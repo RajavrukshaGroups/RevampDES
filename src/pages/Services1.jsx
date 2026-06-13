@@ -1,0 +1,918 @@
+import React from 'react';
+
+export default function Services1() {
+  return (
+    <>
+      <main id="wrapper">
+        
+        <div className="preload preload-container">
+            <div className="spinner-circle lg">
+                <span className="spinner-circle1 spinner-child"></span>
+                <span className="spinner-circle2 spinner-child"></span>
+                <span className="spinner-circle3 spinner-child"></span>
+                <span className="spinner-circle4 spinner-child"></span>
+                <span className="spinner-circle5 spinner-child"></span>
+                <span className="spinner-circle6 spinner-child"></span>
+                <span className="spinner-circle7 spinner-child"></span>
+                <span className="spinner-circle8 spinner-child"></span>
+                <span className="spinner-circle9 spinner-child"></span>
+            </div>
+        </div>
+        
+        
+        <header className="header header-fixed mt-xl-20">
+            <div className="container w-1810">
+                <div className="header-content">
+                    <a href="/" className="logo">
+                        <img src="./assets/images/logo/logo.svg" alt="" />
+                    </a>
+                    <div className="header-center d-none d-xl-block">
+                        <nav className="box-navigation">
+                            <ul className="box-nav-menu">
+                                <li className="menu-item has-sub_menu">
+                                    <a href="#" className="item-link">
+                                        Home
+                                        <span className="icon icon-chevron-down"></span>
+                                    </a>
+                                    <div className="sub-menu">
+                                        <ul className="sub-menu_list">
+                                            <li>
+                                                <a href="/" className="sub-menu_link">Home Digital Marketing</a>
+                                            </li>
+                                            <li>
+                                                <a href="/home-seo" className="sub-menu_link">Home Seo</a>
+                                            </li>
+                                            <li>
+                                                <a href="/home-branding-agency" className="sub-menu_link">Home Branding
+                                                    Agency</a>
+                                            </li>
+                                            <li>
+                                                <a href="/home-seo-marketing" className="sub-menu_link">Home Seo
+                                                    Marketing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li className="menu-item has-sub_menu">
+                                    <a href="/about-us" className="item-link">
+                                        Pages
+                                        <span className="icon icon-chevron-down"></span>
+                                    </a>
+                                    <div className="sub-menu">
+                                        <ul className="sub-menu_list">
+                                            <li>
+                                                <a href="/about-us" className="sub-menu_link">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="/our-team" className="sub-menu_link">Our Team</a>
+                                            </li>
+                                            <li>
+                                                <a href="/team-details" className="sub-menu_link">Team Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="/pricing-plan" className="sub-menu_link">Pricing Plan</a>
+                                            </li>
+                                            <li>
+                                                <a href="/faqs" className="sub-menu_link">Faqs</a>
+                                            </li>
+
+
+                                            <li>
+                                                <a href="/contact" className="sub-menu_link">Contact</a>
+                                            </li>
+                                            <li>
+                                                <a href="/404" className="sub-menu_link">404</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li className="menu-item has-sub_menu">
+                                    <a href="#" className="item-link active">
+                                        Services
+                                        <span className="icon icon-chevron-down"></span>
+                                    </a>
+                                    <div className="sub-menu">
+                                        <ul className="sub-menu_list">
+                                            <li>
+                                                <a href="/services-1" className="sub-menu_link active">Services 01</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services-2" className="sub-menu_link">Services 02</a>
+                                            </li>
+                                            <li>
+                                                <a href="/service-details" className="sub-menu_link">Service Details</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li className="menu-item has-sub_menu">
+                                    <a href="#" className="item-link">
+                                        Portfolio
+                                        <span className="icon icon-chevron-down"></span>
+                                    </a>
+                                    <div className="sub-menu">
+                                        <ul className="sub-menu_list">
+                                            <li>
+                                                <a href="/portfolio-1" className="sub-menu_link">Portfolio 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="/portfolio-2" className="sub-menu_link">Portfolio 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="/portfolio-details" className="sub-menu_link">Portfolio
+                                                    Details</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li className="menu-item has-sub_menu">
+                                    <a href="#" className="item-link">
+                                        Blog
+                                        <span className="icon icon-chevron-down"></span>
+                                    </a>
+                                    <div className="sub-menu">
+                                        <ul className="sub-menu_list">
+                                            <li>
+                                                <a href="/blog-gird" className="sub-menu_link">Blog Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="/blog-listing" className="sub-menu_link">Blog Listing</a>
+                                            </li>
+                                            <li>
+                                                <a href="/blog-detail" className="sub-menu_link">Blog Details</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div className="header-right d-flex align-items-center g-20">
+                        <div className="d-sm-block d-none">
+                            <a href="/contact" className="tf-btn">
+                                <span className="text-btn">Get in Touch</span>
+                                <span className="icon-btn">
+                                    <i className="icon-arrow-up-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div className="d-none d-xl-block">
+                            <a href="#pop-up-sidebar" data-bs-toggle="modal" className="tf-btn-sidebar">
+                                <i className="icon-union"></i>
+                            </a>
+                        </div>
+
+                        <div className="d-xl-none">
+                            <a href="#mobileMenu" data-bs-toggle="offcanvas" className=" mobile-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        
+
+        
+        <div className="page-title">
+            <div className="img-sharp sharp-1">
+                <div className="blob-wrapper">
+                    <div className="blob"></div>
+                </div>
+            </div>
+            <div className="img-sharp sharp-2">
+                <div className="blob-wrapper">
+                    <div className="blob"></div>
+                </div>
+            </div>
+            <div className="container w-1810">
+                <div className="page-title-content">
+                    <div className="content content-2">
+                        <h1 className="title mb-xl-50">
+                            Performance-
+                            <br />Driven Digital
+                            <br />Services
+                        </h1>
+                        <div className="breadkcum">
+                            <a href="/">Home</a>
+                            <span className="icon icon-chevron-right"></span>
+                            <span className="breadkcum-active">Services 01</span>
+                        </div>
+                    </div>
+                    <div className="image">
+                        <img loading="lazy" width="915" height="470"
+                            src="./assets/images/page-title/img-page-title-3.jpg" alt="Image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <section className="section-strategy p-services flat-spacing-1">
+            <div className="container">
+                <div className="heading-section mb-70 text-center">
+                    <div className="sub-title h6 mb-10 letter-space--2 fw-5">
+                        Real strategies. <span>Real results.</span>
+                    </div>
+                    <h2 className="title letter-space--3 fw-6 mb-30">
+                        We believe success comes from
+                        <br />strategy, not guesswork. Approach
+                        <br />combines deep market insight.
+                    </h2>
+                </div>
+
+                <div className="row rg-30">
+                    <div className="col-lg-4">
+                        <div className="marketing-card style-2">
+                            <div className="img-sharp">
+                                <div className="blob-wrapper">
+                                    <div className="blob"></div>
+                                </div>
+                            </div>
+                            <div className="logo">
+                                <img src="./assets/images/logo/logo-white-marketing-card.svg" alt="image" />
+                            </div>
+                            <div className="content">
+                                <div className="h5 title fw-6 letter-space--3">
+                                    Helping businesses connect, convert, and scale digitally.
+                                </div>
+                                <p className="desc ff-2 fw-5">
+                                    We ensure every marketing drives results increased traffic and engagement
+                                </p>
+                                <div className="list-benefit d-flex g-8 flex-wrap">
+                                    <div className="benefit-item d-flex align-items-center g-10">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="ff-2 fw-5">End-to-End Digital Solutions</span>
+                                    </div>
+                                    <div className="benefit-item d-flex align-items-center g-10">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="ff-2 fw-5">Smart Strategies. Powerful Results.</span>
+                                    </div>
+                                    <div className="benefit-item d-flex align-items-center g-10">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="ff-2 fw-5">Helping Brands Grow Online</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="image">
+                            <img loading="lazy" width="553" height="500"
+                                src="./assets/images/section/img-section-strategy-2.jpg" alt="Image" />
+                        </div>
+                    </div>
+                    <div className="col-lg-4">
+                        <div className="growth-card style-2">
+                            <div className="top-card">
+                                <div className="counter-item">
+                                    <div className="counter mb-25">
+                                        <div className="number-counter flex fs-65 fw-6">
+                                            <span className="number odometer color-primary h1 letter-space--3 fw-6"
+                                                data-to="63" data-inviewport="yes"> 0 </span>
+                                            <span className="fs-60 lh-100 fw-6">%</span>
+                                        </div>
+                                    </div>
+                                    <p className="text-body-1 fw-6 lh-100 ff-2 fw-6 color-paragraph letter-space--2">
+                                        Business develop growth</p>
+                                </div>
+                            </div>
+                            <div className="line"></div>
+                            <div className="content-card">
+                                <p className="desc mb-50 ff-2 color-paragraph">
+                                    We help brands increase visibility, engage the right audience, and convert leads
+                                    into loyal customers.
+                                </p>
+                                <a href="#" className="tf-btn style-big style-color-dt-blue">
+                                    <span className="text-btn">Get Started</span>
+                                    <span className="icon-btn">
+                                        <i className="icon-arrow-up-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <section className="section-services p-services">
+
+            <div className="container">
+                <div className="heading-section mb-70 text-center">
+                    <div className="sub-title h6 mb-10 letter-space--2 fw-5">
+                        Smart Digital Services. <span>Measurable Results.</span>
+                    </div>
+                    <h2 className="title letter-space--3 fw-6 mb-30">
+                        We provide heigh-quality digital
+                        <br />marketing services
+                    </h2>
+                </div>
+
+                <div className="services-item-list mb-20 hover-img">
+                    <div className="left-item">
+                        <span className="number ff-2 color-paragraph">01</span>
+                        <div className="item-content">
+                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Search Engine
+                                Optimization
+                                (SEO)</a>
+
+                            <div className="text ff-2 mb-25 color-paragraph">
+                                We help attract targeted organic traffic by continuously monitoring performance and
+                                adapting
+                                to search algorithm changes.
+                            </div>
+                            <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
+                                <ul className="list-benefit d-flex flex-column">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Keyword Research & Strategy</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Link Building & Authority Growth</span>
+                                    </li>
+                                </ul>
+                                <ul className="list-benefit d-flex flex-column">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">On-Page SEO Optimization</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">SEO Analytics & Reporting</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="/service-details" className="tf-btn style-big style-border">
+                                <span className="text-btn">Read more</span>
+                                <span className="icon-btn">
+                                    <i className="icon-arrow-up-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/service-details" className="image">
+                        <img loading="lazy" width="550" height="300" src="./assets/images/widget/services-list-1.jpg"
+                            alt="Image" />
+                    </a>
+                </div>
+
+                <div className="services-item-list mb-20 hover-img">
+                    <div className="left-item">
+                        <span className="number ff-2 color-paragraph">02</span>
+                        <div className="item-content">
+                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Pay-Per-Click
+                                Advertising
+                                (PPC)</a>
+
+                            <div className="text ff-2 mb-25 color-paragraph">
+                                Pay-Per-Click Advertising (PPC) is a powerful way to drive instant traffic, qualified
+                                leads, and measurable results.
+                            </div>
+                            <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
+                                <ul className="list-benefit d-flex flex-column">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Advanced Keyword Research</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Landing Page Optimization</span>
+                                    </li>
+                                </ul>
+                                <ul className="list-benefit d-flex flex-column">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Conversion-Focused Ad Copy</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Transparent Reporting</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="/service-details" className="tf-btn style-big style-border">
+                                <span className="text-btn">Read more</span>
+                                <span className="icon-btn">
+                                    <i className="icon-arrow-up-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/service-details" className="image">
+                        <img loading="lazy" width="550" height="300" src="./assets/images/widget/services-list-2.jpg"
+                            alt="Image" />
+                    </a>
+                </div>
+
+                <div className="services-item-list mb-20 hover-img">
+                    <div className="left-item">
+                        <span className="number ff-2 color-paragraph">03</span>
+                        <div className="item-content">
+                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Branding &
+                                Digital
+                                Strategy</a>
+
+                            <div className="text ff-2 mb-25 color-paragraph">
+                                We help brands define a clear identity, compelling message, and strong online presence
+                                through research-driven .
+                            </div>
+                            <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
+                                <ul className="list-benefit d-flex flex-column">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Brand Identity & Positioning</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Strategic Digital Roadmap</span>
+                                    </li>
+                                </ul>
+                                <ul className="list-benefit d-flex flex-column">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Market & Audience Research</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Consistent Brand Messaging</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="/service-details" className="tf-btn style-big style-border">
+                                <span className="text-btn">Read more</span>
+                                <span className="icon-btn">
+                                    <i className="icon-arrow-up-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/service-details" className="image">
+                        <img loading="lazy" width="550" height="300" src="./assets/images/widget/services-list-3.jpg"
+                            alt="Image" />
+                    </a>
+                </div>
+
+                <div className="services-item-list mb-20 hover-img">
+                    <div className="left-item">
+                        <span className="number ff-2 color-paragraph">04</span>
+                        <div className="item-content">
+                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Web Design &
+                                Development</a>
+
+                            <div className="text ff-2 mb-25 color-paragraph">
+                                Web Design & Development combines creativity, technology, and strategy to build websites
+                                that look great better.
+                            </div>
+                            <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
+                                <ul className="list-benefit d-flex flex-column">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Responsive & Friendly Design</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">SEO-Optimized Structure</span>
+                                    </li>
+                                </ul>
+                                <ul className="list-benefit d-flex flex-column">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Fast & Secure Performance</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Scalable & Future-Ready</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="/service-details" className="tf-btn style-big style-border">
+                                <span className="text-btn">Read more</span>
+                                <span className="icon-btn">
+                                    <i className="icon-arrow-up-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/service-details" className="image">
+                        <img loading="lazy" width="550" height="300" src="./assets/images/widget/services-list-4.jpg"
+                            alt="Image" />
+                    </a>
+                </div>
+
+                <div className="services-item-list">
+                    <div className="left-item">
+                        <span className="number ff-2 color-paragraph">05</span>
+                        <div className="item-content">
+                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Influencer
+                                Marketing</a>
+
+                            <div className="text ff-2 mb-25 color-paragraph">
+                                We connect your business with relevant influencers across social media platforms to
+                                create authentic, engaging campaigns.
+                            </div>
+                            <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
+                                <ul className="list-benefit d-flex flex-column">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Targeted Influencer Selection</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Brand Awareness & Growth</span>
+                                    </li>
+                                </ul>
+                                <ul className="list-benefit d-flex flex-column">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Cross-Platform Management</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-24"></i>
+                                        <span className="letter-space--2">Strategy & Collaboration</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="/service-details" className="tf-btn style-big style-border">
+                                <span className="text-btn">Read more</span>
+                                <span className="icon-btn">
+                                    <i className="icon-arrow-up-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="/service-details" className="image">
+                        <img loading="lazy" width="550" height="300" src="./assets/images/widget/services-list-5.jpg"
+                            alt="Image" />
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        
+
+        
+        <section className="section-cta p-services flat-spacing-1">
+            <div className="container">
+                <div className="heading-section">
+                    <h1 className="title fw-6 letter-space--3 color-dt-black mb-70">
+                        Let's create the best
+                        <br />product experience
+                        <br />for your project
+                    </h1>
+                </div>
+                <div className="section-cta-inner d-flex align-items-end justify-content-between g-30">
+                    <div className="left">
+                        <div className="text h5 fw-5 color-paragraph lh-35 ff-2 letter-space--2">
+                            Influencer Marketing helps your
+                            brand connect authentically with
+                            your audience trusted voices.
+                        </div>
+
+                        <div className="bottom d-flex g-10 rg-30 align-items-end justify-content-between">
+                            <div className="image img-min">
+                                <img loading="lazy" width="270" height="215"
+                                    src="./assets/images/section/img-cta-p-services-1.jpg" alt="Image" />
+                            </div>
+                            <div className="right-bottom">
+                                <ul className="list-benefit d-flex flex-column g-8 mb-25">
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-18"></i>
+                                        <span className="letter-space--2 text-nowrap">Targeted Influencer Selection</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-18"></i>
+                                        <span className="letter-space--2 text-nowrap">Brand Awareness & Growth</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-18"></i>
+                                        <span className="letter-space--2 text-nowrap">Cross-Platform Management</span>
+                                    </li>
+                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                        <i className="icon-check fs-18"></i>
+                                        <span className="letter-space--2 text-nowrap">Strategy & Collaboration</span>
+                                    </li>
+                                </ul>
+                                <a href="#" className="tf-btn style-color-dt-blue">
+                                    <span className="text-btn">Read more</span>
+                                    <span className="icon-btn">
+                                        <i className="icon-arrow-up-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="image">
+                        <img loading="lazy" width="630" height="430"
+                            src="./assets/images/section/img-cta-p-services-2.jpg" alt="Image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <footer className="footer">
+            <div className="img-sharp">
+                <div className="blob-wrapper">
+                    <div className="blob"></div>
+                </div>
+            </div>
+            <div className="footer-inner">
+                <div className="container w-1650">
+                    <div className="top-footer">
+                        <p className="big-text split-text effect-right">Let’s Connect
+                            <br /><span className="img d-none d-sm-inline-block wow fadeInRight"><img loading="lazy"
+                                    width="350" height="130" src="./assets/images/section/img-footer-title.jpg"
+                                    alt="Image" /></span> together
+
+                            <span className="img d-sm-none mt-20"><img loading="lazy" width="350" height="130"
+                                    src="./assets/images/section/img-footer-title.jpg" alt="Image" /></span>
+                        </p>
+                        <div className="d-lg-block d-none">
+                            <a href="#" className="link-btn">
+                                <span className="icon-btn">
+                                    <i className="icon-arrow-up-right"></i>
+                                </span>
+                                <span className="text-btn">Let’s Talk</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="footer-inner">
+                <div className="container w-1750">
+                    <div className="midder-footer">
+                        <a href="/" className="logo-footer">
+                            <img src="./assets/images/logo/logo.svg" alt="image" />
+                        </a>
+
+                        <div className="footer-content footer-col-block footer-content-1">
+                            <div className="title-mobile h5 letter-space--3 fw-5">
+                                Solutions
+                                <i className="icon-chevron-down d-sm-none d-block"></i>
+                            </div>
+                            <div className="tf-collapse-content" style={{}}>
+                                <ul className="content">
+                                    <li className="support-item-footer"><a href="#" className="ff-2">Search Engine
+                                            Optimization</a>
+                                    </li>
+                                    <li className="support-item-footer"><a href="#" className="ff-2">Pay-Per-Click
+                                            Advertising</a>
+                                    </li>
+                                    <li className="support-item-footer"><a href="#" className="ff-2">Social Media Marketing</a>
+                                    </li>
+                                    <li className="support-item-footer"><a href="#" className="ff-2">Branding & Digital
+                                            Strategy</a>
+                                    </li>
+                                    <li className="support-item-footer"><a href="#" className="ff-2">Influencer Marketing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="footer-content footer-col-block footer-content-1">
+                            <div className="title-mobile h5 letter-space--3 fw-5">
+                                Our Company
+                                <i className="icon-chevron-down d-sm-none d-block"></i>
+                            </div>
+                            <div className="tf-collapse-content" style={{}}>
+                                <ul className="content">
+                                    <li className="support-item-footer"><a href="#" className="ff-2">Company History</a></li>
+                                    <li className="support-item-footer"><a href="#" className="ff-2">Team Members</a></li>
+                                    <li className="support-item-footer"><a href="#" className="ff-2">Latest Cases</a></li>
+                                    <li className="support-item-footer"><a href="#" className="ff-2">Need a Careers</a></li>
+                                    <li className="support-item-footer"><a href="#" className="ff-2">Articles & news</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="footer-content footer-col-block newsletter-footer footer-content-2">
+                            <div className="title-mobile h5 letter-space--3 fw-5">
+                                Newsletter
+                                <i className="icon-chevron-down d-sm-none d-block"></i>
+                            </div>
+                            <div className="tf-collapse-content" style={{}}>
+                                <div className="content">
+                                    <p className="text fw-5 ff-2 mb-40">
+                                        Stay ahead in the digital world by subscribing to our newsletter.
+                                    </p>
+                                    <form action="#" className="form-newsletter-2">
+                                        <fieldset className="input-absolute mb-20">
+                                            <input type="email" placeholder="Email address" required />
+                                            <button type="submit" className="send-btn">
+                                                <i className="icon-send"></i>
+                                            </button>
+                                        </fieldset>
+                                        <fieldset className="box-checkbox d-flex align-items-center g-10">
+                                            <input type="checkbox" name="checkbox-1" id="checkbox-1"
+                                                className="input-check-box" />
+                                            <label htmlFor="checkbox-1" className="text-checkbox ff-2">I here by accept all <a
+                                                    href="#" className="ff-2 fw-6">terms & conditions.</a></label>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="footer-content footer-col-block contact-footer footer-content-2">
+                            <div className="title-mobile h5 letter-space--3 fw-5">
+                                Contact Us
+                                <i className="icon-chevron-down d-sm-none d-block"></i>
+                            </div>
+                            <div className="tf-collapse-content" style={{}}>
+                                <div className="content">
+                                    <div className="contact-footer-item mb-30">
+                                        <div className="icon-contact">
+                                            <i className="icon-map-pin"></i>
+                                        </div>
+                                        <a href="#" className="text ff-2 fw-5">
+                                            <span>1234 Innovation Drive, Suite 500,
+                                                <br />San Francisco, CA 94105, USA</span>
+                                        </a>
+                                    </div>
+                                    <div className="contact-footer-item mb-30">
+                                        <div className="icon-contact">
+                                            <i className="icon-mail"></i>
+                                        </div>
+                                        <div className="text ff-2 fw-5">
+                                            <a href="#">supporttech@gmail.com</a>
+                                            <a href="#">www.seonex.com</a>
+                                        </div>
+                                    </div>
+                                    <div className="contact-footer-item">
+                                        <div className="icon-contact">
+                                            <i className="icon-phone-outgoing"></i>
+                                        </div>
+                                        <div className="text ff-2 fw-5">
+                                            <a href="#">+1 (415) 555-7890</a>
+                                            <a href="#">+1 (310) 555-876</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container w-1750">
+                <div className="bottom-footer d-flex align-items-center justify-content-between g-20">
+                    <ul className="d-flex align-items-center g-30 flex-wrap justify-content-center">
+                        <li><a href="/" className="color-white ff-2">Home</a></li>
+                        <li><a href="/about-us" className="color-white ff-2">About</a></li>
+                        <li><a href="/services-1" className="color-white ff-2">Service</a></li>
+                        <li><a href="#" className="color-white ff-2">Privacy</a></li>
+                        <li><a href="/faqs" className="color-white ff-2">FAQs</a></li>
+                    </ul>
+                    <span className="color-text-3 text-center ff-2">Copyright@ 2026 <span
+                            className="color-dt-light fw-6">SEONEX</span>. All
+                        Rights Reserved.</span>
+                </div>
+            </div>
+        </footer>
+
+        <div className="overlay-filter" id="overlay-filter"></div>
+    </main>
+
+    
+    <div className="offcanvas offcanvas-start" id="mobileMenu">
+        <div className="pop-up-nav-mobile">
+            <div className="canvas-header">
+                <a href="#" className="logo-site">
+                    <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
+                </a>
+                <span className="icon icon-close" data-bs-dismiss="offcanvas"></span>
+            </div>
+            <div className="canvas-body">
+                <div className="mb-content-top">
+                    <ul className="nav-ul-mb" id="wrapper-menu-navigation"></ul>
+                </div>
+            </div>
+            <div className="canvas-bottom">
+            </div>
+        </div>
+
+    </div>
+    
+
+    
+    <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
+        <div className="modal-dialog" role="document">
+            <div className="modal-content modal-sidebar">
+                <div className="sidebar-header d-flex align-items-center justify-content-between">
+                    <a href="/" className="logo-sidebar">
+                        <img src="./assets/images/logo/logo-2.svg" alt="" />
+                    </a>
+                    <span className="icon icon-close-popup" data-bs-dismiss="modal"><i className="icon-x-circle"></i></span>
+                </div>
+                <div className="sidebar-content mb-70">
+                    <p className="h5 title fw-6">
+                        Learn About Us
+                    </p>
+                    <p className="text text-body-2 ff-2 mb-70">
+                        We are a results-driven digital marketing agency dedicated to helping brands grow, connect, and
+                        thrive in the digital world. By combining data-driven strategy, creative storytelling, and the
+                        latest marketing technologies
+                    </p>
+                    <div className="list-img d-flex align-items-center g-20">
+                        <div className="img">
+                            <img loading="lazy" width="115" height="115"
+                                src="./assets/images/widget/pop-up-siderbar-1.jpg" alt="Image" />
+                        </div>
+                        <div className="img">
+                            <img loading="lazy" width="115" height="115"
+                                src="./assets/images/widget/pop-up-siderbar-2.jpg" alt="Image" />
+                        </div>
+                        <div className="img">
+                            <img loading="lazy" width="115" height="115"
+                                src="./assets/images/widget/pop-up-siderbar-3.jpg" alt="Image" />
+                        </div>
+                        <div className="img">
+                            <img loading="lazy" width="115" height="115"
+                                src="./assets/images/widget/pop-up-siderbar-4.jpg" alt="Image" />
+                        </div>
+                    </div>
+                </div>
+                <div className="sidebar-content mb-70">
+                    <p className="h5 title fw-6">
+                        Contact Us
+                    </p>
+                    <ul>
+                        <li className="contact-list-item">
+                            <a href="#" className="text-body-2 ff-2">245 Park Avenue, Suite 300 New York</a>
+                        </li>
+                        <li className="contact-list-item">
+                            <a href="#" className="text-body-2 ff-2">supporttech@gmail.com</a>
+                        </li>
+                        <li className="contact-list-item">
+                            <a href="#" className="text-body-2 ff-2">+1 (200) 555-876</a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="sidebar-content newsletter-form">
+                    <p className="h5 title fw-6">
+                        Newsletter
+                    </p>
+                    <p className="text ff-2 mb-30">
+                        Stay ahead in the digital world by subscribing to our newsletter.
+                    </p>
+                    <form action="#" className="form-newsletter">
+                        <fieldset className="d-flex align-items-center flex-wrap g-10">
+                            <input type="text" name="email-input" id="email-input" className="input-newsletter flex-grow-1"
+                                placeholder="Email address" />
+                            <button className="tf-btn style-big style-color-dt-blue">
+                                <span className="text-btn">Subscribe</span>
+                                <span className="icon-btn"><i className="icon-arrow-up-right"></i></span>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div className="progress-wrap">
+        <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                style={{"transition":"strokeDashoffset 10ms linear","strokeDasharray":"307.919, 307.919","strokeDashoffset":"277.672"}}>
+            </path>
+        </svg>
+    </div>
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    </>
+  );
+}
