@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
-export default function Portfolio1() {
+export default function Portfolio2() {
   return (
     <>
       <main id="wrapper">
-        
+         
         <div className="preload preload-container">
             <div className="spinner-circle lg">
                 <span className="spinner-circle1 spinner-child"></span>
@@ -47,7 +47,7 @@ export default function Portfolio1() {
                         <div className="breadkcum">
                             <a href="/">Home</a>
                             <span className="icon icon-chevron-right"></span>
-                            <span className="breadkcum-active">Projects 01</span>
+                            <span className="breadkcum-active">Projects 02</span>
                         </div>
                     </div>
                     <div className="image">
@@ -70,154 +70,119 @@ export default function Portfolio1() {
                         Let’s explore our awards winning projects
                     </h2>
                 </div>
+                <div className="list-item-project-g-2">
+
+                    <div className="item">
+                        <div className="project-item hover-img style-3">
+                            <a href="/portfolio-details" className="image">
+                                <img loading="lazy" width="520" height="630"
+                                    src="./assets/images/project/project-item-2-1.jpg" alt="Image" />
+                            </a>
+                            <div className="content">
+                                <div className="meta-project">
+                                    <span className="ff-2 fw-5">Digital product</span>
+                                    <span className="line-dot"></span>
+                                    <span className="ff-2 fw-5">2026</span>
+                                </div>
+                                <a href="/portfolio-details" className="name-project h5 fw-6 letter-space--3">
+                                    Mobile Apps development
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="project-item hover-img style-3">
+                            <a href="/portfolio-details" className="image">
+                                <img loading="lazy" width="580" height="580"
+                                    src="./assets/images/project/project-item-2-2.jpg" alt="Image" />
+                            </a>
+                            <div className="content">
+                                <div className="meta-project">
+                                    <span className="ff-2 fw-5">Digital product</span>
+                                    <span className="line-dot"></span>
+                                    <span className="ff-2 fw-5">2026</span>
+                                </div>
+                                <a href="/portfolio-details" className="name-project h5 fw-6 letter-space--3">
+                                    Product design & branding
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="project-item hover-img style-3">
+                            <a href="/portfolio-details" className="image">
+                                <img loading="lazy" width="580" height="580"
+                                    src="./assets/images/project/project-item-2-3.jpg" alt="Image" />
+                            </a>
+                            <div className="content">
+                                <div className="meta-project">
+                                    <span className="ff-2 fw-5">Digital product</span>
+                                    <span className="line-dot"></span>
+                                    <span className="ff-2 fw-5">2026</span>
+                                </div>
+                                <a href="/portfolio-details" className="name-project h5 fw-6 letter-space--3">
+                                    Software development
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="project-item hover-img style-3">
+                            <a href="/portfolio-details" className="image">
+                                <img loading="lazy" width="580" height="580"
+                                    src="./assets/images/project/project-item-2-4.jpg" alt="Image" />
+                            </a>
+                            <div className="content">
+                                <div className="meta-project">
+                                    <span className="ff-2 fw-5">Digital product</span>
+                                    <span className="line-dot"></span>
+                                    <span className="ff-2 fw-5">2026</span>
+                                </div>
+                                <a href="/portfolio-details" className="name-project h5 fw-6 letter-space--3">
+                                    Software development
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="project-item hover-img style-3">
+                            <a href="/portfolio-details" className="image">
+                                <img loading="lazy" width="580" height="580"
+                                    src="./assets/images/project/project-item-2-5.jpg" alt="Image" />
+                            </a>
+                            <div className="content">
+                                <div className="meta-project">
+                                    <span className="ff-2 fw-5">Digital product</span>
+                                    <span className="line-dot"></span>
+                                    <span className="ff-2 fw-5">2026</span>
+                                </div>
+                                <a href="/portfolio-details" className="name-project h5 fw-6 letter-space--3">
+                                    Product design & branding
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item">
+                        <div className="project-item hover-img style-3">
+                            <a href="/portfolio-details" className="image">
+                                <img loading="lazy" width="580" height="580"
+                                    src="./assets/images/project/project-item-2-6.jpg" alt="Image" />
+                            </a>
+                            <div className="content">
+                                <div className="meta-project">
+                                    <span className="ff-2 fw-5">Digital product</span>
+                                    <span className="line-dot"></span>
+                                    <span className="ff-2 fw-5">2026</span>
+                                </div>
+                                <a href="/portfolio-details" className="name-project h5 fw-6 letter-space--3">
+                                    Mobile Apps development
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div className="list-item-project">
-                <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-1.jpg"
-                            alt="Image" />
-                    </a>
-                    <div className="content">
-                        <div className="meta-project">
-                            <span className="ff-2 fw-5">Digital marketing</span>
-                            <span className="line-dot"></span>
-                            <span className="ff-2 fw-5">2026</span>
-                        </div>
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Global E-commerce SEO Campaign
-                        </a>
-                    </div>
-                </div>
-                <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-2.jpg"
-                            alt="Image" />
-                    </a>
-                    <div className="content">
-                        <div className="meta-project">
-                            <span className="ff-2 fw-5">Digital marketing</span>
-                            <span className="line-dot"></span>
-                            <span className="ff-2 fw-5">2026</span>
-                        </div>
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Social Media Brand Awareness
-                        </a>
-                    </div>
-                </div>
-                <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-3.jpg"
-                            alt="Image" />
-                    </a>
-                    <div className="content">
-                        <div className="meta-project">
-                            <span className="ff-2 fw-5">Digital marketing</span>
-                            <span className="line-dot"></span>
-                            <span className="ff-2 fw-5">2026</span>
-                        </div>
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Email Marketing Automation
-                        </a>
-                    </div>
-                </div>
-                <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-4.jpg"
-                            alt="Image" />
-                    </a>
-                    <div className="content">
-                        <div className="meta-project">
-                            <span className="ff-2 fw-5">Digital marketing</span>
-                            <span className="line-dot"></span>
-                            <span className="ff-2 fw-5">2026</span>
-                        </div>
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Influencer Marketing Campaign
-                        </a>
-                    </div>
-                </div>
-                <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-5.jpg"
-                            alt="Image" />
-                    </a>
-                    <div className="content">
-                        <div className="meta-project">
-                            <span className="ff-2 fw-5">Digital marketing</span>
-                            <span className="line-dot"></span>
-                            <span className="ff-2 fw-5">2026</span>
-                        </div>
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Brand Identity & Digital Branding
-                        </a>
-                    </div>
-                </div>
-                <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-6.jpg"
-                            alt="Image" />
-                    </a>
-                    <div className="content">
-                        <div className="meta-project">
-                            <span className="ff-2 fw-5">Digital marketing</span>
-                            <span className="line-dot"></span>
-                            <span className="ff-2 fw-5">2026</span>
-                        </div>
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Local SEO for Small Businesses
-                        </a>
-                    </div>
-                </div>
-                <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-13.jpg"
-                            alt="Image" />
-                    </a>
-                    <div className="content">
-                        <div className="meta-project">
-                            <span className="ff-2 fw-5">Digital marketing</span>
-                            <span className="line-dot"></span>
-                            <span className="ff-2 fw-5">2026</span>
-                        </div>
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Influencer Marketing Campaign
-                        </a>
-                    </div>
-                </div>
-                <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-14.jpg"
-                            alt="Image" />
-                    </a>
-                    <div className="content">
-                        <div className="meta-project">
-                            <span className="ff-2 fw-5">Digital marketing</span>
-                            <span className="line-dot"></span>
-                            <span className="ff-2 fw-5">2026</span>
-                        </div>
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Brand Identity & Digital Branding
-                        </a>
-                    </div>
-                </div>
-                <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-15.jpg"
-                            alt="Image" />
-                    </a>
-                    <div className="content">
-                        <div className="meta-project">
-                            <span className="ff-2 fw-5">Digital marketing</span>
-                            <span className="line-dot"></span>
-                            <span className="ff-2 fw-5">2026</span>
-                        </div>
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Local SEO for Small Businesses
-                        </a>
-                    </div>
-                </div>
-            </div>
         </section>
         
 
@@ -258,9 +223,9 @@ export default function Portfolio1() {
                     <span className="icon icon-close-popup" data-bs-dismiss="modal"><i className="icon-x-circle"></i></span>
                 </div>
                 <div className="sidebar-content mb-70">
-                    <p className="h5 title fw-6">
+                   <p className="h5 title fw-6">
                         Learn About Us
-                    </p>
+                   </p>
                     <p className="text text-body-2 ff-2 mb-70">
                         We are a results-driven digital marketing agency dedicated to helping brands grow, connect, and
                         thrive in the digital world. By combining data-driven strategy, creative storytelling, and the
@@ -286,9 +251,9 @@ export default function Portfolio1() {
                     </div>
                 </div>
                 <div className="sidebar-content mb-70">
-                    <p className="h5 title fw-6">
+                   <p className="h5 title fw-6">
                         Contact Us
-                    </p>
+                   </p>
                     <ul>
                         <li className="contact-list-item">
                             <a href="#" className="text-body-2 ff-2">245 Park Avenue, Suite 300 New York</a>
@@ -302,9 +267,9 @@ export default function Portfolio1() {
                     </ul>
                 </div>
                 <div className="sidebar-content newsletter-form">
-                    <p className="h5 title fw-6">
+                   <p className="h5 title fw-6">
                         Newsletter
-                    </p>
+                   </p>
                     <p className="text ff-2 mb-30">
                         Stay ahead in the digital world by subscribing to our newsletter.
                     </p>
@@ -323,7 +288,7 @@ export default function Portfolio1() {
         </div>
     </div>
     
-    
+      
     <div className="progress-wrap">
         <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"

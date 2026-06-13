@@ -1,26 +1,26 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import AboutUs from './pages/AboutUs';
-import BlogDetail from './pages/BlogDetail';
-import BlogGird from './pages/BlogGird';
-import BlogListing from './pages/BlogListing';
-import Contact from './pages/Contact';
-import Faqs from './pages/Faqs';
-import HomeBrandingAgency from './pages/HomeBrandingAgency';
-import HomeSeo from './pages/HomeSeo';
-import HomeSeoMarketing from './pages/HomeSeoMarketing';
-import Index from './pages/Index';
-import OurTeam from './pages/OurTeam';
-import Page404 from './pages/Page404';
-import Portfolio1 from './pages/Portfolio1';
-import Portfolio2 from './pages/Portfolio2';
-import PortfolioDetails from './pages/PortfolioDetails';
-import PricingPlan from './pages/PricingPlan';
-import ServiceDetails from './pages/ServiceDetails';
-import Services1 from './pages/Services1';
-import Services2 from './pages/Services2';
-import TeamDetails from './pages/TeamDetails';
+import Home from './pages/Home/Home';
+import AboutUs from './pages/Company/AboutUs';
+import BlogDetail from './pages/Blog/BlogDetail';
+import BlogGird from './pages/Blog/BlogGird';
+import BlogListing from './pages/Blog/BlogListing';
+import Contact from './pages/Company/Contact';
+import Faqs from './pages/Company/Faqs';
+import HomeBrandingAgency from './pages/Home/HomeBrandingAgency';
+import HomeSeo from './pages/Home/HomeSeo';
+import HomeSeoMarketing from './pages/Home/HomeSeoMarketing';
+import Index from './pages/Home/Index';
+import OurTeam from './pages/Company/OurTeam';
+import Page404 from './pages/Misc/Page404';
+import Portfolio1 from './pages/Portfolio/Portfolio1';
+import Portfolio2 from './pages/Portfolio/Portfolio2';
+import PortfolioDetails from './pages/Portfolio/PortfolioDetails';
+import PricingPlan from './pages/Company/PricingPlan';
+import ServiceDetails from './pages/Services/ServiceDetails';
+import Services1 from './pages/Services/Services1';
+import Services2 from './pages/Services/Services2';
+import TeamDetails from './pages/Company/TeamDetails';
 
 function App() {
   return (
