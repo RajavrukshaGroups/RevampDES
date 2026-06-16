@@ -374,11 +374,11 @@ export default function Home() {
                 We don’t guess — <span>we grow.</span>
               </div>
               <h2 className="title letter-space--3 fw-6 mb-30 wow fadeInUp">
-                We are a team of passionate digital
+                We are a team of passionate digital strategists, creatives, and
+                analysts dedicated to growth businesses
                 <br />
-                strategists, creatives, and analysts
+                {/* strategists, creatives, and analysts */}
                 <br />
-                dedicated to growth businesses
               </h2>
 
               <p className="desc ff-2 text-body-1 mb-30 lh-32 fw-5 color-paragraph wow fadeInUp">
@@ -820,6 +820,229 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* <section className="section-services h-dm">
+            <div className="heading-section animation-follow mouse-follow-title">
+                <div className="container w-1750">
+                    <div className="sub-title h6 mb-25 letter-space--2 fw-5 wow fadeInUp">
+                        Smart Digital Services. <span>Measurable Results.</span>
+                    </div>
+                    <div className="title title-big text-follow wow fadeInUp">
+                        Digital Marketing Services
+                    </div>
+                </div>
+                <div className="line-header-section"></div>
+            </div>
+
+            <div className="container w-1750">
+                <div className="section-inner g-30">
+                    <div className="left-section">
+                        <div className="wg-according" id="According1">
+                            <div className="according-item">
+                                <p className="header-according">
+                                    <a href="#according1" data-bs-toggle="collapse"
+                                        className="title-according  h5 fw-5 letter-space--5">
+                                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                                            <span className="number-accourding text-body-3 ff-2 fw-4">01</span>
+                                            Search Engine Optimization (SEO)
+                                        </span>
+                                        <span className="icon"><i className="icon-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                </p>
+                                <div id="according1" className="collapse show" data-bs-parent="#According1">
+                                    <div className="according-content">
+                                        <p className="text ff-2 mb-25">
+                                            We help attract targeted organic traffic by continuously monitoring
+                                            performance and adapting to search algorithm changes.
+                                        </p>
+                                        <ul className="list-benefit d-flex align-items-center flex-wrap">
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>Keyword
+                                                Research & Strategy</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>On-Page
+                                                SEO Optimization</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>Link
+                                                Building & Authority Growth</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>SEO
+                                                Analytics & Reporting</li>
+                                        </ul>
+                                        <div className="image">
+                                            <img loading="lazy" width="550" height="290"
+                                                src="./assets/images/widget/img-according.jpg" alt="Image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="according-item">
+                                <p className="header-according">
+                                    <a href="#according2" data-bs-toggle="collapse"
+                                        className="title-according h5 fw-5 letter-space--5 collapsed">
+                                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                                            <span className="number-accourding text-body-3 ff-2 fw-4">02</span>
+                                            Pay-Per-Click Advertising (PPC)
+                                        </span>
+                                        <span className="icon"><i className="icon-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                </p>
+                                <div id="according2" className="collapse" data-bs-parent="#According1">
+                                    <div className="according-content">
+                                        <p className="text ff-2 mb-25">
+                                            We help attract targeted organic traffic by continuously monitoring
+                                            performance and adapting to search algorithm changes.
+                                        </p>
+                                        <ul className="list-benefit d-flex align-items-center flex-wrap">
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>Keyword
+                                                Research & Strategy</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>On-Page
+                                                SEO Optimization</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>Link
+                                                Building & Authority Growth</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>SEO
+                                                Analytics & Reporting</li>
+                                        </ul>
+                                        <div className="image">
+                                            <img loading="lazy" width="550" height="290"
+                                                src="./assets/images/widget/img-according.jpg" alt="Image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="according-item">
+                                <p className="header-according">
+                                    <a href="#according3" data-bs-toggle="collapse"
+                                        className="title-according h5 fw-5 letter-space--5 collapsed">
+                                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                                            <span className="number-accourding text-body-3 ff-2 fw-4">03</span>
+                                            Branding & Digital Strategy
+                                        </span>
+                                        <span className="icon"><i className="icon-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                </p>
+                                <div id="according3" className="collapse" data-bs-parent="#According1">
+                                    <div className="according-content">
+                                        <p className="text ff-2 mb-25">
+                                            We help attract targeted organic traffic by continuously monitoring
+                                            performance and adapting to search algorithm changes.
+                                        </p>
+                                        <ul className="list-benefit d-flex align-items-center flex-wrap">
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>Keyword
+                                                Research & Strategy</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>On-Page
+                                                SEO Optimization</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>Link
+                                                Building & Authority Growth</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>SEO
+                                                Analytics & Reporting</li>
+                                        </ul>
+                                        <div className="image">
+                                            <img loading="lazy" width="550" height="290"
+                                                src="./assets/images/widget/img-according.jpg" alt="Image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="according-item">
+                                <p className="header-according">
+                                    <a href="#according4" data-bs-toggle="collapse"
+                                        className="title-according h5 fw-5 letter-space--5 collapsed">
+                                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                                            <span className="number-accourding text-body-3 ff-2 fw-4">04</span>
+                                            Web Design & Development
+                                        </span>
+                                        <span className="icon"><i className="icon-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                </p>
+                                <div id="according4" className="collapse" data-bs-parent="#According1">
+                                    <div className="according-content">
+                                        <p className="text ff-2 mb-25">
+                                            We help attract targeted organic traffic by continuously monitoring
+                                            performance and adapting to search algorithm changes.
+                                        </p>
+                                        <ul className="list-benefit d-flex align-items-center flex-wrap">
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>Keyword
+                                                Research & Strategy</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>On-Page
+                                                SEO Optimization</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>Link
+                                                Building & Authority Growth</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>SEO
+                                                Analytics & Reporting</li>
+                                        </ul>
+                                        <div className="image">
+                                            <img loading="lazy" width="550" height="290"
+                                                src="./assets/images/widget/img-according.jpg" alt="Image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="according-item">
+                                <p className="header-according">
+                                    <a href="#according5" data-bs-toggle="collapse"
+                                        className="title-according h5 fw-5 letter-space--5 collapsed">
+                                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                                            <span className="number-accourding text-body-3 ff-2 fw-4">05</span>
+                                            Influencer Marketing
+                                        </span>
+                                        <span className="icon"><i className="icon-chevron-right"></i>
+                                        </span>
+                                    </a>
+                                </p>
+                                <div id="according5" className="collapse" data-bs-parent="#According1">
+                                    <div className="according-content">
+                                        <p className="text ff-2 mb-25">
+                                            We help attract targeted organic traffic by continuously monitoring
+                                            performance and adapting to search algorithm changes.
+                                        </p>
+                                        <ul className="list-benefit d-flex align-items-center flex-wrap">
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>Keyword
+                                                Research & Strategy</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>On-Page
+                                                SEO Optimization</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>Link
+                                                Building & Authority Growth</li>
+                                            <li className="benefit-item letter-space--2"><i className="icon-check"></i>SEO
+                                                Analytics & Reporting</li>
+                                        </ul>
+                                        <div className="image">
+                                            <img loading="lazy" width="550" height="290"
+                                                src="./assets/images/widget/img-according.jpg" alt="Image" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="right">
+                        <div className="image-testimonial">
+                            <div className="image">
+                                <img loading="lazy" width="845" height="1000"
+                                    src="./assets/images/widget/img-section-services.jpg" alt="Image" />
+                            </div>
+                            <div className="content">
+                                <div className="counter-item">
+                                    <div className="counter mb-10">
+                                        <div className="number-counter flex fs-65 fw-6">
+                                            <span className="number odometer color-primary h1 letter-space--3 fw-6"
+                                                data-to="83" data-inviewport="yes"> 0 </span>
+                                            <span className="h1 fw-6">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p className="text h5 letter-space--3">
+                                    “Their digital strategies delivered <br />measurable growth and consistent
+                                    <br />leads
+                                    for our business.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> */}
 
         <section className="section-infiniteSlide">
           <div className="infiniteSlide-app infiniteSlide-1 bg-dt-blue ">
@@ -949,11 +1172,10 @@ export default function Home() {
                 Driven by Strategy <span>Focused on Results.</span>
               </div>
               <h2 className="title letter-space--3 fw-6 wow fadeInUp">
-                We build customized marketing solutions
-                <br />
-                connect businesses with the right audience
-                <br />
-                focus is on transparency, performance
+                We build customized marketing solutions connect businesses with
+                the right audience focus is on transparency, performance
+                {/* <br /> */}
+                {/* <br /> */}
               </h2>
             </div>
           </div>
