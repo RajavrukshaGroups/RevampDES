@@ -5452,6 +5452,7 @@ form .form-content {
 }
 .heading-section .sub-title span {
   color: var(--digital-marketing-black);
+  /* color:var(--digital-marketing-light); */
   font-style: italic;
 }
 .heading-section .sub-title.style-bg-2 {

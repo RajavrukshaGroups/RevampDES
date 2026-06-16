@@ -17,9 +17,9 @@ export default function Header() {
                   <li className="menu-item has-sub_menu">
                     <a href="#" className="item-link active">
                       Home
-                      <span className="icon icon-chevron-down"></span>
+                      {/* <span className="icon icon-chevron-down"></span> */}
                     </a>
-                    <div className="sub-menu">
+                    {/* <div className="sub-menu">
                       <ul className="sub-menu_list">
                         <li>
                           <a href="/" className="sub-menu_link active">
@@ -48,7 +48,7 @@ export default function Header() {
                           </a>
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
                   </li>
 
                   <li className="menu-item has-sub_menu">

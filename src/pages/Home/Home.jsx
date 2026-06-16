@@ -12,6 +12,24 @@ import ImgVideo from "../../assets/images/section/img-video.jpg";
 import AvtTestimonial from "../../assets/images/testimonial/avt-testimonial.jpg";
 import ImgSectionService from "../../assets/images/widget/img-section-services.jpg";
 import ImgAccording from "../../assets/images/widget/img-according.jpg";
+import ImgSectionWhy from "../../assets/images/section/img-section-why.jpg";
+import ImgSectionWhy2 from "../../assets/images/section/img-section-why-2.jpg";
+import ImgSectionWhy3 from "../../assets/images/section/img-section-why-3.jpg";
+import ImgSectionWhy4 from "../../assets/images/section/img-section-why-4.jpg";
+import ProjectItem1 from "../../assets/images/projects/project-item-1.jpg";
+import ProjectItem2 from "../../assets/images/projects/project-item-2.jpg";
+import ProjectItem3 from "../../assets/images/projects/project-item-3.jpg";
+import ProjectItem4 from "../../assets/images/projects/project-item-4.jpg";
+import ProjectItem5 from "../../assets/images/projects/project-item-5.jpg";
+import ProjectItem6 from "../../assets/images/projects/project-item-6.jpg";
+import DESLogoSideBar from "../../assets/images/header/DES_logo_new.svg";
+import PopUpSidebar1 from "../../assets/images/widget/pop-up-siderbar-1.jpg"
+import PopUpSidebar2 from "../../assets/images/widget/pop-up-siderbar-2.jpg"
+import PopUpSidebar3 from "../../assets/images/widget/pop-up-siderbar-3.jpg"
+import PopUpSidebar4 from "../../assets/images/widget/pop-up-siderbar-4.jpg"
+
+
+
 
 export default function Home() {
   return (
@@ -254,11 +272,8 @@ export default function Home() {
                   data-wow-delay=".2s"
                 >
                   We focus on creating real, data-driven strategies that deliver
-                  <br />
                   measurable results. Every campaign is built on research,
-                  insight,
-                  <br />
-                  and clear objectives—ensuring your marketing.
+                  insight and clear objectives—ensuring your marketing.
                 </p>
 
                 <a
@@ -1174,8 +1189,6 @@ export default function Home() {
               <h2 className="title letter-space--3 fw-6 wow fadeInUp">
                 We build customized marketing solutions connect businesses with
                 the right audience focus is on transparency, performance
-                {/* <br /> */}
-                {/* <br /> */}
               </h2>
             </div>
           </div>
@@ -1194,7 +1207,7 @@ export default function Home() {
               data-center="true"
               data-init="2"
             >
-              <div className="swiper-wrapper">
+              {/* <div className="swiper-wrapper">
                 <div className="swiper-slide d-none d-sm-block">
                   <div className="image-working-proccess img-1">
                     <img
@@ -1314,7 +1327,7 @@ export default function Home() {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="container">
@@ -1406,17 +1419,17 @@ export default function Home() {
         <section className="section-team h-dm">
           <div className="flat-spacing-3">
             <div className="parallax-main overflow-hidden">
-              <div className="img-section parallax-scaleInUp-large">
+              {/* <div className="img-section parallax-scaleInUp-large">
                 <img
                   loading="lazy"
                   src="./assets/images/section/img-section-team.jpg"
                   alt="Image"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
 
-          <div className="container w-1750">
+          {/* <div className="container w-1750">
             <div className="heading-section d-flex align-items-center justify-content-between flat-spacing-2 flex-wrap g-30">
               <div className="letf">
                 <div className="sub-title h6 mb-10 letter-space--2 fw-5 wow fadeInUp">
@@ -1451,9 +1464,9 @@ export default function Home() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div
+          {/* <div
             dir="ltr"
             className="sw-team swiper tf-swiper flat-spacing-3"
             data-laptop="5"
@@ -1722,7 +1735,7 @@ export default function Home() {
               </div>
             </div>
             <div className="sw-dot-pagination tf-sw-pagination style-dt-blue mt-20 d-xl-none"></div>
-          </div>
+          </div> */}
         </section>
 
         <section className="section-why flat-spacing-3 h-dm">
@@ -1745,7 +1758,8 @@ export default function Home() {
                   loading="lazy"
                   width="630"
                   height="530"
-                  src="./assets/images/section/img-section-why.jpg"
+                  // src="./assets/images/section/img-section-why.jpg"
+                  src={ImgSectionWhy}
                   alt="Image"
                 />
               </div>
@@ -1756,7 +1770,8 @@ export default function Home() {
                 <div className="wg-according" id="According2">
                   <div
                     className="according-item style-2 mb-30"
-                    data-image="./assets/images/section/img-section-why.jpg"
+                    // data-image="./assets/images/section/img-section-why.jpg"
+                    data-image={ImgSectionWhy}
                   >
                     <p className="header-according">
                       <a
@@ -1822,7 +1837,8 @@ export default function Home() {
                   </div>
                   <div
                     className="according-item style-2 mb-30"
-                    data-image="./assets/images/section/img-section-why-2.jpg"
+                    // data-image="./assets/images/section/img-section-why-2.jpg"
+                    data-image={ImgSectionWhy2}
                   >
                     <p className="header-according">
                       <a
@@ -1883,7 +1899,8 @@ export default function Home() {
                   </div>
                   <div
                     className="according-item style-2 mb-30"
-                    data-image="./assets/images/section/img-section-why-3.jpg"
+                    // data-image="./assets/images/section/img-section-why-3.jpg"
+                    data-image={ImgSectionWhy3}
                   >
                     <p className="header-according">
                       <a
@@ -1941,7 +1958,8 @@ export default function Home() {
                   </div>
                   <div
                     className="according-item style-2"
-                    data-image="./assets/images/section/img-section-why-4.jpg"
+                    // data-image="./assets/images/section/img-section-why-4.jpg"
+                    data-image={ImgSectionWhy4}
                   >
                     <p className="header-according">
                       <a
@@ -2042,8 +2060,8 @@ export default function Home() {
                   Explore Our — <span>Latest Works.</span>
                 </div>
                 <h2 className="title letter-space--3 fw-6 wow fadeInUp">
-                  Let’s explore our awards <br />
-                  winning projects
+                  Let’s explore our <br />
+                  projects
                 </h2>
               </div>
 
@@ -2077,7 +2095,8 @@ export default function Home() {
                   loading="lazy"
                   width="580"
                   height="580"
-                  src="./assets/images/project/project-item-1.jpg"
+                  // src="./assets/images/project/project-item-1.jpg"
+                  src={ProjectItem1}
                   alt="Image"
                 />
               </a>
@@ -2101,7 +2120,8 @@ export default function Home() {
                   loading="lazy"
                   width="580"
                   height="580"
-                  src="./assets/images/project/project-item-2.jpg"
+                  // src="./assets/images/project/project-item-2.jpg"
+                  src={ProjectItem2}
                   alt="Image"
                 />
               </a>
@@ -2125,7 +2145,8 @@ export default function Home() {
                   loading="lazy"
                   width="580"
                   height="580"
-                  src="./assets/images/project/project-item-3.jpg"
+                  // src="./assets/images/project/project-item-3.jpg"
+                  src={ProjectItem3}
                   alt="Image"
                 />
               </a>
@@ -2149,7 +2170,8 @@ export default function Home() {
                   loading="lazy"
                   width="580"
                   height="580"
-                  src="./assets/images/project/project-item-4.jpg"
+                  // src="./assets/images/project/project-item-4.jpg"
+                  src={ProjectItem4}
                   alt="Image"
                 />
               </a>
@@ -2173,7 +2195,8 @@ export default function Home() {
                   loading="lazy"
                   width="580"
                   height="580"
-                  src="./assets/images/project/project-item-5.jpg"
+                  // src="./assets/images/project/project-item-5.jpg"
+                  src={ProjectItem5}
                   alt="Image"
                 />
               </a>
@@ -2197,7 +2220,8 @@ export default function Home() {
                   loading="lazy"
                   width="580"
                   height="580"
-                  src="./assets/images/project/project-item-6.jpg"
+                  // src="./assets/images/project/project-item-6.jpg"
+                  src={ProjectItem6}
                   alt="Image"
                 />
               </a>
@@ -2442,7 +2466,7 @@ export default function Home() {
 
         <section className="section-blog flat-spacing-3">
           <div className="flat-spacing-3">
-            <div className="parallax-main overflow-hidden">
+            {/* <div className="parallax-main overflow-hidden">
               <div className="image-section parallax-scaleInUp-large">
                 <img
                   loading="lazy"
@@ -2450,12 +2474,12 @@ export default function Home() {
                   alt="Image"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="container">
             <div className="row justify-content-between rg-50">
-              <div className="col-lg-5">
+              {/* <div className="col-lg-5">
                 <div className="heading-section">
                   <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
                     Read Our — <span>News & Blog.</span>
@@ -2477,9 +2501,9 @@ export default function Home() {
                     </span>
                   </a>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="col-lg-6">
+              {/* <div className="col-lg-6">
                 <div
                   className="blog-card style-2 hover-img wow fadeInUp"
                   data-wow-delay=".2s"
@@ -2631,7 +2655,7 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -2781,7 +2805,7 @@ export default function Home() {
           <div className="modal-content modal-sidebar">
             <div className="sidebar-header d-flex align-items-center justify-content-between">
               <a href="/" className="logo-sidebar">
-                <img src="./assets/images/logo/logo-2.svg" alt="" />
+                <img src={DESLogoSideBar} alt="" className="des-logo"/>
               </a>
               <span className="icon icon-close-popup" data-bs-dismiss="modal">
                 <i className="icon-x-circle"></i>
@@ -2801,7 +2825,8 @@ export default function Home() {
                     loading="lazy"
                     width="115"
                     height="115"
-                    src="./assets/images/widget/pop-up-siderbar-1.jpg"
+                    // src="./assets/images/widget/pop-up-siderbar-1.jpg"
+                    src={PopUpSidebar1}
                     alt="Image"
                   />
                 </div>
@@ -2810,7 +2835,8 @@ export default function Home() {
                     loading="lazy"
                     width="115"
                     height="115"
-                    src="./assets/images/widget/pop-up-siderbar-2.jpg"
+                    // src="./assets/images/widget/pop-up-siderbar-2.jpg"
+                    src={PopUpSidebar2}
                     alt="Image"
                   />
                 </div>
@@ -2819,7 +2845,8 @@ export default function Home() {
                     loading="lazy"
                     width="115"
                     height="115"
-                    src="./assets/images/widget/pop-up-siderbar-3.jpg"
+                    // src="./assets/images/widget/pop-up-siderbar-3.jpg"
+                    src={PopUpSidebar3}
                     alt="Image"
                   />
                 </div>
@@ -2828,7 +2855,8 @@ export default function Home() {
                     loading="lazy"
                     width="115"
                     height="115"
-                    src="./assets/images/widget/pop-up-siderbar-4.jpg"
+                    // src="./assets/images/widget/pop-up-siderbar-4.jpg"
+                    src={PopUpSidebar4}
                     alt="Image"
                   />
                 </div>
@@ -2839,17 +2867,21 @@ export default function Home() {
               <ul>
                 <li className="contact-list-item">
                   <a href="#" className="text-body-2 ff-2">
-                    245 Park Avenue, Suite 300 New York
+                    35, 4th A cross, Dasarahalli Main Rd
+                    <br />
+                    Bhuvaneswari Nagar, Hebbal Kempapura,
+                    <br />
+                    Bengaluru, Karnataka 560024{" "}
                   </a>
                 </li>
                 <li className="contact-list-item">
                   <a href="#" className="text-body-2 ff-2">
-                    supporttech@gmail.com
+                    info@digitaleliteservices.in{" "}
                   </a>
                 </li>
                 <li className="contact-list-item">
                   <a href="#" className="text-body-2 ff-2">
-                    +1 (200) 555-876
+                    +91 6366930178
                   </a>
                 </li>
               </ul>
