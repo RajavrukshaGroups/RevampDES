@@ -23,13 +23,10 @@ import ProjectItem4 from "../../assets/images/projects/project-item-4.jpg";
 import ProjectItem5 from "../../assets/images/projects/project-item-5.jpg";
 import ProjectItem6 from "../../assets/images/projects/project-item-6.jpg";
 import DESLogoSideBar from "../../assets/images/header/DES_logo_new.svg";
-import PopUpSidebar1 from "../../assets/images/widget/pop-up-siderbar-1.jpg"
-import PopUpSidebar2 from "../../assets/images/widget/pop-up-siderbar-2.jpg"
-import PopUpSidebar3 from "../../assets/images/widget/pop-up-siderbar-3.jpg"
-import PopUpSidebar4 from "../../assets/images/widget/pop-up-siderbar-4.jpg"
-
-
-
+import PopUpSidebar1 from "../../assets/images/widget/pop-up-siderbar-1.jpg";
+import PopUpSidebar2 from "../../assets/images/widget/pop-up-siderbar-2.jpg";
+import PopUpSidebar3 from "../../assets/images/widget/pop-up-siderbar-3.jpg";
+import PopUpSidebar4 from "../../assets/images/widget/pop-up-siderbar-4.jpg";
 
 export default function Home() {
   return (
@@ -78,7 +75,10 @@ export default function Home() {
                 digital marketing */}
                 Elevating brands
                 <br />
-                with performance
+                with{" "}
+                <span style={{ color: "var(--digital-marketing-light)" }}>
+                  performance
+                </span>
                 <br />
                 marketing
               </h1>
@@ -261,8 +261,14 @@ export default function Home() {
                   Real strategies. <span>Real results.</span>
                 </div>
                 <h2 className="title letter-space--3 fw-6 wow fadeInUp">
-                  We believe success comes from strategy, not guesswork.
-                  Approach combines deep market insight.
+                  <span style={{ color: "var(--digital-marketing-blue)" }}>
+                    We believe
+                  </span>{" "}
+                  success comes from strategy, not guesswork.{" "}
+                  <span style={{ color: "var(--digital-marketing-light)" }}>
+                    Approach combines
+                  </span>{" "}
+                  deep market insight.
                 </h2>
               </div>
 
@@ -389,8 +395,14 @@ export default function Home() {
                 We don’t guess — <span>we grow.</span>
               </div>
               <h2 className="title letter-space--3 fw-6 mb-30 wow fadeInUp">
-                We are a team of passionate digital strategists, creatives, and
-                analysts dedicated to growth businesses
+                We are a{" "}
+                <span style={{ color: "var(--digital-marketing-blue)" }}>
+                  team of passionate
+                </span>{" "}
+                digital strategists, creatives, and analysts dedicated to{" "}
+                <span style={{ color: "var(--digital-marketing-light)" }}>
+                  growth businesses
+                </span>
                 <br />
                 {/* strategists, creatives, and analysts */}
                 <br />
@@ -1187,8 +1199,14 @@ export default function Home() {
                 Driven by Strategy <span>Focused on Results.</span>
               </div>
               <h2 className="title letter-space--3 fw-6 wow fadeInUp">
-                We build customized marketing solutions connect businesses with
-                the right audience focus is on transparency, performance
+                <span style={{ color: "var(--digital-marketing-light)" }}>
+                  We build
+                </span>{" "}
+                customized marketing solutions connect businesses with the{" "}
+                <span style={{ color: "var(--digital-marketing-light)" }}>
+                  right audience
+                </span>{" "}
+                focus is on transparency, performance
               </h2>
             </div>
           </div>
@@ -2805,7 +2823,7 @@ export default function Home() {
           <div className="modal-content modal-sidebar">
             <div className="sidebar-header d-flex align-items-center justify-content-between">
               <a href="/" className="logo-sidebar">
-                <img src={DESLogoSideBar} alt="" className="des-logo"/>
+                <img src={DESLogoSideBar} alt="" className="des-logo" />
               </a>
               <span className="icon icon-close-popup" data-bs-dismiss="modal">
                 <i className="icon-x-circle"></i>
