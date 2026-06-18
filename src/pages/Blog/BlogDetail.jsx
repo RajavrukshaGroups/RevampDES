@@ -2,6 +2,16 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SidePopup from '../../components/sidePopup';
+import blogsDetails1 from '../../assets/images/blogDetails/img-blog-detail-1.jpg';
+import blogsDetails2 from '../../assets/images/blogDetails/img-blog-detail-2.jpg';
+import blogsDetails3 from '../../assets/images/blogDetails/avt-author.jpg';
+import blogsDetails4 from '../../assets/images/blogDetails/blog-list-small-4.jpg';
+import blogsDetails5 from '../../assets/images/blogDetails/blog-list-small-5.jpg';
+import blogsDetails6 from '../../assets/images/blogDetails/blog-list-small-2.jpg';
+import blogsDetails7 from '../../assets/images/blogDetails/blog-list-small-3.jpg';
+import blogsDetails8 from '../../assets/images/blogDetails/img-bg-cta.jpg';
+import blogsDetails9 from '../../assets/images/blogDetails/avt-quote.jpg';
+
 
 export default function BlogDetail() {
   return (
@@ -72,7 +82,8 @@ export default function BlogDetail() {
                         <div className="wg-blog-detail">
                             <div className="image-blog-detail mb-40">
                                 <img loading="lazy" width="850" height="530"
-                                    src="./assets/images/blog/img-blog-detail-1.jpg" alt="Image" />
+                                    // src="./assets/images/blog/img-blog-detail-1.jpg" alt="Image" />
+                                    src={blogsDetails1} alt="Image" />
                             </div>
                             <div className=" mb-50">
                                 <h3 className="title fw-6 letter-space--3 lh-36 mb-40">
@@ -124,7 +135,9 @@ export default function BlogDetail() {
                                 </div>
                                 <div className="user-quote">
                                     <a href="#" className="image">
-                                        <img src="./assets/images/avatar/avt-quote.jpg" alt="img" />
+                                        <img 
+                                        // src="./assets/images/avatar/avt-quote.jpg" alt="img" />
+                                        src={blogsDetails9} alt="img" />
                                     </a>
                                     <a href="#" className="name fw-6 text-body-2 color-dt-black">Robert Johnson<span
                                             className="color-paragraph fw-5 text-body-3">/Author</span></a>
@@ -133,7 +146,8 @@ export default function BlogDetail() {
 
                             <div className="image-blog-detail mb-50">
                                 <img loading="lazy" width="850" height="530"
-                                    src="./assets/images/blog/img-blog-detail-2.jpg" alt="Image" />
+                                    // src="./assets/images/blog/img-blog-detail-2.jpg" alt="Image" />
+                                    src={blogsDetails2} alt="Image" />
                             </div>
 
                             <div className="detail-content mb-70">
@@ -187,7 +201,8 @@ export default function BlogDetail() {
                             <div className="box-author mb-70">
                                 <a href="#" className="image">
                                     <img loading="lazy" width="130" height="130"
-                                        src="./assets/images/avatar/avt-author.jpg" alt="Image" />
+                                        // src="./assets/images/avatar/avt-author.jpg" alt="Image" />
+                                        src={blogsDetails3} alt="Image" />
                                 </a>
 
                                 <div className="author-content">
@@ -218,7 +233,8 @@ export default function BlogDetail() {
                                     <a href="/blog-detail" className="post-list-small">
                                         <span className="image">
                                             <img loading="lazy" width="100" height="100"
-                                                src="./assets/images/blog/blog-list-small-4.jpg" alt="Image" />
+                                                // src="./assets/images/blog/blog-list-small-4.jpg" alt="Image" />
+                                                src={blogsDetails4} alt="Image" />
                                         </span>
 
                                         <span className="post-content">
@@ -235,7 +251,8 @@ export default function BlogDetail() {
                                     <a href="/blog-detail" className="post-list-small">
                                         <span className="image">
                                             <img loading="lazy" width="100" height="100"
-                                                src="./assets/images/blog/blog-list-small-5.jpg" alt="Image" />
+                                                // src="./assets/images/blog/blog-list-small-5.jpg" alt="Image" />
+                                                src={blogsDetails5} alt="Image" />
                                         </span>
 
                                         <span className="post-content">
@@ -360,7 +377,8 @@ export default function BlogDetail() {
                                     <a href="/blog-detail" className="post-list-small mb-30">
                                         <span className="image">
                                             <img loading="lazy" width="100" height="100"
-                                                src="./assets/images/blog/blog-list-small-1.jpg" alt="Image" />
+                                                //src="./assets/images/blog/blog-list-small-1.jpg" alt="Image" />
+                                                src={blogsDetails5} alt="Image" />
                                         </span>
 
                                         <span className="post-content">
@@ -376,7 +394,8 @@ export default function BlogDetail() {
                                     <a href="/blog-detail" className="post-list-small mb-30">
                                         <span className="image">
                                             <img loading="lazy" width="100" height="100"
-                                                src="./assets/images/blog/blog-list-small-2.jpg" alt="Image" />
+                                                // src="./assets/images/blog/blog-list-small-2.jpg" alt="Image" />
+                                                src={blogsDetails6} alt="Image" />
                                         </span>
 
                                         <span className="post-content">
@@ -392,7 +411,8 @@ export default function BlogDetail() {
                                     <a href="/blog-detail" className="post-list-small">
                                         <span className="image">
                                             <img loading="lazy" width="100" height="100"
-                                                src="./assets/images/blog/blog-list-small-3.jpg" alt="Image" />
+                                                // src="./assets/images/blog/blog-list-small-3.jpg" alt="Image" />
+                                                src={blogsDetails7} alt="Image" />
                                         </span>
 
                                         <span className="post-content">
@@ -428,7 +448,8 @@ export default function BlogDetail() {
                             <div className="wg-cta">
                                 <div className="image">
                                     <img loading="lazy" width="410" height="430"
-                                        src="./assets/images/blog/img-bg-cta.jpg" alt="Image" />
+                                        // src="./assets/images/blog/img-bg-cta.jpg" alt="Image" />
+                                        src={blogsDetails8} alt="Image" />
                                 </div>
                                 <div className="top-content-wg">
                                     <p className="h6 sub-title fw-5 letter-space--2">

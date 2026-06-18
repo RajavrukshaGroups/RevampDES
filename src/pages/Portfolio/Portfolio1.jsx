@@ -2,6 +2,16 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SidePopup from '../../components/sidePopup';
+import portfolioHeroImage from '../../assets/images/portfolio/img-page-title-2.jpg';
+import portfolioImage1 from '../../assets/images/portfolio/project-item-1.jpg';
+import portfolioImage2 from '../../assets/images/portfolio/project-item-2.jpg';
+import portfolioImage3 from '../../assets/images/portfolio/project-item-3.jpg';
+import portfolioImage4 from '../../assets/images/portfolio/project-item-4.jpg';
+import portfolioImage5 from '../../assets/images/portfolio/project-item-5.jpg';
+import portfolioImage6 from '../../assets/images/portfolio/project-item-6.jpg';
+import portfolioImage13 from '../../assets/images/portfolio/project-item-13.jpg';
+import portfolioImage14 from '../../assets/images/portfolio/project-item-14.jpg';
+import portfolioImage15 from '../../assets/images/portfolio/project-item-15.jpg';
 
 export default function Portfolio1() {
   return (
@@ -42,7 +52,7 @@ export default function Portfolio1() {
                 <div className="page-title-content">
                     <div className="content">
                         <h1 className="title mb-xl-100">
-                            Delivering impact
+                            <span style={{ color:"var(--digital-marketing-light)"}}>Delivering</span> impact
                             <br />- one project
                         </h1>
                         <div className="breadkcum">
@@ -53,7 +63,8 @@ export default function Portfolio1() {
                     </div>
                     <div className="image">
                         <img loading="lazy" width="915" height="470"
-                            src="./assets/images/page-title/img-page-title-2.jpg" alt="Image" />
+                            // src="./assets/images/page-title/img-page-title-2.jpg" alt="Image" />
+                        src={portfolioHeroImage} alt="Image" />
                     </div>
                 </div>
             </div>
@@ -68,7 +79,7 @@ export default function Portfolio1() {
                         Explore Our — <span>Latest Works.</span>
                     </div>
                     <h2 className="title letter-space--3 fw-6 mb-30">
-                        Let’s explore our awards winning projects
+                        Let’s <span style={{ color:"var(--digital-marketing-blue)" }}>explore our </span>awards <span style={{ color:"var(--digital-marketing-light)" }}>winning projects</span>
                     </h2>
                 </div>
             </div>
@@ -76,8 +87,10 @@ export default function Portfolio1() {
             <div className="list-item-project">
                 <div className="project-item hover-img">
                     <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-1.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="580" height="580" 
+                        // src="./assets/images/project/project-item-1.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage1} alt="Image" />
                     </a>
                     <div className="content">
                         <div className="meta-project">
@@ -92,8 +105,10 @@ export default function Portfolio1() {
                 </div>
                 <div className="project-item hover-img">
                     <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-2.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="580" height="580"
+                        //  src="./assets/images/project/project-item-2.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage2} alt="Image" />
                     </a>
                     <div className="content">
                         <div className="meta-project">
@@ -108,8 +123,10 @@ export default function Portfolio1() {
                 </div>
                 <div className="project-item hover-img">
                     <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-3.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="580" height="580"
+                        //  src="./assets/images/project/project-item-3.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage3} alt="Image" />
                     </a>
                     <div className="content">
                         <div className="meta-project">
@@ -124,8 +141,10 @@ export default function Portfolio1() {
                 </div>
                 <div className="project-item hover-img">
                     <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-4.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="580" height="580"
+                        //  src="./assets/images/project/project-item-4.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage4} alt="Image" />
                     </a>
                     <div className="content">
                         <div className="meta-project">
@@ -140,8 +159,10 @@ export default function Portfolio1() {
                 </div>
                 <div className="project-item hover-img">
                     <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-5.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="580" height="580" 
+                        // src="./assets/images/project/project-item-5.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage5} alt="Image" />
                     </a>
                     <div className="content">
                         <div className="meta-project">
@@ -156,8 +177,10 @@ export default function Portfolio1() {
                 </div>
                 <div className="project-item hover-img">
                     <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-6.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="580" height="580" 
+                        // src="./assets/images/project/project-item-6.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage6} alt="Image" />
                     </a>
                     <div className="content">
                         <div className="meta-project">
@@ -172,8 +195,10 @@ export default function Portfolio1() {
                 </div>
                 <div className="project-item hover-img">
                     <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-13.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="580" height="580" 
+                        // src="./assets/images/project/project-item-13.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage13} alt="Image" />
                     </a>
                     <div className="content">
                         <div className="meta-project">
@@ -188,8 +213,10 @@ export default function Portfolio1() {
                 </div>
                 <div className="project-item hover-img">
                     <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-14.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="580" height="580"
+                        //  src="./assets/images/project/project-item-14.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage14} alt="Image" />
                     </a>
                     <div className="content">
                         <div className="meta-project">
@@ -204,8 +231,10 @@ export default function Portfolio1() {
                 </div>
                 <div className="project-item hover-img">
                     <a href="/portfolio-details" className="image">
-                        <img loading="lazy" width="580" height="580" src="./assets/images/project/project-item-15.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="580" height="580" 
+                        // src="./assets/images/project/project-item-15.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage15} alt="Image" />
                     </a>
                     <div className="content">
                         <div className="meta-project">

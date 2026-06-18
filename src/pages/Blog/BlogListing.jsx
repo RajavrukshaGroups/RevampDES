@@ -2,6 +2,19 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SidePopup from '../../components/sidePopup';
+import blogsHeroImage from '../../assets/images/blogsList/img-page-title.jpg';
+import blogImage1 from '../../assets/images/blogsList/img-blog-list.jpg';
+import blogImage2 from '../../assets/images/blogsList/img-blog-list-1.jpg';
+import blogImage3 from '../../assets/images/blogsList/img-blog-list-2.jpg';
+import blogImage4 from '../../assets/images/blogsList/img-blog-list-3.jpg';
+import blogImage5 from '../../assets/images/blogsList/img-blog-list-4.jpg';
+import blogImage6 from '../../assets/images/blogsList/img-blog-list-5.jpg';
+import blogImageCta from '../../assets/images/blogsList/img-bg-cta.jpg';
+import blogImage7 from '../../assets/images/blogsList/img-blog-list-6.jpg';
+
+import logListSmall1 from '../../assets/images/blogsList/blog-list-small-1.jpg';
+import logListSmall2 from '../../assets/images/blogsList/blog-list-small-2.jpg';
+import logListSmall3 from '../../assets/images/blogsList/blog-list-small-3.jpg';
 
 export default function BlogListing() {
   return (
@@ -52,8 +65,10 @@ export default function BlogListing() {
                         </div>
                     </div>
                     <div className="image">
-                        <img loading="lazy" width="915" height="470" src="./assets/images/page-title/img-page-title.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="915" height="470"
+                        //  src="./assets/images/page-title/img-page-title.jpg"
+                        //     alt="Image" />
+                        src={blogsHeroImage} alt="Image" />
                     </div>
                 </div>
             </div>
@@ -68,7 +83,8 @@ export default function BlogListing() {
                         <div className="blog-card style-list-2 mb-30 hover-img">
                             <a href="/blog-detail" className="image image-blog">
                                 <img loading="lazy" width="630" height="430"
-                                    src="./assets/images/blog/img-blog-list.jpg" alt="Image" />
+                                    // src="./assets/images/blog/img-blog-list.jpg" alt="Image" />
+                                    src={blogImage1} alt="Image" />
                             </a>
                             <div className="card-content">
                                 <div className="meta d-flex align-items-center g-30">
@@ -89,7 +105,8 @@ export default function BlogListing() {
                         <div className="blog-card style-list-2 mb-30 hover-img">
                             <a href="/blog-detail" className="image image-blog">
                                 <img loading="lazy" width="630" height="430"
-                                    src="./assets/images/blog/img-blog-list-1.jpg" alt="Image" />
+                                    // src="./assets/images/blog/img-blog-list-1.jpg" alt="Image" />
+                                    src={blogImage2} alt="Image" />
                             </a>
                             <div className="card-content">
                                 <div className="meta d-flex align-items-center g-30">
@@ -110,7 +127,8 @@ export default function BlogListing() {
                         <div className="blog-card style-list-2 mb-30 hover-img">
                             <a href="/blog-detail" className="image image-blog">
                                 <img loading="lazy" width="630" height="430"
-                                    src="./assets/images/blog/img-blog-list-2.jpg" alt="Image" />
+                                    // src="./assets/images/blog/img-blog-list-2.jpg" alt="Image" />
+                                    src={blogImage3} alt="Image" />
                             </a>
                             <div className="card-content">
                                 <div className="meta d-flex align-items-center g-30">
@@ -131,7 +149,8 @@ export default function BlogListing() {
                         <div className="blog-card style-list-2 mb-30 hover-img">
                             <a href="/blog-detail" className="image image-blog">
                                 <img loading="lazy" width="630" height="430"
-                                    src="./assets/images/blog/img-blog-list-3.jpg" alt="Image" />
+                                    // src="./assets/images/blog/img-blog-list-3.jpg" alt="Image" />
+                                    src={blogImage4} alt="Image" />
                             </a>
                             <div className="card-content">
                                 <div className="meta d-flex align-items-center g-30">
@@ -152,7 +171,8 @@ export default function BlogListing() {
                         <div className="blog-card style-list-2 mb-30 hover-img">
                             <a href="/blog-detail" className="image image-blog">
                                 <img loading="lazy" width="630" height="430"
-                                    src="./assets/images/blog/img-blog-list-4.jpg" alt="Image" />
+                                    // src="./assets/images/blog/img-blog-list-4.jpg" alt="Image" />
+                                    src={blogImage5} alt="Image" />
                             </a>
                             <div className="card-content">
                                 <div className="meta d-flex align-items-center g-30">
@@ -173,7 +193,8 @@ export default function BlogListing() {
                         <div className="blog-card style-list-2 mb-30 hover-img">
                             <a href="/blog-detail" className="image image-blog">
                                 <img loading="lazy" width="630" height="430"
-                                    src="./assets/images/blog/img-blog-list-5.jpg" alt="Image" />
+                                    // src="./assets/images/blog/img-blog-list-5.jpg" alt="Image" />
+                                    src={blogImage6} alt="Image" />
                             </a>
                             <div className="card-content">
                                 <div className="meta d-flex align-items-center g-30">
@@ -194,7 +215,8 @@ export default function BlogListing() {
                         <div className="blog-card style-list-2 hover-img">
                             <a href="/blog-detail" className="image image-blog">
                                 <img loading="lazy" width="630" height="430"
-                                    src="./assets/images/blog/img-blog-list-6.jpg" alt="Image" />
+                                    // src="./assets/images/blog/img-blog-list-6.jpg" alt="Image" />
+                                    src={blogImage7} alt="Image" />
                             </a>
                             <div className="card-content">
                                 <div className="meta d-flex align-items-center g-30">
@@ -284,7 +306,8 @@ export default function BlogListing() {
                                     <a href="/blog-detail" className="post-list-small mb-30">
                                         <span className="image">
                                             <img loading="lazy" width="100" height="100"
-                                                src="./assets/images/blog/blog-list-small-1.jpg" alt="Image" />
+                                                // src="./assets/images/blog/blog-list-small-1.jpg" alt="Image" />
+                                                src={logListSmall1} alt="Image" />
                                         </span>
 
                                         <span className="post-content">
@@ -300,7 +323,8 @@ export default function BlogListing() {
                                     <a href="/blog-detail" className="post-list-small mb-30">
                                         <span className="image">
                                             <img loading="lazy" width="100" height="100"
-                                                src="./assets/images/blog/blog-list-small-2.jpg" alt="Image" />
+                                                // src="./assets/images/blog/blog-list-small-2.jpg" alt="Image" />
+                                                src={logListSmall2} alt="Image" />
                                         </span>
 
                                         <span className="post-content">
@@ -316,7 +340,8 @@ export default function BlogListing() {
                                     <a href="/blog-detail" className="post-list-small">
                                         <span className="image">
                                             <img loading="lazy" width="100" height="100"
-                                                src="./assets/images/blog/blog-list-small-3.jpg" alt="Image" />
+                                                // src="./assets/images/blog/blog-list-small-3.jpg" alt="Image" />
+                                                src={logListSmall3} alt="Image" />
                                         </span>
 
                                         <span className="post-content">
@@ -352,7 +377,8 @@ export default function BlogListing() {
                             <div className="wg-cta">
                                 <div className="image">
                                     <img loading="lazy" width="410" height="430"
-                                        src="./assets/images/blog/img-bg-cta.jpg" alt="Image" />
+                                        // src="./assets/images/blog/img-bg-cta.jpg" alt="Image" />
+                                        src={blogImageCta} alt="Image" />
                                 </div>
                                 <div className="top-content-wg">
                                     <p className="h6 sub-title fw-5 letter-space--2">

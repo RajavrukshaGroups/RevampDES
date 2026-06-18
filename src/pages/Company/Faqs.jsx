@@ -44,7 +44,7 @@ export default function Faqs() {
                     <div className="content left">
                         <h1 className="title mb-xl-100">
                             <span style={{color:"var(--digital-marketing-light)"}}>Everything </span>you
-                            <br />need to <span style={{color:"var(--digital-marketing-light)"}}>know</span>
+                            <br />need to <span style={{color:"var(--digital-marketing-ligh)"}}>know</span>
                         </h1>
                         <div className="breadkcum">
                             <a href="/">Home</a>

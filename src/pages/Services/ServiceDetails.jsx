@@ -2,6 +2,10 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SidePopup from '../../components/sidePopup';
+import serviceDetailsHeroImage from '../../assets/images/serviceDetails/img-page-title-4.jpg';
+import serviceDetailsImage1 from '../../assets/images/serviceDetails/img-services-detail-1.jpg';
+import serviceDetailsImage2 from '../../assets/images/serviceDetails/img-services-detail-2.jpg';
+import serviceDetailsImage3 from '../../assets/images/serviceDetails/img-services-detail-3.jpg';
 
 export default function ServiceDetails() {
   return (
@@ -42,7 +46,7 @@ export default function ServiceDetails() {
                 <div className="page-title-content">
                     <h1 className="title">
                         Search Engine
-                        <br />Optimization (SEO)
+                        <br />Optimization (<span style={{ color: "var(--digital-marketing-light)" }}>SEO</span>)
                     </h1>
                     <div className="breadkcum">
                         <a href="/">Home</a>
@@ -56,8 +60,10 @@ export default function ServiceDetails() {
         <div className="img-page-title d-none d-lg-block">
             <div className="container">
                 <div className="image">
-                    <img loading="lazy" width="915" height="470" src="./assets/images/page-title/img-page-title-4.jpg"
-                        alt="Image" />
+                    <img loading="lazy" width="915" height="470" 
+                    // src="./assets/images/page-title/img-page-title-4.jpg"
+                    //     alt="Image" />
+                    src={serviceDetailsHeroImage} alt="Image" />
                 </div>
             </div>
 
@@ -105,8 +111,8 @@ export default function ServiceDetails() {
                                 user experience, and measurable results that drive sustainable success.
                             </div>
                             <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-                                Our SEO working process is built on a strategic, step-by-step approach to deliver
-                                sustainable growth and measurable
+                                <span style={{ color: "var(--digital-marketing-blue)" }}>Our SEO working process</span> is built on a strategic, <span style={{ color: "var(--digital-marketing-light)" }}>step-by-step approach</span> to deliver
+                                sustainable <span style={{ color: "var(--digital-marketing-blue)" }}>growth and measurable</span>
                                 <br />results.
                             </h3>
                             <div className="list-process-item d-flex justify-content-between mb-70">
@@ -159,16 +165,18 @@ export default function ServiceDetails() {
                             <div className="list-img d-flex g-30 align-items-center mb-70">
                                 <div className="image">
                                     <img loading="lazy" width="410" height="470"
-                                        src="./assets/images/section/img-services-detail-1.jpg" alt="Image" />
+                                        // src="./assets/images/section/img-services-detail-1.jpg" alt="Image" />
+                                        src={serviceDetailsImage1} alt="Image" />
                                 </div>
                                 <div className="image">
                                     <img loading="lazy" width="410" height="470"
-                                        src="./assets/images/section/img-services-detail-2.jpg" alt="Image" />
+                                        // src="./assets/images/section/img-services-detail-2.jpg" alt="Image" />
+                                        src={serviceDetailsImage2} alt="Image" />
                                 </div>
                             </div>
                             <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30">
-                                Using our digital marketing services gives your business a competitive edge in the
-                                online market.
+                                Using <span style={{ color: "var(--digital-marketing-blue)" }}>our digital marketing services</span> gives <span style={{ color: "var(--digital-marketing-blue)" }}>your business</span> a competitive edge in the
+                                {" "}online market.
                             </h3>
                             <div className="text ff-2 color-paragraph mb-70">
                                 We help increase your brand visibility, attract the right audience, and convert traffic
@@ -197,7 +205,8 @@ export default function ServiceDetails() {
                                 </div>
                                 <div className="right image">
                                     <img loading="lazy" width="410" height="540"
-                                        src="./assets/images/section/img-services-detail-3.jpg" alt="Image" />
+                                        // src="./assets/images/section/img-services-detail-3.jpg" alt="Image" />
+                                        src={serviceDetailsImage3} alt="Image" />
                                 </div>
                             </div>
                         </div>

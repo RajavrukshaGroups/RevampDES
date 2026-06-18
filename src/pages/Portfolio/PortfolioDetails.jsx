@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import PortfolioDetailsImage1 from '../../assets/images/portfolioDetails/project-information-item-1.jpg';
+import PortfolioDetailsImage2 from '../../assets/images/portfolioDetails/project-results-item-1.jpg';
+import PortfolioDetailsImage3 from '../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
 
 export default function PortfolioDetails() {
   return (
@@ -69,7 +72,8 @@ export default function PortfolioDetails() {
                     <div className="project-information-item mb-74">
                         <div className="image">
                             <img loading="lazy" width="960" height="570"
-                                src="./assets/images/project/project-information-item-1.jpg" alt="Image" />
+                                // src="./assets/images/project/project-information-item-1.jpg" alt="Image" />
+                                src={PortfolioDetailsImage1} alt="Image" />
                         </div>
                         <div className="content">
                             <p className="title h6 fw-6 letter-space--3 ">
@@ -181,7 +185,8 @@ export default function PortfolioDetails() {
                         <div className="col-sm-6 col-lg-7">
                             <div className="image">
                                 <img loading="lazy" width="740" height="470"
-                                    src="./assets/images/project/project-results-item-1.jpg" alt="Image" />
+                                    // src="./assets/images/project/project-results-item-1.jpg" alt="Image" />
+                                    src={PortfolioDetailsImage2} alt="Image" />
                             </div>
                         </div>
                     </div>
@@ -190,7 +195,9 @@ export default function PortfolioDetails() {
 
             <div className="container">
                 <div className="image-section mb-74">
-                    <img loading="lazy" src="./assets/images/project/img-section-portfolio-detail.jpg" alt="Image" />
+                    <img loading="lazy" 
+                    // src="./assets/images/project/img-section-portfolio-detail.jpg" alt="Image" />
+                    src={PortfolioDetailsImage3} alt="Image" />
                 </div>
             </div>
 

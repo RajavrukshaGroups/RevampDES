@@ -4759,7 +4759,7 @@ form .form-content {
 /*--------- Abstracts variable --------- */
 .page-title {
   background-color: var(--digital-marketing-dark);
-  margin-top: -90px;
+  margin-top: -102px;
   position: relative;
   overflow: hidden;
 }
