@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SidePopup from '../../components/sidePopup';
+import FaqsImage from '../../assets/images/faqs/img-page-title.jpg';
 
 export default function Faqs() {
   return (
@@ -41,8 +43,8 @@ export default function Faqs() {
                 <div className="page-title-content">
                     <div className="content left">
                         <h1 className="title mb-xl-100">
-                            Everything you
-                            <br />need to know
+                            <span style={{color:"var(--digital-marketing-light)"}}>Everything </span>you
+                            <br />need to <span style={{color:"var(--digital-marketing-light)"}}>know</span>
                         </h1>
                         <div className="breadkcum">
                             <a href="/">Home</a>
@@ -53,7 +55,8 @@ export default function Faqs() {
                     <div className="right">
                         <div className="image">
                             <img loading="lazy" width="915" height="470"
-                                src="./assets/images/page-title/img-page-title.jpg" alt="Image" />
+                                //src="./assets/images/page-title/img-page-title.jpg" alt="Image" />
+                                src={FaqsImage} alt="FAQs"/>
                         </div>
                     </div>
                 </div>
@@ -145,7 +148,7 @@ export default function Faqs() {
                             </p>
 
                             <div className="wg-according" id="According1">
-                                <div className="according-item-2 style-icon-bg-blue mb-20">
+                                <div className="according-item-2 style-icon-bg-blue mb-20"  >
                                     <p className="header-according">
                                         <a href="#according1" data-bs-toggle="collapse"
                                             className="title-according h6 fw-6 letter-space--3 collapsed">
@@ -159,7 +162,7 @@ export default function Faqs() {
                                     </p>
                                     <div id="according1" className="collapse" data-bs-parent="#According1">
                                         <div className="according-content">
-                                            <p className="text ff-2 mw-762">
+                                            <p className="text ff-2 mw-762" >
                                                 Yes, you can upgrade or change your plan at any time. Simply go to your
                                                 account settings, choose the new plan that suits your needs, and the
                                                 changes will take effect immediately (or at the start of your next
@@ -195,7 +198,7 @@ export default function Faqs() {
                                         </a>
                                     </p>
                                     <div id="according2" className="collapse show" data-bs-parent="#According1">
-                                        <div className="according-content">
+                                        <div className="according-content" >
                                             <p className="text ff-2 mw-762">
                                                 Yes, you can upgrade or change your plan at any time. Simply go to your
                                                 account settings, choose the new plan that suits your needs, and the
@@ -286,8 +289,8 @@ export default function Faqs() {
                                                     <span className="fw-5 ff-2">User-Friendly Interface</span>
                                                 </li>
                                                 <li className="benefit-item d-flex align-items-center g-10 color-paragraph">
-                                                    <i className="icon-check fs-24"></i>
-                                                    <span className="fw-5 ff-2">Reliable Support</span>
+                                                    <i className="icon-check fs-24" style={{color: "#ffffff"}}></i>
+                                                    <span className="fw-5 ff-2" style={{color: "#ffffff"}}>Reliable Support</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -547,7 +550,7 @@ export default function Faqs() {
                                     </p>
                                     <div id="According-1" className="collapse" data-bs-parent="#According3">
                                         <div className="according-content">
-                                            <p className="text ff-2 mw-762">
+                                            <p className="text ff-2 mw-762" >
                                                 Yes, you can upgrade or change your plan at any time. Simply go to your
                                                 account settings, choose the new plan that suits your needs, and the
                                                 changes will take effect immediately (or at the start of your next
@@ -758,81 +761,124 @@ export default function Faqs() {
     
 
     
-    <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
+     {/* <div
+        className="modal fade modalRight pop-up-menu-mobile"
+        id="pop-up-sidebar"
+      >
         <div className="modal-dialog" role="document">
-            <div className="modal-content modal-sidebar">
-                <div className="sidebar-header d-flex align-items-center justify-content-between">
-                    <a href="/" className="logo-sidebar">
-                        <img src="./assets/images/logo/logo-2.svg" alt="" />
-                    </a>
-                    <span className="icon icon-close-popup" data-bs-dismiss="modal"><i className="icon-x-circle"></i></span>
-                </div>
-                <div className="sidebar-content mb-70">
-                    <p className="h5 title fw-6">
-                        Learn About Us
-                    </p>
-                    <p className="text text-body-2 ff-2 mb-70">
-                        We are a results-driven digital marketing agency dedicated to helping brands grow, connect, and
-                        thrive in the digital world. By combining data-driven strategy, creative storytelling, and the
-                        latest marketing technologies
-                    </p>
-                    <div className="list-img d-flex align-items-center g-20">
-                        <div className="img">
-                            <img loading="lazy" width="115" height="115"
-                                src="./assets/images/widget/pop-up-siderbar-1.jpg" alt="Image" />
-                        </div>
-                        <div className="img">
-                            <img loading="lazy" width="115" height="115"
-                                src="./assets/images/widget/pop-up-siderbar-2.jpg" alt="Image" />
-                        </div>
-                        <div className="img">
-                            <img loading="lazy" width="115" height="115"
-                                src="./assets/images/widget/pop-up-siderbar-3.jpg" alt="Image" />
-                        </div>
-                        <div className="img">
-                            <img loading="lazy" width="115" height="115"
-                                src="./assets/images/widget/pop-up-siderbar-4.jpg" alt="Image" />
-                        </div>
-                    </div>
-                </div>
-                <div className="sidebar-content mb-70">
-                    <p className="h5 title fw-6">
-                        Contact Us
-                    </p>
-                    <ul>
-                        <li className="contact-list-item">
-                            <a href="#" className="text-body-2 ff-2">245 Park Avenue, Suite 300 New York</a>
-                        </li>
-                        <li className="contact-list-item">
-                            <a href="#" className="text-body-2 ff-2">supporttech@gmail.com</a>
-                        </li>
-                        <li className="contact-list-item">
-                            <a href="#" className="text-body-2 ff-2">+1 (200) 555-876</a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="sidebar-content newsletter-form">
-                    <p className="h5 title fw-6">
-                        Newsletter
-                    </p>
-                    <p className="text ff-2 mb-30">
-                        Stay ahead in the digital world by subscribing to our newsletter.
-                    </p>
-                    <form action="#" className="form-newsletter">
-                        <fieldset className="d-flex align-items-center flex-wrap g-10">
-                            <input type="text" name="email-input" id="email-input" className="input-newsletter flex-grow-1"
-                                placeholder="Email address" />
-                            <button className="tf-btn style-big style-color-dt-blue">
-                                <span className="text-btn">Subscribe</span>
-                                <span className="icon-btn"><i className="icon-arrow-up-right"></i></span>
-                            </button>
-                        </fieldset>
-                    </form>
-                </div>
+          <div className="modal-content modal-sidebar">
+            <div className="sidebar-header d-flex align-items-center justify-content-between">
+              <a href="/" className="logo-sidebar">
+                <img src={DESLogoSideBar} alt="" className="des-logo" />
+              </a>
+              <span className="icon icon-close-popup" data-bs-dismiss="modal">
+                <i className="icon-x-circle"></i>
+              </span>
             </div>
+            <div className="sidebar-content mb-70">
+              <p className="h5 title fw-6">Learn About Us</p>
+              <p className="text text-body-2 ff-2 mb-70">
+                We are a results-driven digital marketing agency dedicated to
+                helping brands grow, connect, and thrive in the digital world.
+                By combining data-driven strategy, creative storytelling, and
+                the latest marketing technologies
+              </p>
+              <div className="list-img d-flex align-items-center g-20">
+                <div className="img">
+                  <img
+                    loading="lazy"
+                    width="115"
+                    height="115"
+                    // src="./assets/images/widget/pop-up-siderbar-1.jpg"
+                    src={PopUpSidebar1}
+                    alt="Image"
+                  />
+                </div>
+                <div className="img">
+                  <img
+                    loading="lazy"
+                    width="115"
+                    height="115"
+                    // src="./assets/images/widget/pop-up-siderbar-2.jpg"
+                    src={PopUpSidebar2}
+                    alt="Image"
+                  />
+                </div>
+                <div className="img">
+                  <img
+                    loading="lazy"
+                    width="115"
+                    height="115"
+                    // src="./assets/images/widget/pop-up-siderbar-3.jpg"
+                    src={PopUpSidebar3}
+                    alt="Image"
+                  />
+                </div>
+                <div className="img">
+                  <img
+                    loading="lazy"
+                    width="115"
+                    height="115"
+                    // src="./assets/images/widget/pop-up-siderbar-4.jpg"
+                    src={PopUpSidebar4}
+                    alt="Image"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="sidebar-content mb-70">
+              <p className="h5 title fw-6">Contact Us</p>
+              <ul>
+                <li className="contact-list-item">
+                  <a href="#" className="text-body-2 ff-2">
+                    35, 4th A cross, Dasarahalli Main Rd
+                    <br />
+                    Bhuvaneswari Nagar, Hebbal Kempapura,
+                    <br />
+                    Bengaluru, Karnataka 560024{" "}
+                  </a>
+                </li>
+                <li className="contact-list-item">
+                  <a href="#" className="text-body-2 ff-2">
+                    info@digitaleliteservices.in{" "}
+                  </a>
+                </li>
+                <li className="contact-list-item">
+                  <a href="#" className="text-body-2 ff-2">
+                    +91 6366930178
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="sidebar-content newsletter-form">
+              <p className="h5 title fw-6">Newsletter</p>
+              <p className="text ff-2 mb-30">
+                Stay ahead in the digital world by subscribing to our
+                newsletter.
+              </p>
+              <form action="#" className="form-newsletter">
+                <fieldset className="d-flex align-items-center flex-wrap g-10">
+                  <input
+                    type="text"
+                    name="email-input"
+                    id="email-input"
+                    className="input-newsletter flex-grow-1"
+                    placeholder="Email address"
+                  />
+                  <button className="tf-btn style-big style-color-dt-blue">
+                    <span className="text-btn">Subscribe</span>
+                    <span className="icon-btn">
+                      <i className="icon-arrow-up-right"></i>
+                    </span>
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
         </div>
-    </div>
+      </div> */}
     
+    <SidePopup />
     
     <div className="progress-wrap">
         <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

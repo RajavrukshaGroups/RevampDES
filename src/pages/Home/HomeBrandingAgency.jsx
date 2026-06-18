@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SidePopup from '../../components/sidePopup';
 
 export default function HomeBrandingAgency() {
   return (
@@ -1212,7 +1213,7 @@ export default function HomeBrandingAgency() {
     
 
     
-    <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
+    {/* <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
         <div className="modal-dialog" role="document">
             <div className="modal-content modal-sidebar">
                 <div className="sidebar-header d-flex align-items-center justify-content-between">
@@ -1285,8 +1286,9 @@ export default function HomeBrandingAgency() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
     
+    <SidePopup />
     
     <div className="progress-wrap style-color-ba-purple">
         <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

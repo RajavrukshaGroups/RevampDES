@@ -5,11 +5,11 @@ export default function Header() {
   return (
     <>
       <header className="header header-fixed mt-xl-20">
-        <div className="container w-1810">
-          <div className="header-content">
+        <div className="container w-1810 ">
+          <div className="header-content ">
             <a href="/" className="logo">
               {/* <img src="./assets/images/logo/logo.svg" alt="company_logo" /> */}
-              <img src={DESLOGO} alt="company_logo" className="des-logo" />
+              <img src={DESLOGO} alt="company_logo" className="des-logo"/>
             </a>
             <div className="header-center d-none d-xl-block">
               <nav className="box-navigation">

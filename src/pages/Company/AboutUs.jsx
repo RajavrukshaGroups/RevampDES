@@ -5,6 +5,7 @@ import AboutUsHeroImg from "../../assets/images/aboutus/img-page-title-2.jpg";
 import AboutUsImgVideo from "../../assets/images/aboutus/img-video.jpg";
 import AboutUsFounderImg from "../../assets/images/aboutus/avt-testimonial.jpg";
 import AboutUsConsultaionImg from "../../assets/images/aboutus/img-bg-cta-p-about.jpg";
+import SidePopup from "../../components/sidePopup";
 export default function AboutUs() {
   return (
     <>
@@ -338,7 +339,7 @@ export default function AboutUs() {
               </div>
 
               <h2 className="title letter-space--3 fw-6 mb-30">
-                Your trusted partner for digital growth and success
+                Your trusted partner for <span style={{color:"var(--digital-marketing-light)"}}>digital growth</span> and success
               </h2>
 
               <p className="desc ff-2 text-body-1 lh-32 fw-5 color-paragraph">
@@ -368,9 +369,9 @@ export default function AboutUs() {
                   Get Consultations - <span>work together</span>
                 </div>
                 <h2 className="title letter-space--3 fw-6 mb-50">
-                  Let’s build a smarter
+                  Let’s build a <span style={{color:"var(--digital-marketing-light)"}}> smarter
                   <br />
-                  marketing strategy
+                  marketing </span> strategy
                 </h2>
                 <a
                   href="/contact"
@@ -394,9 +395,10 @@ export default function AboutUs() {
                   Meet Our professionals — <span>100+ members.</span>
                 </div>
                 <h2 className="title letter-space--3 fw-6">
-                  Meet our professional
+                  Meet our <span style={{color:"var(--digital-marketing-blue)"}}>professional 
                   <br />
-                  team members
+                   {" "}<span style={{color:"var(--digital-marketing-ligh)"}}>team</span> </span>members
+
                 </h2>
               </div>
 
@@ -772,8 +774,8 @@ export default function AboutUs() {
                 Driven by Strategy <span>Focused on Results.</span>
               </div>
               <h2 className="title letter-space--3 fw-6">
-                We build customized marketing solutions connect businesses with
-                the right audience focus is on transparency, performance
+                We build  <span style={{color:"var(--digital-marketing-light)"}}>customized marketing </span> solutions connect businesses with
+                the  <span style={{color:"var(--digital-marketing-light)"}}>right </span> audience focus is on <span style={{color:"var(--digital-marketing-light)"}}>transparency</span>, performance
               </h2>
             </div>
           </div>
@@ -985,9 +987,9 @@ export default function AboutUs() {
                 Clients Testimonials — <span>4.9/5 (300+Reviews).</span>
               </div>
               <h2 className="title letter-space--3 fw-6">
-                Clients’ feedback reflects the trust
+                Clients’ feedback  reflects the<span style={{color:"var(--digital-marketing-blue)"}}> trust
                 <br />
-                results, & long partnerships.
+                {" "}results</span>, & long partnerships.
               </h2>
             </div>
             <div
@@ -1268,7 +1270,7 @@ export default function AboutUs() {
                 Connect Our — <span>Global Clients.</span>
               </div>
               <h2 className="title letter-space--3 fw-6">
-                Helping 80+ brands success
+                Helping <span style={{color:"var(--digital-marketing-blue)"}}>80+</span> brands <span style={{color:"var(--digital-marketing-light)"}}>achieve success</span>
               </h2>
             </div>
 
@@ -1396,7 +1398,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      <div
+      {/* <div
         className="modal fade modalRight pop-up-menu-mobile"
         id="pop-up-sidebar"
       >
@@ -1503,7 +1505,9 @@ export default function AboutUs() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <SidePopup />
 
       <div className="progress-wrap">
         <svg

@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SidePopup from '../../components/sidePopup';
+import PricingHeroImg from "../../assets/images/pricing/img-page-title-2.jpg";
+import FrequentQuestionsImage from "../../assets/images/pricing/img-faqs-p-services-2.jpg";
 
 export default function PricingPlan() {
   return (
@@ -41,7 +44,7 @@ export default function PricingPlan() {
                 <div className="page-title-content">
                     <div className="content left">
                         <h1 className="title mb-xl-100">
-                            Plans built to
+                            <span style={{color:"var(--digital-marketing-light)"}}>Plans</span> built to
                             <br />deliver results
                         </h1>
                         <div className="breadkcum">
@@ -53,7 +56,8 @@ export default function PricingPlan() {
                     <div className="right">
                         <div className="image">
                             <img loading="lazy" width="915" height="470"
-                                src="./assets/images/page-title/img-page-title-2.jpg" alt="Image" />
+                                // src="./assets/images/page-title/img-page-title-2.jpg" alt="Image" />
+                                src={PricingHeroImg}/>
                         </div>
                     </div>
                 </div>
@@ -71,7 +75,7 @@ export default function PricingPlan() {
                     </div>
 
                     <h2 className="title letter-space--3 fw-6 mb-30">
-                        Smart pricing for smarter results
+                        <span style={{color:"var(--digital-marketing-blue)"}}>Smart pricing </span>for <span style={{color:"var(--digital-marketing-light)"}}>smarter results</span>
                     </h2>
 
                     <div className="desc ff-2 text-body-1 lh-35 fw-5 color-paragraph">
@@ -395,14 +399,19 @@ export default function PricingPlan() {
                         Questions & <span>Answers</span>
                     </div>
                     <h2 className="title letter-space--3 fw-6">
-                        SEO insights & frequently
-                        <br />asked questions
+                        <span style={{color:"var(--digital-marketing-blue)"}}>SEO</span><span style={{color:"var(--digital-marketing-light)"}}> insights</span> & frequently
+                        <br /> asked <span style={{color:"var(--digital-marketing-light)"}}>questions</span>
                     </h2>
                 </div>
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="wg-according" id="According1">
-                            <div className="according-item-2 style-icon-bg-blue mb-20">
+                            <div className="according-item-2 style-icon-bg-blue mb-20" style={{
+                                    // border: '2px solid',
+                                    // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                                    background: 'linear-gradient(to right, blue, orange)',
+                                    color: "#ffffff",
+                                }}>
                                 <p className="header-according">
                                     <a href="#according1" data-bs-toggle="collapse"
                                         className="title-according h6 fw-6 letter-space--3 collapsed">
@@ -416,14 +425,19 @@ export default function PricingPlan() {
                                 </p>
                                 <div id="according1" className="collapse" data-bs-parent="#According1">
                                     <div className="according-content">
-                                        <p className="text ff-2">
+                                        <p className="text ff-2" style={{color:"#ffffff"}}>
                                             Yes! Our plans are flexible. You can upgrade, downgrade, or
                                             <br />customize your package anytime as your business needs evolve.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="according-item-2 style-icon-bg-blue mb-20">
+                            <div className="according-item-2 style-icon-bg-blue mb-20"  style={{
+                                    // border: '2px solid',
+                                    // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                                    background: 'linear-gradient(to right, blue, orange)',
+                                    color: "#ffffff",
+                                }}>
                                 <p className="header-according">
                                     <a href="#according2" data-bs-toggle="collapse"
                                         className="title-according h6 fw-6 letter-space--3">
@@ -437,14 +451,19 @@ export default function PricingPlan() {
                                 </p>
                                 <div id="according2" className="collapse show" data-bs-parent="#According1">
                                     <div className="according-content">
-                                        <p className="text ff-2">
+                                        <p className="text ff-2" style={{color:"#ffffff"}}>
                                             Yes! Our plans are flexible. You can upgrade, downgrade, or
                                             <br />customize your package anytime as your business needs evolve.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="according-item-2 style-icon-bg-blue mb-20">
+                            <div className="according-item-2 style-icon-bg-blue mb-20"  style={{
+                                    // border: '2px solid',
+                                    // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                                    background: 'linear-gradient(to right, blue, orange)',
+                                    color: "#ffffff",
+                                }}>
                                 <p className="header-according">
                                     <a href="#according3" data-bs-toggle="collapse"
                                         className="title-according h6 fw-6 letter-space--3 collapsed">
@@ -458,14 +477,19 @@ export default function PricingPlan() {
                                 </p>
                                 <div id="according3" className="collapse" data-bs-parent="#According1">
                                     <div className="according-content">
-                                        <p className="text ff-2">
+                                        <p className="text ff-2" style={{color:"#ffffff"}}>
                                             Yes! Our plans are flexible. You can upgrade, downgrade, or
                                             <br />customize your package anytime as your business needs evolve.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="according-item-2 style-icon-bg-blue mb-20">
+                            <div className="according-item-2 style-icon-bg-blue mb-20"  style={{
+                                    // border: '2px solid',
+                                    // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                                    background: 'linear-gradient(to right, blue, orange)',
+                                    color: "#ffffff",
+                                }}>
                                 <p className="header-according">
                                     <a href="#according4" data-bs-toggle="collapse"
                                         className="title-according h6 fw-6 letter-space--3 collapsed">
@@ -479,14 +503,19 @@ export default function PricingPlan() {
                                 </p>
                                 <div id="according4" className="collapse" data-bs-parent="#According1">
                                     <div className="according-content">
-                                        <p className="text ff-2">
+                                        <p className="text ff-2" style={{color:"#ffffff"}}>
                                             Yes! Our plans are flexible. You can upgrade, downgrade, or
                                             <br />customize your package anytime as your business needs evolve.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="according-item-2 style-icon-bg-blue">
+                            <div className="according-item-2 style-icon-bg-blue"  style={{
+                                    // border: '2px solid',
+                                    // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                                    background: 'linear-gradient(to right, blue, orange)',
+                                    color: "#ffffff",
+                                }}>
                                 <p className="header-according">
                                     <a href="#according5" data-bs-toggle="collapse"
                                         className="title-according h6 fw-6 letter-space--3 collapsed">
@@ -500,7 +529,7 @@ export default function PricingPlan() {
                                 </p>
                                 <div id="according5" className="collapse" data-bs-parent="#According1">
                                     <div className="according-content">
-                                        <p className="text ff-2">
+                                        <p className="text ff-2" style={{color:"#ffffff"}}>
                                             Yes! Our plans are flexible. You can upgrade, downgrade, or
                                             <br />customize your package anytime as your business needs evolve.
                                         </p>
@@ -512,7 +541,8 @@ export default function PricingPlan() {
                     <div className="col-lg-6">
                         <div className="image">
                             <img loading="lazy" width="570" height="670"
-                                src="./assets/images/section/img-faqs-p-services-2.jpg" alt="Image" />
+                                // src="./assets/images/section/img-faqs-p-services-2.jpg" alt="Image" />
+                                src={FrequentQuestionsImage}/>
                         </div>
                     </div>
                 </div>
@@ -547,7 +577,7 @@ export default function PricingPlan() {
     
 
     
-    <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
+    {/* <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
         <div className="modal-dialog" role="document">
             <div className="modal-content modal-sidebar">
                 <div className="sidebar-header d-flex align-items-center justify-content-between">
@@ -620,8 +650,9 @@ export default function PricingPlan() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
     
+    <SidePopup />
     
     <div className="progress-wrap">
         <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

@@ -27,6 +27,7 @@ import PopUpSidebar1 from "../../assets/images/widget/pop-up-siderbar-1.jpg";
 import PopUpSidebar2 from "../../assets/images/widget/pop-up-siderbar-2.jpg";
 import PopUpSidebar3 from "../../assets/images/widget/pop-up-siderbar-3.jpg";
 import PopUpSidebar4 from "../../assets/images/widget/pop-up-siderbar-4.jpg";
+import SidePopup from "../../components/sidePopup";
 
 export default function Home() {
   return (
@@ -504,14 +505,19 @@ export default function Home() {
             <div className="section-inner g-30">
               <div className="left-section">
                 <div className="wg-according" id="According1">
-                  <div className="according-item">
-                    <p className="header-according">
+                  <div className="according-item" style={{
+                    // border: '2px solid',
+                    // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                    background: 'linear-gradient(to right, blue, orange)',
+                    color: "#ffffff",
+                  }}>
+                    <p className="header-according" >
                       <a
                         href="#according1"
                         data-bs-toggle="collapse"
                         className="title-according  h5 fw-5 letter-space--5"
                       >
-                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5"style={{color: "#ffffff",}} >
                           <span className="number-accourding text-body-3 ff-2 fw-4">
                             01
                           </span>
@@ -526,6 +532,7 @@ export default function Home() {
                       id="according1"
                       className="collapse show"
                       data-bs-parent="#According1"
+                      // style={{ background: '#F2F2F2',borderRadius: '10px', }}
                     >
                       <div className="according-content">
                         <p className="text ff-2 mb-25">
@@ -533,20 +540,22 @@ export default function Home() {
                           continuously monitoring performance and adapting to
                           search algorithm changes.
                         </p>
-                        <ul className="list-benefit d-flex align-items-center flex-wrap">
-                          <li className="benefit-item letter-space--2">
+                        <ul className="list-benefit d-flex align-items-center flex-wrap" style={{
+  color: "#ffffff",
+}} >
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff"}} >
                             <i className="icon-check"></i>Keyword Research &
                             Strategy
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff"}} >
                             <i className="icon-check"></i>On-Page SEO
                             Optimization
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff"}} >
                             <i className="icon-check"></i>Link Building &
                             Authority Growth
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff"}} >
                             <i className="icon-check"></i>SEO Analytics &
                             Reporting
                           </li>
@@ -564,12 +573,14 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="according-item">
+                  <div className="according-item" style={{background: 'linear-gradient(to right, blue, orange)',
+                    color: "#ffffff",}}>
                     <p className="header-according">
                       <a
                         href="#according2"
                         data-bs-toggle="collapse"
                         className="title-according h5 fw-5 letter-space--5 collapsed"
+                        style={{color: "#ffffff",}}
                       >
                         <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
                           <span className="number-accourding text-body-3 ff-2 fw-4">
@@ -593,20 +604,20 @@ export default function Home() {
                           continuously monitoring performance and adapting to
                           search algorithm changes.
                         </p>
-                        <ul className="list-benefit d-flex align-items-center flex-wrap">
-                          <li className="benefit-item letter-space--2">
+                        <ul className="list-benefit d-flex align-items-center flex-wrap" >
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}} >
                             <i className="icon-check"></i>Keyword Research &
                             Strategy
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}} >
                             <i className="icon-check"></i>On-Page SEO
                             Optimization
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}} >
                             <i className="icon-check"></i>Link Building &
                             Authority Growth
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}} >
                             <i className="icon-check"></i>SEO Analytics &
                             Reporting
                           </li>
@@ -624,14 +635,15 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="according-item">
+                  <div className="according-item" style={{background: 'linear-gradient(to right, blue, orange)',
+                    color: "#ffffff",}}>
                     <p className="header-according">
                       <a
                         href="#according3"
                         data-bs-toggle="collapse"
                         className="title-according h5 fw-5 letter-space--5 collapsed"
                       >
-                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5" style={{color: "#ffffff",}}>
                           <span className="number-accourding text-body-3 ff-2 fw-4">
                             03
                           </span>
@@ -654,19 +666,19 @@ export default function Home() {
                           search algorithm changes.
                         </p>
                         <ul className="list-benefit d-flex align-items-center flex-wrap">
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>Keyword Research &
                             Strategy
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>On-Page SEO
                             Optimization
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>Link Building &
                             Authority Growth
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>SEO Analytics &
                             Reporting
                           </li>
@@ -684,14 +696,14 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="according-item">
+                  <div className="according-item" style={{background: 'linear-gradient(to right, blue, orange)', color: "#ffffff",}}>
                     <p className="header-according">
                       <a
                         href="#according4"
                         data-bs-toggle="collapse"
                         className="title-according h5 fw-5 letter-space--5 collapsed"
                       >
-                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5" style={{color: "#ffffff",}}>
                           <span className="number-accourding text-body-3 ff-2 fw-4">
                             04
                           </span>
@@ -714,19 +726,19 @@ export default function Home() {
                           search algorithm changes.
                         </p>
                         <ul className="list-benefit d-flex align-items-center flex-wrap">
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>Keyword Research &
                             Strategy
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>On-Page SEO
                             Optimization
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>Link Building &
                             Authority Growth
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>SEO Analytics &
                             Reporting
                           </li>
@@ -744,14 +756,14 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="according-item">
+                  <div className="according-item" style={{background: 'linear-gradient(to right, blue, orange)', color: "#ffffff",}}>
                     <p className="header-according">
                       <a
                         href="#according5"
                         data-bs-toggle="collapse"
                         className="title-according h5 fw-5 letter-space--5 collapsed"
                       >
-                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5" style={{color: "#ffffff",}}>
                           <span className="number-accourding text-body-3 ff-2 fw-4">
                             05
                           </span>
@@ -774,19 +786,19 @@ export default function Home() {
                           search algorithm changes.
                         </p>
                         <ul className="list-benefit d-flex align-items-center flex-wrap">
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>Keyword Research &
                             Strategy
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>On-Page SEO
                             Optimization
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>Link Building &
                             Authority Growth
                           </li>
-                          <li className="benefit-item letter-space--2">
+                          <li className="benefit-item letter-space--2" style={{color: "#ffffff",}}>
                             <i className="icon-check"></i>SEO Analytics &
                             Reporting
                           </li>
@@ -1085,47 +1097,37 @@ export default function Home() {
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
-                    <i className="icon-light"></i>
-                    Pay-Per-Click Advertising (PPC)
-                  </div>
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <i className="icon-light"></i>
+                  Pay-Per-Click Advertising (PPC)
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
-                    <i className="icon-light"></i>
-                    Social Media Marketing (SMM)
-                  </div>
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <i className="icon-light"></i>
+                  Social Media Marketing (SMM)
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
-                    <i className="icon-light"></i>
-                    Branding & Digital Strategy
-                  </div>
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <i className="icon-light"></i>
+                  Branding &amp; Digital Strategy
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
-                    <i className="icon-light"></i>
-                    Influencer Marketing
-                  </div>
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <i className="icon-light"></i>
+                  Influencer Marketing
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
-                    <i className="icon-light"></i>
-                    Web Design & Development
-                  </div>
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <i className="icon-light"></i>
+                  Web Design &amp; Development
                 </div>
               </div>
             </div>
@@ -1135,7 +1137,7 @@ export default function Home() {
             <div
               className="infiniteSlide infiniteSlide-wrapper tf-marquee"
               data-clone="3"
-              data-style={{ right: "" }}
+              data-style="right"
             >
               <div className="infiniteSlide-slide">
                 <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
@@ -1145,47 +1147,37 @@ export default function Home() {
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
-                    <i className="icon-light"></i>
-                    Pay-Per-Click Advertising (PPC)
-                  </div>
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <i className="icon-light"></i>
+                  Pay-Per-Click Advertising (PPC)
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
-                    <i className="icon-light"></i>
-                    Social Media Marketing (SMM)
-                  </div>
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <i className="icon-light"></i>
+                  Social Media Marketing (SMM)
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
-                    <i className="icon-light"></i>
-                    Branding & Digital Strategy
-                  </div>
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <i className="icon-light"></i>
+                  Branding &amp; Digital Strategy
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
-                    <i className="icon-light"></i>
-                    Influencer Marketing
-                  </div>
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <i className="icon-light"></i>
+                  Influencer Marketing
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
-                    <i className="icon-light"></i>
-                    Web Design & Development
-                  </div>
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <i className="icon-light"></i>
+                  Web Design &amp; Development
                 </div>
               </div>
             </div>
@@ -1199,7 +1191,7 @@ export default function Home() {
                 Driven by Strategy <span>Focused on Results.</span>
               </div>
               <h2 className="title letter-space--3 fw-6 wow fadeInUp">
-                <span style={{ color: "var(--digital-marketing-light)" }}>
+                <span style={{ color: "var(--digital-marketing-blue)" }}>
                   We build
                 </span>{" "}
                 customized marketing solutions connect businesses with the{" "}
@@ -1763,9 +1755,9 @@ export default function Home() {
                 Why Choose Us — <span>Core Features.</span>
               </div>
               <h2 className="title letter-space--3 fw-6 wow fadeInUp">
-                We combine expertise, innovation,
+                We combine <span style={{color:"var(--digital-marketing-blue)"}}>expertise</span>,
                 <br />
-                and a client-focused approach.
+                innovation and a client-focused <span style={{color:"var(--digital-marketing-light)"}}>approach</span>.
               </h2>
             </div>
 
@@ -2075,7 +2067,7 @@ export default function Home() {
             <div className="heading-section d-flex align-items-center justify-content-between flat-spacing-2 flex-wrap g-30">
               <div className="letf">
                 <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
-                  Explore Our — <span>Latest Works.</span>
+                  Explore Our — <span >Latest Works.</span>
                 </div>
                 <h2 className="title letter-space--3 fw-6 wow fadeInUp">
                   Let’s explore our <br />
@@ -2264,12 +2256,12 @@ export default function Home() {
           <div className="container">
             <div className="heading-section flat-spacing-2 text-center">
               <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
-                Clients Testimonials — <span>4.9/5 (300+Reviews).</span>
+                Clients Testimonials — <span >4.9/5 (300+Reviews)</span>.
               </div>
               <h2 className="title letter-space--3 fw-6 wow fadeInUp">
-                Clients’ feedback reflects the trust
+                <span style={{color:"var(--digital-marketing-blue)"}}>Clients’ </span>feedback reflects the trust
                 <br />
-                results, & long partnerships.
+                results, & long <span style={{color:"var(--digital-marketing-light)"}}>partnerships</span>.
               </h2>
             </div>
             <div className="row rg-70">
@@ -2686,10 +2678,10 @@ export default function Home() {
           <div className="container">
             <div className="heading-section text-center mb-70">
               <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
-                Connect Our — <span>Global Clients.</span>
+                Connect Our — <span >Global Clients.</span>
               </div>
               <h2 className="title letter-space--3 fw-6 wow fadeInUp">
-                Helping 80+ brands success
+                Helping <span style={{color:"var(--digital-marketing-blue)"}}>80+</span> brands <span style={{color: "linear-gradient(to right, #2196F3, #FF9800"}}>success</span>
               </h2>
             </div>
 
@@ -2815,7 +2807,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div
+      {/* <div
         className="modal fade modalRight pop-up-menu-mobile"
         id="pop-up-sidebar"
       >
@@ -2930,7 +2922,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
+      <SidePopup />
 
       <div className="progress-wrap">
         <svg

@@ -1,6 +1,10 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SidePopup from '../../components/sidePopup';
+import Services2Image from '../../assets/images/services2/img-features-p-services.jpg';
+import FaqServices2Image from '../../assets/images/services2/img-faqs-p-services.jpg';
+import BgServices2Image from '../../assets/images/services2/img-bg-cta-p-service-2.jpg';
 
 export default function Services2() {
   return (
@@ -41,7 +45,7 @@ export default function Services2() {
                 <div className="page-title-content">
                     <div className="content content-2">
                         <h1 className="title mb-xl-50">
-                            Performance-
+                            <span style={{ color: "var(--digital-marketing-light)" }}>Performance</span>-
                             <br />Driven Digital
                             <br />Services
                         </h1>
@@ -53,7 +57,8 @@ export default function Services2() {
                     </div>
                     <div className="image">
                         <img loading="lazy" width="915" height="470"
-                            src="./assets/images/page-title/img-page-title-3.jpg" alt="Image" />
+                            // src="./assets/images/page-title/img-page-title-3.jpg" alt="Image" />
+                            src={Services2Image} alt="Image" />
                     </div>
                 </div>
             </div>
@@ -69,8 +74,8 @@ export default function Services2() {
                             Real strategies. <span>Real strategies.</span>
                         </div>
                         <h2 className="title letter-space--3 fw-6 mb-30">
-                            Solutions for growth
-                            <br />minded brands
+                            <span style={{ color: "var(--digital-marketing-blue)" }}>Solutions</span> for growth
+                            <br /> {" "}minded <span style={{ color: "var(--digital-marketing-light)" }}>brands</span>
                         </h2>
                         <div className="desc color-paragraph ff-2">
                             We offer a full suite of digital marketing services designed to help your brand grow,
@@ -133,7 +138,8 @@ export default function Services2() {
                     </div>
                     <div className="image">
                         <img loading="lazy" width="630" height="570"
-                            src="./assets/images/section/img-features-p-services.jpg" alt="Image" />
+                            // src="./assets/images/section/img-features-p-services.jpg" alt="Image" />
+                            src={Services2Image} alt="Image" />
                     </div>
                 </div>
             </div>
@@ -356,7 +362,9 @@ export default function Services2() {
         
         <section className="section-cta p-about">
             <div className="image">
-                <img loading="lazy" src="./assets/images/section/img-bg-cta-p-service-2.jpg" alt="Image" />
+                {/* <img src="./assets/images/section/img-bg-cta-p-service-2.jpg" alt="Image" /> */}
+                <img loading="lazy" 
+                src={BgServices2Image} alt="Image" />
             </div>
             <div className="container">
                 <div className="content">
@@ -365,8 +373,8 @@ export default function Services2() {
                             Get Consultations - <span>work together</span>
                         </div>
                         <h2 className="title letter-space--3 fw-6 mb-50">
-                            Let’s build a smarter
-                            <br />marketing strategy
+                            <span style={{ color: "var(--digital-marketing-ligh)" }}>Let’s build </span>a <span style={{ color: "var(--digital-marketing-light)" }}>smarter
+                            <br />{" "}marketing strategy</span>
                         </h2>
                         <a href="#" className="tf-btn style-big style-color-dt-light">
                             <span className="text-btn">Get Started</span>
@@ -388,8 +396,8 @@ export default function Services2() {
                         Questions & <span className="color-dt-blue">Answers</span>
                     </div>
                     <h2 className="title letter-space--3 fw-6">
-                        SEO insights & frequently
-                        <br />asked questions
+                       <span style={{ color: "var(--digital-marketing-blue)" }}>SEO insights</span> & frequently
+                        <br />{" "}asked questions
                     </h2>
                 </div>
                 <div className="row rg-30">
@@ -505,7 +513,8 @@ export default function Services2() {
                     <div className="col-lg-6">
                         <div className="image">
                             <img loading="lazy" width="570" height="670"
-                                src="./assets/images/section/img-faqs-p-services.jpg" alt="Image" />
+                                // src="./assets/images/section/img-faqs-p-services.jpg" alt="Image" />
+                                src={FaqServices2Image} alt="Image" />
                         </div>
                     </div>
                 </div>
@@ -523,7 +532,7 @@ export default function Services2() {
         <div className="pop-up-nav-mobile">
             <div className="canvas-header">
                 <a href="#" className="logo-site">
-                    <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
+                    <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />  
                 </a>
                 <span className="icon icon-close" data-bs-dismiss="offcanvas"></span>
             </div>
@@ -540,7 +549,7 @@ export default function Services2() {
     
 
     
-    <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
+    {/* <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
         <div className="modal-dialog" role="document">
             <div className="modal-content modal-sidebar">
                 <div className="sidebar-header d-flex align-items-center justify-content-between">
@@ -613,7 +622,9 @@ export default function Services2() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
+
+    <SidePopup />
     
     
     <div className="progress-wrap">

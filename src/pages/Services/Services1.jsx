@@ -1,6 +1,16 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SidePopup from '../../components/sidePopup';
+import Services1Image from '../../assets/images/services/img-page-title-3.jpg';
+import Services2Image from '../../assets/images/services/img-section-strategy-2.jpg';
+import Services3Image from '../../assets/images/services/services-list-1.jpg';
+import Services4Image from '../../assets/images/services/services-list-2.jpg';
+import Services5Image from '../../assets/images/services/services-list-3.jpg';
+import Services6Image from '../../assets/images/services/services-list-4.jpg';
+import Services7Image from '../../assets/images/services/services-list-5.jpg';
+import Services8Image from '../../assets/images/services/img-cta-p-services-2.jpg';
+import Services9Image from '../../assets/images/services/img-cta-p-services-1.jpg';
 
 export default function Services1() {
   return (
@@ -41,7 +51,7 @@ export default function Services1() {
                 <div className="page-title-content">
                     <div className="content content-2">
                         <h1 className="title mb-xl-50">
-                            Performance-
+                            <span style={{ color: "var(--digital-marketing-light)" }}>Performance</span>-
                             <br />Driven Digital
                             <br />Services
                         </h1>
@@ -53,7 +63,8 @@ export default function Services1() {
                     </div>
                     <div className="image">
                         <img loading="lazy" width="915" height="470"
-                            src="./assets/images/page-title/img-page-title-3.jpg" alt="Image" />
+                            // src="./assets/images/page-title/img-page-title-3.jpg" alt="Image" />
+                            src={Services1Image} alt="Image" />
                     </div>
                 </div>
             </div>
@@ -68,9 +79,9 @@ export default function Services1() {
                         Real strategies. <span>Real results.</span>
                     </div>
                     <h2 className="title letter-space--3 fw-6 mb-30">
-                        We believe success comes from
-                        <br />strategy, not guesswork. Approach
-                        <br />combines deep market insight.
+                        <span style={{ color:"var(--digital-marketing-blue)"}}>We believe success </span> comes from
+                        <br />{" "}strategy, <span style={{ color:"var(--digital-marketing-light)" }}>not guesswork</span>. Approach
+                        <br />{" "} combines deep market insight.
                     </h2>
                 </div>
 
@@ -84,6 +95,7 @@ export default function Services1() {
                             </div>
                             <div className="logo">
                                 <img src="./assets/images/logo/logo-white-marketing-card.svg" alt="image" />
+                                
                             </div>
                             <div className="content">
                                 <div className="h5 title fw-6 letter-space--3">
@@ -112,7 +124,8 @@ export default function Services1() {
                     <div className="col-lg-4">
                         <div className="image">
                             <img loading="lazy" width="553" height="500"
-                                src="./assets/images/section/img-section-strategy-2.jpg" alt="Image" />
+                                // src="./assets/images/section/img-section-strategy-2.jpg" alt="Image" />
+                                src={Services2Image} alt="Image" />
                         </div>
                     </div>
                     <div className="col-lg-4">
@@ -159,8 +172,8 @@ export default function Services1() {
                         Smart Digital Services. <span>Measurable Results.</span>
                     </div>
                     <h2 className="title letter-space--3 fw-6 mb-30">
-                        We provide heigh-quality digital
-                        <br />marketing services
+                        <span style={{color:"var(--digital-marketing-blue)"}}>We provide</span> <span style={{color:"var(--digital-marketing-light)"}}>heigh-quality</span> digital
+                        <br />{" "}marketing services
                     </h2>
                 </div>
 
@@ -208,8 +221,9 @@ export default function Services1() {
                         </div>
                     </div>
                     <a href="/service-details" className="image">
-                        <img loading="lazy" width="550" height="300" src="./assets/images/widget/services-list-1.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="550" height="300" 
+                        //src="./assets/images/widget/services-list-1.jpg" alt="Image" />
+                        src={Services3Image} alt="Image" />
                     </a>
                 </div>
 
@@ -256,8 +270,9 @@ export default function Services1() {
                         </div>
                     </div>
                     <a href="/service-details" className="image">
-                        <img loading="lazy" width="550" height="300" src="./assets/images/widget/services-list-2.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="550" height="300" 
+                       // src="./assets/images/widget/services-list-2.jpg" alt="Image" />
+                       src={Services4Image} alt="Image" />
                     </a>
                 </div>
 
@@ -304,8 +319,10 @@ export default function Services1() {
                         </div>
                     </div>
                     <a href="/service-details" className="image">
-                        <img loading="lazy" width="550" height="300" src="./assets/images/widget/services-list-3.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="550" height="300"
+                        //  src="./assets/images/widget/services-list-3.jpg"
+                        //     alt="Image" />
+                        src={Services5Image} alt="Image" />
                     </a>
                 </div>
 
@@ -351,8 +368,10 @@ export default function Services1() {
                         </div>
                     </div>
                     <a href="/service-details" className="image">
-                        <img loading="lazy" width="550" height="300" src="./assets/images/widget/services-list-4.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="550" height="300" 
+                        // src="./assets/images/widget/services-list-4.jpg"
+                        //     alt="Image" />
+                        src={Services6Image} alt="Image" />
                     </a>
                 </div>
 
@@ -398,8 +417,10 @@ export default function Services1() {
                         </div>
                     </div>
                     <a href="/service-details" className="image">
-                        <img loading="lazy" width="550" height="300" src="./assets/images/widget/services-list-5.jpg"
-                            alt="Image" />
+                        <img loading="lazy" width="550" height="300" 
+                        // src="./assets/images/widget/services-list-5.jpg"
+                        //     alt="Image" />
+                        src={Services7Image} alt="Image" />
                     </a>
                 </div>
             </div>
@@ -412,9 +433,9 @@ export default function Services1() {
             <div className="container">
                 <div className="heading-section">
                     <h1 className="title fw-6 letter-space--3 color-dt-black mb-70">
-                        Let's create the best
-                        <br />product experience
-                        <br />for your project
+                        <span style={{ color: "var(--digital-marketing-blue)" }}>Let's create</span> the best
+                        <br />{" "}product experience
+                        <br />{" "}for <span style={{ color: "var(--digital-marketing-light)" }}>your project</span>
                     </h1>
                 </div>
                 <div className="section-cta-inner d-flex align-items-end justify-content-between g-30">
@@ -428,8 +449,9 @@ export default function Services1() {
                         <div className="bottom d-flex g-10 rg-30 align-items-end justify-content-between">
                             <div className="image img-min">
                                 <img loading="lazy" width="270" height="215"
-                                    src="./assets/images/section/img-cta-p-services-1.jpg" alt="Image" />
-                            </div>
+                                    //src="./assets/images/section/img-cta-p-services-1.jpg" alt="Image" />
+                                    src={Services9Image} alt="Image" />
+                                </div>
                             <div className="right-bottom">
                                 <ul className="list-benefit d-flex flex-column g-8 mb-25">
                                     <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
@@ -460,7 +482,8 @@ export default function Services1() {
                     </div>
                     <div className="image">
                         <img loading="lazy" width="630" height="430"
-                            src="./assets/images/section/img-cta-p-services-2.jpg" alt="Image" />
+                            //src="./assets/images/section/img-cta-p-services-2.jpg" alt="Image" />
+                            src={Services8Image} alt="Image" />
                     </div>
                 </div>
             </div>
@@ -494,7 +517,7 @@ export default function Services1() {
     
 
     
-    <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
+    {/* <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
         <div className="modal-dialog" role="document">
             <div className="modal-content modal-sidebar">
                 <div className="sidebar-header d-flex align-items-center justify-content-between">
@@ -567,7 +590,9 @@ export default function Services1() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
+
+    <SidePopup />
     
     
     <div className="progress-wrap">

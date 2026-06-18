@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SidePopup from '../../components/sidePopup';
 
 export default function BlogListing() {
   return (
@@ -419,7 +420,7 @@ export default function BlogListing() {
     
 
     
-    <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
+    {/* <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
         <div className="modal-dialog" role="document">
             <div className="modal-content modal-sidebar">
                 <div className="sidebar-header d-flex align-items-center justify-content-between">
@@ -492,7 +493,9 @@ export default function BlogListing() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
+
+    <SidePopup />
     
     
     <div className="progress-wrap">

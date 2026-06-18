@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import SidePopup from '../../components/sidePopup';
 
 export default function Portfolio2() {
   return (
@@ -213,80 +214,7 @@ export default function Portfolio2() {
     
 
     
-    <div className="modal fade modalRight pop-up-menu-mobile" id="pop-up-sidebar">
-        <div className="modal-dialog" role="document">
-            <div className="modal-content modal-sidebar">
-                <div className="sidebar-header d-flex align-items-center justify-content-between">
-                    <a href="/" className="logo-sidebar">
-                        <img src="./assets/images/logo/logo-2.svg" alt="" />
-                    </a>
-                    <span className="icon icon-close-popup" data-bs-dismiss="modal"><i className="icon-x-circle"></i></span>
-                </div>
-                <div className="sidebar-content mb-70">
-                   <p className="h5 title fw-6">
-                        Learn About Us
-                   </p>
-                    <p className="text text-body-2 ff-2 mb-70">
-                        We are a results-driven digital marketing agency dedicated to helping brands grow, connect, and
-                        thrive in the digital world. By combining data-driven strategy, creative storytelling, and the
-                        latest marketing technologies
-                    </p>
-                    <div className="list-img d-flex align-items-center g-20">
-                        <div className="img">
-                            <img loading="lazy" width="115" height="115"
-                                src="./assets/images/widget/pop-up-siderbar-1.jpg" alt="Image" />
-                        </div>
-                        <div className="img">
-                            <img loading="lazy" width="115" height="115"
-                                src="./assets/images/widget/pop-up-siderbar-2.jpg" alt="Image" />
-                        </div>
-                        <div className="img">
-                            <img loading="lazy" width="115" height="115"
-                                src="./assets/images/widget/pop-up-siderbar-3.jpg" alt="Image" />
-                        </div>
-                        <div className="img">
-                            <img loading="lazy" width="115" height="115"
-                                src="./assets/images/widget/pop-up-siderbar-4.jpg" alt="Image" />
-                        </div>
-                    </div>
-                </div>
-                <div className="sidebar-content mb-70">
-                   <p className="h5 title fw-6">
-                        Contact Us
-                   </p>
-                    <ul>
-                        <li className="contact-list-item">
-                            <a href="#" className="text-body-2 ff-2">245 Park Avenue, Suite 300 New York</a>
-                        </li>
-                        <li className="contact-list-item">
-                            <a href="#" className="text-body-2 ff-2">supporttech@gmail.com</a>
-                        </li>
-                        <li className="contact-list-item">
-                            <a href="#" className="text-body-2 ff-2">+1 (200) 555-876</a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="sidebar-content newsletter-form">
-                   <p className="h5 title fw-6">
-                        Newsletter
-                   </p>
-                    <p className="text ff-2 mb-30">
-                        Stay ahead in the digital world by subscribing to our newsletter.
-                    </p>
-                    <form action="#" className="form-newsletter">
-                        <fieldset className="d-flex align-items-center flex-wrap g-10">
-                            <input type="text" name="email-input" id="email-input" className="input-newsletter flex-grow-1"
-                                placeholder="Email address" />
-                            <button className="tf-btn style-big style-color-dt-blue">
-                                <span className="text-btn">Subscribe</span>
-                                <span className="icon-btn"><i className="icon-arrow-up-right"></i></span>
-                            </button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    <SidePopup />
     
       
     <div className="progress-wrap">
