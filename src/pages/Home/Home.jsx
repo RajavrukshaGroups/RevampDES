@@ -85,8 +85,7 @@ export default function Home() {
               </h1>
               <div className="desc h5 lh-35 ff-2 fw-5 title-animation">
                 {/* We help businesses grow by creating smart, results- */}
-                From SEO and paid advertising to web design and automation, we
-                create marketing systems that drive sustainable growth.
+                From SEO and paid advertising to web design and automation, we create marketing systems that drive sustainable growth.
                 {/* <br /> */}
               </div>
               <a
