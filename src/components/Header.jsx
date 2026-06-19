@@ -117,30 +117,30 @@ export default function Header() {
                         </li>
 
                         <li>
-                          <a href="/services-1" className="sub-menu_link">
+                          <a href="/services-social-media-marketing" className="sub-menu_link">
                             Social Media Marketing
                           </a>
                         </li>
 
                         <li>
-                          <a href="/services-1" className="sub-menu_link">
+                          <a href="/services-web-development" className="sub-menu_link">
                             Web Development
                           </a>
                         </li>
 
                         <li>
-                          <a href="/services-1" className="sub-menu_link">
+                          <a href="/services-graphic-design" className="sub-menu_link">
                             Graphic Design
                           </a>
                         </li>
 
                         <li>
-                          <a href="/services-1" className="sub-menu_link">
+                          <a href="/services-lead-generation" className="sub-menu_link">
                             Lead Generation
                           </a>
                         </li>
                         <li>
-                          <a href="/services-1" className="sub-menu_link">
+                          <a href="/services-whatsapp-automation" className="sub-menu_link">
                             WhatsApp Automation
                           </a>
                         </li>

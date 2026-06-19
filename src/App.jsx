@@ -22,6 +22,11 @@ import Services1 from './pages/Services/Services1';
 import Services2 from './pages/Services/Services2';
 import TeamDetails from './pages/Company/TeamDetails';
 import SEO from './pages/Services/SEO';
+import SocialMediaMarketing from './pages/Services/SocialMediaMarketing';
+import WebDevelopment from './pages/Services/WebDevelopment';
+import GraphicDesign from './pages/Services/GraphicDesign';
+import LeadGeneration from './pages/Services/LeadGeneration';
+import WhatsappAutomation from './pages/Services/WhatsappAutomation';
 
 function App() {
   return (
@@ -48,6 +53,11 @@ function App() {
         <Route path="/services-2" element={<Services2 />} />
         <Route path="/team-details" element={<TeamDetails />} />
         <Route path="/services-seo" element={<SEO />} />
+        <Route path="/services-social-media-marketing" element={<SocialMediaMarketing />} />
+        <Route path="/services-web-development" element={<WebDevelopment />} />
+        <Route path="/services-graphic-design" element={<GraphicDesign />} />
+        <Route path="/services-lead-generation" element={<LeadGeneration />} />
+        <Route path="/services-whatsapp-automation" element={<WhatsappAutomation />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
