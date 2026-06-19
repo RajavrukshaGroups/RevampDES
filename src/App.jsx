@@ -1,32 +1,33 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import AboutUs from './pages/Company/AboutUs';
-import BlogDetail from './pages/Blog/BlogDetail';
-import BlogGird from './pages/Blog/BlogGird';
-import BlogListing from './pages/Blog/BlogListing';
-import Contact from './pages/Company/Contact';
-import Faqs from './pages/Company/Faqs';
-import HomeBrandingAgency from './pages/Home/HomeBrandingAgency';
-import HomeSeo from './pages/Home/HomeSeo';
-import HomeSeoMarketing from './pages/Home/HomeSeoMarketing';
-import Index from './pages/Home/Index';
-import OurTeam from './pages/Company/OurTeam';
-import Page404 from './pages/Misc/Page404';
-import Portfolio1 from './pages/Portfolio/Portfolio1';
-import Portfolio2 from './pages/Portfolio/Portfolio2';
-import PortfolioDetails from './pages/Portfolio/PortfolioDetails';
-import PricingPlan from './pages/Company/PricingPlan';
-import ServiceDetails from './pages/Services/ServiceDetails';
-import Services1 from './pages/Services/Services1';
-import Services2 from './pages/Services/Services2';
-import TeamDetails from './pages/Company/TeamDetails';
-import SEO from './pages/Services/SEO';
-import SocialMediaMarketing from './pages/Services/SocialMediaMarketing';
-import WebDevelopment from './pages/Services/WebDevelopment';
-import GraphicDesign from './pages/Services/GraphicDesign';
-import LeadGeneration from './pages/Services/LeadGeneration';
-import WhatsappAutomation from './pages/Services/WhatsappAutomation';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import AboutUs from "./pages/Company/AboutUs";
+import BlogDetail from "./pages/Blog/BlogDetail";
+import BlogGird from "./pages/Blog/BlogGird";
+import BlogListing from "./pages/Blog/BlogListing";
+import Contact from "./pages/Company/Contact";
+import Faqs from "./pages/Company/Faqs";
+import HomeBrandingAgency from "./pages/Home/HomeBrandingAgency";
+import HomeSeo from "./pages/Home/HomeSeo";
+import HomeSeoMarketing from "./pages/Home/HomeSeoMarketing";
+import Index from "./pages/Home/Index";
+import OurTeam from "./pages/Company/OurTeam";
+import Page404 from "./pages/Misc/Page404";
+import Portfolio1 from "./pages/Portfolio/Portfolio1";
+import Portfolio2 from "./pages/Portfolio/Portfolio2";
+import PortfolioDetails from "./pages/Portfolio/PortfolioDetails";
+import PricingPlan from "./pages/Company/PricingPlan";
+import ServiceDetails from "./pages/Services/ServiceDetails";
+import Services1 from "./pages/Services/Services1";
+import Services2 from "./pages/Services/Services2";
+import TeamDetails from "./pages/Company/TeamDetails";
+import SEO from "./pages/Services/SEO";
+import SocialMediaMarketing from "./pages/Services/SocialMediaMarketing";
+import WebDevelopment from "./pages/Services/WebDevelopment";
+import GraphicDesign from "./pages/Services/GraphicDesign";
+import LeadGeneration from "./pages/Services/LeadGeneration";
+import WhatsappAutomation from "./pages/Services/WhatsappAutomation";
+import WebDevelopmentNew from "./pages/Services/WebDevelopmentNew";
 
 function App() {
   return (
@@ -53,11 +54,18 @@ function App() {
         <Route path="/services-2" element={<Services2 />} />
         <Route path="/team-details" element={<TeamDetails />} />
         <Route path="/services-seo" element={<SEO />} />
-        <Route path="/services-social-media-marketing" element={<SocialMediaMarketing />} />
-        <Route path="/services-web-development" element={<WebDevelopment />} />
+        <Route
+          path="/services-social-media-marketing"
+          element={<SocialMediaMarketing />}
+        />
+        {/* <Route path="/services-web-development" element={<WebDevelopment />} /> */}
+        <Route path="/services-web-development" element={<WebDevelopmentNew/>} />
         <Route path="/services-graphic-design" element={<GraphicDesign />} />
         <Route path="/services-lead-generation" element={<LeadGeneration />} />
-        <Route path="/services-whatsapp-automation" element={<WhatsappAutomation />} />
+        <Route
+          path="/services-whatsapp-automation"
+          element={<WhatsappAutomation />}
+        />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
