@@ -21,6 +21,7 @@ import ServiceDetails from './pages/Services/ServiceDetails';
 import Services1 from './pages/Services/Services1';
 import Services2 from './pages/Services/Services2';
 import TeamDetails from './pages/Company/TeamDetails';
+import SEO from './pages/Services/SEO';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
         <Route path="/services-1" element={<Services1 />} />
         <Route path="/services-2" element={<Services2 />} />
         <Route path="/team-details" element={<TeamDetails />} />
+        <Route path="/services-seo" element={<SEO />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>

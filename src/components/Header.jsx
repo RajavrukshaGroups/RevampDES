@@ -107,14 +107,48 @@ export default function Header() {
                       <ul className="sub-menu_list">
                         <li>
                           <a href="/services-1" className="sub-menu_link">
-                            Services 01
+                            Digital Marketing
                           </a>
                         </li>
                         <li>
+                          <a href="/services-seo" className="sub-menu_link">
+                            SEO
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="/services-1" className="sub-menu_link">
+                            Social Media Marketing
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="/services-1" className="sub-menu_link">
+                            Web Development
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="/services-1" className="sub-menu_link">
+                            Graphic Design
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="/services-1" className="sub-menu_link">
+                            Lead Generation
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/services-1" className="sub-menu_link">
+                            WhatsApp Automation
+                          </a>
+                        </li>
+                        {/* <li>
                           <a href="/services-2" className="sub-menu_link">
                             Services 02
                           </a>
-                        </li>
+                        </li> */}
                         <li>
                           <a href="/service-details" className="sub-menu_link">
                             Service Details
