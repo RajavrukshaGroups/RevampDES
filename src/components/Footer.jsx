@@ -164,7 +164,7 @@ export default function Footer() {
                           className="text-checkbox ff-2"
                         >
                           I here by accept all {""}
-                          <a href="#" className="ff-2 fw-6">
+                          <a href="/faqs" className="ff-2 fw-6">
                             terms & conditions.
                           </a>
                         </label>
@@ -242,7 +242,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="color-white ff-2">
+                <a href="/faqs" className="color-white ff-2">
                   Privacy
                 </a>
               </li>
