@@ -174,38 +174,44 @@ export default function SEO() {
                     </h2>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
                         <span className="number ff-2 color-paragraph">01</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Keyword Research & Strategy</a>
+                            <a href="/seo-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Keyword Research & Strategy</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We identify high-value keywords that drive targeted traffic and align with your business goals through comprehensive market analysis and competitor research.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Competitor Keyword Analysis</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Long-Tail Keyword Optimization</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Search Intent Analysis</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Keyword Mapping & Planning</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/seo-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -213,44 +219,50 @@ export default function SEO() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/seo-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services3Image} alt="Keyword Research" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">02</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>02</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">On-Page SEO Optimization</a>
+                            <a href="/seo-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>On-Page SEO Optimization</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We optimize every element of your website—from meta tags to content structure—ensuring search engines understand and rank your pages effectively.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Meta Tag & Title Optimization</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Content Structure & Headings</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Image & Schema Optimization</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Internal Linking Strategy</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/seo-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -258,44 +270,50 @@ export default function SEO() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/seo-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                        src={Services4Image} alt="On-Page SEO" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">03</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>03</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Technical SEO & Site Audit</a>
+                            <a href="/seo-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Technical SEO & Site Audit</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We conduct comprehensive technical audits to identify and fix issues that impact search performance, from site speed to mobile responsiveness.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Crawling & Indexing Optimization</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Site Architecture & UX</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Core Web Vitals Optimization</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">HTTPS & Security Implementation</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/seo-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -303,44 +321,50 @@ export default function SEO() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/seo-service-details" className="image">
                         <img loading="lazy" width="550" height="300"
                         src={Services5Image} alt="Technical SEO" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">04</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>04</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Link Building & Authority Growth</a>
+                            <a href="/seo-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Link Building & Authority Growth</a>
 
                             <div className="text ff-2 mb-25 color-paragraph">
                                 We build high-quality, authoritative backlinks that boost your domain authority and improve search rankings through ethical white-hat techniques.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Quality Backlink Acquisition</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Guest Posting Strategy</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Authority & Trust Building</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Competitor Backlink Analysis</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/seo-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -348,44 +372,50 @@ export default function SEO() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/seo-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services6Image} alt="Link Building" />
                     </a>
                 </div>
 
-                <div className="services-item-list">
+                <div className="services-item-list" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">05</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>05</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">SEO Analytics & Performance Tracking</a>
+                            <a href="/seo-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>SEO Analytics & Performance Tracking</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We provide comprehensive analytics and transparent reporting, tracking key metrics to measure success and continuously optimize your SEO strategy.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Keyword Ranking Monitoring</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Traffic & Conversion Analysis</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Custom Dashboard Reports</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Continuous Optimization Insights</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/seo-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -393,7 +423,7 @@ export default function SEO() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/seo-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services7Image} alt="SEO Analytics" />
                     </a>

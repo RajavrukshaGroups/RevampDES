@@ -4309,7 +4309,7 @@ form .form-content {
   height: 50px;
 }
 .tf-btn.style-color-dt-blue .text-btn {
-  background-color: var(--digital-marketing-blue);
+  background-color: var(--digital-marketing-light);
   color: var(--white);
 }
 .tf-btn.style-color-dt-blue .icon-btn {
@@ -4413,6 +4413,13 @@ form .form-content {
   border-color: var(--digital-marketing-blue);
   color: var(--white);
 }
+
+.tf-btn.style-borders:hover .text-btn {
+  background-color: var(--digital-marketing-light);
+  border-color: var(--digital-marketing-light);
+  color: var(--white);
+}
+
 .tf-btn.style-border:hover .icon-btn {
   background-color: var(--digital-marketing-blue);
   border-color: var(--digital-marketing-blue);

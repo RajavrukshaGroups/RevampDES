@@ -177,42 +177,48 @@ export default function Services1() {
                     </h2>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">01</span>
+                        <span className="number ff-2 " style={{color:"#ffffff"}}>01</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Search Engine
+                            <a href="/digital-marketing-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Search Engine
                                 Optimization
                                 (SEO)</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We help attract targeted organic traffic by continuously monitoring performance and
                                 adapting
                                 to search algorithm changes.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Keyword Research & Strategy</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Link Building & Authority Growth</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">On-Page SEO Optimization</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">SEO Analytics & Reporting</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/digital-marketing-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -220,48 +226,54 @@ export default function Services1() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/digital-marketing-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         //src="./assets/images/widget/services-list-1.jpg" alt="Image" />
                         src={Services3Image} alt="Image" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">02</span>
+                        <span className="number ff-2 " style={{color:"#ffffff"}}>02</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Pay-Per-Click
+                            <a href="/digital-marketing-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Pay-Per-Click
                                 Advertising
                                 (PPC)</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25 " style={{color:"#ffffff"}}>
                                 Pay-Per-Click Advertising (PPC) is a powerful way to drive instant traffic, qualified
                                 leads, and measurable results.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Advanced Keyword Research</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Landing Page Optimization</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Conversion-Focused Ad Copy</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Transparent Reporting</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/digital-marketing-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -269,48 +281,54 @@ export default function Services1() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/digital-marketing-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                        // src="./assets/images/widget/services-list-2.jpg" alt="Image" />
                        src={Services4Image} alt="Image" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">03</span>
+                        <span className="number ff-2 " style={{color:"#ffffff"}}>03</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Branding &
+                            <a href="/digital-marketing-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Branding &
                                 Digital
                                 Strategy</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25 " style={{color:"#ffffff"}}>
                                 We help brands define a clear identity, compelling message, and strong online presence
                                 through research-driven .
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Brand Identity & Positioning</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Strategic Digital Roadmap</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Market & Audience Research</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Consistent Brand Messaging</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/digital-marketing-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -318,7 +336,7 @@ export default function Services1() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/digital-marketing-service-details" className="image">
                         <img loading="lazy" width="550" height="300"
                         //  src="./assets/images/widget/services-list-3.jpg"
                         //     alt="Image" />
@@ -326,40 +344,46 @@ export default function Services1() {
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">04</span>
+                        <span className="number ff-2 " style={{color:"#ffffff"}}>04</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Web Design &
+                            <a href="/digital-marketing-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Web Design &
                                 Development</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25 " style={{color:"#ffffff"}}>
                                 Web Design & Development combines creativity, technology, and strategy to build websites
                                 that look great better.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Responsive & Friendly Design</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">SEO-Optimized Structure</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Fast & Secure Performance</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Scalable & Future-Ready</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/digital-marketing-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -367,7 +391,7 @@ export default function Services1() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/digital-marketing-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         // src="./assets/images/widget/services-list-4.jpg"
                         //     alt="Image" />
@@ -375,40 +399,46 @@ export default function Services1() {
                     </a>
                 </div>
 
-                <div className="services-item-list">
+                <div className="services-item-list" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">05</span>
+                        <span className="number ff-2 " style={{color:"#ffffff"}}>05</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Influencer
+                            <a href="/digital-marketing-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Influencer
                                 Marketing</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We connect your business with relevant influencers across social media platforms to
                                 create authentic, engaging campaigns.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Targeted Influencer Selection</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Brand Awareness & Growth</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Cross-Platform Management</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 " style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Strategy & Collaboration</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/digital-marketing-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -416,7 +446,7 @@ export default function Services1() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/digital-marketing-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         // src="./assets/images/widget/services-list-5.jpg"
                         //     alt="Image" />

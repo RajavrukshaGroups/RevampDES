@@ -15,7 +15,7 @@ export default function Header() {
               <nav className="box-navigation">
                 <ul className="box-nav-menu">
                   <li className="menu-item has-sub_menu">
-                    <a href="#" className="item-link active">
+                    <a href="/" className="item-link active">
                       Home
                       {/* <span className="icon icon-chevron-down"></span> */}
                     </a>
@@ -52,7 +52,7 @@ export default function Header() {
                   </li>
 
                   <li className="menu-item has-sub_menu">
-                    <a href="#" className="item-link">
+                    <a href="" className="item-link">
                       Pages
                       <span className="icon icon-chevron-down"></span>
                     </a>
@@ -99,48 +99,48 @@ export default function Header() {
                   </li>
 
                   <li className="menu-item has-sub_menu">
-                    <a href="#" className="item-link">
+                    <a href="" className="item-link">
                       Services
                       <span className="icon icon-chevron-down"></span>
                     </a>
                     <div className="sub-menu">
                       <ul className="sub-menu_list">
                         <li>
-                          <a href="/services-1" className="sub-menu_link">
+                          <a href="/services/Digital-marketing-agency-in-bangalore" className="sub-menu_link">
                             Digital Marketing
                           </a>
                         </li>
                         <li>
-                          <a href="/services-seo" className="sub-menu_link">
+                          <a href="/services/seo-services-in-bangalore" className="sub-menu_link">
                             SEO
                           </a>
                         </li>
 
                         <li>
-                          <a href="/services-social-media-marketing" className="sub-menu_link">
+                          <a href="/services/social-media-marketing-company-bangalore" className="sub-menu_link">
                             Social Media Marketing
                           </a>
                         </li>
 
                         <li>
-                          <a href="/services-web-development" className="sub-menu_link">
+                          <a href="/services/web-development-company-bangalore" className="sub-menu_link">
                             Web Development
                           </a>
                         </li>
 
                         <li>
-                          <a href="/services-graphic-design" className="sub-menu_link">
+                          <a href="/services/graphic-design-company-bangalore" className="sub-menu_link">
                             Graphic Design
                           </a>
                         </li>
 
                         <li>
-                          <a href="/services-lead-generation" className="sub-menu_link">
+                          <a href="/services/lead-generation-companies-in-bangalore" className="sub-menu_link">
                             Lead Generation
                           </a>
                         </li>
                         <li>
-                          <a href="/services-whatsapp-automation" className="sub-menu_link">
+                          <a href="/services/whatsapp-automation-AI-providers-india" className="sub-menu_link">
                             WhatsApp Automation
                           </a>
                         </li>
@@ -149,17 +149,17 @@ export default function Header() {
                             Services 02
                           </a>
                         </li> */}
-                        <li>
+                        {/* <li>
                           <a href="/service-details" className="sub-menu_link">
                             Service Details
                           </a>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </li>
 
                   <li className="menu-item has-sub_menu">
-                    <a href="#" className="item-link">
+                    <a href="" className="item-link">
                       Portfolio
                       <span className="icon icon-chevron-down"></span>
                     </a>
@@ -188,7 +188,7 @@ export default function Header() {
                   </li>
 
                   <li className="menu-item has-sub_menu">
-                    <a href="#" className="item-link">
+                    <a href="" className="item-link">
                       Blog
                       <span className="icon icon-chevron-down"></span>
                     </a>

@@ -234,7 +234,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/services-1" className="color-white ff-2">
+                <a href="/services/Digital-marketing-agency-in-bangalore" className="color-white ff-2">
                   Service
                 </a>
               </li>

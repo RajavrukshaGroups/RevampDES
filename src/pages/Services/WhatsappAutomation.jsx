@@ -174,38 +174,44 @@ export default function WhatsAppAutomation() {
                     </h2>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">01</span>
+                        <span className="number ff-2"style={{color:"#ffffff"}}>01</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">WhatsApp Business API Setup & Integration</a>
+                            <a href="/whatsapp-automation-service-details" className="title fw-6 h3 letter-space--3 lh-100">WhatsApp Business API Setup & Integration</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We set up and integrate WhatsApp Business API with your existing systems, enabling automated messaging, customer engagement, and scalable communication.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">API Configuration & Integration</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">CRM & System Integration</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Business Profile Setup</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Compliance & Best Practices</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/whatsapp-automation-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -213,44 +219,50 @@ export default function WhatsAppAutomation() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/whatsapp-automation-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services3Image} alt="WhatsApp API Integration" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">02</span>
+                        <span className="number ff-2">02</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Automated Broadcast & Campaigns</a>
+                            <a href="/whatsapp-automation-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Automated Broadcast & Campaigns</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We create and manage automated WhatsApp broadcast campaigns that deliver personalized messages to your audience at scale while maintaining authenticity.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Segmented Broadcast Campaigns</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Personalized Message Templates</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Interactive Polls & Surveys</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Campaign Analytics & Reporting</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/whatsapp-automation-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -258,44 +270,50 @@ export default function WhatsAppAutomation() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/whatsapp-automation-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                        src={Services4Image} alt="WhatsApp Broadcast Campaigns" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">03</span>
+                        <span className="number ff-2">03</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Chatbots & Automated Conversations</a>
+                            <a href="/whatsapp-automation-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Chatbots & Automated Conversations</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25 ">
                                 We develop intelligent WhatsApp chatbots that handle customer inquiries, qualify leads, and provide instant responses 24/7.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">AI-Powered Chatbot Development</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Lead Qualification & Routing</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Multi-Language Support</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Conversation Flow Design</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/whatsapp-automation-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -303,44 +321,50 @@ export default function WhatsAppAutomation() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/whatsapp-automation-service-details" className="image">
                         <img loading="lazy" width="550" height="300"
                         src={Services5Image} alt="WhatsApp Chatbots" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">04</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>04</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">E-Commerce & Payment Integration</a>
+                            <a href="/whatsapp-automation-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>E-Commerce & Payment Integration</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We integrate WhatsApp with your e-commerce platform, enabling automated order confirmations, payment processing, and customer support.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Order & Payment Confirmations</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Product Catalog Integration</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Abandoned Cart Recovery</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Customer Support Automation</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/whatsapp-automation-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -348,44 +372,50 @@ export default function WhatsAppAutomation() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/whatsapp-automation-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services6Image} alt="E-Commerce Integration" />
                     </a>
                 </div>
 
-                <div className="services-item-list">
+                <div className="services-item-list" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">05</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>05</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Analytics, Reporting & Optimization</a>
+                            <a href="/whatsapp-automation-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Analytics, Reporting & Optimization</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We provide comprehensive analytics and reporting on your WhatsApp campaigns, helping you understand performance and optimize for better results.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Message Performance Tracking</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Engagement & Conversion Analytics</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">A/B Testing & Optimization</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Custom Dashboard Reports</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/whatsapp-automation-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -393,7 +423,7 @@ export default function WhatsAppAutomation() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/whatsapp-automation-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services7Image} alt="WhatsApp Analytics" />
                     </a>

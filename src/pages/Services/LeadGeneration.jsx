@@ -146,12 +146,12 @@ export default function LeadGeneration() {
                                 <p className="desc mb-50 ff-2 color-paragraph">
                                     We help businesses attract high-quality leads, optimize conversion funnels, and build sustainable sales pipelines through proven lead generation strategies.
                                 </p>
-                                <a href="#" className="tf-btn style-big style-color-dt-blue">
+                                {/* <a href="#" className="tf-btn style-big style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>
                                     </span>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </div>
@@ -174,38 +174,44 @@ export default function LeadGeneration() {
                     </h2>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">01</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>01</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Targeted Lead Generation Campaigns</a>
+                            <a href="/lead-generation-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Targeted Lead Generation Campaigns</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We design and execute targeted lead generation campaigns that attract high-quality prospects through strategic outreach and data-driven targeting.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Ideal Customer Profile Development</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Multi-Channel Outreach Strategy</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Lead Scoring & Prioritization</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Campaign Performance Optimization</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/lead-generation-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -213,44 +219,50 @@ export default function LeadGeneration() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/lead-generation-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services3Image} alt="Targeted Lead Generation" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">02</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>02</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Landing Page & Funnel Optimization</a>
+                            <a href="/lead-generation-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Landing Page & Funnel Optimization</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We create high-converting landing pages and optimize conversion funnels that guide prospects through the customer journey seamlessly.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Conversion-Focused Landing Pages</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Lead Capture Form Optimization</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">A/B Testing & Conversion Rate Optimization</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Funnel Analysis & Optimization</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/lead-generation-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -258,44 +270,50 @@ export default function LeadGeneration() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/lead-generation-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                        src={Services4Image} alt="Landing Page Optimization" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">03</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>03</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Email & Nurture Campaigns</a>
+                            <a href="/lead-generation-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Email & Nurture Campaigns</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We develop strategic email marketing and lead nurture campaigns that build relationships, establish trust, and convert prospects into customers.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Personalized Email Sequences</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Automated Drip Campaigns</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Lead Scoring & Segmentation</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Performance Tracking & Optimization</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/lead-generation-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -303,89 +321,101 @@ export default function LeadGeneration() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/lead-generation-service-details" className="image">
                         <img loading="lazy" width="550" height="300"
                         src={Services5Image} alt="Email & Nurture Campaigns" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">04</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>04</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">LinkedIn & B2B Lead Generation</a>
+                            <a href="/lead-generation-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>LinkedIn & B2B Lead Generation</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We leverage LinkedIn and other B2B platforms to connect with decision-makers, build meaningful relationships, and generate high-value business leads.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">LinkedIn Profile Optimization</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Strategic Connection Building</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">B2B Outreach Campaigns</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Sales Navigator & Advanced Targeting</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
-                                <span className="text-btn">Read more</span>
-                                <span className="icon-btn">
-                                    <i className="icon-arrow-up-right"></i>
-                                </span>
-                            </a>
+                                <a href="/lead-generation-service-details" className="tf-btn style-big style-borders">
+                                    <span className="text-btn">Read more</span>
+                                    <span className="icon-btn">
+                                        <i className="icon-arrow-up-right"></i>
+                                    </span>
+                                </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/lead-generation-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services6Image} alt="B2B Lead Generation" />
                     </a>
                 </div>
 
-                <div className="services-item-list">
+                <div className="services-item-list" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">05</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>05</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Lead Analytics & Sales Intelligence</a>
+                            <a href="/lead-generation-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Lead Analytics & Sales Intelligence</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We provide comprehensive lead analytics and sales intelligence that help you understand prospect behavior, optimize strategies, and close more deals.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Lead Tracking & Analytics</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Conversion Attribution Analysis</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Sales Intelligence Reports</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Strategic Performance Insights</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/lead-generation-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -393,7 +423,7 @@ export default function LeadGeneration() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/lead-generation-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services7Image} alt="Lead Analytics" />
                     </a>

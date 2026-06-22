@@ -174,38 +174,44 @@ export default function WebDevelopment() {
                     </h2>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">01</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>01</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Custom Website Development</a>
+                            <a href="/web-development-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Custom Website Development</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We build custom, responsive websites tailored to your brand, business goals, and target audience using the latest technologies and best practices.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Responsive & Mobile-First Design</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Custom CMS Integration</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Performance & SEO Optimization</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Cross-Browser Compatibility</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/web-development-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -213,44 +219,50 @@ export default function WebDevelopment() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/web-development-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services3Image} alt="Custom Website Development" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">02</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>02</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">E-Commerce Development</a>
+                            <a href="/web-development-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>E-Commerce Development</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We create powerful e-commerce platforms that drive sales, enhance user experience, and provide seamless shopping experiences across all devices.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Secure Payment Integration</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Inventory Management Systems</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Optimized Checkout Experience</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Mobile Commerce Optimization</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/web-development-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -258,44 +270,50 @@ export default function WebDevelopment() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/web-development-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                        src={Services4Image} alt="E-Commerce Development" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">03</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>03</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Web Application Development</a>
+                            <a href="/web-development-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Web Application Development</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We build custom web applications tailored to your business needs, from internal tools to complex SaaS platforms with scalable architecture.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Full-Stack Development</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">API Integration & Development</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Cloud-Native Architecture</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Scalable & Secure Infrastructure</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/web-development-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -303,44 +321,50 @@ export default function WebDevelopment() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/web-development-service-details" className="image">
                         <img loading="lazy" width="550" height="300"
                         src={Services5Image} alt="Web Application Development" />
                     </a>
                 </div>
 
-                <div className="services-item-list mb-20 hover-img">
+                <div className="services-item-list mb-20 hover-img" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">04</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>04</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">UI/UX Design & Prototyping</a>
+                            <a href="/web-development-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>UI/UX Design & Prototyping</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We create intuitive, user-centered designs that enhance user experience, increase engagement, and drive conversions through research-driven design.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">User Research & Persona Development</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Interactive Prototypes & Wireframes</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">User Testing & Feedback Analysis</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Accessibility & Inclusive Design</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/web-development-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -348,44 +372,50 @@ export default function WebDevelopment() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/web-development-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services6Image} alt="UI/UX Design" />
                     </a>
                 </div>
 
-                <div className="services-item-list">
+                <div className="services-item-list" style={{
+                      // border: '2px solid',
+                      // borderImage: 'linear-gradient(to right, blue, orange) 1',
+                      background: "linear-gradient(to right, blue, orange)",
+                      color: "#ffffff",
+                      border: "none",
+                    }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">05</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>05</span>
                         <div className="item-content">
-                            <a href="/service-details" className="title fw-6 h3 letter-space--3 lh-100">Web Maintenance & Support</a>
+                            <a href="/web-development-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Web Maintenance & Support</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We provide ongoing maintenance, security updates, performance optimization, and technical support to keep your website running smoothly.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Security Monitoring & Updates</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Performance Optimization</span>
                                     </li>
                                 </ul>
                                 <ul className="list-benefit d-flex flex-column">
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph mb-12">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">Content & Feature Updates</span>
                                     </li>
-                                    <li className="benefit-item d-flex align-items-center g-7 color-paragraph">
+                                    <li className="benefit-item d-flex align-items-center g-7 mb-12" style={{color:"#ffffff"}}>
                                         <i className="icon-check fs-24"></i>
                                         <span className="letter-space--2">24/7 Technical Support</span>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/service-details" className="tf-btn style-big style-border">
+                            <a href="/web-development-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -393,7 +423,7 @@ export default function WebDevelopment() {
                             </a>
                         </div>
                     </div>
-                    <a href="/service-details" className="image">
+                    <a href="/web-development-service-details" className="image">
                         <img loading="lazy" width="550" height="300" 
                         src={Services7Image} alt="Web Maintenance" />
                     </a>

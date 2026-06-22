@@ -93,7 +93,7 @@ export default function HomeSeoMarketing() {
                             <br />on helping brands rank higher, reach the right audience,
                             <br />and achieve measurable results.
                         </div>
-                        <a href="/services-1" className="tf-btn style-big style-border border-color-8 title-animation">
+                        <a href="/services/Digital-marketing-agency-in-bangalore" className="tf-btn style-big style-border border-color-8 title-animation">
                             <span className="text-btn">View more</span>
                             <span className="icon-btn">
                                 <i className="icon-arrow-up-right"></i>
