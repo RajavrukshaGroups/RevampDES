@@ -27,13 +27,6 @@ import WebDevelopment from './pages/Services/WebDevelopment';
 import GraphicDesign from './pages/Services/GraphicDesign';
 import LeadGeneration from './pages/Services/LeadGeneration';
 import WhatsappAutomation from './pages/Services/WhatsappAutomation';
-import GraphicDesignServiceDetails from './pages/Services/ServiceDetails/GraphicDesignServiceDetails'
-import DigitalMarketingServiceDetails from './pages/Services/ServiceDetails/DigitalMarketingServiceDetails';
-import SEOServiceDetails from './pages/Services/ServiceDetails/SEOServiceDetails';
-import SocialMediaMarketingServiceDetails from './pages/Services/ServiceDetails/SocialMediaMarketingServiceDetails';
-import WebDevelopmentServiceDetails from './pages/Services/ServiceDetails/WebDevelopmentServiceDetails';
-import LeadGenerationServiceDetails from './pages/Services/ServiceDetails/LeadGenerationServiceDetails';
-import WhatsappAutomationServiceDetails from './pages/Services/ServiceDetails/WhatsappAutomationServiceDetails';
 
 function App() {
   return (
@@ -60,24 +53,12 @@ function App() {
         <Route path="/services/Digital-marketing-agency-in-bangalore" element={<Services1 />} />
         <Route path="/services-2" element={<Services2 />} />
         <Route path="/team-details" element={<TeamDetails />} />
-        
-        <Route path="/services/seo-services-in-bangalore" element={<SEO />} />
-        <Route path="/services/social-media-marketing-company-bangalore" element={<SocialMediaMarketing />} />
-        <Route path="/services/web-development-company-bangalore" element={<WebDevelopment />} />
-        <Route path="/services/graphic-design-company-bangalore" element={<GraphicDesign />} />
-        <Route path="/services/lead-generation-companies-in-bangalore" element={<LeadGeneration />} />
-        <Route path="/services/whatsapp-automation-AI-providers-india" element={<WhatsappAutomation />} />
-
-
-        <Route path="/graphic-design-service-details" element={<GraphicDesignServiceDetails />} />
-        <Route path="/digital-marketing-service-details" element={<DigitalMarketingServiceDetails />} />
-        <Route path="/seo-service-details" element={<SEOServiceDetails />} />
-        <Route path="/social-media-marketing-service-details" element={<SocialMediaMarketingServiceDetails />} />
-        <Route path="/web-development-service-details" element={<WebDevelopmentServiceDetails />} />
-        <Route path="/lead-generation-service-details" element={<LeadGenerationServiceDetails />} />
-        <Route path="/whatsapp-automation-service-details" element={<WhatsappAutomationServiceDetails />} />
-        
-
+        <Route path="/services-seo" element={<SEO />} />
+        <Route path="/services-social-media-marketing" element={<SocialMediaMarketing />} />
+        <Route path="/services-web-development" element={<WebDevelopment />} />
+        <Route path="/services-graphic-design" element={<GraphicDesign />} />
+        <Route path="/services-lead-generation" element={<LeadGeneration />} />
+        <Route path="/services-whatsapp-automation" element={<WhatsappAutomation />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
