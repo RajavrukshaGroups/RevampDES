@@ -376,7 +376,7 @@ export default function Services2() {
                             <span style={{ color: "var(--digital-marketing-ligh)" }}>Let’s build </span>a <span style={{ color: "var(--digital-marketing-light)" }}>smarter
                             <br />{" "}marketing strategy</span>
                         </h2>
-                        <a href="#" className="tf-btn style-big style-color-dt-light">
+                        <a href="/contact" className="tf-btn style-big style-color-dt-light">
                             <span className="text-btn">Get Started</span>
                             <span className="icon-btn">
                                 <i className="icon-arrow-up-right"></i>

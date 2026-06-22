@@ -2,13 +2,58 @@ import React from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import SidePopup from "../../../components/sidePopup";
+import {
+  Building2,
+  HeartPulse,
+  GraduationCap,
+  Laptop,
+  ShoppingBag,
+  Factory,
+  Wallet,
+  Hotel,
+  Store,
+  Scale,
+  HardHat,
+  Rocket,
+  Palette,
+  PenTool,
+  Image,
+  Layout,
+  Brush,
+  Star,
+  Award,
+  Clock,
+  Users,
+  Target,
+  TrendingUp,
+  Zap,
+  Eye,
+  Heart,
+  Sparkles,
+  CheckCircle,
+} from "lucide-react";
 // Import relevant images for the graphic design service page
-import graphicHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg"; // Replace with relevant image
-import graphicDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg"; // Replace with relevant image
-import graphicDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg"; // Replace with relevant image
-import graphicDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg"; // Replace with relevant image
+import graphicHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
+import graphicDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
+import graphicDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
+import graphicDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
 
 export default function ServiceDetailsGraphicDesign() {
+  // Helper function to handle image errors
+  const handleImageError = (e) => {
+    e.target.style.display = 'none';
+    const parent = e.target.parentElement;
+    if (parent) {
+      parent.style.background = '#f0f4f9';
+      parent.style.minHeight = '200px';
+      parent.style.display = 'flex';
+      parent.style.alignItems = 'center';
+      parent.style.justifyContent = 'center';
+      parent.style.borderRadius = '8px';
+      parent.innerHTML = '<span style="color: #666; font-size: 14px;">Image not available</span>';
+    }
+  };
+
   return (
     <>
       <main id="wrapper">
@@ -66,6 +111,9 @@ export default function ServiceDetailsGraphicDesign() {
                 height="470"
                 src={graphicHeroImage}
                 alt="Professional Graphic Design Services in Bangalore"
+                className="w-100"
+                style={{ borderRadius: "8px", objectFit: "cover" }}
+                onError={handleImageError}
               />
             </div>
           </div>
@@ -120,7 +168,7 @@ export default function ServiceDetailsGraphicDesign() {
                     <li>
                       <a
                         href="/services/graphic-design-company-bangalore"
-                        className="category-services-item fw-5 letter-space--2 ff-2"
+                        className="category-services-item fw-5 letter-space--2 ff-2 active"
                       >
                         Graphic Design
                       </a>
@@ -217,25 +265,43 @@ export default function ServiceDetailsGraphicDesign() {
                     </div>
                   </div>
 
-                  {/* Image Grid */}
-                  <div className="list-img d-flex g-30 align-items-center mb-70">
-                    <div className="image">
-                      <img
-                        loading="lazy"
-                        width="410"
-                        height="470"
-                        src={graphicDetailImage1}
-                        alt="Graphic Design Work Sample 1"
-                      />
+                  {/* Image Grid - FIXED with proper responsive alignment */}
+                  <div className="row g-4 mb-70">
+                    <div className="col-12 col-md-6">
+                      <div className="image" style={{ height: "100%" }}>
+                        <img
+                          loading="lazy"
+                          src={graphicDetailImage1}
+                          alt="Graphic Design Work Sample 1"
+                          className="img-fluid w-100"
+                          style={{
+                            borderRadius: "8px",
+                            aspectRatio: "410 / 470",
+                            objectFit: "cover",
+                            height: "100%",
+                            maxHeight: "470px",
+                          }}
+                          onError={handleImageError}
+                        />
+                      </div>
                     </div>
-                    <div className="image">
-                      <img
-                        loading="lazy"
-                        width="410"
-                        height="470"
-                        src={graphicDetailImage2}
-                        alt="Graphic Design Work Sample 2"
-                      />
+                    <div className="col-12 col-md-6">
+                      <div className="image" style={{ height: "100%" }}>
+                        <img
+                          loading="lazy"
+                          src={graphicDetailImage2}
+                          alt="Graphic Design Work Sample 2"
+                          className="img-fluid w-100"
+                          style={{
+                            borderRadius: "8px",
+                            aspectRatio: "410 / 470",
+                            objectFit: "cover",
+                            height: "100%",
+                            maxHeight: "470px",
+                          }}
+                          onError={handleImageError}
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -262,28 +328,30 @@ export default function ServiceDetailsGraphicDesign() {
                     brand image.
                   </div>
 
-                  {/* Why Choose Us / Our Process Section */}
-                  <div className="content-detail">
-                    <div className="left">
-                      <h4 className="title-3 fw-6 letter-space--3 lh-32 mb-50">
-                        Why Choose <span style={{ color: "var(--digital-marketing-light)" }}>Digital Elite Services</span> for Graphic Design?
+                  {/* Why Choose Us Section - Updated with proper responsive grid */}
+                  <div className="row align-items-center g-4 mb-70">
+                    <div className="col-12 col-lg-7">
+                      <h4 className="title-3 fw-6 letter-space--3 lh-32 mb-4">
+                        Why Choose <span style={{ color: "var(--digital-marketing-light)" }}>
+                          Digital Elite Services
+                        </span> for Graphic Design?
                       </h4>
 
-                      <div className="desc-1 ff-2 mb-50 color-paragraph">
+                      <div className="desc-1 ff-2 mb-4 color-paragraph">
                         <strong>Creative Excellence:</strong> Our team of
                         experienced designers brings fresh ideas and innovative
                         concepts to every project.
                       </div>
 
-                      <div className="desc-1 ff-2 mb-50 color-paragraph">
+                      <div className="desc-1 ff-2 mb-4 color-paragraph">
                         <strong>Customized Solutions:</strong> We offer
                         tailored design solutions that match your specific goals
                         and requirements.
                       </div>
 
-                      <div className="desc-1 ff-2 mb-50 color-paragraph">
+                      <div className="desc-1 ff-2 mb-4 color-paragraph">
                         <strong>Affordable Pricing & Quick Turnaround:</strong>{" "}
-                        High-quality design doesn’t have to be expensive. We
+                        High-quality design doesn't have to be expensive. We
                         value your time and ensure timely delivery of projects.
                       </div>
 
@@ -294,21 +362,29 @@ export default function ServiceDetailsGraphicDesign() {
                         meets your expectations.
                       </div>
                     </div>
-                    <div className="right image">
-                      <img
-                        loading="lazy"
-                        width="410"
-                        height="540"
-                        src={graphicDetailImage3}
-                        alt="Digital Elite Services Graphic Design Process"
-                      />
+
+                    <div className="col-12 col-lg-5">
+                      <div className="image">
+                        <img
+                          loading="lazy"
+                          src={graphicDetailImage3}
+                          alt="Digital Elite Services Graphic Design Process"
+                          className="img-fluid w-100"
+                          style={{
+                            borderRadius: "8px",
+                            objectFit: "cover",
+                            maxHeight: "540px",
+                          }}
+                          onError={handleImageError}
+                        />
+                      </div>
                     </div>
                   </div>
 
-                  {/* Our Design Process */}
+                  {/* Our Design Process - With Icons */}
                   <div className="mt-70">
                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-                      Our <span style={{ color: "var(--digital-marketing-blue)", }}>
+                      Our <span style={{ color: "var(--digital-marketing-blue)" }}>
                         Structured Design Process
                       </span>
                     </h3>
@@ -317,32 +393,197 @@ export default function ServiceDetailsGraphicDesign() {
                       collaborative design process to deliver exceptional
                       results.
                     </div>
-                    <ul className="list-unstyled ff-2 color-paragraph">
-                      <li className="mb-20">
-                        <strong>1. Understanding Your Requirements:</strong> We
-                        begin by understanding your business, target audience,
-                        and design preferences.
-                      </li>
-                      <li className="mb-20">
-                        <strong>2. Research & Concept Development:</strong> Our
-                        team conducts research and develops creative concepts
-                        tailored to your brand.
-                      </li>
-                      <li className="mb-20">
-                        <strong>3. Design Creation:</strong> We create visually
-                        stunning designs using the latest tools and techniques.
-                      </li>
-                      <li className="mb-20">
-                        <strong>4. Feedback & Revisions:</strong> Your feedback
-                        is crucial. We refine the designs based on your inputs
-                        to achieve perfection.
-                      </li>
-                      <li>
-                        <strong>5. Final Delivery:</strong> Once approved, we
-                        deliver high-quality files ready for use across all
-                        platforms.
-                      </li>
-                    </ul>
+
+                    <div className="row g-4">
+                      {[
+                        {
+                          icon: <Target size={24} />,
+                          title: "Understanding Your Requirements",
+                          desc: "We begin by understanding your business, target audience, and design preferences."
+                        },
+                        {
+                          icon: <Eye size={24} />,
+                          title: "Research & Concept Development",
+                          desc: "Our team conducts research and develops creative concepts tailored to your brand."
+                        },
+                        {
+                          icon: <Brush size={24} />,
+                          title: "Design Creation",
+                          desc: "We create visually stunning designs using the latest tools and techniques."
+                        },
+                        {
+                          icon: <Star size={24} />,
+                          title: "Feedback & Revisions",
+                          desc: "Your feedback is crucial. We refine the designs based on your inputs to achieve perfection."
+                        },
+                        {
+                          icon: <CheckCircle size={24} />,
+                          title: "Final Delivery",
+                          desc: "Once approved, we deliver high-quality files ready for use across all platforms."
+                        }
+                      ].map((item, index) => (
+                        <div key={index} className="col-12 col-md-6 d-flex">
+                          <div
+                            className="p-30 w-100"
+                            style={{
+                              background: "var(--digital-marketing-light-bg)",
+                              borderRadius: "12px",
+                            }}
+                          >
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "12px",
+                                marginBottom: "10px",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  color: "var(--digital-marketing-light)",
+                                  flexShrink: 0,
+                                }}
+                              >
+                                {item.icon}
+                              </span>
+                              <h5 className="fw-6 mb-0">{item.title}</h5>
+                            </div>
+                            <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* What Makes Us Different */}
+                  <div className="mt-70">
+                    <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
+                      What Makes{" "}
+                      <span style={{ color: "var(--digital-marketing-blue)" }}>
+                        Digital Elite Services
+                      </span>{" "}
+                      Different
+                    </h3>
+                    <div className="text ff-2 color-paragraph mb-40">
+                      Choosing the right graphic design company in Bangalore can significantly impact your brand image. Digital Elite Services stands out because of our commitment to excellence, creativity, and client success.
+                    </div>
+                    
+                    <div className="row g-4">
+                      {[
+                        {
+                          icon: <Palette size={24} />,
+                          title: "Creative Excellence",
+                          desc: "Our designers bring fresh ideas and innovative concepts to every project."
+                        },
+                        {
+                          icon: <PenTool size={24} />,
+                          title: "Customized Solutions",
+                          desc: "We offer tailored design solutions that match your specific goals and requirements."
+                        },
+                        {
+                          icon: <Clock size={24} />,
+                          title: "Quick Turnaround",
+                          desc: "We value your time and ensure timely delivery of all projects."
+                        },
+                        {
+                          icon: <Users size={24} />,
+                          title: "Client-Centric Approach",
+                          desc: "Your satisfaction is our priority throughout the design process."
+                        }
+                      ].map((item, index) => (
+                        <div key={index} className="col-12 col-md-6 d-flex">
+                          <div
+                            className="p-30 w-100"
+                            style={{
+                              background: "var(--digital-marketing-light-bg)",
+                              borderRadius: "12px",
+                            }}
+                          >
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "12px",
+                                marginBottom: "10px",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  color: "var(--digital-marketing-light)",
+                                  flexShrink: 0,
+                                }}
+                              >
+                                {item.icon}
+                              </span>
+                              <h5 className="fw-6 mb-0">{item.title}</h5>
+                            </div>
+                            <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Industries We Serve */}
+                  <div className="mt-70">
+                    <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
+                      Industries We{" "}
+                      <span style={{ color: "var(--digital-marketing-blue)" }}>
+                        Serve
+                      </span>
+                    </h3>
+                    <div className="text ff-2 color-paragraph mb-40">
+                      Digital Elite Services has experience working with businesses across various industries. Our diverse expertise allows us to understand unique market challenges and develop effective design solutions.
+                    </div>
+
+                    <div
+                      className="d-flex flex-wrap"
+                      style={{
+                        gap: "20px 40px",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      {[
+                        { icon: <Building2 size={20} />, text: "Real Estate" },
+                        { icon: <HeartPulse size={20} />, text: "Healthcare" },
+                        { icon: <GraduationCap size={20} />, text: "Education" },
+                        { icon: <Laptop size={20} />, text: "Information Technology" },
+                        { icon: <ShoppingBag size={20} />, text: "E-commerce" },
+                        { icon: <Factory size={20} />, text: "Manufacturing" },
+                        { icon: <Wallet size={20} />, text: "Finance" },
+                        { icon: <Hotel size={20} />, text: "Hospitality" },
+                        { icon: <Store size={20} />, text: "Retail" },
+                        { icon: <Scale size={20} />, text: "Professional Services" },
+                        { icon: <HardHat size={20} />, text: "Construction" },
+                        { icon: <Rocket size={20} />, text: "Startups" },
+                      ].map((item, index) => (
+                        <div
+                          key={index}
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "12px",
+                            minWidth: "200px",
+                            flex: "1 1 200px",
+                          }}
+                          className="ff-2 color-paragraph"
+                        >
+                          <span
+                            style={{
+                              color: "var(--digital-marketing-light)",
+                              flexShrink: 0,
+                            }}
+                          >
+                            {item.icon}
+                          </span>
+                          <strong style={{ fontWeight: 600 }}>{item.text}</strong>
+                        </div>
+                      ))}
+                    </div>
+                    
+                    <div className="text ff-2 color-paragraph">
+                      Our industry-specific design strategies ensure that your brand visuals resonate with the right audience and deliver meaningful results.
+                    </div>
                   </div>
 
                   {/* Final CTA */}

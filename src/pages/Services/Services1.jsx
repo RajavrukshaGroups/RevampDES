@@ -149,7 +149,7 @@ export default function Services1() {
                                     We help brands increase visibility, engage the right audience, and convert leads
                                     into loyal customers.
                                 </p>
-                                <a href="#" className="tf-btn style-big style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-big style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>
