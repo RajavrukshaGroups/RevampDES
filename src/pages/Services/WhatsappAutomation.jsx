@@ -146,7 +146,7 @@ export default function WhatsAppAutomation() {
                                 <p className="desc mb-50 ff-2 color-paragraph">
                                     We help businesses leverage WhatsApp automation to engage customers, nurture leads, and drive conversions through personalized conversations at scale.
                                 </p>
-                                <a href="#" className="tf-btn style-big style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-big style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>
@@ -475,7 +475,7 @@ export default function WhatsAppAutomation() {
                                         <span className="letter-space--2 text-nowrap">Performance Analytics</span>
                                     </li>
                                 </ul>
-                                <a href="#" className="tf-btn style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>

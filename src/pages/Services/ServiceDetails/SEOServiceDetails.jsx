@@ -38,15 +38,35 @@ import {
   PenTool,
   Mic,
   Video,
-  Image
+  Image,
+  Wallet,
+  Store,
+  Scale,
+  HardHat,
+  Factory, // Added missing import
 } from "lucide-react";
 // Import relevant images for the SEO service page
-import seoHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg"; // Replace with relevant image
-import seoDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg"; // Replace with relevant image
-import seoDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg"; // Replace with relevant image
-import seoDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg"; // Replace with relevant image
+import seoHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
+import seoDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
+import seoDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
+import seoDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
 
 export default function ServiceDetailsSEO() {
+  // Helper function to handle image errors
+  const handleImageError = (e) => {
+    e.target.style.display = 'none';
+    const parent = e.target.parentElement;
+    if (parent) {
+      parent.style.background = '#f0f4f9';
+      parent.style.minHeight = '200px';
+      parent.style.display = 'flex';
+      parent.style.alignItems = 'center';
+      parent.style.justifyContent = 'center';
+      parent.style.borderRadius = '8px';
+      parent.innerHTML = '<span style="color: #666; font-size: 14px;">Image not available</span>';
+    }
+  };
+
   return (
     <>
       <main id="wrapper">
@@ -104,6 +124,9 @@ export default function ServiceDetailsSEO() {
                 height="470"
                 src={seoHeroImage}
                 alt="Leading SEO Services in Bangalore"
+                className="w-100"
+                style={{ borderRadius: "8px", objectFit: "cover" }}
+                onError={handleImageError}
               />
             </div>
           </div>
@@ -202,51 +225,60 @@ export default function ServiceDetailsSEO() {
                   <div className="text ff-2 color-paragraph mb-40">
                     Search Engine Optimization (SEO) is the backbone of digital marketing. It ensures your website ranks higher on search engines like Google, making it easier for potential customers to find you.
                   </div>
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Eye size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Increase Website Visibility</h5>
+                  
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <Eye size={24} />,
+                        title: "Increase Website Visibility",
+                        desc: "Make your business easily discoverable by potential customers searching online."
+                      },
+                      {
+                        icon: <Users size={24} />,
+                        title: "Drive High-Quality Organic Traffic",
+                        desc: "Attract visitors who are actively searching for your products or services."
+                      },
+                      {
+                        icon: <Shield size={24} />,
+                        title: "Improve Brand Credibility & Trust",
+                        desc: "Higher rankings build trust and establish your brand as an industry authority."
+                      },
+                      {
+                        icon: <Rocket size={24} />,
+                        title: "Stay Ahead of Competitors",
+                        desc: "Outperform competitors in search results and capture more market share."
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                         </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Make your business easily discoverable by potential customers searching online.
-                        </p>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Users size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Drive High-Quality Organic Traffic</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Attract visitors who are actively searching for your products or services.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Shield size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Improve Brand Credibility & Trust</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Higher rankings build trust and establish your brand as an industry authority.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Rocket size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Stay Ahead of Competitors</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Outperform competitors in search results and capture more market share.
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
@@ -263,51 +295,59 @@ export default function ServiceDetailsSEO() {
                   <h4 className="fw-6 letter-space--3 color-dt-black mb-30">
                     What Sets Us Apart?
                   </h4>
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <BarChart3 size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Data-Driven Approach</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <BarChart3 size={24} />,
+                        title: "Data-Driven Approach",
+                        desc: "We rely on in-depth research, analytics, and performance tracking to guide our SEO strategies."
+                      },
+                      {
+                        icon: <Award size={24} />,
+                        title: "Experienced SEO Professionals",
+                        desc: "Our team stays updated with the latest algorithm changes and industry trends."
+                      },
+                      {
+                        icon: <FileText size={24} />,
+                        title: "Transparent Reporting",
+                        desc: "You'll receive regular reports detailing keyword rankings, traffic growth, and campaign performance."
+                      },
+                      {
+                        icon: <Shield size={24} />,
+                        title: "Ethical SEO Practices",
+                        desc: "We follow white-hat SEO techniques that ensure long-term success without risking penalties."
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                         </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          We rely on in-depth research, analytics, and performance tracking to guide our SEO strategies.
-                        </p>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Award size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Experienced SEO Professionals</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Our team stays updated with the latest algorithm changes and industry trends.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FileText size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Transparent Reporting</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          You'll receive regular reports detailing keyword rankings, traffic growth, and campaign performance.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Shield size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Ethical SEO Practices</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          We follow white-hat SEO techniques that ensure long-term success without risking penalties.
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
@@ -357,71 +397,98 @@ export default function ServiceDetailsSEO() {
                     </div>
                   </div>
 
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <PenTool size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Content Marketing</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <PenTool size={24} />,
+                        title: "Content Marketing",
+                        desc: "We create engaging, keyword-rich content that attracts users and improves search rankings."
+                      },
+                      {
+                        icon: <Link2 size={24} />,
+                        title: "Link Building",
+                        desc: "We build high-quality backlinks from authoritative websites to boost domain authority."
+                      },
+                      {
+                        icon: <MapPin size={24} />,
+                        title: "Local SEO",
+                        desc: "We optimize your Google Business Profile and local listings to increase visibility in local searches."
+                      },
+                      {
+                        icon: <ShoppingBag size={24} />,
+                        title: "E-Commerce SEO",
+                        desc: "Specialized optimization for product pages, categories, and shopping search visibility."
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                         </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          We create engaging, keyword-rich content that attracts users and improves search rankings.
-                        </p>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Link2 size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Link Building</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          We build high-quality backlinks from authoritative websites to boost domain authority.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <MapPin size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Local SEO</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          We optimize your Google Business Profile and local listings to increase visibility in local searches.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <ShoppingBag size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>E-Commerce SEO</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Specialized optimization for product pages, categories, and shopping search visibility.
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
-                  <div className="list-img d-flex g-30 align-items-center mb-70">
-                    <div className="image">
-                      <img
-                        loading="lazy"
-                        width="410"
-                        height="470"
-                        src={seoDetailImage1}
-                        alt="SEO Strategy Session"
-                      />
+                  {/* Image Grid - FIXED with proper responsive alignment */}
+                  <div className="row g-4 mb-70">
+                    <div className="col-12 col-md-6">
+                      <div className="image" style={{ height: "100%" }}>
+                        <img
+                          loading="lazy"
+                          src={seoDetailImage1}
+                          alt="SEO Strategy Session"
+                          className="img-fluid w-100"
+                          style={{
+                            borderRadius: "8px",
+                            aspectRatio: "410 / 470",
+                            objectFit: "cover",
+                            height: "100%",
+                            maxHeight: "470px",
+                          }}
+                          onError={handleImageError}
+                        />
+                      </div>
                     </div>
-                    <div className="image">
-                      <img
-                        loading="lazy"
-                        width="410"
-                        height="470"
-                        src={seoDetailImage2}
-                        alt="SEO Performance Results"
-                      />
+                    <div className="col-12 col-md-6">
+                      <div className="image" style={{ height: "100%" }}>
+                        <img
+                          loading="lazy"
+                          src={seoDetailImage2}
+                          alt="SEO Performance Results"
+                          className="img-fluid w-100"
+                          style={{
+                            borderRadius: "8px",
+                            aspectRatio: "410 / 470",
+                            objectFit: "cover",
+                            height: "100%",
+                            maxHeight: "470px",
+                          }}
+                          onError={handleImageError}
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -435,39 +502,51 @@ export default function ServiceDetailsSEO() {
                   <div className="text ff-2 color-paragraph mb-40">
                     Digital Elite Services has worked with clients across various industries, understanding the unique challenges of each sector and creating strategies that deliver real results.
                   </div>
-                  <div className="row g-20" style={{ marginBottom: "40px" }}>
-                    <div className="col-md-6">
-                      <ul className="list-unstyled ff-2 color-paragraph">
-                        <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                          <ShoppingBag size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          E-commerce
-                        </li>
-                        <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                          <Building2 size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          Real Estate
-                        </li>
-                        <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                          <HeartPulse size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          Healthcare
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-md-6">
-                      <ul className="list-unstyled ff-2 color-paragraph">
-                        <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                          <GraduationCap size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          Education
-                        </li>
-                        <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                          <Laptop size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          IT and Software
-                        </li>
-                        <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                          <Hotel size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          Hospitality
-                        </li>
-                      </ul>
-                    </div>
+
+                  {/* Industries We Serve - WITH BOLD TEXT */}
+                  <div
+                    className="d-flex flex-wrap"
+                    style={{
+                      gap: "20px 40px",
+                      marginBottom: "40px",
+                    }}
+                  >
+                    {[
+                      { icon: <ShoppingBag size={20} />, text: "E-commerce" },
+                      { icon: <Building2 size={20} />, text: "Real Estate" },
+                      { icon: <HeartPulse size={20} />, text: "Healthcare" },
+                      { icon: <GraduationCap size={20} />, text: "Education" },
+                      { icon: <Laptop size={20} />, text: "Information Technology" },
+                      { icon: <Hotel size={20} />, text: "Hospitality" },
+                      { icon: <Wallet size={20} />, text: "Finance" },
+                      { icon: <Store size={20} />, text: "Retail" },
+                      { icon: <Scale size={20} />, text: "Professional Services" },
+                      { icon: <HardHat size={20} />, text: "Construction" },
+                      { icon: <Rocket size={20} />, text: "Startups" },
+                      { icon: <Factory size={20} />, text: "Manufacturing" },
+                    ].map((item, index) => (
+                      <div
+                        key={index}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "12px",
+                          minWidth: "200px",
+                          flex: "1 1 200px",
+                        }}
+                        className="ff-2 color-paragraph"
+                      >
+                        <span
+                          style={{
+                            color: "var(--digital-marketing-light)",
+                            flexShrink: 0,
+                          }}
+                        >
+                          {item.icon}
+                        </span>
+                        <strong style={{ fontWeight: 600 }}>{item.text}</strong>
+                      </div>
+                    ))}
                   </div>
 
                   <div className="mt-70">
@@ -480,51 +559,60 @@ export default function ServiceDetailsSEO() {
                     <div className="text ff-2 color-paragraph mb-40">
                       We follow a structured and proven SEO process to ensure consistent success.
                     </div>
-                    <div className="row g-30">
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Search size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Step 1: Website Audit</h5>
+                    
+                    <div className="row g-4">
+                      {[
+                        {
+                          icon: <Search size={24} />,
+                          title: "Step 1: Website Audit",
+                          desc: "We conduct a comprehensive audit to identify strengths, weaknesses, and opportunities."
+                        },
+                        {
+                          icon: <Compass size={24} />,
+                          title: "Step 2: Strategy Development",
+                          desc: "Based on insights, we create a tailored SEO strategy aligned with your business objectives."
+                        },
+                        {
+                          icon: <Settings size={24} />,
+                          title: "Step 3: Implementation",
+                          desc: "Our team executes on-page, technical, and off-page SEO techniques."
+                        },
+                        {
+                          icon: <Gauge size={24} />,
+                          title: "Step 4: Monitoring & Optimization",
+                          desc: "We continuously track performance and optimize campaigns for better results."
+                        }
+                      ].map((item, index) => (
+                        <div key={index} className="col-12 col-md-6 d-flex">
+                          <div
+                            className="p-30 w-100"
+                            style={{
+                              background: "var(--digital-marketing-light-bg)",
+                              borderRadius: "12px",
+                            }}
+                          >
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "12px",
+                                marginBottom: "10px",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  color: "var(--digital-marketing-light)",
+                                  flexShrink: 0,
+                                }}
+                              >
+                                {item.icon}
+                              </span>
+                              <h5 className="fw-6 mb-0">{item.title}</h5>
+                            </div>
+                            <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                           </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            We conduct a comprehensive audit to identify strengths, weaknesses, and opportunities.
-                          </p>
                         </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Compass size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Step 2: Strategy Development</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Based on insights, we create a tailored SEO strategy aligned with your business objectives.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Settings size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Step 3: Implementation</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Our team executes on-page, technical, and off-page SEO techniques.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Gauge size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Step 4: Monitoring & Optimization</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            We continuously track performance and optimize campaigns for better results.
-                          </p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
 
@@ -535,28 +623,47 @@ export default function ServiceDetailsSEO() {
                         Digital Elite Services
                       </span>
                     </h3>
-                    <div className="row g-30">
-                      <div className="col-md-4">
-                        <div className="text-center p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                          <Globe size={40} style={{ color: "var(--digital-marketing-light)", marginBottom: "15px" }} />
-                          <h5 className="fw-6">Increased Online Visibility</h5>
-                          <p className="ff-2 color-paragraph">Make your business easily discoverable online.</p>
+                    
+                    <div className="row g-4">
+                      {[
+                        {
+                          icon: <Globe size={40} />,
+                          title: "Increased Online Visibility",
+                          desc: "Make your business easily discoverable online."
+                        },
+                        {
+                          icon: <TrendingUp size={40} />,
+                          title: "Higher Search Engine Rankings",
+                          desc: "Achieve top positions on Google search results."
+                        },
+                        {
+                          icon: <Target size={40} />,
+                          title: "More Targeted Traffic",
+                          desc: "Attract visitors who are ready to convert."
+                        }
+                      ].map((item, index) => (
+                        <div key={index} className="col-12 col-md-4 d-flex">
+                          <div
+                            className="text-center p-30 w-100"
+                            style={{
+                              background: "var(--digital-marketing-light-bg)",
+                              borderRadius: "12px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                display: "block",
+                                marginBottom: "15px",
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6">{item.title}</h5>
+                            <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
+                          </div>
                         </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div className="text-center p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                          <TrendingUp size={40} style={{ color: "var(--digital-marketing-light)", marginBottom: "15px" }} />
-                          <h5 className="fw-6">Higher Search Engine Rankings</h5>
-                          <p className="ff-2 color-paragraph">Achieve top positions on Google search results.</p>
-                        </div>
-                      </div>
-                      <div className="col-md-4">
-                        <div className="text-center p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                          <Target size={40} style={{ color: "var(--digital-marketing-light)", marginBottom: "15px" }} />
-                          <h5 className="fw-6">More Targeted Traffic</h5>
-                          <p className="ff-2 color-paragraph">Attract visitors who are ready to convert.</p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
 
@@ -570,51 +677,60 @@ export default function ServiceDetailsSEO() {
                     <div className="text ff-2 color-paragraph mb-40">
                       Unlike paid advertising, SEO delivers long-term value. While paid campaigns stop generating traffic once the budget ends, SEO continues to bring organic visitors to your website over time. This makes SEO one of the most cost-effective digital marketing strategies for businesses of all sizes.
                     </div>
-                    <div className="row g-30">
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Users size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Attract Customers Consistently</h5>
+                    
+                    <div className="row g-4">
+                      {[
+                        {
+                          icon: <Users size={24} />,
+                          title: "Attract Customers Consistently",
+                          desc: "Drive ongoing organic traffic without continuous ad spend."
+                        },
+                        {
+                          icon: <Award size={24} />,
+                          title: "Build Brand Awareness Organically",
+                          desc: "Establish your brand as a trusted industry authority."
+                        },
+                        {
+                          icon: <Sparkles size={24} />,
+                          title: "Generate Higher ROI Over Time",
+                          desc: "SEO investments compound for sustainable business growth."
+                        },
+                        {
+                          icon: <Globe size={24} />,
+                          title: "Increase Website Authority",
+                          desc: "Build domain authority through quality content and backlinks."
+                        }
+                      ].map((item, index) => (
+                        <div key={index} className="col-12 col-md-6 d-flex">
+                          <div
+                            className="p-30 w-100"
+                            style={{
+                              background: "var(--digital-marketing-light-bg)",
+                              borderRadius: "12px",
+                            }}
+                          >
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "12px",
+                                marginBottom: "10px",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  color: "var(--digital-marketing-light)",
+                                  flexShrink: 0,
+                                }}
+                              >
+                                {item.icon}
+                              </span>
+                              <h5 className="fw-6 mb-0">{item.title}</h5>
+                            </div>
+                            <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                           </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Drive ongoing organic traffic without continuous ad spend.
-                          </p>
                         </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Award size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Build Brand Awareness Organically</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Establish your brand as a trusted industry authority.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Sparkles size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Generate Higher ROI Over Time</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            SEO investments compound for sustainable business growth.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Globe size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Increase Website Authority</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Build domain authority through quality content and backlinks.
-                          </p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
 
@@ -629,51 +745,60 @@ export default function ServiceDetailsSEO() {
                     <div className="text ff-2 color-paragraph mb-40">
                       Bangalore is one of India's fastest-growing business hubs, with thousands of companies competing for online visibility. Digital Elite Services specializes in local SEO strategies that improve your visibility in location-based searches.
                     </div>
-                    <div className="row g-30">
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <MapPin size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Google Business Profile Optimization</h5>
+                    
+                    <div className="row g-4">
+                      {[
+                        {
+                          icon: <MapPin size={24} />,
+                          title: "Google Business Profile Optimization",
+                          desc: "Optimize your profile to appear in local search results and Google Maps."
+                        },
+                        {
+                          icon: <Target size={24} />,
+                          title: "Local Keyword Targeting",
+                          desc: "Target location-specific keywords to attract nearby customers."
+                        },
+                        {
+                          icon: <CheckCircle size={24} />,
+                          title: "Customer Review Management",
+                          desc: "Build trust through positive reviews and responsive reputation management."
+                        },
+                        {
+                          icon: <Layers size={24} />,
+                          title: "Geo-Targeted SEO Strategies",
+                          desc: "Create location-specific content and optimize for local search intent."
+                        }
+                      ].map((item, index) => (
+                        <div key={index} className="col-12 col-md-6 d-flex">
+                          <div
+                            className="p-30 w-100"
+                            style={{
+                              background: "var(--digital-marketing-light-bg)",
+                              borderRadius: "12px",
+                            }}
+                          >
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "12px",
+                                marginBottom: "10px",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  color: "var(--digital-marketing-light)",
+                                  flexShrink: 0,
+                                }}
+                              >
+                                {item.icon}
+                              </span>
+                              <h5 className="fw-6 mb-0">{item.title}</h5>
+                            </div>
+                            <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                           </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Optimize your profile to appear in local search results and Google Maps.
-                          </p>
                         </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Target size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Local Keyword Targeting</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Target location-specific keywords to attract nearby customers.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <CheckCircle size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Customer Review Management</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Build trust through positive reviews and responsive reputation management.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Layers size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Geo-Targeted SEO Strategies</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Create location-specific content and optimize for local search intent.
-                          </p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
 
@@ -687,51 +812,60 @@ export default function ServiceDetailsSEO() {
                     <div className="text ff-2 color-paragraph mb-40">
                       With the majority of internet users accessing websites through smartphones, mobile optimization has become essential for SEO success. Google prioritizes mobile-friendly websites in search rankings.
                     </div>
-                    <div className="row g-30">
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Smartphone size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Mobile Responsiveness</h5>
+                    
+                    <div className="row g-4">
+                      {[
+                        {
+                          icon: <Smartphone size={24} />,
+                          title: "Mobile Responsiveness",
+                          desc: "Ensure your website adapts perfectly to all screen sizes."
+                        },
+                        {
+                          icon: <Zap size={24} />,
+                          title: "Page Speed Optimization",
+                          desc: "Optimize loading times for better user experience and rankings."
+                        },
+                        {
+                          icon: <Image size={24} />,
+                          title: "Image & Media Optimization",
+                          desc: "Compress and optimize images for faster mobile loading."
+                        },
+                        {
+                          icon: <Layers size={24} />,
+                          title: "Simplified Navigation",
+                          desc: "Improve user experience with intuitive mobile navigation."
+                        }
+                      ].map((item, index) => (
+                        <div key={index} className="col-12 col-md-6 d-flex">
+                          <div
+                            className="p-30 w-100"
+                            style={{
+                              background: "var(--digital-marketing-light-bg)",
+                              borderRadius: "12px",
+                            }}
+                          >
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "12px",
+                                marginBottom: "10px",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  color: "var(--digital-marketing-light)",
+                                  flexShrink: 0,
+                                }}
+                              >
+                                {item.icon}
+                              </span>
+                              <h5 className="fw-6 mb-0">{item.title}</h5>
+                            </div>
+                            <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                           </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Ensure your website adapts perfectly to all screen sizes.
-                          </p>
                         </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Zap size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Page Speed Optimization</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Optimize loading times for better user experience and rankings.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Image size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Image & Media Optimization</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Compress and optimize images for faster mobile loading.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Layers size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Simplified Navigation</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Improve user experience with intuitive mobile navigation.
-                          </p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
 
@@ -745,28 +879,44 @@ export default function ServiceDetailsSEO() {
                     <div className="text ff-2 color-paragraph mb-40">
                       Technical SEO plays a crucial role in improving how search engines crawl and index your website. Our technical SEO experts analyze and optimize critical aspects of your website.
                     </div>
-                    <ul className="list-unstyled ff-2 color-paragraph">
-                      <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                        <Code size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                        Website Architecture & Crawlability
-                      </li>
-                      <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                        <Shield size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                        HTTPS Security Implementation
-                      </li>
-                      <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                        <Link2 size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                        Broken Link Fixes & Canonical Tags
-                      </li>
-                      <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                        <Gauge size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                        Core Web Vitals Optimization
-                      </li>
-                      <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                        <Database size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                        Structured Data Implementation
-                      </li>
-                    </ul>
+                    
+                    <div
+                      className="d-flex flex-wrap"
+                      style={{
+                        gap: "26px 30px",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      {[
+                        { icon: <Code size={20} />, text: "Website Architecture & Crawlability" },
+                        { icon: <Shield size={20} />, text: "HTTPS Security Implementation" },
+                        { icon: <Link2 size={20} />, text: "Broken Link Fixes & Canonical Tags" },
+                        { icon: <Gauge size={20} />, text: "Core Web Vitals Optimization" },
+                        { icon: <Database size={20} />, text: "Structured Data Implementation" },
+                      ].map((item, index) => (
+                        <div
+                          key={index}
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "12px",
+                            minWidth: "220px",
+                            flex: "1 1 250px",
+                          }}
+                          className="ff-2 color-paragraph"
+                        >
+                          <span
+                            style={{
+                              color: "var(--digital-marketing-light)",
+                              flexShrink: 0,
+                            }}
+                          >
+                            {item.icon}
+                          </span>
+                          {item.text}
+                        </div>
+                      ))}
+                    </div>
                   </div>
 
                   <div className="mt-70">
@@ -779,54 +929,64 @@ export default function ServiceDetailsSEO() {
                     <div className="text ff-2 color-paragraph mb-40">
                       The SEO landscape continues to evolve rapidly. Businesses that adapt to changing trends gain a competitive advantage in search rankings.
                     </div>
-                    <div className="row g-30">
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Mic size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Voice Search Optimization</h5>
+                    
+                    <div className="row g-4">
+                      {[
+                        {
+                          icon: <Mic size={24} />,
+                          title: "Voice Search Optimization",
+                          desc: "Optimize for conversational keywords as voice assistants become more popular."
+                        },
+                        {
+                          icon: <Brain size={24} />,
+                          title: "AI and Search Algorithms",
+                          desc: "High-quality content and user intent are more important than ever."
+                        },
+                        {
+                          icon: <Smartphone size={24} />,
+                          title: "User Experience Signals",
+                          desc: "Fast loading times and mobile usability are key ranking factors."
+                        },
+                        {
+                          icon: <Video size={24} />,
+                          title: "Video SEO",
+                          desc: "Video content is growing rapidly and can significantly improve engagement."
+                        }
+                      ].map((item, index) => (
+                        <div key={index} className="col-12 col-md-6 d-flex">
+                          <div
+                            className="p-30 w-100"
+                            style={{
+                              background: "var(--digital-marketing-light-bg)",
+                              borderRadius: "12px",
+                            }}
+                          >
+                            <div
+                              style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: "12px",
+                                marginBottom: "10px",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  color: "var(--digital-marketing-light)",
+                                  flexShrink: 0,
+                                }}
+                              >
+                                {item.icon}
+                              </span>
+                              <h5 className="fw-6 mb-0">{item.title}</h5>
+                            </div>
+                            <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                           </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Optimize for conversational keywords as voice assistants become more popular.
-                          </p>
                         </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Brain size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>AI and Search Algorithms</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            High-quality content and user intent are more important than ever.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Smartphone size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>User Experience Signals</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Fast loading times and mobile usability are key ranking factors.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                            <Video size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                            <h5 className="fw-6" style={{ marginBottom: 0 }}>Video SEO</h5>
-                          </div>
-                          <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                            Video content is growing rapidly and can significantly improve engagement.
-                          </p>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
 
+                  {/* Final CTA */}
                   <div className="mt-70 p-40" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px" }}>
                     <h4 className="fw-6 letter-space--3 lh-32 mb-30" style={{marginTop:"53px"}}>
                       Get Started with the{" "}

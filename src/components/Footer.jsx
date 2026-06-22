@@ -66,27 +66,27 @@ export default function Footer() {
                 <div className="tf-collapse-content">
                   <ul className="content">
                     <li className="support-item-footer">
-                      <a href="#" className="ff-2">
+                      <a href="/services/seo-services-in-bangalore" className="ff-2">
                         Search Engine Optimization
                       </a>
                     </li>
                     <li className="support-item-footer">
-                      <a href="#" className="ff-2">
+                      <a href="/services/Digital-marketing-agency-in-bangalore" className="ff-2">
                         Pay-Per-Click Advertising
                       </a>
                     </li>
                     <li className="support-item-footer">
-                      <a href="#" className="ff-2">
+                      <a href="/services/social-media-marketing-company-bangalore" className="ff-2">
                         Social Media Marketing
                       </a>
                     </li>
                     <li className="support-item-footer">
-                      <a href="#" className="ff-2">
+                      <a href="/services/Digital-marketing-agency-in-bangalore" className="ff-2">
                         Branding & Digital Strategy
                       </a>
                     </li>
                     <li className="support-item-footer">
-                      <a href="#" className="ff-2">
+                      <a href="/services/Digital-marketing-agency-in-bangalore" className="ff-2">
                         Influencer Marketing
                       </a>
                     </li>
@@ -102,17 +102,17 @@ export default function Footer() {
                 <div className="tf-collapse-content">
                   <ul className="content">
                     <li className="support-item-footer">
-                      <a href="#" className="ff-2">
+                      <a href="/about-us" className="ff-2">
                         Company History
                       </a>
                     </li>
                     <li className="support-item-footer">
-                      <a href="#" className="ff-2">
+                      <a href="/our-team" className="ff-2">
                         Team Members
                       </a>
                     </li>
                     <li className="support-item-footer">
-                      <a href="#" className="ff-2">
+                      <a href="/portfolio-1" className="ff-2">
                         Latest Cases
                       </a>
                     </li>
