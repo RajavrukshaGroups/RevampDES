@@ -146,7 +146,7 @@ export default function GraphicDesign() {
                                 <p className="desc mb-50 ff-2 color-paragraph">
                                     We create stunning visual identities and designs that capture attention, communicate your message, and build lasting brand connections.
                                 </p>
-                                <a href="/graphic-design-service-details" className="tf-btn style-big style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-big style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>
@@ -475,7 +475,7 @@ export default function GraphicDesign() {
                                         <span className="letter-space--2 text-nowrap">Strategic Design Consulting</span>
                                     </li>
                                 </ul>
-                                <a href="/graphic-design-service-details" className="tf-btn style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>
@@ -693,7 +693,7 @@ export default function GraphicDesign() {
 //                                 <p className="desc mb-50 ff-2 color-paragraph">
 //                                     Being a reputed graphic designing company in Bangalore, Digital Elite Services caters to a wide range of clients, including startups, small businesses, and large enterprises.
 //                                 </p>
-//                                 <a href="#" className="tf-btn style-big style-color-dt-blue">
+//                                 <a href="/contact" className="tf-btn style-big style-color-dt-blue">
 //                                     <span className="text-btn">Get Started</span>
 //                                     <span className="icon-btn">
 //                                         <i className="icon-arrow-up-right"></i>
@@ -1051,7 +1051,7 @@ export default function GraphicDesign() {
 //                                         <span className="ff-2 color-paragraph" style={{ fontSize: '12px', marginLeft: '5px' }}>— Your satisfaction is our priority. We work closely with you throughout the design process to ensure the final output meets your expectations.</span>
 //                                     </li>
 //                                 </ul>
-//                                 <a href="#" className="tf-btn style-color-dt-blue">
+//                                 <a href="/contact" className="tf-btn style-color-dt-blue">
 //                                     <span className="text-btn">Get Started</span>
 //                                     <span className="icon-btn">
 //                                         <i className="icon-arrow-up-right"></i>

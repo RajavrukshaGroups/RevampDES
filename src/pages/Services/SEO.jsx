@@ -146,7 +146,7 @@ export default function SEO() {
                                 <p className="desc mb-50 ff-2 color-paragraph">
                                     We help businesses improve visibility, attract qualified leads, and achieve top search engine rankings through proven SEO strategies.
                                 </p>
-                                <a href="#" className="tf-btn style-big style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-big style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>
@@ -475,7 +475,7 @@ export default function SEO() {
                                         <span className="letter-space--2 text-nowrap">Dedicated SEO Expert Support</span>
                                     </li>
                                 </ul>
-                                <a href="#" className="tf-btn style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>

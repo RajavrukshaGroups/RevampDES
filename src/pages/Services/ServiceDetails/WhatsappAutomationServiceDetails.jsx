@@ -2,62 +2,6 @@ import React from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import SidePopup from "../../../components/sidePopup";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faDatabase,
-  faGlobe,
-  faUsers,
-  faSearch,
-  faUserPlus,
-  faChartBar,
-  faRocket,
-  faAward,
-  faShieldAlt,
-  faBolt,
-  faCog,
-  faLayerGroup,
-  faCompass,
-  faTachometerAlt,
-  faMobileAlt,
-  faEnvelope,
-  faPaperPlane,
-  faClock,
-  faCheckCircle,
-  faHeadset,
-  faBuilding,
-  faHeartbeat,
-  faShoppingBag,
-  faGraduationCap,
-  faWallet,
-  faMicrochip,
-  faThumbsUp,
-  faHandshake,
-  faFileAlt,
-  faPenFancy,
-  faFilter,
-  faChartPie,
-  faChartLine,
-  faMousePointer,
-  faArrowRight,
-  faCopy,
-  faBullhorn,
-  faEye,
-  faBullseye,
-  faStar,
-  faCrown,
-  faLightbulb,
-  faFlag,
-  faGift,
-  faHeart,
-  faTrophy,
-  faCircleCheck,
-  faCircleDot,
-  faCircleArrowRight,
-  faMessage,
-  faPhone,
-  faAt,
-  faShareAlt
-} from '@fortawesome/free-solid-svg-icons';
 import {
   MessageCircle,
   Bot,
@@ -69,15 +13,50 @@ import {
   Layout,
   Send,
   Settings,
-  Layers
+  Layers,
+  Building2,
+  HeartPulse,
+  GraduationCap,
+  Laptop,
+  ShoppingBag,
+  Factory,
+  Wallet,
+  Hotel,
+  Store,
+  Scale,
+  HardHat,
+  Rocket,
+  Zap,
+  Eye,
+  Award,
+  Users,
+  Clock,
+  BarChart3,
+  CheckCircle,
+  Globe,
 } from "lucide-react";
 // Import relevant images for the WhatsApp automation service page
-import whatsappHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg"; // Replace with relevant image
-import whatsappDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg"; // Replace with relevant image
-import whatsappDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg"; // Replace with relevant image
-import whatsappDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg"; // Replace with relevant image
+import whatsappHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
+import whatsappDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
+import whatsappDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
+import whatsappDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
 
 export default function ServiceDetailsWhatsAppAutomation() {
+  // Helper function to handle image errors
+  const handleImageError = (e) => {
+    e.target.style.display = 'none';
+    const parent = e.target.parentElement;
+    if (parent) {
+      parent.style.background = '#f0f4f9';
+      parent.style.minHeight = '200px';
+      parent.style.display = 'flex';
+      parent.style.alignItems = 'center';
+      parent.style.justifyContent = 'center';
+      parent.style.borderRadius = '8px';
+      parent.innerHTML = '<span style="color: #666; font-size: 14px;">Image not available</span>';
+    }
+  };
+
   return (
     <>
       <main id="wrapper">
@@ -135,6 +114,9 @@ export default function ServiceDetailsWhatsAppAutomation() {
                 height="470"
                 src={whatsappHeroImage}
                 alt="WhatsApp Business API & Automation Services in Bangalore"
+                className="w-100"
+                style={{ borderRadius: "8px", objectFit: "cover" }}
+                onError={handleImageError}
               />
             </div>
           </div>
@@ -240,51 +222,59 @@ export default function ServiceDetailsWhatsAppAutomation() {
                     WhatsApp automation allows companies to:
                   </div>
 
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faBolt} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Respond Instantly</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <Zap size={24} />,
+                        title: "Respond Instantly",
+                        desc: "Respond instantly to customer inquiries and improve satisfaction."
+                      },
+                      {
+                        icon: <Settings size={24} />,
+                        title: "Automate Repetitive Tasks",
+                        desc: "Automate repetitive communication tasks and save valuable time."
+                      },
+                      {
+                        icon: <Target size={24} />,
+                        title: "Run Targeted Campaigns",
+                        desc: "Run targeted marketing campaigns that reach the right audience."
+                      },
+                      {
+                        icon: <Clock size={24} />,
+                        title: "24/7 Customer Support",
+                        desc: "Provide 24/7 customer support with automated responses."
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                         </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Respond instantly to customer inquiries and improve satisfaction.
-                        </p>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faCog} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Automate Repetitive Tasks</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Automate repetitive communication tasks and save valuable time.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faBullseye} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Run Targeted Campaigns</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Run targeted marketing campaigns that reach the right audience.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faClock} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>24/7 Customer Support</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Provide 24/7 customer support with automated responses.
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
@@ -331,7 +321,6 @@ export default function ServiceDetailsWhatsAppAutomation() {
                       <div className="number ff-2 fw-5 letter-space--2">01</div>
                       <div className="dot"></div>
                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-                        <Bot size={18} style={{ marginRight: "8px", color: "var(--digital-marketing-light)" }} />
                         Advanced Chatbot Automation
                       </a>
                       <div className="desc ff-2">
@@ -343,7 +332,6 @@ export default function ServiceDetailsWhatsAppAutomation() {
                       <div className="number ff-2 fw-5 letter-space--2">02</div>
                       <div className="dot"></div>
                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-                        <FontAwesomeIcon icon={faPaperPlane} style={{ marginRight: "8px", color: "var(--digital-marketing-light)" }} />
                         Bulk Messaging Solutions
                       </a>
                       <div className="desc ff-2">
@@ -355,7 +343,6 @@ export default function ServiceDetailsWhatsAppAutomation() {
                       <div className="number ff-2 fw-5 letter-space--2">03</div>
                       <div className="dot"></div>
                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-                        <FontAwesomeIcon icon={faDatabase} style={{ marginRight: "8px", color: "var(--digital-marketing-light)" }} />
                         CRM Integration
                       </a>
                       <div className="desc ff-2">
@@ -364,49 +351,88 @@ export default function ServiceDetailsWhatsAppAutomation() {
                     </div>
                   </div>
 
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faUserPlus} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Lead Generation & Nurturing</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <Users size={24} />,
+                        title: "Lead Generation & Nurturing",
+                        desc: "Automation workflows help capture leads and nurture them through personalized communication."
+                      },
+                      {
+                        icon: <BarChart3 size={24} />,
+                        title: "Analytics & Performance Tracking",
+                        desc: "With detailed insights and reporting, businesses can measure campaign performance and optimize strategies."
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                         </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Automation workflows help capture leads and nurture them through personalized communication.
-                        </p>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faChartBar} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Analytics & Performance Tracking</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          With detailed insights and reporting, businesses can measure campaign performance and optimize strategies.
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
-                  <div className="list-img d-flex g-30 align-items-center mb-70">
-                    <div className="image">
-                      <img
-                        loading="lazy"
-                        width="410"
-                        height="470"
-                        src={whatsappDetailImage1}
-                        alt="WhatsApp Automation Strategy"
-                      />
+                  {/* Image Grid - FIXED with proper responsive alignment */}
+                  <div className="row g-4 mb-70">
+                    <div className="col-12 col-md-6">
+                      <div className="image" style={{ height: "100%" }}>
+                        <img
+                          loading="lazy"
+                          src={whatsappDetailImage1}
+                          alt="WhatsApp Automation Strategy"
+                          className="img-fluid w-100"
+                          style={{
+                            borderRadius: "8px",
+                            aspectRatio: "410 / 470",
+                            objectFit: "cover",
+                            height: "100%",
+                            maxHeight: "470px",
+                          }}
+                          onError={handleImageError}
+                        />
+                      </div>
                     </div>
-                    <div className="image">
-                      <img
-                        loading="lazy"
-                        width="410"
-                        height="470"
-                        src={whatsappDetailImage2}
-                        alt="WhatsApp Automation Results"
-                      />
+                    <div className="col-12 col-md-6">
+                      <div className="image" style={{ height: "100%" }}>
+                        <img
+                          loading="lazy"
+                          src={whatsappDetailImage2}
+                          alt="WhatsApp Automation Results"
+                          className="img-fluid w-100"
+                          style={{
+                            borderRadius: "8px",
+                            aspectRatio: "410 / 470",
+                            objectFit: "cover",
+                            height: "100%",
+                            maxHeight: "470px",
+                          }}
+                          onError={handleImageError}
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -427,51 +453,59 @@ export default function ServiceDetailsWhatsAppAutomation() {
                   <h4 className="fw-6 letter-space--3 color-dt-black mb-30">
                     What Makes Digital Elite Services the Best Choice?
                   </h4>
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faBullseye} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Tailored Solutions</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <Target size={24} />,
+                        title: "Tailored Solutions",
+                        desc: "Every business gets a personalized automation strategy designed for their specific needs."
+                      },
+                      {
+                        icon: <Smartphone size={24} />,
+                        title: "User-Friendly Systems",
+                        desc: "Easy-to-use tools that require minimal technical expertise for your team."
+                      },
+                      {
+                        icon: <Rocket size={24} />,
+                        title: "Scalable Infrastructure",
+                        desc: "Solutions that grow with your business and adapt to increasing demands."
+                      },
+                      {
+                        icon: <Headphones size={24} />,
+                        title: "Expert Support",
+                        desc: "Dedicated team to assist at every stage of implementation and beyond."
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                         </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Every business gets a personalized automation strategy designed for their specific needs.
-                        </p>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faMobileAlt} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>User-Friendly Systems</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Easy-to-use tools that require minimal technical expertise for your team.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faRocket} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Scalable Infrastructure</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Solutions that grow with your business and adapt to increasing demands.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faHeadset} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Expert Support</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Dedicated team to assist at every stage of implementation and beyond.
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
@@ -485,51 +519,59 @@ export default function ServiceDetailsWhatsAppAutomation() {
                     Implementing WhatsApp automation is not just about sending messages—it's about building meaningful customer relationships. Digital Elite Services helps businesses achieve this by creating smart, data-driven communication systems.
                   </div>
 
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <MessageCircle size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Improved Customer Engagement</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <MessageCircle size={24} />,
+                        title: "Improved Customer Engagement",
+                        desc: "Automated responses ensure that customers receive instant replies, leading to higher satisfaction and better engagement."
+                      },
+                      {
+                        icon: <TrendingUp size={24} />,
+                        title: "Increased Sales Conversions",
+                        desc: "With personalized messaging and timely follow-ups, businesses can convert more leads into paying customers."
+                      },
+                      {
+                        icon: <Zap size={24} />,
+                        title: "Efficient Operations",
+                        desc: "Automation reduces the need for manual intervention, allowing teams to focus on more strategic tasks."
+                      },
+                      {
+                        icon: <Eye size={24} />,
+                        title: "Better Customer Insights",
+                        desc: "Detailed analytics provide valuable insights into customer behavior, helping refine marketing strategies."
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                         </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Automated responses ensure that customers receive instant replies, leading to higher satisfaction and better engagement.
-                        </p>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <TrendingUp size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Increased Sales Conversions</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          With personalized messaging and timely follow-ups, businesses can convert more leads into paying customers.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faBolt} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Efficient Operations</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Automation reduces the need for manual intervention, allowing teams to focus on more strategic tasks.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <FontAwesomeIcon icon={faEye} size="lg" style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Better Customer Insights</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Detailed analytics provide valuable insights into customer behavior, helping refine marketing strategies.
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
@@ -546,6 +588,69 @@ export default function ServiceDetailsWhatsAppAutomation() {
                     Digital Elite Services is at the forefront of this transformation, continuously evolving its solutions to meet the changing needs of businesses. By adopting the latest technologies, the company ensures that its clients stay ahead in a competitive market.
                   </div>
 
+                  {/* Industries We Serve - WITH BOLD TEXT */}
+                  <div className="mt-70">
+                    <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
+                      Industries We{" "}
+                      <span style={{ color: "var(--digital-marketing-blue)" }}>
+                        Serve
+                      </span>
+                    </h3>
+                    <div className="text ff-2 color-paragraph mb-40">
+                      Digital Elite Services has experience working with businesses across various industries. Our diverse expertise allows us to understand unique market challenges and develop effective WhatsApp automation solutions.
+                    </div>
+
+                    <div
+                      className="d-flex flex-wrap"
+                      style={{
+                        gap: "20px 40px",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      {[
+                        { icon: <Building2 size={20} />, text: "Real Estate" },
+                        { icon: <HeartPulse size={20} />, text: "Healthcare" },
+                        { icon: <GraduationCap size={20} />, text: "Education" },
+                        { icon: <Laptop size={20} />, text: "Information Technology" },
+                        { icon: <ShoppingBag size={20} />, text: "E-commerce" },
+                        { icon: <Factory size={20} />, text: "Manufacturing" },
+                        { icon: <Wallet size={20} />, text: "Finance" },
+                        { icon: <Hotel size={20} />, text: "Hospitality" },
+                        { icon: <Store size={20} />, text: "Retail" },
+                        { icon: <Scale size={20} />, text: "Professional Services" },
+                        { icon: <HardHat size={20} />, text: "Construction" },
+                        { icon: <Rocket size={20} />, text: "Startups" },
+                      ].map((item, index) => (
+                        <div
+                          key={index}
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "12px",
+                            minWidth: "200px",
+                            flex: "1 1 200px",
+                          }}
+                          className="ff-2 color-paragraph"
+                        >
+                          <span
+                            style={{
+                              color: "var(--digital-marketing-light)",
+                              flexShrink: 0,
+                            }}
+                          >
+                            {item.icon}
+                          </span>
+                          <strong style={{ fontWeight: 600 }}>{item.text}</strong>
+                        </div>
+                      ))}
+                    </div>
+                    
+                    <div className="text ff-2 color-paragraph">
+                      Our industry-specific WhatsApp automation strategies ensure that your business communication resonates with the right audience and delivers meaningful results.
+                    </div>
+                  </div>
+
+                  {/* Final CTA */}
                   <div className="mt-70 p-40" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px" }}>
                     <h4 className="fw-6 letter-space--3 lh-32 mb-30" style={{marginTop:"53px"}}>
                       Partner with the{" "}

@@ -175,7 +175,7 @@
 //                       exceptional user experiences and business growth.
 //                     </p>
 //                     <a
-//                       href="#"
+//                       href="/contact"
 //                       className="tf-btn style-big style-color-dt-blue"
 //                     >
 //                       <span className="text-btn">Get Started</span>
@@ -214,7 +214,7 @@
 //                 <span className="number ff-2 color-paragraph">01</span>
 //                 <div className="item-content">
 //                   <a
-//                     href="/service-details"
+//                     href="/web-development-service-details"
 //                     className="title fw-6 h3 letter-space--3 lh-100"
 //                   >
 //                     Custom Website Development
@@ -256,7 +256,7 @@
 //                     </ul>
 //                   </div>
 //                   <a
-//                     href="/service-details"
+//                     href="/web-development-service-details"
 //                     className="tf-btn style-big style-border"
 //                   >
 //                     <span className="text-btn">Read more</span>
@@ -266,7 +266,7 @@
 //                   </a>
 //                 </div>
 //               </div>
-//               <a href="/service-details" className="image">
+//               <a href="/web-development-service-details" className="image">
 //                 <img
 //                   loading="lazy"
 //                   width="550"
@@ -282,7 +282,7 @@
 //                 <span className="number ff-2 color-paragraph">02</span>
 //                 <div className="item-content">
 //                   <a
-//                     href="/service-details"
+//                     href="/web-development-service-details"
 //                     className="title fw-6 h3 letter-space--3 lh-100"
 //                   >
 //                     E-Commerce Development
@@ -324,7 +324,7 @@
 //                     </ul>
 //                   </div>
 //                   <a
-//                     href="/service-details"
+//                     href="/web-development-service-details"
 //                     className="tf-btn style-big style-border"
 //                   >
 //                     <span className="text-btn">Read more</span>
@@ -334,7 +334,7 @@
 //                   </a>
 //                 </div>
 //               </div>
-//               <a href="/service-details" className="image">
+//               <a href="/web-development-service-details" className="image">
 //                 <img
 //                   loading="lazy"
 //                   width="550"
@@ -350,7 +350,7 @@
 //                 <span className="number ff-2 color-paragraph">03</span>
 //                 <div className="item-content">
 //                   <a
-//                     href="/service-details"
+//                     href="/web-development-service-details"
 //                     className="title fw-6 h3 letter-space--3 lh-100"
 //                   >
 //                     Web Application Development
@@ -392,7 +392,7 @@
 //                     </ul>
 //                   </div>
 //                   <a
-//                     href="/service-details"
+//                     href="/web-development-service-details"
 //                     className="tf-btn style-big style-border"
 //                   >
 //                     <span className="text-btn">Read more</span>
@@ -402,7 +402,7 @@
 //                   </a>
 //                 </div>
 //               </div>
-//               <a href="/service-details" className="image">
+//               <a href="/web-development-service-details" className="image">
 //                 <img
 //                   loading="lazy"
 //                   width="550"
@@ -418,7 +418,7 @@
 //                 <span className="number ff-2 color-paragraph">04</span>
 //                 <div className="item-content">
 //                   <a
-//                     href="/service-details"
+//                     href="/web-development-service-details"
 //                     className="title fw-6 h3 letter-space--3 lh-100"
 //                   >
 //                     UI/UX Design & Prototyping
@@ -460,7 +460,7 @@
 //                     </ul>
 //                   </div>
 //                   <a
-//                     href="/service-details"
+//                     href="/web-development-service-details"
 //                     className="tf-btn style-big style-border"
 //                   >
 //                     <span className="text-btn">Read more</span>
@@ -470,7 +470,7 @@
 //                   </a>
 //                 </div>
 //               </div>
-//               <a href="/service-details" className="image">
+//               <a href="/web-development-service-details" className="image">
 //                 <img
 //                   loading="lazy"
 //                   width="550"
@@ -486,7 +486,7 @@
 //                 <span className="number ff-2 color-paragraph">05</span>
 //                 <div className="item-content">
 //                   <a
-//                     href="/service-details"
+//                     href="/web-development-service-details"
 //                     className="title fw-6 h3 letter-space--3 lh-100"
 //                   >
 //                     Web Maintenance & Support
@@ -528,7 +528,7 @@
 //                     </ul>
 //                   </div>
 //                   <a
-//                     href="/service-details"
+//                     href="/web-development-service-details"
 //                     className="tf-btn style-big style-border"
 //                   >
 //                     <span className="text-btn">Read more</span>
@@ -538,7 +538,7 @@
 //                   </a>
 //                 </div>
 //               </div>
-//               <a href="/service-details" className="image">
+//               <a href="/web-development-service-details" className="image">
 //                 <img
 //                   loading="lazy"
 //                   width="550"
@@ -610,7 +610,7 @@
 //                         </span>
 //                       </li>
 //                     </ul>
-//                     <a href="#" className="tf-btn style-color-dt-blue">
+//                     <a href="/contact" className="tf-btn style-color-dt-blue">
 //                       <span className="text-btn">Get Started</span>
 //                       <span className="icon-btn">
 //                         <i className="icon-arrow-up-right"></i>
@@ -934,7 +934,7 @@ export default function WebDevelopmentNew() {
                       exceptional user experiences and business growth.
                     </p>
                     <a
-                      href="#"
+                      href="/contact"
                       className="tf-btn style-big style-color-dt-blue"
                     >
                       <span className="text-btn">Get Started</span>
@@ -1051,7 +1051,7 @@ export default function WebDevelopmentNew() {
                         </span>
                         <div className="item-content">
                           <a
-                            href="/service-details"
+                            href="/web-development-service-details"
                             className="title fw-6 h3 letter-space--3 lh-100"
                           >
                             {service.title}
@@ -1090,7 +1090,7 @@ export default function WebDevelopmentNew() {
                             </ul>
                           </div>
                           <a
-                            href="/service-details"
+                            href="/web-development-service-details"
                             className="tf-btn style-big style-border"
                           >
                             <span className="text-btn">Read more</span>
@@ -1100,7 +1100,7 @@ export default function WebDevelopmentNew() {
                           </a>
                         </div>
                       </div>
-                      <a href="/service-details" className="image">
+                      <a href="/web-development-service-details" className="image">
                         <motion.img
                           loading="lazy"
                           width="550"
@@ -1182,7 +1182,7 @@ export default function WebDevelopmentNew() {
                         </span>
                       </li>
                     </ul>
-                    <a href="#" className="tf-btn style-color-dt-blue">
+                    <a href="/contact" className="tf-btn style-color-dt-blue">
                       <span className="text-btn">Get Started</span>
                       <span className="icon-btn">
                         <i className="icon-arrow-up-right"></i>

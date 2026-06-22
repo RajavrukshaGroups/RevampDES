@@ -252,7 +252,7 @@ export default function WebDevelopmentNew() {
                       exceptional user experiences and business growth.
                     </p>
                     <a
-                      href="#"
+                      href="/contact"
                       className="tf-btn style-big style-color-dt-blue"
                     >
                       <span className="text-btn">Get Started</span>
@@ -500,7 +500,7 @@ export default function WebDevelopmentNew() {
                         </span>
                       </li>
                     </ul>
-                    <a href="#" className="tf-btn style-color-dt-blue">
+                    <a href="/contact" className="tf-btn style-color-dt-blue">
                       <span className="text-btn">Get Started</span>
                       <span className="icon-btn">
                         <i className="icon-arrow-up-right"></i>

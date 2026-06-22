@@ -146,7 +146,7 @@ export default function SocialMediaMarketing() {
                                 <p className="desc mb-50 ff-2 color-paragraph">
                                     We help brands build meaningful connections, grow their online presence, and drive real business results through strategic social media marketing.
                                 </p>
-                                <a href="#" className="tf-btn style-big style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-big style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>
@@ -475,7 +475,7 @@ export default function SocialMediaMarketing() {
                                         <span className="letter-space--2 text-nowrap">Dedicated Social Media Manager</span>
                                     </li>
                                 </ul>
-                                <a href="#" className="tf-btn style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>

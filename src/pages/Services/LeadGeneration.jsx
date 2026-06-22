@@ -146,12 +146,12 @@ export default function LeadGeneration() {
                                 <p className="desc mb-50 ff-2 color-paragraph">
                                     We help businesses attract high-quality leads, optimize conversion funnels, and build sustainable sales pipelines through proven lead generation strategies.
                                 </p>
-                                {/* <a href="#" className="tf-btn style-big style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-big style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>
                                     </span>
-                                </a> */}
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -475,7 +475,7 @@ export default function LeadGeneration() {
                                         <span className="letter-space--2 text-nowrap">Data-Driven Insights</span>
                                     </li>
                                 </ul>
-                                <a href="#" className="tf-btn style-color-dt-blue">
+                                <a href="/contact" className="tf-btn style-color-dt-blue">
                                     <span className="text-btn">Get Started</span>
                                     <span className="icon-btn">
                                         <i className="icon-arrow-up-right"></i>

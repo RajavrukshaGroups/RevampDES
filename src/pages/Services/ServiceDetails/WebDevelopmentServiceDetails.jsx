@@ -50,15 +50,35 @@ import {
   LineChart,
   MousePointer,
   Grid,
-  Box
+  Box,
+  Wallet,
+  Scale,
+  HardHat,
+  Factory,
+  Hotel,
 } from "lucide-react";
 // Import relevant images for the web development service page
-import webHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg"; // Replace with relevant image
-import webDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg"; // Replace with relevant image
-import webDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg"; // Replace with relevant image
-import webDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg"; // Replace with relevant image
+import webHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
+import webDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
+import webDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
+import webDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
 
 export default function ServiceDetailsWebDevelopment() {
+  // Helper function to handle image errors
+  const handleImageError = (e) => {
+    e.target.style.display = 'none';
+    const parent = e.target.parentElement;
+    if (parent) {
+      parent.style.background = '#f0f4f9';
+      parent.style.minHeight = '200px';
+      parent.style.display = 'flex';
+      parent.style.alignItems = 'center';
+      parent.style.justifyContent = 'center';
+      parent.style.borderRadius = '8px';
+      parent.innerHTML = '<span style="color: #666; font-size: 14px;">Image not available</span>';
+    }
+  };
+
   return (
     <>
       <main id="wrapper">
@@ -92,7 +112,7 @@ export default function ServiceDetailsWebDevelopment() {
           <div className="container">
             <div className="page-title-content">
               <h1 className="title">
-                Web Development Company in <br />
+                Web Development Company in {" "}
                 <span style={{ color: "var(--digital-marketing-light)" }}>
                   Bangalore for Startups & Enterprises
                 </span>
@@ -115,6 +135,9 @@ export default function ServiceDetailsWebDevelopment() {
                 height="470"
                 src={webHeroImage}
                 alt="Web Development Company in Bangalore"
+                className="w-100"
+                style={{ borderRadius: "8px", objectFit: "cover" }}
+                onError={handleImageError}
               />
             </div>
           </div>
@@ -217,55 +240,61 @@ export default function ServiceDetailsWebDevelopment() {
                   <h4 className="fw-6 letter-space--3 color-dt-black mb-30">
                     UI/UX Design Services in Bangalore
                   </h4>
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Users size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>User Research & Competitor Analysis</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <Users size={24} />,
+                        title: "User Research & Competitor Analysis"
+                      },
+                      {
+                        icon: <PenTool size={24} />,
+                        title: "Wireframing & Prototyping"
+                      },
+                      {
+                        icon: <Laptop size={24} />,
+                        title: "Website UI/UX Design"
+                      },
+                      {
+                        icon: <Smartphone size={24} />,
+                        title: "Mobile-Responsive Interface Design"
+                      },
+                      {
+                        icon: <Layers size={24} />,
+                        title: "Interaction & Usability Design"
+                      },
+                      {
+                        icon: <Search size={24} />,
+                        title: "UX Audits & Improvements"
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <PenTool size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Wireframing & Prototyping</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Laptop size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Website UI/UX Design</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Smartphone size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Mobile-Responsive Interface Design</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Layers size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Interaction & Usability Design</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Search size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>UX Audits & Improvements</h5>
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
@@ -282,75 +311,100 @@ export default function ServiceDetailsWebDevelopment() {
                   <h4 className="fw-6 letter-space--3 color-dt-black mb-30">
                     Our Expert Web Development Services in Bangalore Include:
                   </h4>
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Code size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Custom Website Development</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <Code size={24} />,
+                        title: "Custom Website Development"
+                      },
+                      {
+                        icon: <Building2 size={24} />,
+                        title: "Business & Corporate Websites"
+                      },
+                      {
+                        icon: <ShoppingBag size={24} />,
+                        title: "E-Commerce Website Development"
+                      },
+                      {
+                        icon: <Layout size={24} />,
+                        title: "CMS-Based Development"
+                      },
+                      {
+                        icon: <Server size={24} />,
+                        title: "Web Application Development"
+                      },
+                      {
+                        icon: <Settings size={24} />,
+                        title: "API & Third-Party Integrations"
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Building2 size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Business & Corporate Websites</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <ShoppingBag size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>E-Commerce Website Development</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Layout size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>CMS-Based Development</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Server size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Web Application Development</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Settings size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>API & Third-Party Integrations</h5>
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
-                  <div className="list-img d-flex g-30 align-items-center mb-70">
-                    <div className="image">
-                      <img
-                        loading="lazy"
-                        width="410"
-                        height="470"
-                        src={webDetailImage1}
-                        alt="Web Development Process"
-                      />
+                  {/* Image Grid - FIXED with proper responsive alignment */}
+                  <div className="row g-4 mb-70">
+                    <div className="col-12 col-md-6">
+                      <div className="image" style={{ height: "100%" }}>
+                        <img
+                          loading="lazy"
+                          src={webDetailImage1}
+                          alt="Web Development Process"
+                          className="img-fluid w-100"
+                          style={{
+                            borderRadius: "8px",
+                            aspectRatio: "410 / 470",
+                            objectFit: "cover",
+                            height: "100%",
+                            maxHeight: "470px",
+                          }}
+                          onError={handleImageError}
+                        />
+                      </div>
                     </div>
-                    <div className="image">
-                      <img
-                        loading="lazy"
-                        width="410"
-                        height="470"
-                        src={webDetailImage2}
-                        alt="Web Development Results"
-                      />
+                    <div className="col-12 col-md-6">
+                      <div className="image" style={{ height: "100%" }}>
+                        <img
+                          loading="lazy"
+                          src={webDetailImage2}
+                          alt="Web Development Results"
+                          className="img-fluid w-100"
+                          style={{
+                            borderRadius: "8px",
+                            aspectRatio: "410 / 470",
+                            objectFit: "cover",
+                            height: "100%",
+                            maxHeight: "470px",
+                          }}
+                          onError={handleImageError}
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -368,39 +422,53 @@ export default function ServiceDetailsWebDevelopment() {
                   <h4 className="fw-6 letter-space--3 color-dt-black mb-30">
                     Our Web Design Solutions Include:
                   </h4>
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Monitor size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Responsive Website Design</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <Monitor size={24} />,
+                        title: "Responsive Website Design"
+                      },
+                      {
+                        icon: <Target size={24} />,
+                        title: "Landing Page Design"
+                      },
+                      {
+                        icon: <Building2 size={24} />,
+                        title: "Corporate Website Design"
+                      },
+                      {
+                        icon: <Grid size={24} />,
+                        title: "UI Design for Web Platforms"
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Target size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Landing Page Design</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Building2 size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Corporate Website Design</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Grid size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>UI Design for Web Platforms</h5>
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
@@ -452,7 +520,6 @@ export default function ServiceDetailsWebDevelopment() {
                       <div className="number ff-2 fw-5 letter-space--2">01</div>
                       <div className="dot"></div>
                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-                        <Users size={18} style={{ marginRight: "8px", color: "var(--digital-marketing-light)" }} />
                         Understanding Your Business
                       </a>
                       <div className="desc ff-2">
@@ -464,7 +531,6 @@ export default function ServiceDetailsWebDevelopment() {
                       <div className="number ff-2 fw-5 letter-space--2">02</div>
                       <div className="dot"></div>
                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-                        <PenTool size={18} style={{ marginRight: "8px", color: "var(--digital-marketing-light)" }} />
                         Planning & Design
                       </a>
                       <div className="desc ff-2">
@@ -476,7 +542,6 @@ export default function ServiceDetailsWebDevelopment() {
                       <div className="number ff-2 fw-5 letter-space--2">03</div>
                       <div className="dot"></div>
                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-                        <Code size={18} style={{ marginRight: "8px", color: "var(--digital-marketing-light)" }} />
                         Development
                       </a>
                       <div className="desc ff-2">
@@ -485,29 +550,49 @@ export default function ServiceDetailsWebDevelopment() {
                     </div>
                   </div>
 
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Gauge size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Step 4: Testing & Optimization</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <Gauge size={24} />,
+                        title: "Step 4: Testing & Optimization",
+                        desc: "We rigorously test your website for performance, usability, and responsiveness."
+                      },
+                      {
+                        icon: <Rocket size={24} />,
+                        title: "Step 5: Launch & Support",
+                        desc: "After a successful launch, we provide ongoing support and updates to ensure optimal performance."
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                         </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          We rigorously test your website for performance, usability, and responsiveness.
-                        </p>
                       </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Rocket size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Step 5: Launch & Support</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          After a successful launch, we provide ongoing support and updates to ensure optimal performance.
-                        </p>
-                      </div>
-                    </div>
+                    ))}
                   </div>
 
                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
@@ -521,75 +606,134 @@ export default function ServiceDetailsWebDevelopment() {
                     Choosing the right digital partner can make all the difference. Here's why businesses trust Digital Elite Services:
                   </div>
 
-                  <div className="row g-30 mb-70">
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Award size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Expertise & Experience</h5>
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <Award size={24} />,
+                        title: "Expertise & Experience",
+                        desc: "Our team brings years of experience in UI/UX design and web development, ensuring high-quality outcomes."
+                      },
+                      {
+                        icon: <Target size={24} />,
+                        title: "Tailored Solutions",
+                        desc: "We understand that every business is unique, so we create customized solutions that align with your goals."
+                      },
+                      {
+                        icon: <Sparkles size={24} />,
+                        title: "Latest Technologies",
+                        desc: "We stay updated with the latest trends and technologies to deliver modern, future-ready websites."
+                      },
+                      {
+                        icon: <Zap size={24} />,
+                        title: "Focus on Performance",
+                        desc: "Our websites are optimized for speed, SEO, and user experience, helping you rank better and convert more visitors."
+                      },
+                      {
+                        icon: <Box size={24} />,
+                        title: "End-to-End Services",
+                        desc: "From concept to deployment, we handle every aspect of your digital project."
+                      },
+                      {
+                        icon: <Headphones size={24} />,
+                        title: "Dedicated Client Support",
+                        desc: "Our dedicated support team is always available to assist with updates, maintenance, and technical guidance."
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex">
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                         </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Our team brings years of experience in UI/UX design and web development, ensuring high-quality outcomes.
-                        </p>
                       </div>
+                    ))}
+                  </div>
+
+                  {/* Industries We Serve - WITH BOLD TEXT */}
+                  <div className="mt-70">
+                    <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
+                      Industries We{" "}
+                      <span style={{ color: "var(--digital-marketing-blue)" }}>
+                        Serve
+                      </span>
+                    </h3>
+                    <div className="text ff-2 color-paragraph mb-40">
+                      Digital Elite Services has experience working with businesses across various industries. Our diverse expertise allows us to understand unique market challenges and develop effective web solutions.
                     </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Target size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Tailored Solutions</h5>
+
+                    <div
+                      className="d-flex flex-wrap"
+                      style={{
+                        gap: "20px 40px",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      {[
+                        { icon: <Building2 size={20} />, text: "Real Estate" },
+                        { icon: <HeartPulse size={20} />, text: "Healthcare" },
+                        { icon: <GraduationCap size={20} />, text: "Education" },
+                        { icon: <Laptop size={20} />, text: "Information Technology" },
+                        { icon: <ShoppingBag size={20} />, text: "E-commerce" },
+                        { icon: <Factory size={20} />, text: "Manufacturing" },
+                        { icon: <Wallet size={20} />, text: "Finance" },
+                        { icon: <Hotel size={20} />, text: "Hospitality" },
+                        { icon: <Store size={20} />, text: "Retail" },
+                        { icon: <Scale size={20} />, text: "Professional Services" },
+                        { icon: <HardHat size={20} />, text: "Construction" },
+                        { icon: <Rocket size={20} />, text: "Startups" },
+                      ].map((item, index) => (
+                        <div
+                          key={index}
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "12px",
+                            minWidth: "200px",
+                            flex: "1 1 200px",
+                          }}
+                          className="ff-2 color-paragraph"
+                        >
+                          <span
+                            style={{
+                              color: "var(--digital-marketing-light)",
+                              flexShrink: 0,
+                            }}
+                          >
+                            {item.icon}
+                          </span>
+                          <strong style={{ fontWeight: 600 }}>{item.text}</strong>
                         </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          We understand that every business is unique, so we create customized solutions that align with your goals.
-                        </p>
-                      </div>
+                      ))}
                     </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Sparkles size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Latest Technologies</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          We stay updated with the latest trends and technologies to deliver modern, future-ready websites.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Zap size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Focus on Performance</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Our websites are optimized for speed, SEO, and user experience, helping you rank better and convert more visitors.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Box size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>End-to-End Services</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          From concept to deployment, we handle every aspect of your digital project.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-                          <Headphones size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-                          <h5 className="fw-6" style={{ marginBottom: 0 }}>Dedicated Client Support</h5>
-                        </div>
-                        <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-                          Our dedicated support team is always available to assist with updates, maintenance, and technical guidance.
-                        </p>
-                      </div>
+                    
+                    <div className="text ff-2 color-paragraph">
+                      Our industry-specific web development strategies ensure that your website meets the unique needs of your target audience and delivers meaningful results.
                     </div>
                   </div>
 
+                  {/* Final CTA */}
                   <div className="mt-70 p-40" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px" }}>
                     <h4 className="fw-6 letter-space--3 lh-32 mb-30" style={{marginTop:"53px"}}>
                       Let's Build Your{" "}
