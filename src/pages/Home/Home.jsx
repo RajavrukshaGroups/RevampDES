@@ -29,6 +29,7 @@ import PopUpSidebar3 from "../../assets/images/widget/pop-up-siderbar-3.jpg";
 import PopUpSidebar4 from "../../assets/images/widget/pop-up-siderbar-4.jpg";
 import SidePopup from "../../components/sidePopup";
 
+
 export default function Home() {
   return (
     <>
