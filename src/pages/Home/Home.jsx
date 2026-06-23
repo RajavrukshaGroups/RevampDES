@@ -2827,6 +2827,7 @@ export default function Home() {
               </h2>
             </div>
 
+{/* logos */}
             <div className="infiniteSlide-app list-brands">
               <div
                 className="infiniteSlide infiniteSlide-wrapper tf-marquee g-30"
