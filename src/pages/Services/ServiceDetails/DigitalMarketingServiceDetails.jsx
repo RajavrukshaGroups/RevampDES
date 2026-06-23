@@ -3046,19 +3046,11 @@ export default function ServiceDetailsDigitalMarketing() {
           cursor: default;
         }
 
-        .process-item-2:hover {
-          transform: translateY(-8px) scale(1.02);
-          box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-        }
 
         .p-30 {
           transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
-        .p-30:hover {
-          transform: translateY(-8px) scale(1.02);
-          box-shadow: 0 15px 50px rgba(0,0,0,0.1);
-        }
 
         /* ============================================
            IMAGE HOVER ZOOM EFFECT
@@ -3103,11 +3095,6 @@ export default function ServiceDetailsDigitalMarketing() {
           cursor: default;
         }
 
-        .d-flex.flex-wrap > div:hover {
-          background: rgba(var(--digital-marketing-light-rgb), 0.05);
-          transform: translateX(8px) scale(1.02);
-          box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        }
 
         /* ============================================
            CTA BOX ANIMATION
@@ -3134,10 +3121,7 @@ export default function ServiceDetailsDigitalMarketing() {
           opacity: 1;
         }
 
-        .p-40:hover {
-          transform: scale(1.02);
-          box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-        }
+
 
         /* ============================================
            SIDEBAR CATEGORY ITEMS
@@ -3157,7 +3141,7 @@ export default function ServiceDetailsDigitalMarketing() {
           left: 0;
           width: 0;
           height: 3px;
-          background: var(--digital-marketing-light);
+          background: var(--digital-marketing-blue);
           transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
           border-radius: 2px;
         }
@@ -3169,11 +3153,11 @@ export default function ServiceDetailsDigitalMarketing() {
 
         .category-services-item:hover {
           transform: translateX(8px);
-          color: var(--digital-marketing-light);
+          color: var(--digital-marketing-blue);
         }
 
         .category-services-item.active {
-          color: var(--digital-marketing-light);
+          color: var(--digital-marketing-blue);
           font-weight: 600;
         }
 
@@ -3184,10 +3168,6 @@ export default function ServiceDetailsDigitalMarketing() {
           transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
-        .row.g-4 > .d-flex:hover {
-          transform: translateY(-8px) scale(1.02);
-          box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-        }
 
         /* ============================================
            TYPING EFFECT
