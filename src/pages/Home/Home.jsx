@@ -28,7 +28,17 @@ import PopUpSidebar2 from "../../assets/images/widget/pop-up-siderbar-2.jpg";
 import PopUpSidebar3 from "../../assets/images/widget/pop-up-siderbar-3.jpg";
 import PopUpSidebar4 from "../../assets/images/widget/pop-up-siderbar-4.jpg";
 import SidePopup from "../../components/sidePopup";
-
+import airzen from "../../../public/assets/images/clients/AIRZEN.png";
+import alizaStore from "../../../public/assets/images/clients/ALIZA.png";
+import aqua from "../../../public/assets/images/clients/aqua.png";
+import humStrum from "../../../public/assets/images/clients/BEE.png";
+import chaskaTea from "../../../public/assets/images/clients/CHASKA.png";
+import petsHugs from "../../../public/assets/images/clients/PETS.png";
+import sriSaiExim from "../../../public/assets/images/clients/SSE.png";
+import dhsLogo from "../../../public/assets/images/clients/DHS.png";
+import RRPL from "../../../public/assets/images/clients/RPL.png";
+import PlumeriaResort from "../../../public/assets/images/clients/Plumeria.png";
+import "./client-logo-fix.css";
 
 export default function Home() {
   return (
@@ -86,7 +96,8 @@ export default function Home() {
               </h1>
               <div className="desc h5 lh-35 ff-2 fw-5 title-animation">
                 {/* We help businesses grow by creating smart, results- */}
-                From SEO and paid advertising to web design and automation, we create marketing systems that drive sustainable growth.
+                From SEO and paid advertising to web design and automation, we
+                create marketing systems that drive sustainable growth.
                 {/* <br /> */}
               </div>
               <a
@@ -680,7 +691,7 @@ export default function Home() {
                     style={{
                       background: "linear-gradient(to right, blue, orange)",
                       color: "#ffffff",
-                      border:"none",
+                      border: "none",
                     }}
                   >
                     <p className="header-according">
@@ -762,7 +773,7 @@ export default function Home() {
                     style={{
                       background: "linear-gradient(to right, blue, orange)",
                       color: "#ffffff",
-                      border:"none"
+                      border: "none",
                     }}
                   >
                     <p className="header-according">
@@ -844,7 +855,7 @@ export default function Home() {
                     style={{
                       background: "linear-gradient(to right, blue, orange)",
                       color: "#ffffff",
-                      border:"none"
+                      border: "none",
                     }}
                   >
                     <p className="header-according">
@@ -2816,99 +2827,117 @@ export default function Home() {
               </h2>
             </div>
 
+{/* logos */}
             <div className="infiniteSlide-app list-brands">
               <div
                 className="infiniteSlide infiniteSlide-wrapper tf-marquee g-30"
                 data-clone="3"
               >
                 <div className="infiniteSlide-slide">
-                  <a className="brand-item">
-                    <img
-                      src="./assets/images/icon/brand-1.svg"
-                      alt="Image"
-                      className="brand"
-                    />
-                    <img
-                      src="./assets/images/icon/hover-brand-1.svg"
-                      alt="Image"
-                      className="brand-hover"
-                    />
-                  </a>
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={airzen} alt="AirZen" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Airzen Technologies</h6>
+                    <p className="client-industry">
+                      Air Purification & Wellness
+                    </p>
+                  </div>
                 </div>
 
                 <div className="infiniteSlide-slide">
-                  <a className="brand-item">
-                    <img
-                      src="./assets/images/icon/brand-2.svg"
-                      alt="Image"
-                      className="brand"
-                    />
-                    <img
-                      src="./assets/images/icon/hover-brand-2.svg"
-                      alt="Image"
-                      className="brand-hover"
-                    />
-                  </a>
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={alizaStore} alt="aliza" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Aliza Stores</h6>
+                    <p className="client-industry">E-Commerce & Retail</p>
+                  </div>
                 </div>
 
                 <div className="infiniteSlide-slide">
-                  <a className="brand-item">
-                    <img
-                      src="./assets/images/icon/brand-3.svg"
-                      alt="Image"
-                      className="brand"
-                    />
-                    <img
-                      src="./assets/images/icon/hover-brand-3.svg"
-                      alt="Image"
-                      className="brand-hover"
-                    />
-                  </a>
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={aqua} alt="aqua" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Aqua Gold</h6>
+                    <p className="client-industry">Water Treatment Solutions</p>
+                  </div>
                 </div>
 
                 <div className="infiniteSlide-slide">
-                  <a className="brand-item">
-                    <img
-                      src="./assets/images/icon/brand-4.svg"
-                      alt="Image"
-                      className="brand"
-                    />
-                    <img
-                      src="./assets/images/icon/hover-brand-4.svg"
-                      alt="Image"
-                      className="brand-hover"
-                    />
-                  </a>
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={humStrum} alt="humstrum" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Hum & Strum Music School</h6>
+                    <p className="client-industry">Music & Entertainment</p>
+                  </div>
                 </div>
 
                 <div className="infiniteSlide-slide">
-                  <a className="brand-item">
-                    <img
-                      src="./assets/images/icon/brand-5.svg"
-                      alt="Image"
-                      className="brand"
-                    />
-                    <img
-                      src="./assets/images/icon/hover-brand-5.svg"
-                      alt="Image"
-                      className="brand-hover"
-                    />
-                  </a>
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={chaskaTea} alt="chaskaTea" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Chaska Tea</h6>
+                    <p className="client-industry">Food & Beverage</p>
+                  </div>
                 </div>
 
                 <div className="infiniteSlide-slide">
-                  <a className="brand-item">
-                    <img
-                      src="./assets/images/icon/brand-6.svg"
-                      alt="Image"
-                      className="brand"
-                    />
-                    <img
-                      src="./assets/images/icon/hover-brand-6.svg"
-                      alt="Image"
-                      className="brand-hover"
-                    />
-                  </a>
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img
+                        src={sriSaiExim}
+                        alt="sirsaiexim"
+                        className="brand"
+                      />
+                    </a>
+
+                    <h6 className="client-name">Sri Sai Exim</h6>
+                    <p className="client-industry">Import & Export</p>
+                  </div>
+                </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={dhsLogo} alt="dhs" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Defence Housing Society</h6>
+                    <p className="client-industry">Real Estate & Housing</p>
+                  </div>
+                </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={RRPL} alt="rrpl" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Rajavruksha Realtors</h6>
+                    <p className="client-industry">
+                      Real Estate & Construction
+                    </p>
+                  </div>
+                </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={RRPL} alt="plumeria" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Plumeria Resort</h6>
+                    <p className="client-industry">Hospitality & Tourism</p>
+                  </div>
                 </div>
               </div>
             </div>

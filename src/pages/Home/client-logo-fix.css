@@ -1,0 +1,81 @@
+/* Remove card styling completely */
+.brand-item {
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Prevent black hover effect */
+.brand-item:hover {
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Disable hover logo completely */
+.brand-hover {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Keep logo visible */
+.brand-item .brand {
+  max-height: 80px;
+  /* max-height: 110px; */
+  width: auto;
+  object-fit: contain;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+
+  transition: transform 0.3s ease;
+}
+
+/* Keep logo visible on hover */
+.brand-item:hover .brand {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+
+  transform: scale(1.05);
+}
+
+/* Remove spacing around slides */
+.infiniteSlide-slide {
+  padding: 0 !important;
+  margin: 0 5px !important;
+}
+
+/* Remove any template backgrounds */
+.infiniteSlide-slide *,
+.brand-item * {
+  background: transparent !important;
+}
+
+.brand-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.client-name {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--digital-marketing-black);
+}
+
+.client-industry {
+  font-size: 13px;
+  color: var(--paragraph);
+  margin: 0;
+  line-height: 1.4;
+}
