@@ -12,6 +12,7 @@ import Services6Image from "../../assets/images/services/services-list-4.jpg";
 import Services7Image from "../../assets/images/services/services-list-5.jpg";
 import Services8Image from "../../assets/images/services/img-cta-p-services-2.jpg";
 import Services9Image from "../../assets/images/services/img-cta-p-services-1.jpg";
+import logoWhiteMarketingCard from '../../assets/images/logo/logo-white-marketing-card.svg';
 
 const services = [
   {
@@ -181,7 +182,7 @@ export default function WebDevelopmentNew() {
                   </div>
                   <div className="logo">
                     <img
-                      src="./assets/images/logo/logo-white-marketing-card.svg"
+                      src={logoWhiteMarketingCard}
                       alt="image"
                     />
                   </div>
