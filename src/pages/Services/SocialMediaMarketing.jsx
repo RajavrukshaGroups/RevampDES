@@ -183,7 +183,7 @@ export default function SocialMediaMarketing() {
                       border: "none",
                     }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph" style={{color:"#ffffff"}}>01</span>
+                        <span className="number ff-2" style={{color:"#ffffff"}}>01</span>
                         <div className="item-content">
                             <a href="/social-media-marketing-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Social Media Strategy & Planning</a>
 
@@ -314,7 +314,7 @@ export default function SocialMediaMarketing() {
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/social-media-marketing-service-details" className="tf-btn style-big style-border">
+                            <a href="/social-media-marketing-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -340,7 +340,7 @@ export default function SocialMediaMarketing() {
                         <div className="item-content">
                             <a href="/social-media-marketing-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Paid Social Media Advertising</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph" style={{color:"#ffffff"}}>
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We create and manage targeted paid social campaigns across platforms to maximize reach, engagement, and ROI through data-driven optimization.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
@@ -365,7 +365,7 @@ export default function SocialMediaMarketing() {
                                     </li>
                                 </ul>
                             </div>
-                            <a href="/social-media-marketing-service-details" className="tf-btn style-big style-border">
+                            <a href="/social-media-marketing-service-details" className="tf-btn style-big style-borders">
                                 <span className="text-btn">Read more</span>
                                 <span className="icon-btn">
                                     <i className="icon-arrow-up-right"></i>
@@ -391,7 +391,7 @@ export default function SocialMediaMarketing() {
                         <div className="item-content">
                             <a href="/social-media-marketing-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Social Media Analytics & Reporting</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph" style={{color:"#ffffff"}}>
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We provide detailed analytics and comprehensive reporting that tracks performance metrics, audience insights, and campaign effectiveness.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">

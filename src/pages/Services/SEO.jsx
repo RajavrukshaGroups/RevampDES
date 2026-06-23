@@ -183,7 +183,7 @@ export default function SEO() {
                       border: "none",
                     }}>
                     <div className="left-item">
-                        <span className="number ff-2 color-paragraph">01</span>
+                        <span className="number ff-2 " style={{color:"#ffffff"}}>01</span>
                         <div className="item-content">
                             <a href="/seo-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Keyword Research & Strategy</a>
 
@@ -340,7 +340,7 @@ export default function SEO() {
                         <div className="item-content">
                             <a href="/seo-service-details" className="title fw-6 h3 letter-space--3 lh-100" style={{color:"#ffffff"}}>Link Building & Authority Growth</a>
 
-                            <div className="text ff-2 mb-25 color-paragraph">
+                            <div className="text ff-2 mb-25" style={{color:"#ffffff"}}>
                                 We build high-quality, authoritative backlinks that boost your domain authority and improve search rankings through ethical white-hat techniques.
                             </div>
                             <div className="d-flex justify-content-between flex-wrap g-12 mb-lg-54">
