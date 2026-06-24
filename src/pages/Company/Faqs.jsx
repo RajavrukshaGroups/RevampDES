@@ -1,3 +1,4 @@
+import DESLOGO from "../../assets/images/header/DES_logo_white.png";
 import React, { useRef } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -1486,13 +1487,12 @@ export default function Faqs() {
 
       <div className="offcanvas offcanvas-start" id="mobileMenu">
         <div className="pop-up-nav-mobile">
-          <div className="canvas-header">
+          <div className="canvas-header" style={{backgroundColor: "#1c1c1c", margin: "-15px -15px 15px -15px", padding: "15px"}}>
             <a href="#" className="logo-site">
-              <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
+              <img src={DESLOGO} alt="Digital Elite Service" className="des-logo" style={{maxWidth: "150px"}} />
             </a>
             <span
-              className="icon icon-close"
-              data-bs-dismiss="offcanvas"
+              className="icon icon-close" style={{color: "white"}} data-bs-dismiss="offcanvas"
             ></span>
           </div>
           <div className="canvas-body">

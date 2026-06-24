@@ -1,3 +1,4 @@
+import DESLOGO from "../../assets/images/header/DES_logo_white.png";
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -6,6 +7,19 @@ import AboutUsImgVideo from "../../assets/images/aboutus/img-video.jpg";
 import AboutUsFounderImg from "../../assets/images/aboutus/avt-testimonial.jpg";
 import AboutUsConsultaionImg from "../../assets/images/aboutus/img-bg-cta-p-about.jpg";
 import SidePopup from "../../components/sidePopup";
+
+
+import airzen from "../../../public/assets/images/clients/AIRZEN.png";
+import alizaStore from "../../../public/assets/images/clients/ALIZA.png";
+import aqua from "../../../public/assets/images/clients/aqua.png";
+import humStrum from "../../../public/assets/images/clients/BEE.png";
+import chaskaTea from "../../../public/assets/images/clients/CHASKA.png";
+import petsHugs from "../../../public/assets/images/clients/PETS.png";
+import sriSaiExim from "../../../public/assets/images/clients/SSE.png";
+import dhsLogo from "../../../public/assets/images/clients/DHS.png";
+import RRPL from "../../../public/assets/images/clients/RPL.png";
+import PlumeriaResort from "../../../public/assets/images/clients/Plumeria.png";
+
 export default function AboutUs() {
   return (
     <>
@@ -98,7 +112,7 @@ export default function AboutUs() {
             </div>
 
             <div className="row rg-30">
-              <div className="col-lg-8">
+              <div className="col-12 col-md-6 col-lg-8">
                 <div className="wg-video">
                   <div className="image">
                     <img
@@ -124,7 +138,7 @@ export default function AboutUs() {
                 </div>
               </div>
 
-              <div className="col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="testimonial-card">
                   <div className="img-sharp">
                     <div className="blob-wrapper">
@@ -135,7 +149,7 @@ export default function AboutUs() {
                     “A reliable team that truly understands digital growth.
                     Transparent, data-driven, and highly effective.”
                   </p>
-                  <div className="d-flex position-relative mb-50">
+                  <div className="d-flex position-relative mb-50 flex-wrap">
                     <a href="#" className="img-avt">
                       <img
                         loading="lazy"
@@ -161,8 +175,8 @@ export default function AboutUs() {
             </div>
 
             <div className="list-funfact-item p-about mt-100">
-              <div className="funfact-item-2">
-                <div className="progress-circle-svg" data-progress="99">
+              <div className="funfact-item-2 text-center text-md-start">
+                <div className="progress-circle-svg mx-auto mx-md-0" data-progress="99">
                   <svg
                     className="progress-ring"
                     width="154"
@@ -204,8 +218,8 @@ export default function AboutUs() {
                 </div>
               </div>
 
-              <div className="funfact-item-2">
-                <div className="progress-circle-svg" data-progress="93">
+              <div className="funfact-item-2 text-center text-md-start">
+                <div className="progress-circle-svg mx-auto mx-md-0" data-progress="93">
                   <svg
                     className="progress-ring"
                     width="154"
@@ -247,8 +261,8 @@ export default function AboutUs() {
                 </div>
               </div>
 
-              <div className="funfact-item-2">
-                <div className="progress-circle-svg" data-progress="90">
+              <div className="funfact-item-2 text-center text-md-start">
+                <div className="progress-circle-svg mx-auto mx-md-0" data-progress="90">
                   <svg
                     className="progress-ring"
                     width="154"
@@ -290,8 +304,8 @@ export default function AboutUs() {
                 </div>
               </div>
 
-              <div className="funfact-item-2">
-                <div className="progress-circle-svg" data-progress="20">
+              <div className="funfact-item-2 text-center text-md-start">
+                <div className="progress-circle-svg mx-auto mx-md-0" data-progress="20">
                   <svg
                     className="progress-ring"
                     width="154"
@@ -456,12 +470,12 @@ export default function AboutUs() {
                         Alexander Mitchell
                       </a>
                       <p className="position ff-2">Head of IT Operations</p>
-                      <div className="list-btn-bottom d-flex g-10">
+                      <div className="list-btn-bottom d-flex g-10 flex-wrap">
                         <a href="#" className="btn-add btn-plus">
                           <i className="icon-plus"></i>
                         </a>
 
-                        <ul className="list-btn-social d-flex g-10">
+                        <ul className="list-btn-social d-flex g-10 flex-wrap">
                           <li>
                             <a href="#" className="btn-add">
                               <i className="icon-fb"></i>
@@ -507,12 +521,12 @@ export default function AboutUs() {
                         Christopher Langford
                       </a>
                       <p className="position ff-2">Project Manager</p>
-                      <div className="list-btn-bottom d-flex g-10">
+                      <div className="list-btn-bottom d-flex g-10 flex-wrap">
                         <a href="#" className="btn-add btn-plus">
                           <i className="icon-plus"></i>
                         </a>
 
-                        <ul className="list-btn-social d-flex g-10">
+                        <ul className="list-btn-social d-flex g-10 flex-wrap">
                           <li>
                             <a href="#" className="btn-add">
                               <i className="icon-fb"></i>
@@ -558,12 +572,12 @@ export default function AboutUs() {
                         Nathaniel Blackwood
                       </a>
                       <p className="position ff-2">Cybersecurity Lead</p>
-                      <div className="list-btn-bottom d-flex g-10">
+                      <div className="list-btn-bottom d-flex g-10 flex-wrap">
                         <a href="#" className="btn-add btn-plus">
                           <i className="icon-plus"></i>
                         </a>
 
-                        <ul className="list-btn-social d-flex g-10">
+                        <ul className="list-btn-social d-flex g-10 flex-wrap">
                           <li>
                             <a href="#" className="btn-add">
                               <i className="icon-fb"></i>
@@ -609,12 +623,12 @@ export default function AboutUs() {
                         Theodore Carrington
                       </a>
                       <p className="position ff-2">Lead UX/UI Designer</p>
-                      <div className="list-btn-bottom d-flex g-10">
+                      <div className="list-btn-bottom d-flex g-10 flex-wrap">
                         <a href="#" className="btn-add btn-plus">
                           <i className="icon-plus"></i>
                         </a>
 
-                        <ul className="list-btn-social d-flex g-10">
+                        <ul className="list-btn-social d-flex g-10 flex-wrap">
                           <li>
                             <a href="#" className="btn-add">
                               <i className="icon-fb"></i>
@@ -653,7 +667,7 @@ export default function AboutUs() {
               data-clone="3"
             >
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Search Engine Optimization (SEO)
                 </div>
@@ -661,7 +675,7 @@ export default function AboutUs() {
 
               <div className="infiniteSlide-slide">
                 <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                     <i className="icon-light"></i>
                     Pay-Per-Click Advertising (PPC)
                   </div>
@@ -670,7 +684,7 @@ export default function AboutUs() {
 
               <div className="infiniteSlide-slide">
                 <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                     <i className="icon-light"></i>
                     Social Media Marketing (SMM)
                   </div>
@@ -679,7 +693,7 @@ export default function AboutUs() {
 
               <div className="infiniteSlide-slide">
                 <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                     <i className="icon-light"></i>
                     Branding & Digital Strategy
                   </div>
@@ -688,7 +702,7 @@ export default function AboutUs() {
 
               <div className="infiniteSlide-slide">
                 <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                     <i className="icon-light"></i>
                     Influencer Marketing
                   </div>
@@ -697,7 +711,7 @@ export default function AboutUs() {
 
               <div className="infiniteSlide-slide">
                 <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                     <i className="icon-light"></i>
                     Web Design & Development
                   </div>
@@ -713,7 +727,7 @@ export default function AboutUs() {
               data-style={{ right: "" }}
             >
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Search Engine Optimization (SEO)
                 </div>
@@ -721,7 +735,7 @@ export default function AboutUs() {
 
               <div className="infiniteSlide-slide">
                 <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                     <i className="icon-light"></i>
                     Pay-Per-Click Advertising (PPC)
                   </div>
@@ -730,7 +744,7 @@ export default function AboutUs() {
 
               <div className="infiniteSlide-slide">
                 <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                     <i className="icon-light"></i>
                     Social Media Marketing (SMM)
                   </div>
@@ -739,7 +753,7 @@ export default function AboutUs() {
 
               <div className="infiniteSlide-slide">
                 <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                     <i className="icon-light"></i>
                     Branding & Digital Strategy
                   </div>
@@ -748,7 +762,7 @@ export default function AboutUs() {
 
               <div className="infiniteSlide-slide">
                 <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                     <i className="icon-light"></i>
                     Influencer Marketing
                   </div>
@@ -757,7 +771,7 @@ export default function AboutUs() {
 
               <div className="infiniteSlide-slide">
                 <div className="infiniteSlide-slide">
-                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                  <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                     <i className="icon-light"></i>
                     Web Design & Development
                   </div>
@@ -927,7 +941,7 @@ export default function AboutUs() {
                   step.
                 </p>
 
-                <div className="list-why-item d-flex justify-content-between">
+                <div className="list-why-item d-flex justify-content-between flex-wrap">
                   <div className="line"></div>
                   <div className="why-item-2">
                     <p className="number ff-2 fw-6 letter-space--3 text-body-2 lh-100">
@@ -1263,7 +1277,7 @@ export default function AboutUs() {
           <div className="line-page"></div>
         </div>
 
-        <div className="section-clients flat-spacing-1">
+        {/* <div className="section-clients flat-spacing-1">
           <div className="container">
             <div className="heading-section text-center mb-70">
               <div className="sub-title h6 mb-12 letter-space--2 fw-5">
@@ -1371,7 +1385,145 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+         <div className="section-clients flat-spacing-1">
+                  <div className="container">
+                    <div className="heading-section text-center mb-70">
+                      <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
+                        Connect Our — <span>Global Clients.</span>
+                      </div>
+                      <h2 className="title letter-space--3 fw-6 wow fadeInUp">
+                        Helping{" "}
+                        <span style={{ color: "var(--digital-marketing-blue)" }}>
+                          80+
+                        </span>{" "}
+                        brands{" "}
+                        <span
+                          style={{
+                            color: "linear-gradient(to right, #2196F3, #FF9800",
+                          }}
+                        >
+                          success
+                        </span>
+                      </h2>
+                    </div>
+        
+        {/* logos */}
+                    <div className="infiniteSlide-app list-brands">
+                      <div
+                        className="infiniteSlide infiniteSlide-wrapper tf-marquee g-30"
+                        data-clone="3"
+                      >
+                        <div className="infiniteSlide-slide">
+                          <div className="brand-card">
+                            <a className="brand-item">
+                              <img src={airzen} alt="AirZen" className="brand" />
+                            </a>
+        
+                            <h6 className="client-name">Airzen Technologies</h6>
+                            <p className="client-industry">
+                              Air Purification & Wellness
+                            </p>
+                          </div>
+                        </div>
+        
+                        <div className="infiniteSlide-slide">
+                          <div className="brand-card">
+                            <a className="brand-item">
+                              <img src={alizaStore} alt="aliza" className="brand" />
+                            </a>
+        
+                            <h6 className="client-name">Aliza Stores</h6>
+                            <p className="client-industry">E-Commerce & Retail</p>
+                          </div>
+                        </div>
+        
+                        <div className="infiniteSlide-slide">
+                          <div className="brand-card">
+                            <a className="brand-item">
+                              <img src={aqua} alt="aqua" className="brand" />
+                            </a>
+        
+                            <h6 className="client-name">Aqua Gold</h6>
+                            <p className="client-industry">Water Treatment Solutions</p>
+                          </div>
+                        </div>
+        
+                        <div className="infiniteSlide-slide">
+                          <div className="brand-card">
+                            <a className="brand-item">
+                              <img src={humStrum} alt="humstrum" className="brand" />
+                            </a>
+        
+                            <h6 className="client-name">Hum & Strum Music School</h6>
+                            <p className="client-industry">Music & Entertainment</p>
+                          </div>
+                        </div>
+        
+                        <div className="infiniteSlide-slide">
+                          <div className="brand-card">
+                            <a className="brand-item">
+                              <img src={chaskaTea} alt="chaskaTea" className="brand" />
+                            </a>
+        
+                            <h6 className="client-name">Chaska Tea</h6>
+                            <p className="client-industry">Food & Beverage</p>
+                          </div>
+                        </div>
+        
+                        <div className="infiniteSlide-slide">
+                          <div className="brand-card">
+                            <a className="brand-item">
+                              <img
+                                src={sriSaiExim}
+                                alt="sirsaiexim"
+                                className="brand"
+                              />
+                            </a>
+        
+                            <h6 className="client-name">Sri Sai Exim</h6>
+                            <p className="client-industry">Import & Export</p>
+                          </div>
+                        </div>
+        
+                        <div className="infiniteSlide-slide">
+                          <div className="brand-card">
+                            <a className="brand-item">
+                              <img src={dhsLogo} alt="dhs" className="brand" />
+                            </a>
+        
+                            <h6 className="client-name">Defence Housing Society</h6>
+                            <p className="client-industry">Real Estate & Housing</p>
+                          </div>
+                        </div>
+        
+                        <div className="infiniteSlide-slide">
+                          <div className="brand-card">
+                            <a className="brand-item">
+                              <img src={RRPL} alt="rrpl" className="brand" />
+                            </a>
+        
+                            <h6 className="client-name">Rajavruksha Realtors</h6>
+                            <p className="client-industry">
+                              Real Estate & Construction
+                            </p>
+                          </div>
+                        </div>
+        
+                        <div className="infiniteSlide-slide">
+                          <div className="brand-card">
+                            <a className="brand-item">
+                              <img src={RRPL} alt="plumeria" className="brand" />
+                            </a>
+        
+                            <h6 className="client-name">Plumeria Resort</h6>
+                            <p className="client-industry">Hospitality & Tourism</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
         <Footer />
 
@@ -1380,13 +1532,12 @@ export default function AboutUs() {
 
       <div className="offcanvas offcanvas-start" id="mobileMenu">
         <div className="pop-up-nav-mobile">
-          <div className="canvas-header">
+          <div className="canvas-header" style={{backgroundColor: "#1c1c1c", margin: "-15px -15px 15px -15px", padding: "15px"}}>
             <a href="#" className="logo-site">
-              <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
+              <img src={DESLOGO} alt="Digital Elite Service" className="des-logo" style={{maxWidth: "150px"}} />
             </a>
             <span
-              className="icon icon-close"
-              data-bs-dismiss="offcanvas"
+              className="icon icon-close" style={{color: "white"}} data-bs-dismiss="offcanvas"
             ></span>
           </div>
           <div className="canvas-body">
@@ -1404,7 +1555,7 @@ export default function AboutUs() {
       >
         <div className="modal-dialog" role="document">
           <div className="modal-content modal-sidebar">
-            <div className="sidebar-header d-flex align-items-center justify-content-between">
+            <div className="sidebar-header d-flex align-items-center justify-content-between flex-wrap">
               <a href="/" className="logo-sidebar">
                 <img src="./assets/images/logo/logo-2.svg" alt="" />
               </a>
@@ -1420,7 +1571,7 @@ export default function AboutUs() {
                 By combining data-driven strategy, creative storytelling, and
                 the latest marketing technologies
               </p>
-              <div className="list-img d-flex align-items-center g-20">
+              <div className="list-img d-flex align-items-center g-20 flex-wrap">
                 <div className="img">
                   <img
                     loading="lazy"
