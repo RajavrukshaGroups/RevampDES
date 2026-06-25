@@ -1,4 +1,19 @@
 /* Remove card styling completely */
+/* ================================
+   HERO DESCRIPTION
+================================ */
+
+.hero-left .hero-content .desc {
+  max-width: 760px !important;
+  width: 100%;
+  white-space: normal;
+  word-break: normal;
+}
+
+/* Optional: slightly wider hero content */
+.hero-left .hero-content {
+  max-width: 760px;
+}
 .brand-item {
   background: transparent !important;
   padding: 0 !important;
