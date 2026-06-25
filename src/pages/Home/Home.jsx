@@ -39,6 +39,8 @@ import sriSaiExim from "../../../public/assets/images/clients/SSE.png";
 import dhsLogo from "../../../public/assets/images/clients/DHS.png";
 import RRPL from "../../../public/assets/images/clients/RPL.png";
 import PlumeriaResort from "../../../public/assets/images/clients/Plumeria.png";
+import AITIFLogo from "../../../public/assets/images/clients/AITIF.png";
+import NeelLogo from "../../../public/assets/images/clients/NEEL.png";
 import "./client-logo-fix.css";
 
 export default function Home() {
@@ -86,8 +88,7 @@ export default function Home() {
                 to growth through
                 <br />
                 digital marketing */}
-                Elevating brands{" "}
-                <br className="d-none d-md-block" />
+                Elevating brands <br className="d-none d-md-block" />
                 with{" "}
                 <span style={{ color: "var(--digital-marketing-light)" }}>
                   performance
@@ -2245,7 +2246,7 @@ export default function Home() {
                   href="/portfolio-details"
                   className="name-project h5 fw-6 letter-space--3"
                 >
-                E-commerce SEO Campaign
+                  E-commerce SEO Campaign
                 </a>
               </div>
             </div>
@@ -2432,7 +2433,8 @@ export default function Home() {
                         loading="lazy"
                         width="66"
                         height="66"
-                        src="./assets/images/avatar/avt-tes-1.jpg"
+                        // src="./assets/images/avatar/avt-tes-1.jpg"
+                        src={humStrum}
                         alt="Image"
                       />
                     </a>
@@ -2440,9 +2442,9 @@ export default function Home() {
                       href="#"
                       className="name text-body-1 fw-6 letter-space--3"
                     >
-                      Alexander Mitchell
+                      Hum Strum
                     </a>
-                    <p className="position ff-2">CEO of BrightWave</p>
+                    {/* <p className="position ff-2">Hum Strum</p> */}
                   </div>
                 </div>
                 <div className="tes-item">
@@ -2479,7 +2481,8 @@ export default function Home() {
                         loading="lazy"
                         width="66"
                         height="66"
-                        src="./assets/images/avatar/avt-tes-2.jpg"
+                        // src="./assets/images/avatar/avt-tes-2.jpg"
+                        src={petsHugs}
                         alt="Image"
                       />
                     </a>
@@ -2487,9 +2490,9 @@ export default function Home() {
                       href="#"
                       className="name text-body-1 fw-6 letter-space--3"
                     >
-                      Samantha Carter,
+                      Pets N Hugs
                     </a>
-                    <p className="position ff-2">Marketing Director</p>
+                    {/* <p className="position ff-2">Marketing Director</p> */}
                   </div>
                 </div>
               </div>
@@ -2543,7 +2546,8 @@ export default function Home() {
                         loading="lazy"
                         width="66"
                         height="66"
-                        src="./assets/images/avatar/avt-tes-3.jpg"
+                        // src="./assets/images/avatar/avt-tes-3.jpg"
+                        src={NeelLogo}
                         alt="Image"
                       />
                     </a>
@@ -2551,9 +2555,9 @@ export default function Home() {
                       href="#"
                       className="name text-body-1 fw-6 letter-space--3"
                     >
-                      Daniel Roberts
+                      Neel Technology
                     </a>
-                    <p className="position ff-2">Founder of EcomBoost</p>
+                    {/* <p className="position ff-2">Founder of EcomBoost</p> */}
                   </div>
                 </div>
                 <div className="tes-item">
@@ -2588,7 +2592,8 @@ export default function Home() {
                         loading="lazy"
                         width="66"
                         height="66"
-                        src="./assets/images/avatar/avt-tes-4.jpg"
+                        // src="./assets/images/avatar/avt-tes-4.jpg"
+                        src={AITIFLogo}
                         alt="Image"
                       />
                     </a>
@@ -2596,9 +2601,9 @@ export default function Home() {
                       href="#"
                       className="name text-body-1 fw-6 letter-space--3"
                     >
-                      Samantha Carter,
+                      All India Trade Forum
                     </a>
-                    <p className="position ff-2">Marketing Director</p>
+                    {/* <p className="position ff-2">Marketing Director</p> */}
                   </div>
                 </div>
               </div>
@@ -2828,7 +2833,7 @@ export default function Home() {
               </h2>
             </div>
 
-{/* logos */}
+            {/* logos */}
             <div className="infiniteSlide-app list-brands">
               <div
                 className="infiniteSlide infiniteSlide-wrapper tf-marquee g-30"
@@ -2950,12 +2955,26 @@ export default function Home() {
 
       <div className="offcanvas offcanvas-start" id="mobileMenu">
         <div className="pop-up-nav-mobile">
-          <div className="canvas-header" style={{backgroundColor: "#1c1c1c", margin: "-15px -15px 15px -15px", padding: "15px"}}>
+          <div
+            className="canvas-header"
+            style={{
+              backgroundColor: "#1c1c1c",
+              margin: "-15px -15px 15px -15px",
+              padding: "15px",
+            }}
+          >
             <a href="#" className="logo-site">
-              <img src={DESLOGO} alt="Digital Elite Service" className="des-logo" style={{maxWidth: "150px"}} />
+              <img
+                src={DESLOGO}
+                alt="Digital Elite Service"
+                className="des-logo"
+                style={{ maxWidth: "150px" }}
+              />
             </a>
             <span
-              className="icon icon-close" style={{color: "white"}} data-bs-dismiss="offcanvas"
+              className="icon icon-close"
+              style={{ color: "white" }}
+              data-bs-dismiss="offcanvas"
             ></span>
           </div>
           <div className="canvas-body">

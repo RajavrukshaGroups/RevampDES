@@ -1,0 +1,177 @@
+/* ==========================================
+   TESTIMONIAL GRID
+========================================== */
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Grid item */
+
+.testimonial-grid .swiper-slide {
+  width: 100%;
+  display: flex;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.testimonial-grid .tes-item {
+  width: 100%;
+  min-height: 610px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 20px;
+}
+
+/* ==========================================
+   TOP REVIEW
+========================================== */
+
+.testimonial-grid .top {
+  min-height: 390px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 35px !important;
+}
+
+.testimonial-grid .text {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* ==========================================
+   CLIENT SECTION
+========================================== */
+
+.testimonial-grid .user-tes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: -15px !important;
+}
+
+/* Logo container */
+
+.testimonial-grid .img-avt {
+  width: 210px !important;
+  height: 90px !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* margin: 0 auto 12px !important; */
+
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+  overflow: visible !important;
+}
+
+/* Logo */
+
+.testimonial-grid .img-avt img {
+  width: auto !important;
+  height: auto !important;
+
+  max-width: 180px !important;
+  max-height: 80px !important;
+
+  object-fit: contain !important;
+  object-position: center;
+
+  display: block;
+  margin-bottom: 7rem;
+}
+
+/* Bigger DHS */
+
+.testimonial-grid img[src*="DHS"] {
+  max-width: 120px !important;
+  max-height: 120px !important;
+}
+
+/* Bigger Plumeria */
+
+.testimonial-grid img[src*="Plumeria"] {
+  max-width: 180px !important;
+  /* max-height: 80px !important; */
+  max-height: 100px !important;
+}
+
+/* Bigger Sri Sai */
+
+.testimonial-grid img[src*="SSE"],
+.testimonial-grid img[src*="Sri"] {
+  max-width: 180px !important;
+  max-height: 180px !important;
+}
+
+/* Bigger Airzen */
+
+.testimonial-grid img[src*="airzen"] {
+  max-width: 180px !important;
+  max-height: 180px !important;
+}
+
+/* Bigger Aliza */
+
+.testimonial-grid img[src*="aliza"] {
+  max-width: 180px !important;
+  max-height: 180px !important;
+}
+
+/* ==========================================
+   NAME
+========================================== */
+
+.testimonial-grid .name {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+/* ==========================================
+   COMPANY
+========================================== */
+
+.testimonial-grid .position {
+  text-align: center;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1199px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-grid .tes-item {
+    min-height: auto;
+  }
+}
