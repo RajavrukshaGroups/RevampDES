@@ -186,7 +186,7 @@ export default function Header() {
                       </ul>
                     </div>
                   </li>
-
+{/* 
                   <li className="menu-item has-sub_menu">
                     <a href="" className="item-link">
                       Blog
@@ -211,7 +211,7 @@ export default function Header() {
                         </li>
                       </ul>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
             </div>
