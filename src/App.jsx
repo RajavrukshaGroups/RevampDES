@@ -1,72 +1,3 @@
-// import React from 'react';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Home from './pages/Home/Home';
-// import AboutUs from './pages/Company/AboutUs';
-// import BlogDetail from './pages/Blog/BlogDetail';
-// import BlogGird from './pages/Blog/BlogGird';
-// import BlogListing from './pages/Blog/BlogListing';
-// import Contact from './pages/Company/Contact';
-// import Faqs from './pages/Company/Faqs';
-// import HomeBrandingAgency from './pages/Home/HomeBrandingAgency';
-// import HomeSeo from './pages/Home/HomeSeo';
-// import HomeSeoMarketing from './pages/Home/HomeSeoMarketing';
-// import Index from './pages/Home/Index';
-// import OurTeam from './pages/Company/OurTeam';
-// import Page404 from './pages/Misc/Page404';
-// import Portfolio1 from './pages/Portfolio/Portfolio1';
-// import Portfolio2 from './pages/Portfolio/Portfolio2';
-// import PortfolioDetails from './pages/Portfolio/PortfolioDetails';
-// import PricingPlan from './pages/Company/PricingPlan';
-// import ServiceDetails from './pages/Services/ServiceDetails';
-// import Services1 from './pages/Services/Services1';
-// import Services2 from './pages/Services/Services2';
-// import TeamDetails from './pages/Company/TeamDetails';
-// import SEO from './pages/Services/SEO';
-// import SocialMediaMarketing from './pages/Services/SocialMediaMarketing';
-// import WebDevelopment from './pages/Services/WebDevelopment';
-// import GraphicDesign from './pages/Services/GraphicDesign';
-// import LeadGeneration from './pages/Services/LeadGeneration';
-// import WhatsappAutomation from './pages/Services/WhatsappAutomation';
-
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/about-us" element={<AboutUs />} />
-//         <Route path="/blog-detail" element={<BlogDetail />} />
-//         <Route path="/blog-grid" element={<BlogGird />} />
-//         <Route path="/blog-listing" element={<BlogListing />} />
-//         <Route path="/contact" element={<Contact />} />
-//         <Route path="/faqs" element={<Faqs />} />
-//         <Route path="/home-branding-agency" element={<HomeBrandingAgency />} />
-//         <Route path="/home-seo" element={<HomeSeo />} />
-//         <Route path="/home-seo-marketing" element={<HomeSeoMarketing />} />
-//         <Route path="/index" element={<Index />} />
-//         <Route path="/our-team" element={<OurTeam />} />
-//         <Route path="/portfolio-1" element={<Portfolio1 />} />
-//         <Route path="/portfolio-2" element={<Portfolio2 />} />
-//         <Route path="/portfolio-details" element={<PortfolioDetails />} />
-//         <Route path="/pricing-plan" element={<PricingPlan />} />
-//         <Route path="/service-details" element={<ServiceDetails />} />
-
-//         <Route path="/services/Digital-marketing-agency-in-bangalore" element={<Services1 />} />
-//         <Route path="/services-2" element={<Services2 />} />
-//         <Route path="/team-details" element={<TeamDetails />} />
-//         <Route path="/services-seo" element={<SEO />} />
-//         <Route path="/services-social-media-marketing" element={<SocialMediaMarketing />} />
-//         <Route path="/services-web-development" element={<WebDevelopment />} />
-//         <Route path="/services-graphic-design" element={<GraphicDesign />} />
-//         <Route path="/services-lead-generation" element={<LeadGeneration />} />
-//         <Route path="/services-whatsapp-automation" element={<WhatsappAutomation />} />
-//         <Route path="*" element={<Page404 />} />
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
-
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
@@ -103,6 +34,15 @@ import SocialMediaMarketingServiceDetails from "./pages/Services/ServiceDetails/
 import WebDevelopmentServiceDetails from "./pages/Services/ServiceDetails/WebDevelopmentServiceDetails";
 import LeadGenerationServiceDetails from "./pages/Services/ServiceDetails/LeadGenerationServiceDetails";
 import WhatsappAutomationServiceDetails from "./pages/Services/ServiceDetails/WhatsappAutomationServiceDetails";
+import WebsiteDevelopmentPortfolioDetails from "./pages/Portfolio/PortfolioDetailsPages/WebsiteDevelopmentPortfolioDetails"
+import UIUXPortfolioDetails from "./pages/Portfolio/PortfolioDetailsPages/UIUXPortfolioDetails"
+import WhatsAppAutomationPortfolioDetails from "./pages/Portfolio/PortfolioDetailsPages/WhatsAppAutomationPortfolioDetails"
+import SocialMediaBrandAwarenessPortfolioDetails from "./pages/Portfolio/PortfolioDetailsPages/SocialMediaBrandAwarenessPortfolioDetails"
+import InfluencerMarketingCampaignPortfolioDetails from "./pages/Portfolio/PortfolioDetailsPages/InfluencerMarketingCampaignPortfolioDetails"
+import BrandIdentityDigitalBrandingPortfolioDetails from "./pages/Portfolio/PortfolioDetailsPages/BrandIdentityDigitalBrandingPortfolioDetails"
+import PaidSearchCampaignPortfolioDetails from "./pages/Portfolio/PortfolioDetailsPages/PaidSearchCampaignPortfolioDetails"
+import SEOPortfolioDetails from "./pages/Portfolio/PortfolioDetailsPages/SEOPortfolioDetails"
+import LocalSEOPortfolioDetails from "./pages/Portfolio/PortfolioDetailsPages/LocalSEOPortfolioDetails"
 
 function App() {
   return (
@@ -180,6 +120,55 @@ function App() {
           path="/whatsapp-automation-service-details"
           element={<WhatsappAutomationServiceDetails />}
         />
+
+
+        {/* Website Development */}
+        <Route
+          path="/website-development-portfolio-details"
+          element={<WebsiteDevelopmentPortfolioDetails />}
+        />
+
+        {/* UI/UX Development */}
+        <Route
+          path="/uiux-portfolio-details"
+          element={<UIUXPortfolioDetails />}
+        />
+
+        <Route
+          path="/whatsapp-automation-portfolio-details"
+          element={<WhatsAppAutomationPortfolioDetails />}
+        />
+
+        <Route
+          path="/social-media-brand-awareness-portfolio-details"
+          element={<SocialMediaBrandAwarenessPortfolioDetails />}
+        />
+
+        <Route 
+        path="/influencer-marketing-portfolio-details"
+        element={<InfluencerMarketingCampaignPortfolioDetails />}
+        />
+        
+        <Route
+        path="/brand-identity-digital-branding-portfolio-details"
+        element={<BrandIdentityDigitalBrandingPortfolioDetails />}
+        />
+        
+        <Route
+        path="/paid-search-campaign-portfolio-details"
+        element={<PaidSearchCampaignPortfolioDetails />}
+        />
+
+        <Route
+        path="/seo-portfolio-details"
+        element={<SEOPortfolioDetails />}
+        />
+
+        <Route
+        path="/local-seo-portfolio-details"
+        element={<LocalSEOPortfolioDetails />}
+        />
+
         <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>

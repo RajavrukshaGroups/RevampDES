@@ -87,7 +87,7 @@ export default function Portfolio1() {
 
             <div className="list-item-project">
                 <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
+                    <a href="/paid-search-campaign-portfolio-details" className="image">
                         <img loading="lazy" width="580" height="580" 
                         // src="./assets/images/project/project-item-1.jpg"
                         //     alt="Image" />
@@ -99,13 +99,13 @@ export default function Portfolio1() {
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
                         </div> */}
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                          E-commerce SEO Campaign
+                        <a href="/paid-search-campaign-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                          Paid Search Campaigns
                         </a>
                     </div>
                 </div>
                 <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
+                    <a href="/social-media-brand-awareness-portfolio-details" className="image">
                         <img loading="lazy" width="580" height="580"
                         //  src="./assets/images/project/project-item-2.jpg"
                         //     alt="Image" />
@@ -117,13 +117,13 @@ export default function Portfolio1() {
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
                         </div> */}
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                        <a href="/social-media-brand-awareness-portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Social Media Brand Awareness
                         </a>
                     </div>
                 </div>
                 <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
+                    <a href="/seo-portfolio-details" className="image">
                         <img loading="lazy" width="580" height="580"
                         //  src="./assets/images/project/project-item-3.jpg"
                         //     alt="Image" />
@@ -135,13 +135,13 @@ export default function Portfolio1() {
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
                         </div> */}
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            WhatsApp Automation
+                        <a href="/seo-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            Search Engine Optimization (SEO)
                         </a>
                     </div>
                 </div>
                 <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
+                    <a href="/website-development-portfolio-details" className="image">
                         <img loading="lazy" width="580" height="580"
                         //  src="./assets/images/project/project-item-4.jpg"
                         //     alt="Image" />
@@ -153,13 +153,13 @@ export default function Portfolio1() {
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
                         </div> */}
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Influencer Marketing Campaign
+                        <a href="/website-development-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            Website Development
                         </a>
                     </div>
                 </div>
                 <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
+                    <a href="/uiux-portfolio-details" className="image">
                         <img loading="lazy" width="580" height="580" 
                         // src="./assets/images/project/project-item-5.jpg"
                         //     alt="Image" />
@@ -171,13 +171,13 @@ export default function Portfolio1() {
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
                         </div> */}
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Brand Identity & Digital Branding
+                        <a href="/uiux-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            UI/UX Design
                         </a>
                     </div>
                 </div>
                 <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
+                    <a href="/local-seo-portfolio-details" className="image">
                         <img loading="lazy" width="580" height="580" 
                         // src="./assets/images/project/project-item-6.jpg"
                         //     alt="Image" />
@@ -189,13 +189,13 @@ export default function Portfolio1() {
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
                         </div> */}
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                        <a href="/local-seo-portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Local SEO for Small Businesses
                         </a>
                     </div>
                 </div>
                 <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
+                    <a href="/influencer-marketing-portfolio-details" className="image">
                         <img loading="lazy" width="580" height="580" 
                         // src="./assets/images/project/project-item-13.jpg"
                         //     alt="Image" />
@@ -207,13 +207,13 @@ export default function Portfolio1() {
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
                         </div> */}
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                        <a href="/influencer-marketing-portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Influencer Marketing Campaign
                         </a>
                     </div>
                 </div>
                 <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
+                    <a href="/brand-identity-digital-branding-portfolio-details" className="image">
                         <img loading="lazy" width="580" height="580"
                         //  src="./assets/images/project/project-item-14.jpg"
                         //     alt="Image" />
@@ -225,13 +225,13 @@ export default function Portfolio1() {
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
                         </div> */}
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                        <a href="/brand-identity-digital-branding-portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Brand Identity & Digital Branding
                         </a>
                     </div>
                 </div>
                 <div className="project-item hover-img">
-                    <a href="/portfolio-details" className="image">
+                    <a href="/whatsapp-automation-portfolio-details" className="image">
                         <img loading="lazy" width="580" height="580" 
                         // src="./assets/images/project/project-item-15.jpg"
                         //     alt="Image" />
@@ -243,8 +243,8 @@ export default function Portfolio1() {
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
                         </div> */}
-                        <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Local SEO for Small Businesses
+                        <a href="/whatsapp-automation-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            WhatsApp Automation
                         </a>
                     </div>
                 </div>
