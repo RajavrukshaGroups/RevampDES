@@ -17,12 +17,24 @@ import ImgSectionWhy from "../../assets/images/section/img-section-why.jpg";
 import ImgSectionWhy2 from "../../assets/images/section/img-section-why-2.jpg";
 import ImgSectionWhy3 from "../../assets/images/section/img-section-why-3.jpg";
 import ImgSectionWhy4 from "../../assets/images/section/img-section-why-4.jpg";
-import ProjectItem1 from "../../assets/images/projects/project-item-1.jpg";
-import ProjectItem2 from "../../assets/images/projects/project-item-2.jpg";
-import ProjectItem3 from "../../assets/images/projects/project-item-3.jpg";
-import ProjectItem4 from "../../assets/images/projects/project-item-4.jpg";
-import ProjectItem5 from "../../assets/images/projects/project-item-5.jpg";
-import ProjectItem6 from "../../assets/images/projects/project-item-6.jpg";
+// import ProjectItem1 from "../../assets/images/projects/project-item-1.jpg";
+// import ProjectItem2 from "../../assets/images/projects/project-item-2.jpg";
+// import ProjectItem3 from "../../assets/images/projects/project-item-3.jpg";
+// import ProjectItem4 from "../../assets/images/projects/project-item-4.jpg";
+// import ProjectItem5 from "../../assets/images/projects/project-item-5.jpg";
+// import ProjectItem6 from "../../assets/images/projects/project-item-6.jpg";
+
+import portfolioHeroImage from '../../assets/images/portfolio/img-page-title-2.jpg';
+import portfolioImage1 from '../../assets/images/portfolio/project-item-1.jpg';
+import portfolioImage2 from '../../assets/images/portfolio/project-item-2.jpg';
+import portfolioImage3 from '../../assets/images/portfolio/project-item-3.jpg';
+import portfolioImage4 from '../../assets/images/portfolio/project-item-4.jpg';
+import portfolioImage5 from '../../assets/images/portfolio/project-item-5.jpg';
+import portfolioImage6 from '../../assets/images/portfolio/project-item-6.jpg';
+import portfolioImage13 from '../../assets/images/portfolio/project-item-13.jpg';
+import portfolioImage14 from '../../assets/images/portfolio/project-item-14.jpg';
+import portfolioImage15 from '../../assets/images/portfolio/project-item-15.jpg';
+
 import DESLogoSideBar from "../../assets/images/header/DES_logo_new.svg";
 import PopUpSidebar1 from "../../assets/images/widget/pop-up-siderbar-1.jpg";
 import PopUpSidebar2 from "../../assets/images/widget/pop-up-siderbar-2.jpg";
@@ -2188,8 +2200,19 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section-projects flat-spacing-7 bg-color-dt-gray h-dm">
-          <div className="container w-1750">
+  <section className="section-profilio flat-spacing-1">
+            {/* <div className="container">
+                <div className="heading-section mb-70 text-center">
+                    <div className="sub-title h6 mb-10 letter-space--2 fw-5">
+                        Explore Our — <span>Latest Works.</span>
+                    </div>
+                    <h2 className="title letter-space--3 fw-6 mb-30">
+                        Let’s <span style={{ color:"var(--digital-marketing-blue)" }}>explore our </span>awards <span style={{ color:"var(--digital-marketing-light)" }}>winning projects</span>
+                    </h2>
+                </div>
+            </div> */}
+
+            <div className="container w-1750">
             <div className="heading-section d-flex align-items-center justify-content-between flat-spacing-2 flex-wrap g-30">
               <div className="letf">
                 <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
@@ -2211,7 +2234,7 @@ export default function Home() {
                   businesses achieve growth operations.
                 </p>
 
-                <a
+                {/* <a
                   href="#"
                   className="tf-btn style-big style-border wow fadeInUp"
                   data-wow-delay=".2s"
@@ -2220,163 +2243,178 @@ export default function Home() {
                   <span className="icon-btn">
                     <i className="icon-arrow-up-right"></i>
                   </span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
-          <div className="list-project-item">
-            <div className="project-item hover-img">
-              <a href="/portfolio-details" className="image">
-                <img
-                  loading="lazy"
-                  width="580"
-                  height="580"
-                  // src="./assets/images/project/project-item-1.jpg"
-                  src={ProjectItem1}
-                  alt="Image"
-                />
-              </a>
-              <div className="content">
-                {/* <div className="meta-project">
-                  <span className="ff-2 fw-5">Digital marketing</span>
-                  <span className="line-dot"></span>
-                  <span className="ff-2 fw-5">2026</span>
-                </div> */}
-                <a
-                  href="/portfolio-details"
-                  className="name-project h5 fw-6 letter-space--3"
-                >
-                  E-commerce SEO Campaign
-                </a>
-              </div>
+
+
+            <div className="list-item-project">
+                <div className="project-item hover-img">
+                    <a href="/paid-search-campaign-portfolio-details" className="image">
+                        <img loading="lazy" width="580" height="580" 
+                        // src="./assets/images/project/project-item-1.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage1} alt="Image" />
+                    </a>
+                    <div className="content">
+                        {/* <div className="meta-project">
+                            <span className="ff-2 fw-5">Digital marketing</span>
+                            <span className="line-dot"></span>
+                            <span className="ff-2 fw-5">2026</span>
+                        </div> */}
+                        <a href="/paid-search-campaign-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                          Paid Search Campaigns
+                        </a>
+                    </div>
+                </div>
+                <div className="project-item hover-img">
+                    <a href="/social-media-brand-awareness-portfolio-details" className="image">
+                        <img loading="lazy" width="580" height="580"
+                        //  src="./assets/images/project/project-item-2.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage2} alt="Image" />
+                    </a>
+                    <div className="content">
+                        {/* <div className="meta-project">
+                            <span className="ff-2 fw-5">Digital marketing</span>
+                            <span className="line-dot"></span>
+                            <span className="ff-2 fw-5">2026</span>
+                        </div> */}
+                        <a href="/social-media-brand-awareness-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            Social Media Brand Awareness
+                        </a>
+                    </div>
+                </div>
+                <div className="project-item hover-img">
+                    <a href="/seo-portfolio-details" className="image">
+                        <img loading="lazy" width="580" height="580"
+                        //  src="./assets/images/project/project-item-3.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage3} alt="Image" />
+                    </a>
+                    <div className="content">
+                        {/* <div className="meta-project">
+                            <span className="ff-2 fw-5">Digital marketing</span>
+                            <span className="line-dot"></span>
+                            <span className="ff-2 fw-5">2026</span>
+                        </div> */}
+                        <a href="/seo-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            Search Engine Optimization (SEO)
+                        </a>
+                    </div>
+                </div>
+                <div className="project-item hover-img">
+                    <a href="/website-development-portfolio-details" className="image">
+                        <img loading="lazy" width="580" height="580"
+                        //  src="./assets/images/project/project-item-4.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage4} alt="Image" />
+                    </a>
+                    <div className="content">
+                        {/* <div className="meta-project">
+                            <span className="ff-2 fw-5">Digital marketing</span>
+                            <span className="line-dot"></span>
+                            <span className="ff-2 fw-5">2026</span>
+                        </div> */}
+                        <a href="/website-development-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            Website Development
+                        </a>
+                    </div>
+                </div>
+                <div className="project-item hover-img">
+                    <a href="/uiux-portfolio-details" className="image">
+                        <img loading="lazy" width="580" height="580" 
+                        // src="./assets/images/project/project-item-5.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage5} alt="Image" />
+                    </a>
+                    <div className="content">
+                        {/* <div className="meta-project">
+                            <span className="ff-2 fw-5">Digital marketing</span>
+                            <span className="line-dot"></span>
+                            <span className="ff-2 fw-5">2026</span>
+                        </div> */}
+                        <a href="/uiux-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            UI/UX Design
+                        </a>
+                    </div>
+                </div>
+                <div className="project-item hover-img">
+                    <a href="/local-seo-portfolio-details" className="image">
+                        <img loading="lazy" width="580" height="580" 
+                        // src="./assets/images/project/project-item-6.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage6} alt="Image" />
+                    </a>
+                    <div className="content">
+                        {/* <div className="meta-project">
+                            <span className="ff-2 fw-5">Digital marketing</span>
+                            <span className="line-dot"></span>
+                            <span className="ff-2 fw-5">2026</span>
+                        </div> */}
+                        <a href="/local-seo-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            Local SEO for Small Businesses
+                        </a>
+                    </div>
+                </div>
+                <div className="project-item hover-img">
+                    <a href="/influencer-marketing-portfolio-details" className="image">
+                        <img loading="lazy" width="580" height="580" 
+                        // src="./assets/images/project/project-item-13.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage13} alt="Image" />
+                    </a>
+                    <div className="content">
+                        {/* <div className="meta-project">
+                            <span className="ff-2 fw-5">Digital marketing</span>
+                            <span className="line-dot"></span>
+                            <span className="ff-2 fw-5">2026</span>
+                        </div> */}
+                        <a href="/influencer-marketing-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            Influencer Marketing Campaign
+                        </a>
+                    </div>
+                </div>
+                <div className="project-item hover-img">
+                    <a href="/brand-identity-digital-branding-portfolio-details" className="image">
+                        <img loading="lazy" width="580" height="580"
+                        //  src="./assets/images/project/project-item-14.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage14} alt="Image" />
+                    </a>
+                    <div className="content">
+                        {/* <div className="meta-project">
+                            <span className="ff-2 fw-5">Digital marketing</span>
+                            <span className="line-dot"></span>
+                            <span className="ff-2 fw-5">2026</span>
+                        </div> */}
+                        <a href="/brand-identity-digital-branding-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            Brand Identity & Digital Branding
+                        </a>
+                    </div>
+                </div>
+                <div className="project-item hover-img">
+                    <a href="/whatsapp-automation-portfolio-details" className="image">
+                        <img loading="lazy" width="580" height="580" 
+                        // src="./assets/images/project/project-item-15.jpg"
+                        //     alt="Image" />
+                        src={portfolioImage15} alt="Image" />
+                    </a>
+                    <div className="content">
+                        {/* <div className="meta-project">
+                            <span className="ff-2 fw-5">Digital marketing</span>
+                            <span className="line-dot"></span>
+                            <span className="ff-2 fw-5">2026</span>
+                        </div> */}
+                        <a href="/whatsapp-automation-portfolio-details" className="name-project h4 fw-6 letter-space--3">
+                            WhatsApp Automation
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div className="project-item hover-img">
-              <a href="/portfolio-details" className="image">
-                <img
-                  loading="lazy"
-                  width="580"
-                  height="580"
-                  // src="./assets/images/project/project-item-2.jpg"
-                  src={ProjectItem2}
-                  alt="Image"
-                />
-              </a>
-              <div className="content">
-                {/* <div className="meta-project">
-                  <span className="ff-2 fw-5">Digital marketing</span>
-                  <span className="line-dot"></span>
-                  <span className="ff-2 fw-5">2026</span>
-                </div> */}
-                <a
-                  href="/portfolio-details"
-                  className="name-project h5 fw-6 letter-space--3"
-                >
-                  Social Media Brand Awareness
-                </a>
-              </div>
-            </div>
-            <div className="project-item hover-img">
-              <a href="/portfolio-details" className="image">
-                <img
-                  loading="lazy"
-                  width="580"
-                  height="580"
-                  // src="./assets/images/project/project-item-3.jpg"
-                  src={ProjectItem3}
-                  alt="Image"
-                />
-              </a>
-              <div className="content">
-                {/* <div className="meta-project">
-                  <span className="ff-2 fw-5">Digital marketing</span>
-                  <span className="line-dot"></span>
-                  <span className="ff-2 fw-5">2026</span>
-                </div> */}
-                <a
-                  href="/portfolio-details"
-                  className="name-project h5 fw-6 letter-space--3"
-                >
-                  Email Marketing Automation
-                </a>
-              </div>
-            </div>
-            <div className="project-item hover-img">
-              <a href="/portfolio-details" className="image">
-                <img
-                  loading="lazy"
-                  width="580"
-                  height="580"
-                  // src="./assets/images/project/project-item-4.jpg"
-                  src={ProjectItem4}
-                  alt="Image"
-                />
-              </a>
-              <div className="content">
-                {/* <div className="meta-project">
-                  <span className="ff-2 fw-5">Digital marketing</span>
-                  <span className="line-dot"></span>
-                  <span className="ff-2 fw-5">2026</span>
-                </div> */}
-                <a
-                  href="/portfolio-details"
-                  className="name-project h5 fw-6 letter-space--3"
-                >
-                  Influencer Marketing Campaign
-                </a>
-              </div>
-            </div>
-            <div className="project-item hover-img">
-              <a href="/portfolio-details" className="image">
-                <img
-                  loading="lazy"
-                  width="580"
-                  height="580"
-                  // src="./assets/images/project/project-item-5.jpg"
-                  src={ProjectItem5}
-                  alt="Image"
-                />
-              </a>
-              <div className="content">
-                {/* <div className="meta-project">
-                  <span className="ff-2 fw-5">Digital marketing</span>
-                  <span className="line-dot"></span>
-                  <span className="ff-2 fw-5">2026</span>
-                </div> */}
-                <a
-                  href="/portfolio-details"
-                  className="name-project h5 fw-6 letter-space--3"
-                >
-                  Brand Identity & Digital Branding
-                </a>
-              </div>
-            </div>
-            <div className="project-item hover-img">
-              <a href="/portfolio-details" className="image">
-                <img
-                  loading="lazy"
-                  width="580"
-                  height="580"
-                  // src="./assets/images/project/project-item-6.jpg"
-                  src={ProjectItem6}
-                  alt="Image"
-                />
-              </a>
-              <div className="content">
-                {/* <div className="meta-project">
-                  <span className="ff-2 fw-5">Digital marketing</span>
-                  <span className="line-dot"></span>
-                  <span className="ff-2 fw-5">2026</span>
-                </div> */}
-                <a
-                  href="/portfolio-details"
-                  className="name-project h5 fw-6 letter-space--3"
-                >
-                  Local SEO for Small Businesses
-                </a>
-              </div>
-            </div>
-          </div>
         </section>
+        
 
         <section className="section-testimonials flat-spacing-1 h-dm">
           <div className="container">

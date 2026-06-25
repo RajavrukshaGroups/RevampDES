@@ -16,19 +16,23 @@ import {
   ChevronRight
 } from 'lucide-react';
 
-import WebAppImage1 from '../../../assets/images/portfolioDetails/project-information-item-1.jpg';
+//import WebAppImage1 from '../../../assets/images/portfolioDetails/project-information-item-1.jpg';
 import WebAppImage2 from '../../../assets/images/portfolioDetails/project-results-item-1.jpg';
 import WebAppImage3 from '../../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
+
+import WebAppImage1 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo-img.jpeg';
 
 // Import portfolio images
 const Portfolio1 = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 const Portfolio2 = 'https://images.unsplash.com/photo-1577415124269-fc1140a69e91?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio3 = 'https://images.unsplash.com/photo-1580674684081-7617f8f5c72b?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+const Portfolio3 = WebAppImage1
 const Portfolio4 = 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 const Portfolio5 = 'https://images.unsplash.com/photo-1560525821-5613f35bd43d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 
 // Image for Growth Highlights section
 const GrowthImage = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+
+
 
 export default function LocalSEO() {
   // Portfolio data
