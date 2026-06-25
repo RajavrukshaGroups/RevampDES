@@ -8,7 +8,6 @@ import AboutUsFounderImg from "../../assets/images/aboutus/avt-testimonial.jpg";
 import AboutUsConsultaionImg from "../../assets/images/aboutus/img-bg-cta-p-about.jpg";
 import SidePopup from "../../components/sidePopup";
 
-
 import airzen from "../../../public/assets/images/clients/AIRZEN.png";
 import alizaStore from "../../../public/assets/images/clients/ALIZA.png";
 import aqua from "../../../public/assets/images/clients/aqua.png";
@@ -19,6 +18,7 @@ import sriSaiExim from "../../../public/assets/images/clients/SSE.png";
 import dhsLogo from "../../../public/assets/images/clients/DHS.png";
 import RRPL from "../../../public/assets/images/clients/RPL.png";
 import PlumeriaResort from "../../../public/assets/images/clients/Plumeria.png";
+import "./testimonial-slider.css";
 
 export default function AboutUs() {
   return (
@@ -55,7 +55,11 @@ export default function AboutUs() {
             <div className="page-title-content">
               <div className="content">
                 <h1 className="title mb-xl-50">
-                  Generate more <span style={{color:"var(--digital-marketing-light)"}}>leads</span>,
+                  Generate more{" "}
+                  <span style={{ color: "var(--digital-marketing-light)" }}>
+                    leads
+                  </span>
+                  ,
                   <br />
                   increase visibility
                   <br />
@@ -176,7 +180,10 @@ export default function AboutUs() {
 
             <div className="list-funfact-item p-about mt-100">
               <div className="funfact-item-2 text-center text-md-start">
-                <div className="progress-circle-svg mx-auto mx-md-0" data-progress="99">
+                <div
+                  className="progress-circle-svg mx-auto mx-md-0"
+                  data-progress="99"
+                >
                   <svg
                     className="progress-ring"
                     width="154"
@@ -219,7 +226,10 @@ export default function AboutUs() {
               </div>
 
               <div className="funfact-item-2 text-center text-md-start">
-                <div className="progress-circle-svg mx-auto mx-md-0" data-progress="93">
+                <div
+                  className="progress-circle-svg mx-auto mx-md-0"
+                  data-progress="93"
+                >
                   <svg
                     className="progress-ring"
                     width="154"
@@ -262,7 +272,10 @@ export default function AboutUs() {
               </div>
 
               <div className="funfact-item-2 text-center text-md-start">
-                <div className="progress-circle-svg mx-auto mx-md-0" data-progress="90">
+                <div
+                  className="progress-circle-svg mx-auto mx-md-0"
+                  data-progress="90"
+                >
                   <svg
                     className="progress-ring"
                     width="154"
@@ -305,7 +318,10 @@ export default function AboutUs() {
               </div>
 
               <div className="funfact-item-2 text-center text-md-start">
-                <div className="progress-circle-svg mx-auto mx-md-0" data-progress="20">
+                <div
+                  className="progress-circle-svg mx-auto mx-md-0"
+                  data-progress="20"
+                >
                   <svg
                     className="progress-ring"
                     width="154"
@@ -353,7 +369,11 @@ export default function AboutUs() {
               </div>
 
               <h2 className="title letter-space--3 fw-6 mb-30">
-                Your trusted partner for <span style={{color:"var(--digital-marketing-light)"}}>digital growth</span> and success
+                Your trusted partner for{" "}
+                <span style={{ color: "var(--digital-marketing-light)" }}>
+                  digital growth
+                </span>{" "}
+                and success
               </h2>
 
               <p className="desc ff-2 text-body-1 lh-32 fw-5 color-paragraph">
@@ -383,9 +403,14 @@ export default function AboutUs() {
                   Get Consultations - <span>work together</span>
                 </div>
                 <h2 className="title letter-space--3 fw-6 mb-50">
-                  Let’s build a <span style={{color:"var(--digital-marketing-light)"}}> smarter
-                  <br />
-                  marketing </span> strategy
+                  Let’s build a{" "}
+                  <span style={{ color: "var(--digital-marketing-light)" }}>
+                    {" "}
+                    smarter
+                    <br />
+                    marketing{" "}
+                  </span>{" "}
+                  strategy
                 </h2>
                 <a
                   href="/contact"
@@ -401,7 +426,7 @@ export default function AboutUs() {
           </div>
         </section>
 
-        <section className="section-team p-about flat-spacing-7">
+        {/* <section className="section-team p-about flat-spacing-7">
           <div className="container">
             <div className="heading-section d-flex align-items-center mb-70 justify-content-between flex-wrap g-30">
               <div className="letf">
@@ -658,7 +683,7 @@ export default function AboutUs() {
               <div className="sw-dot-pagination tf-sw-pagination style-dt-blue mt-20 d-xl-none"></div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="section-infiniteSlide mt-60">
           <div className="infiniteSlide-app infiniteSlide-1 bg-dt-blue ">
@@ -788,8 +813,19 @@ export default function AboutUs() {
                 Driven by Strategy <span>Focused on Results.</span>
               </div>
               <h2 className="title letter-space--3 fw-6">
-                We build  <span style={{color:"var(--digital-marketing-light)"}}>customized marketing </span> solutions connect businesses with
-                the  <span style={{color:"var(--digital-marketing-light)"}}>right </span> audience focus is on <span style={{color:"var(--digital-marketing-light)"}}>transparency</span>, performance
+                We build{" "}
+                <span style={{ color: "var(--digital-marketing-light)" }}>
+                  customized marketing{" "}
+                </span>{" "}
+                solutions connect businesses with the{" "}
+                <span style={{ color: "var(--digital-marketing-light)" }}>
+                  right{" "}
+                </span>{" "}
+                audience focus is on{" "}
+                <span style={{ color: "var(--digital-marketing-light)" }}>
+                  transparency
+                </span>
+                , performance
               </h2>
             </div>
           </div>
@@ -1001,25 +1037,29 @@ export default function AboutUs() {
                 Clients Testimonials — <span>4.9/5 (300+Reviews).</span>
               </div>
               <h2 className="title letter-space--3 fw-6">
-                Clients’ feedback  reflects the<span style={{color:"var(--digital-marketing-blue)"}}> trust
-                <br />
-                {" "}results</span>, & long partnerships.
+                Clients’ feedback reflects the
+                <span style={{ color: "var(--digital-marketing-blue)" }}>
+                  {" "}
+                  trust
+                  <br /> results
+                </span>
+                , & long partnerships.
               </h2>
             </div>
-            <div
+            {/* <div
               dir="ltr"
-              className="swiper tf-swiper"
+              className="swiper tf-swiper testimonial-grid"
               data-laptop="3"
               data-preview="3"
               data-tablet="2"
               data-mobile-sm="2"
               data-mobile="1"
-              data-group-sm="2"
               data-space-lg="30"
               data-space-md="20"
               data-space="15"
             >
-              <div className="swiper-wrapper">
+              <div className="swiper-wrapper"> */}
+              <div className="testimonial-grid">
                 <div className="swiper-slide">
                   <div className="tes-item">
                     <div className="top">
@@ -1055,7 +1095,8 @@ export default function AboutUs() {
                           loading="lazy"
                           width="66"
                           height="66"
-                          src="./assets/images/avatar/avt-tes-1.jpg"
+                          // src="./assets/images/avatar/avt-tes-1.jpg"
+                          src={dhsLogo}
                           alt="Image"
                         />
                       </a>
@@ -1063,9 +1104,10 @@ export default function AboutUs() {
                         href="#"
                         className="name text-body-1 fw-6 letter-space--3"
                       >
-                        Alexander Mitchell
+                        {/* Alexander Mitchell */}
+                        Director
                       </a>
-                      <p className="position ff-2">CEO of BrightWave</p>
+                      <p className="position ff-2">Defence Housing Society</p>
                     </div>
                   </div>
                 </div>
@@ -1105,7 +1147,8 @@ export default function AboutUs() {
                           loading="lazy"
                           width="66"
                           height="66"
-                          src="./assets/images/avatar/avt-tes-2.jpg"
+                          // src="./assets/images/avatar/avt-tes-2.jpg"
+                          src={sriSaiExim}
                           alt="Image"
                         />
                       </a>
@@ -1113,9 +1156,10 @@ export default function AboutUs() {
                         href="#"
                         className="name text-body-1 fw-6 letter-space--3"
                       >
-                        Samantha Carter,
+                        {/* Samantha Carter, */}
+                        Marketing Director
                       </a>
-                      <p className="position ff-2">Marketing Director</p>
+                      <p className="position ff-2">Sri Sai Exim</p>
                     </div>
                   </div>
                 </div>
@@ -1155,7 +1199,8 @@ export default function AboutUs() {
                           loading="lazy"
                           width="66"
                           height="66"
-                          src="./assets/images/avatar/avt-tes-3.jpg"
+                          // src="./assets/images/avatar/avt-tes-3.jpg"
+                          src={PlumeriaResort}
                           alt="Image"
                         />
                       </a>
@@ -1163,9 +1208,9 @@ export default function AboutUs() {
                         href="#"
                         className="name text-body-1 fw-6 letter-space--3"
                       >
-                        Daniel Roberts
+                        Resort Manager
                       </a>
-                      <p className="position ff-2">Founder of EcomBoost</p>
+                      <p className="position ff-2">Plumeria Resort</p>
                     </div>
                   </div>
                 </div>
@@ -1203,7 +1248,8 @@ export default function AboutUs() {
                           loading="lazy"
                           width="66"
                           height="66"
-                          src="./assets/images/avatar/avt-tes-4.jpg"
+                          // src="./assets/images/avatar/avt-tes-4.jpg"
+                          src={alizaStore}
                           alt="Image"
                         />
                       </a>
@@ -1211,9 +1257,9 @@ export default function AboutUs() {
                         href="#"
                         className="name text-body-1 fw-6 letter-space--3"
                       >
-                        Samantha Carter,
+                        Marketing Director,
                       </a>
-                      <p className="position ff-2">Marketing Director</p>
+                      <p className="position ff-2">Aliza Store</p>
                     </div>
                   </div>
                 </div>
@@ -1253,7 +1299,8 @@ export default function AboutUs() {
                           loading="lazy"
                           width="66"
                           height="66"
-                          src="./assets/images/avatar/avt-tes-1.jpg"
+                          // src="./assets/images/avatar/avt-tes-1.jpg"
+                          src={airzen}
                           alt="Image"
                         />
                       </a>
@@ -1261,15 +1308,13 @@ export default function AboutUs() {
                         href="#"
                         className="name text-body-1 fw-6 letter-space--3"
                       >
-                        Alexander Mitchell
+                        Founder
                       </a>
-                      <p className="position ff-2">CEO of BrightWave</p>
+                      <p className="position ff-2">Airzen Tech</p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="sw-dot-pagination tf-sw-pagination style-dt-blue mt-50"></div>
-            </div>
+              </div>   {/* testimonial-grid */}
           </div>
         </section>
 
@@ -1386,144 +1431,144 @@ export default function AboutUs() {
             </div>
           </div>
         </div> */}
-         <div className="section-clients flat-spacing-1">
-                  <div className="container">
-                    <div className="heading-section text-center mb-70">
-                      <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
-                        Connect Our — <span>Global Clients.</span>
-                      </div>
-                      <h2 className="title letter-space--3 fw-6 wow fadeInUp">
-                        Helping{" "}
-                        <span style={{ color: "var(--digital-marketing-blue)" }}>
-                          80+
-                        </span>{" "}
-                        brands{" "}
-                        <span
-                          style={{
-                            color: "linear-gradient(to right, #2196F3, #FF9800",
-                          }}
-                        >
-                          success
-                        </span>
-                      </h2>
-                    </div>
-        
-        {/* logos */}
-                    <div className="infiniteSlide-app list-brands">
-                      <div
-                        className="infiniteSlide infiniteSlide-wrapper tf-marquee g-30"
-                        data-clone="3"
-                      >
-                        <div className="infiniteSlide-slide">
-                          <div className="brand-card">
-                            <a className="brand-item">
-                              <img src={airzen} alt="AirZen" className="brand" />
-                            </a>
-        
-                            <h6 className="client-name">Airzen Technologies</h6>
-                            <p className="client-industry">
-                              Air Purification & Wellness
-                            </p>
-                          </div>
-                        </div>
-        
-                        <div className="infiniteSlide-slide">
-                          <div className="brand-card">
-                            <a className="brand-item">
-                              <img src={alizaStore} alt="aliza" className="brand" />
-                            </a>
-        
-                            <h6 className="client-name">Aliza Stores</h6>
-                            <p className="client-industry">E-Commerce & Retail</p>
-                          </div>
-                        </div>
-        
-                        <div className="infiniteSlide-slide">
-                          <div className="brand-card">
-                            <a className="brand-item">
-                              <img src={aqua} alt="aqua" className="brand" />
-                            </a>
-        
-                            <h6 className="client-name">Aqua Gold</h6>
-                            <p className="client-industry">Water Treatment Solutions</p>
-                          </div>
-                        </div>
-        
-                        <div className="infiniteSlide-slide">
-                          <div className="brand-card">
-                            <a className="brand-item">
-                              <img src={humStrum} alt="humstrum" className="brand" />
-                            </a>
-        
-                            <h6 className="client-name">Hum & Strum Music School</h6>
-                            <p className="client-industry">Music & Entertainment</p>
-                          </div>
-                        </div>
-        
-                        <div className="infiniteSlide-slide">
-                          <div className="brand-card">
-                            <a className="brand-item">
-                              <img src={chaskaTea} alt="chaskaTea" className="brand" />
-                            </a>
-        
-                            <h6 className="client-name">Chaska Tea</h6>
-                            <p className="client-industry">Food & Beverage</p>
-                          </div>
-                        </div>
-        
-                        <div className="infiniteSlide-slide">
-                          <div className="brand-card">
-                            <a className="brand-item">
-                              <img
-                                src={sriSaiExim}
-                                alt="sirsaiexim"
-                                className="brand"
-                              />
-                            </a>
-        
-                            <h6 className="client-name">Sri Sai Exim</h6>
-                            <p className="client-industry">Import & Export</p>
-                          </div>
-                        </div>
-        
-                        <div className="infiniteSlide-slide">
-                          <div className="brand-card">
-                            <a className="brand-item">
-                              <img src={dhsLogo} alt="dhs" className="brand" />
-                            </a>
-        
-                            <h6 className="client-name">Defence Housing Society</h6>
-                            <p className="client-industry">Real Estate & Housing</p>
-                          </div>
-                        </div>
-        
-                        <div className="infiniteSlide-slide">
-                          <div className="brand-card">
-                            <a className="brand-item">
-                              <img src={RRPL} alt="rrpl" className="brand" />
-                            </a>
-        
-                            <h6 className="client-name">Rajavruksha Realtors</h6>
-                            <p className="client-industry">
-                              Real Estate & Construction
-                            </p>
-                          </div>
-                        </div>
-        
-                        <div className="infiniteSlide-slide">
-                          <div className="brand-card">
-                            <a className="brand-item">
-                              <img src={RRPL} alt="plumeria" className="brand" />
-                            </a>
-        
-                            <h6 className="client-name">Plumeria Resort</h6>
-                            <p className="client-industry">Hospitality & Tourism</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+        <div className="section-clients flat-spacing-1">
+          <div className="container">
+            <div className="heading-section text-center mb-70">
+              <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
+                Connect Our — <span>Global Clients.</span>
+              </div>
+              <h2 className="title letter-space--3 fw-6 wow fadeInUp">
+                Helping{" "}
+                <span style={{ color: "var(--digital-marketing-blue)" }}>
+                  80+
+                </span>{" "}
+                brands{" "}
+                <span
+                  style={{
+                    color: "linear-gradient(to right, #2196F3, #FF9800",
+                  }}
+                >
+                  success
+                </span>
+              </h2>
+            </div>
+
+            {/* logos */}
+            <div className="infiniteSlide-app list-brands">
+              <div
+                className="infiniteSlide infiniteSlide-wrapper tf-marquee g-30"
+                data-clone="3"
+              >
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={airzen} alt="AirZen" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Airzen Technologies</h6>
+                    <p className="client-industry">
+                      Air Purification & Wellness
+                    </p>
                   </div>
                 </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={alizaStore} alt="aliza" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Aliza Stores</h6>
+                    <p className="client-industry">E-Commerce & Retail</p>
+                  </div>
+                </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={aqua} alt="aqua" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Aqua Gold</h6>
+                    <p className="client-industry">Water Treatment Solutions</p>
+                  </div>
+                </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={humStrum} alt="humstrum" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Hum & Strum Music School</h6>
+                    <p className="client-industry">Music & Entertainment</p>
+                  </div>
+                </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={chaskaTea} alt="chaskaTea" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Chaska Tea</h6>
+                    <p className="client-industry">Food & Beverage</p>
+                  </div>
+                </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img
+                        src={sriSaiExim}
+                        alt="sirsaiexim"
+                        className="brand"
+                      />
+                    </a>
+
+                    <h6 className="client-name">Sri Sai Exim</h6>
+                    <p className="client-industry">Import & Export</p>
+                  </div>
+                </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={dhsLogo} alt="dhs" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Defence Housing Society</h6>
+                    <p className="client-industry">Real Estate & Housing</p>
+                  </div>
+                </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={RRPL} alt="rrpl" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Rajavruksha Realtors</h6>
+                    <p className="client-industry">
+                      Real Estate & Construction
+                    </p>
+                  </div>
+                </div>
+
+                <div className="infiniteSlide-slide">
+                  <div className="brand-card">
+                    <a className="brand-item">
+                      <img src={RRPL} alt="plumeria" className="brand" />
+                    </a>
+
+                    <h6 className="client-name">Plumeria Resort</h6>
+                    <p className="client-industry">Hospitality & Tourism</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <Footer />
 
@@ -1532,12 +1577,26 @@ export default function AboutUs() {
 
       <div className="offcanvas offcanvas-start" id="mobileMenu">
         <div className="pop-up-nav-mobile">
-          <div className="canvas-header" style={{backgroundColor: "#1c1c1c", margin: "-15px -15px 15px -15px", padding: "15px"}}>
+          <div
+            className="canvas-header"
+            style={{
+              backgroundColor: "#1c1c1c",
+              margin: "-15px -15px 15px -15px",
+              padding: "15px",
+            }}
+          >
             <a href="#" className="logo-site">
-              <img src={DESLOGO} alt="Digital Elite Service" className="des-logo" style={{maxWidth: "150px"}} />
+              <img
+                src={DESLOGO}
+                alt="Digital Elite Service"
+                className="des-logo"
+                style={{ maxWidth: "150px" }}
+              />
             </a>
             <span
-              className="icon icon-close" style={{color: "white"}} data-bs-dismiss="offcanvas"
+              className="icon icon-close"
+              style={{ color: "white" }}
+              data-bs-dismiss="offcanvas"
             ></span>
           </div>
           <div className="canvas-body">

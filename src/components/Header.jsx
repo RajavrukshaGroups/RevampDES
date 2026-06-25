@@ -73,11 +73,11 @@ export default function Header() {
                             Team Details
                           </a>
                         </li>
-                        <li>
+                        {/* <li>
                           <a href="/pricing-plan" className="sub-menu_link">
                             Pricing Plan
                           </a>
-                        </li>
+                        </li> */}
                         <li>
                           <a href="/faqs" className="sub-menu_link">
                             Faqs

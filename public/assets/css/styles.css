@@ -7430,6 +7430,7 @@ form .form-content {
   justify-content: center;
   flex-direction: column;
   margin-top: -33px;
+  /* margin-top: -60px; */
 }
 .tes-item .user-tes .img-avt {
   max-width: 66px;

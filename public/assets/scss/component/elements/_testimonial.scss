@@ -145,15 +145,25 @@
 
 .tes-item {
     background-color: var(--digital-marketing-gray);
-    padding: 20px 20px 27px;
-    border: 1px solid var(--color-border-1);
-    border-radius: 20px;
+    padding: 20px;
+
+    min-height: 560px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .top {
+        // background-color: var(--white);
+        // padding: 32px 10px 63px;
+        // text-align: center;
+        // border-radius: 20px;
         background-color: var(--white);
-        padding: 32px 10px 63px;
-        text-align: center;
-        border-radius: 20px;
+    padding: 32px 18px 35px;
+    text-align: center;
+    border-radius: 20px;
+
+    min-height: 360px;
 
         .line {
             width: 100%;
@@ -181,37 +191,37 @@
         padding-top: 25px;
     }
 
-    .user-tes {
-        @include flex(center, center);
-        flex-direction: column;
-        margin-top: -33px;
+  .user-tes {
+    @include flex(center, center);
+    flex-direction: column;
 
-        .img-avt {
-            max-width: 66px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-bottom: 17px;
+    margin-top: -15px;
 
-            img {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
-        }
+    .img-avt {
+        width: 180px;
+        height: 95px;
 
-        .name {
-            margin-bottom: 5px;
-            color: var(--digital-marketing-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-            &:hover {
-                color: var(--digital-marketing-blue);
-            }
-        }
+        margin-bottom: 15px;
 
-        .position {
-            color: var(--paragraph);
+        overflow: visible;
+        border-radius: 0;
+        background: transparent;
+
+        img {
+            width: auto;
+            height: auto;
+
+            max-width: 170px;
+            max-height: 90px;
+
+            object-fit: contain;
         }
     }
+}
 
     &.style-2 {
         padding: 40px 15px;
