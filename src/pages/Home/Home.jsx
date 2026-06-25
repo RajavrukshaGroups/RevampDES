@@ -1,3 +1,4 @@
+import DESLOGO from "../../assets/images/header/DES_logo_white.png";
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -79,19 +80,19 @@ export default function Home() {
                 {/* <span className="color-dt-light">Designed for conversion.</span> */}
                 <span className="color-dt-light">Powered by strategy.</span>
               </div>
-              <h1 className="title letter-space--3 fw-6 split-text effect-right">
+              <h1 className="title letter-space--3 fw-4 split-text effect-right">
                 {/* Fueling business
                 <br />
                 to growth through
                 <br />
                 digital marketing */}
-                Elevating brands
-                <br />
+                Elevating brands{" "}
+                <br className="d-none d-md-block" />
                 with{" "}
                 <span style={{ color: "var(--digital-marketing-light)" }}>
                   performance
-                </span>
-                <br />
+                </span>{" "}
+                <br className="d-none d-md-block" />
                 marketing
               </h1>
               <div className="desc h5 lh-35 ff-2 fw-5 title-animation">
@@ -160,7 +161,7 @@ export default function Home() {
                 alt="Image"
               />
             </div>
-            <div className="bottom-hero-right d-flex g-10">
+            <div className="bottom-hero-right d-flex g-10 flex-wrap">
               <div className="d-flex flex-column justify-content-between">
                 <div className="box-team-card mb-10 wow fadeInLeft flex-1">
                   <div className="img-bg">
@@ -308,7 +309,7 @@ export default function Home() {
             </div>
 
             <div className="row rg-30">
-              <div className="col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="marketing-card wow fadeInUp">
                   <div className="img-sharp">
                     <div className="blob-wrapper">
@@ -330,13 +331,13 @@ export default function Home() {
                       traffic and engagement to higher and revenue
                     </p>
                     <div className="list-benefit d-flex g-30 rg-15 flex-wrap">
-                      <div className="benefit-item d-flex align-items-center g-10">
+                      <div className="benefit-item d-flex align-items-center g-10 flex-wrap">
                         <i className="icon-check fs-24"></i>
                         <span className="ff-2 fw-5">
                           SEO & Search Visibility
                         </span>
                       </div>
-                      <div className="benefit-item d-flex align-items-center g-10">
+                      <div className="benefit-item d-flex align-items-center g-10 flex-wrap">
                         <i className="icon-check fs-24"></i>
                         <span className="ff-2 fw-5">Data-Driven Strategy</span>
                       </div>
@@ -344,7 +345,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="image wow fadeInUp" data-wow-delay=".2s">
                   <img
                     loading="lazy"
@@ -356,7 +357,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="growth-card wow fadeInUp" data-wow-delay=".4s">
                   <div className="top-card">
                     <div className="counter-item">
@@ -429,7 +430,7 @@ export default function Home() {
             </div>
 
             <div className="row rg-30">
-              <div className="col-lg-8">
+              <div className="col-12 col-md-6 col-lg-8">
                 <div className="wg-video wow fadeInUp">
                   <div className="image">
                     <img
@@ -455,7 +456,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div
                   className="testimonial-card wow fadeInUp"
                   data-wow-delay=".2s"
@@ -533,7 +534,7 @@ export default function Home() {
                         className="title-according  h5 fw-5 letter-space--5"
                       >
                         <span
-                          className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5"
+                          className="left d-flex align-items-center g-70 flex-wrap h3 fw-6 letter-space--5"
                           style={{ color: "#ffffff" }}
                         >
                           <span className="number-accourding text-body-3 ff-2 fw-4">
@@ -621,7 +622,7 @@ export default function Home() {
                         className="title-according h5 fw-5 letter-space--5 collapsed"
                         style={{ color: "#ffffff" }}
                       >
-                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                        <span className="left d-flex align-items-center g-70 flex-wrap h3 fw-6 letter-space--5">
                           <span className="number-accourding text-body-3 ff-2 fw-4">
                             02
                           </span>
@@ -701,7 +702,7 @@ export default function Home() {
                         className="title-according h5 fw-5 letter-space--5 collapsed"
                       >
                         <span
-                          className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5"
+                          className="left d-flex align-items-center g-70 flex-wrap h3 fw-6 letter-space--5"
                           style={{ color: "#ffffff" }}
                         >
                           <span className="number-accourding text-body-3 ff-2 fw-4">
@@ -783,7 +784,7 @@ export default function Home() {
                         className="title-according h5 fw-5 letter-space--5 collapsed"
                       >
                         <span
-                          className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5"
+                          className="left d-flex align-items-center g-70 flex-wrap h3 fw-6 letter-space--5"
                           style={{ color: "#ffffff" }}
                         >
                           <span className="number-accourding text-body-3 ff-2 fw-4">
@@ -865,7 +866,7 @@ export default function Home() {
                         className="title-according h5 fw-5 letter-space--5 collapsed"
                       >
                         <span
-                          className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5"
+                          className="left d-flex align-items-center g-70 flex-wrap h3 fw-6 letter-space--5"
                           style={{ color: "#ffffff" }}
                         >
                           <span className="number-accourding text-body-3 ff-2 fw-4">
@@ -996,7 +997,7 @@ export default function Home() {
                                 <p className="header-according">
                                     <a href="#according1" data-bs-toggle="collapse"
                                         className="title-according  h5 fw-5 letter-space--5">
-                                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                                        <span className="left d-flex align-items-center g-70 flex-wrap h3 fw-6 letter-space--5">
                                             <span className="number-accourding text-body-3 ff-2 fw-4">01</span>
                                             Search Engine Optimization (SEO)
                                         </span>
@@ -1031,7 +1032,7 @@ export default function Home() {
                                 <p className="header-according">
                                     <a href="#according2" data-bs-toggle="collapse"
                                         className="title-according h5 fw-5 letter-space--5 collapsed">
-                                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                                        <span className="left d-flex align-items-center g-70 flex-wrap h3 fw-6 letter-space--5">
                                             <span className="number-accourding text-body-3 ff-2 fw-4">02</span>
                                             Pay-Per-Click Advertising (PPC)
                                         </span>
@@ -1066,7 +1067,7 @@ export default function Home() {
                                 <p className="header-according">
                                     <a href="#according3" data-bs-toggle="collapse"
                                         className="title-according h5 fw-5 letter-space--5 collapsed">
-                                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                                        <span className="left d-flex align-items-center g-70 flex-wrap h3 fw-6 letter-space--5">
                                             <span className="number-accourding text-body-3 ff-2 fw-4">03</span>
                                             Branding & Digital Strategy
                                         </span>
@@ -1101,7 +1102,7 @@ export default function Home() {
                                 <p className="header-according">
                                     <a href="#according4" data-bs-toggle="collapse"
                                         className="title-according h5 fw-5 letter-space--5 collapsed">
-                                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                                        <span className="left d-flex align-items-center g-70 flex-wrap h3 fw-6 letter-space--5">
                                             <span className="number-accourding text-body-3 ff-2 fw-4">04</span>
                                             Web Design & Development
                                         </span>
@@ -1136,7 +1137,7 @@ export default function Home() {
                                 <p className="header-according">
                                     <a href="#according5" data-bs-toggle="collapse"
                                         className="title-according h5 fw-5 letter-space--5 collapsed">
-                                        <span className="left d-flex align-items-center g-70 h3 fw-6 letter-space--5">
+                                        <span className="left d-flex align-items-center g-70 flex-wrap h3 fw-6 letter-space--5">
                                             <span className="number-accourding text-body-3 ff-2 fw-4">05</span>
                                             Influencer Marketing
                                         </span>
@@ -1206,42 +1207,42 @@ export default function Home() {
               data-clone="3"
             >
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Search Engine Optimization (SEO)
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Pay-Per-Click Advertising (PPC)
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Social Media Marketing (SMM)
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Branding &amp; Digital Strategy
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Influencer Marketing
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Web Design &amp; Development
                 </div>
@@ -1256,42 +1257,42 @@ export default function Home() {
               data-style="right"
             >
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Search Engine Optimization (SEO)
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Pay-Per-Click Advertising (PPC)
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Social Media Marketing (SMM)
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Branding &amp; Digital Strategy
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Influencer Marketing
                 </div>
               </div>
 
               <div className="infiniteSlide-slide">
-                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20">
+                <div className="h5 fw-6 marquee-item d-flex align-items-center g-20 flex-wrap">
                   <i className="icon-light"></i>
                   Web Design &amp; Development
                 </div>
@@ -1624,12 +1625,12 @@ export default function Home() {
                       Alexander Mitchell
                     </a>
                     <p className="position ff-2">Head of IT Operations</p>
-                    <div className="list-btn-bottom d-flex g-10">
+                    <div className="list-btn-bottom d-flex g-10 flex-wrap">
                       <a href="#" className="btn-add btn-plus">
                         <i className="icon-plus"></i>
                       </a>
 
-                      <ul className="list-btn-social d-flex g-10">
+                      <ul className="list-btn-social d-flex g-10 flex-wrap">
                         <li>
                           <a href="#" className="btn-add">
                             <i className="icon-fb"></i>
@@ -1675,12 +1676,12 @@ export default function Home() {
                       Christopher Langford
                     </a>
                     <p className="position ff-2">Project Manager</p>
-                    <div className="list-btn-bottom d-flex g-10">
+                    <div className="list-btn-bottom d-flex g-10 flex-wrap">
                       <a href="#" className="btn-add btn-plus">
                         <i className="icon-plus"></i>
                       </a>
 
-                      <ul className="list-btn-social d-flex g-10">
+                      <ul className="list-btn-social d-flex g-10 flex-wrap">
                         <li>
                           <a href="#" className="btn-add">
                             <i className="icon-fb"></i>
@@ -1726,12 +1727,12 @@ export default function Home() {
                       Nathaniel Blackwood
                     </a>
                     <p className="position ff-2">Cybersecurity Lead</p>
-                    <div className="list-btn-bottom d-flex g-10">
+                    <div className="list-btn-bottom d-flex g-10 flex-wrap">
                       <a href="#" className="btn-add btn-plus">
                         <i className="icon-plus"></i>
                       </a>
 
-                      <ul className="list-btn-social d-flex g-10">
+                      <ul className="list-btn-social d-flex g-10 flex-wrap">
                         <li>
                           <a href="#" className="btn-add">
                             <i className="icon-fb"></i>
@@ -1777,12 +1778,12 @@ export default function Home() {
                       Theodore Carrington
                     </a>
                     <p className="position ff-2">Lead UX/UI Designer</p>
-                    <div className="list-btn-bottom d-flex g-10">
+                    <div className="list-btn-bottom d-flex g-10 flex-wrap">
                       <a href="#" className="btn-add btn-plus">
                         <i className="icon-plus"></i>
                       </a>
 
-                      <ul className="list-btn-social d-flex g-10">
+                      <ul className="list-btn-social d-flex g-10 flex-wrap">
                         <li>
                           <a href="#" className="btn-add">
                             <i className="icon-fb"></i>
@@ -1828,12 +1829,12 @@ export default function Home() {
                       Maximilian Harrington
                     </a>
                     <p className="position ff-2">Software Development</p>
-                    <div className="list-btn-bottom d-flex g-10">
+                    <div className="list-btn-bottom d-flex g-10 flex-wrap">
                       <a href="#" className="btn-add btn-plus">
                         <i className="icon-plus"></i>
                       </a>
 
-                      <ul className="list-btn-social d-flex g-10">
+                      <ul className="list-btn-social d-flex g-10 flex-wrap">
                         <li>
                           <a href="#" className="btn-add">
                             <i className="icon-fb"></i>
@@ -2195,7 +2196,7 @@ export default function Home() {
                 </div>
                 <h2 className="title letter-space--3 fw-6 wow fadeInUp">
                   Let’s explore our <br />
-                  projects
+                  Works
                 </h2>
               </div>
 
@@ -2235,16 +2236,16 @@ export default function Home() {
                 />
               </a>
               <div className="content">
-                <div className="meta-project">
+                {/* <div className="meta-project">
                   <span className="ff-2 fw-5">Digital marketing</span>
                   <span className="line-dot"></span>
                   <span className="ff-2 fw-5">2026</span>
-                </div>
+                </div> */}
                 <a
                   href="/portfolio-details"
                   className="name-project h5 fw-6 letter-space--3"
                 >
-                  Global E-commerce SEO Campaign
+                E-commerce SEO Campaign
                 </a>
               </div>
             </div>
@@ -2260,11 +2261,11 @@ export default function Home() {
                 />
               </a>
               <div className="content">
-                <div className="meta-project">
+                {/* <div className="meta-project">
                   <span className="ff-2 fw-5">Digital marketing</span>
                   <span className="line-dot"></span>
                   <span className="ff-2 fw-5">2026</span>
-                </div>
+                </div> */}
                 <a
                   href="/portfolio-details"
                   className="name-project h5 fw-6 letter-space--3"
@@ -2285,11 +2286,11 @@ export default function Home() {
                 />
               </a>
               <div className="content">
-                <div className="meta-project">
+                {/* <div className="meta-project">
                   <span className="ff-2 fw-5">Digital marketing</span>
                   <span className="line-dot"></span>
                   <span className="ff-2 fw-5">2026</span>
-                </div>
+                </div> */}
                 <a
                   href="/portfolio-details"
                   className="name-project h5 fw-6 letter-space--3"
@@ -2310,11 +2311,11 @@ export default function Home() {
                 />
               </a>
               <div className="content">
-                <div className="meta-project">
+                {/* <div className="meta-project">
                   <span className="ff-2 fw-5">Digital marketing</span>
                   <span className="line-dot"></span>
                   <span className="ff-2 fw-5">2026</span>
-                </div>
+                </div> */}
                 <a
                   href="/portfolio-details"
                   className="name-project h5 fw-6 letter-space--3"
@@ -2335,11 +2336,11 @@ export default function Home() {
                 />
               </a>
               <div className="content">
-                <div className="meta-project">
+                {/* <div className="meta-project">
                   <span className="ff-2 fw-5">Digital marketing</span>
                   <span className="line-dot"></span>
                   <span className="ff-2 fw-5">2026</span>
-                </div>
+                </div> */}
                 <a
                   href="/portfolio-details"
                   className="name-project h5 fw-6 letter-space--3"
@@ -2360,11 +2361,11 @@ export default function Home() {
                 />
               </a>
               <div className="content">
-                <div className="meta-project">
+                {/* <div className="meta-project">
                   <span className="ff-2 fw-5">Digital marketing</span>
                   <span className="line-dot"></span>
                   <span className="ff-2 fw-5">2026</span>
-                </div>
+                </div> */}
                 <a
                   href="/portfolio-details"
                   className="name-project h5 fw-6 letter-space--3"
@@ -2396,7 +2397,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="row rg-70">
-              <div className="col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="tes-item mb-70">
                   <div className="top">
                     <div className="rating">
@@ -2492,7 +2493,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="box-quote-2">
                   <div className="top text-center">
                     <p className="fs-55 lh-70 fw-6">4.9/5</p>
@@ -2507,7 +2508,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4">
                 <div className="tes-item mb-70">
                   <div className="top">
                     <div className="rating">
@@ -2620,7 +2621,7 @@ export default function Home() {
 
           <div className="container">
             <div className="row justify-content-between rg-50">
-              {/* <div className="col-lg-5">
+              {/* <div className="col-12 col-md-6 col-lg-5">
                 <div className="heading-section">
                   <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
                     Read Our — <span>News & Blog.</span>
@@ -2644,7 +2645,7 @@ export default function Home() {
                 </div>
               </div> */}
 
-              {/* <div className="col-lg-6">
+              {/* <div className="col-12 col-md-6 col-lg-6">
                 <div
                   className="blog-card style-2 hover-img wow fadeInUp"
                   data-wow-delay=".2s"
@@ -2662,7 +2663,7 @@ export default function Home() {
                     <div className="meta d-flex align-items-center flex-wrap g-30 rg-15">
                       <a
                         href="#"
-                        className="user-blog d-flex align-items-center g-15"
+                        className="user-blog d-flex align-items-center g-15 flex-wrap"
                       >
                         <span className="img">
                           <img
@@ -2696,7 +2697,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-12 col-md-6 col-lg-6">
                 <div className="blog-card style-2 hover-img wow fadeInUp">
                   <a href="/blog-detail" className="image image-blog">
                     <img
@@ -2711,7 +2712,7 @@ export default function Home() {
                     <div className="meta d-flex align-items-center flex-wrap g-30 rg-15">
                       <a
                         href="#"
-                        className="user-blog d-flex align-items-center g-15"
+                        className="user-blog d-flex align-items-center g-15 flex-wrap"
                       >
                         <span className="img">
                           <img
@@ -2745,7 +2746,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-12 col-md-6 col-lg-6">
                 <div
                   className="blog-card style-2 hover-img wow fadeInUp"
                   data-wow-delay=".2s"
@@ -2763,7 +2764,7 @@ export default function Home() {
                     <div className="meta d-flex align-items-center flex-wrap g-30 rg-15">
                       <a
                         href="#"
-                        className="user-blog d-flex align-items-center g-15"
+                        className="user-blog d-flex align-items-center g-15 flex-wrap"
                       >
                         <span className="img">
                           <img
@@ -2949,13 +2950,12 @@ export default function Home() {
 
       <div className="offcanvas offcanvas-start" id="mobileMenu">
         <div className="pop-up-nav-mobile">
-          <div className="canvas-header">
+          <div className="canvas-header" style={{backgroundColor: "#1c1c1c", margin: "-15px -15px 15px -15px", padding: "15px"}}>
             <a href="#" className="logo-site">
-              <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
+              <img src={DESLOGO} alt="Digital Elite Service" className="des-logo" style={{maxWidth: "150px"}} />
             </a>
             <span
-              className="icon icon-close"
-              data-bs-dismiss="offcanvas"
+              className="icon icon-close" style={{color: "white"}} data-bs-dismiss="offcanvas"
             ></span>
           </div>
           <div className="canvas-body">
@@ -2989,7 +2989,7 @@ export default function Home() {
                 By combining data-driven strategy, creative storytelling, and
                 the latest marketing technologies
               </p>
-              <div className="list-img d-flex align-items-center g-20">
+              <div className="list-img d-flex align-items-center g-20 flex-wrap">
                 <div className="img">
                   <img
                     loading="lazy"

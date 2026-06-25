@@ -1,2451 +1,3 @@
-// // import React from "react";
-// // import Header from "../../../components/Header";
-// // import Footer from "../../../components/Footer";
-// // import SidePopup from "../../../components/sidePopup";
-// // import {
-// //   Building2,
-// //   HeartPulse,
-// //   GraduationCap,
-// //   Laptop,
-// //   ShoppingBag,
-// //   Factory,
-// //   Wallet,
-// //   Hotel,
-// //   Store,
-// //   Scale,
-// //   HardHat,
-// //   Rocket,
-// //   MapPin,
-// //   Navigation,
-// //   BadgeCheck,
-// //   Megaphone,
-// //   BarChart3,
-// //   Target,
-// //   TrendingUp,
-// //   Bot,
-// //   Brain,
-// //   Database,
-// //   Sparkles,
-// //   Users,
-// //   Gauge
-// // } from "lucide-react";
-// // // Import relevant images for the digital marketing service page
-// // import digitalHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg"; // Replace with relevant image
-// // import digitalDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg"; // Replace with relevant image
-// // import digitalDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg"; // Replace with relevant image
-// // import digitalDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg"; // Replace with relevant image
-
-// // export default function ServiceDetailsDigitalMarketing() {
-// //   return (
-// //     <>
-// //       <main id="wrapper">
-// //         <div className="preload preload-container">
-// //           <div className="spinner-circle lg">
-// //             <span className="spinner-circle1 spinner-child"></span>
-// //             <span className="spinner-circle2 spinner-child"></span>
-// //             <span className="spinner-circle3 spinner-child"></span>
-// //             <span className="spinner-circle4 spinner-child"></span>
-// //             <span className="spinner-circle5 spinner-child"></span>
-// //             <span className="spinner-circle6 spinner-child"></span>
-// //             <span className="spinner-circle7 spinner-child"></span>
-// //             <span className="spinner-circle8 spinner-child"></span>
-// //             <span className="spinner-circle9 spinner-child"></span>
-// //           </div>
-// //         </div>
-
-// //         <Header />
-
-// //         <div className="page-title style-2">
-// //           <div className="img-sharp sharp-1">
-// //             <div className="blob-wrapper">
-// //               <div className="blob"></div>
-// //             </div>
-// //           </div>
-// //           <div className="img-sharp sharp-2">
-// //             <div className="blob-wrapper">
-// //               <div className="blob"></div>
-// //             </div>
-// //           </div>
-// //           <div className="container">
-// //             <div className="page-title-content">
-// //               <h1 className="title">
-// //                 Leading <br />
-// //                 <span style={{ color: "var(--digital-marketing-light)" }}>
-// //                   Digital Marketing Agency
-// //                 </span>{" "}
-// //                 in Bangalore
-// //               </h1>
-// //               <div className="breadkcum">
-// //                 <a href="/">Home</a>
-// //                 <span className="icon icon-chevron-right"></span>
-// //                 <span className="breadkcum-active">Service Details</span>
-// //               </div>
-// //             </div>
-// //           </div>
-// //         </div>
-
-// //         <div className="img-page-title d-none d-lg-block">
-// //           <div className="container">
-// //             <div className="image">
-// //               <img
-// //                 loading="lazy"
-// //                 width="915"
-// //                 height="470"
-// //                 src={digitalHeroImage}
-// //                 alt="Leading Digital Marketing Agency in Bangalore"
-// //               />
-// //             </div>
-// //           </div>
-// //         </div>
-
-// //         <section className="section-services-detail flat-spacing-9">
-// //           <div className="container">
-// //             <div className="row rg-50">
-// //               <div className="col-lg-4">
-// //                 <div className="card-sidebar" style={{
-// //                   position: "sticky",
-// //                   top: "100px",
-// //                   left: "20px",
-// //                   zIndex: 1000,
-// //                 }}>
-// //                   <p className="h5 title fw-6 letter-space--3 lh-100">
-// //                     Services Category
-// //                   </p>
-// //                   <ul>
-// //                     <li>
-// //                       <a
-// //                         href="/services/Digital-marketing-agency-in-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2 active"
-// //                       >
-// //                         Digital Marketing
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/seo-services-in-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         Search Engine Optimization
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/social-media-marketing-company-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         Social Media Marketing
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/web-development-company-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         Web Design & Development
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/graphic-design-company-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         Graphic Design
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/lead-generation-companies-in-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         Lead Generation
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/whatsapp-automation-AI-providers-india"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         WhatsApp Automation
-// //                       </a>
-// //                     </li>
-// //                   </ul>
-// //                 </div>
-// //               </div>
-// //               <div className="col-lg-8">
-// //                 <div className="detail-content">
-// //                   <h2 className="fw-6 letter-space--3 color-dt-black mb-50">
-// //                     In today's competitive online landscape, businesses need more than just a website to succeed. They need a strategic digital presence that attracts customers, builds trust, and generates measurable results.{" "}
-// //                     <span style={{ color: "var(--digital-marketing-light)" }}>
-// //                       Digital Elite Service
-// //                     </span>{" "}
-// //                     is a trusted Digital marketing agency in Bangalore that helps businesses achieve sustainable growth through innovative, data-driven marketing solutions.
-// //                   </h2>
-// //                   <div className="text ff-2 color-paragraph mb-70">
-// //                     Our team of experienced marketers, SEO specialists, content strategists, social media experts, and paid advertising professionals work together to deliver exceptional outcomes for businesses across industries. Whether you are a startup looking to establish your online presence, a growing company aiming to generate qualified leads, or an established enterprise seeking to strengthen your digital footprint, Digital Elite Service offers customized solutions designed to meet your goals. As a leading Digital marketing company in Bangalore, we combine creativity, technology, and analytics to create campaigns that deliver real business impact.
-// //                   </div>
-
-// //                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-// //                     Why Businesses Choose{" "}
-// //                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                       Digital Elite Service
-// //                     </span>
-// //                   </h3>
-// //                   <div className="text ff-2 color-paragraph mb-40">
-// //                     Digital marketing has become an essential part of business growth. Customers are searching for products and services online before making purchasing decisions. If your business is not visible where your customers are looking, you risk losing valuable opportunities. Digital Elite Service helps businesses stay ahead of the competition through comprehensive digital marketing strategies tailored to their target audience and industry.
-// //                   </div>
-// //                   <div className="text ff-2 color-paragraph mb-70">
-// //                     Our approach focuses on understanding your business objectives, identifying market opportunities, and implementing strategies that generate measurable returns. We believe every business is unique, which is why we create personalized campaigns rather than relying on generic marketing templates. As a trusted Digital marketing agency in Bangalore, our mission is simple: help businesses grow through effective online marketing strategies that increase visibility, drive traffic, generate leads, and improve conversions.
-// //                   </div>
-
-// //                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-// //                     Comprehensive{" "}
-// //                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                       Digital Marketing Services
-// //                     </span>{" "}
-// //                     in Bangalore
-// //                   </h3>
-// //                   <div className="text ff-2 color-paragraph mb-40">
-// //                     Digital Elite Service provides a complete range of Digital marketing services in Bangalore designed to help businesses maximize their online potential.
-// //                   </div>
-
-// //                   {/* Core Services List - Styled as Process Items */}
-// //                   <div className="list-process-item d-flex justify-content-between mb-70">
-// //                     <div className="line d-none d-md-block"></div>
-// //                     <div className="process-item-2">
-// //                       <div className="number ff-2 fw-5 letter-space--2">01</div>
-// //                       <div className="dot"></div>
-// //                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-// //                         Search Engine Optimization (SEO)
-// //                       </a>
-// //                       <div className="desc ff-2">
-// //                         SEO remains one of the most effective ways to increase online visibility. Our SEO experts use proven strategies to improve search engine rankings and drive organic traffic.
-// //                       </div>
-// //                     </div>
-
-// //                     <div className="process-item-2">
-// //                       <div className="number ff-2 fw-5 letter-space--2">02</div>
-// //                       <div className="dot"></div>
-// //                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-// //                         Pay-Per-Click Advertising (PPC)
-// //                       </a>
-// //                       <div className="desc ff-2">
-// //                         Paid advertising provides immediate visibility and lead generation. Our PPC specialists create highly targeted campaigns that maximize ROI.
-// //                       </div>
-// //                     </div>
-
-// //                     <div className="process-item-2">
-// //                       <div className="number ff-2 fw-5 letter-space--2">03</div>
-// //                       <div className="dot"></div>
-// //                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-// //                         Social Media Marketing
-// //                       </a>
-// //                       <div className="desc ff-2">
-// //                         Social media platforms have become powerful channels for brand awareness, customer engagement, and lead generation through compelling campaigns.
-// //                       </div>
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Image Grid */}
-// //                   <div className="list-img d-flex g-30 align-items-center mb-70">
-// //                     <div className="image">
-// //                       <img
-// //                         loading="lazy"
-// //                         width="410"
-// //                         height="470"
-// //                         src={digitalDetailImage1}
-// //                         alt="Digital Marketing Strategy Session"
-// //                       />
-// //                     </div>
-// //                     <div className="image">
-// //                       <img
-// //                         loading="lazy"
-// //                         width="410"
-// //                         height="470"
-// //                         src={digitalDetailImage2}
-// //                         alt="Digital Marketing Campaign Results"
-// //                       />
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Additional Services Section */}
-// //                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30">
-// //                     More of our{" "}
-// //                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                       digital marketing services
-// //                     </span>{" "}
-// //                     include <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                       Content Marketing, Website Design & Development,
-// //                     </span>{" "}
-// //                     and <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                       Email Marketing
-// //                     </span>
-// //                     .
-// //                   </h3>
-// //                   <div className="text ff-2 color-paragraph mb-70">
-// //                     High-quality content plays a critical role in digital marketing success. Our content marketing strategies focus on creating valuable, informative, and engaging content that attracts and converts potential customers. Your website is often the first interaction potential customers have with your business. Digital Elite Service creates modern, responsive, and user-friendly websites designed to deliver exceptional user experiences. Email marketing continues to be one of the most cost-effective digital marketing channels, helping businesses nurture leads, retain customers, and increase revenue.
-// //                   </div>
-
-// //                   {/* Why Choose Us Section */}
-// //                   <div className="content-detail">
-// //                     <div className="left">
-// //                       <h4 className="title-3 fw-6 letter-space--3 lh-32 mb-50">
-// //                         <span style={{ color: "var(--digital-marketing-light)" }}>Digital Marketing Agency</span> in Bangalore Focused on Results
-// //                       </h4>
-
-// //                       <div className="desc-1 ff-2 mb-50 color-paragraph">
-// //                         <strong>Customized Marketing Strategies:</strong> We understand that every business has unique goals, challenges, and audiences. Our team develops personalized marketing strategies tailored specifically to your needs.
-// //                       </div>
-
-// //                       <div className="desc-1 ff-2 mb-50 color-paragraph">
-// //                         <strong>Experienced Professionals:</strong> Our team consists of skilled digital marketers with expertise across multiple disciplines. From SEO and PPC to social media and content marketing, we bring extensive experience to every project.
-// //                       </div>
-
-// //                       <div className="desc-1 ff-2 mb-50 color-paragraph">
-// //                         <strong>Transparent Communication & Data-Driven Decisions:</strong> We believe strong partnerships are built on trust and transparency. Every marketing decision is backed by data and analytics to maximize results.
-// //                       </div>
-
-// //                       <div className="desc-2 ff-2 color-paragraph">
-// //                         <strong>Focus on ROI:</strong> Our primary objective is helping businesses achieve measurable returns from their marketing investments. We focus on strategies that contribute directly to business growth.
-// //                       </div>
-// //                     </div>
-// //                     <div className="right image">
-// //                       <img
-// //                         loading="lazy"
-// //                         width="410"
-// //                         height="540"
-// //                         src={digitalDetailImage3}
-// //                         alt="Digital Elite Services Digital Marketing Process"
-// //                       />
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Industries We Serve */}
-// //                   <div className="mt-70">
-// //                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-// //                       Industries We{" "}
-// //                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                         Serve
-// //                       </span>
-// //                     </h3>
-// //                     <div className="text ff-2 color-paragraph mb-40">
-// //                       Digital Elite Service has experience working with businesses across various industries. Our diverse expertise allows us to understand unique market challenges and develop effective solutions.
-// //                     </div>
-// //                     <div className="row g-20" style={{ marginBottom: "20px" }}>
-// //                       <div className="col-md-6">
-// //                         <ul className="list-unstyled ff-2 color-paragraph">
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Building2 size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Real Estate
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <HeartPulse size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Healthcare
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <GraduationCap size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Education
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Laptop size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Information Technology
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <ShoppingBag size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             E-commerce
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Factory size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Manufacturing
-// //                           </li>
-// //                         </ul>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <ul className="list-unstyled ff-2 color-paragraph">
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Wallet size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Finance
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Hotel size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Hospitality
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Store size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Retail
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Scale size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Professional Services
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <HardHat size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Construction
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Rocket size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Startups
-// //                           </li>
-// //                         </ul>
-// //                       </div>
-// //                     </div>
-// //                     <div className="text ff-2 color-paragraph">
-// //                       Our industry-specific strategies ensure that marketing campaigns resonate with the right audience and deliver meaningful results.
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Best Digital Marketing Agency Section with Lucide Icons */}
-// //                   <div className="mt-70">
-// //                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-// //                       Best{" "}
-// //                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                         Digital Marketing Agency
-// //                       </span>{" "}
-// //                       in Bangalore for Local Businesses
-// //                     </h3>
-// //                     <div className="text ff-2 color-paragraph mb-40">
-// //                       Local businesses face unique challenges when competing in increasingly crowded markets. Digital Elite Service helps local businesses improve visibility, attract nearby customers, and generate qualified leads.
-// //                     </div>
-// //                     <div className="row g-30">
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-// //                           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-// //                             <MapPin size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             <h5 className="fw-6" style={{ marginBottom: 0 }}>Local SEO Optimization</h5>
-// //                           </div>
-// //                           <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-// //                             Improve visibility in local search results and attract customers in your area.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-// //                           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-// //                             <Navigation size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             <h5 className="fw-6" style={{ marginBottom: 0 }}>Google Business Profile Management</h5>
-// //                           </div>
-// //                           <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-// //                             Optimize your Google Business Profile for better local search performance.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-// //                           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-// //                             <BadgeCheck size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             <h5 className="fw-6" style={{ marginBottom: 0 }}>Reputation Management</h5>
-// //                           </div>
-// //                           <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-// //                             Build and maintain a positive online reputation through effective review management.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-// //                           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-// //                             <Megaphone size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             <h5 className="fw-6" style={{ marginBottom: 0 }}>Local Search Advertising</h5>
-// //                           </div>
-// //                           <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-// //                             Target customers actively searching for products and services in your location.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-// //                     </div>
-// //                   </div>
-
-// //                   {/* What Makes Digital Elite Service Different */}
-// //                   <div className="mt-70">
-// //                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-// //                       What Makes{" "}
-// //                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                         Digital Elite Service
-// //                       </span>{" "}
-// //                       Different
-// //                     </h3>
-// //                     <div className="text ff-2 color-paragraph mb-40">
-// //                       Choosing the right digital marketing company in Bangalore can significantly impact your business growth. Digital Elite Service stands out because of our commitment to excellence, innovation, and client success.
-// //                     </div>
-// //                     <div className="row g-30">
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px" }}>
-// //                           <h5 className="fw-6">Customized Marketing Strategies</h5>
-// //                           <p className="ff-2 color-paragraph">We develop personalized marketing strategies tailored specifically to your business needs.</p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px" }}>
-// //                           <h5 className="fw-6">Experienced Professionals</h5>
-// //                           <p className="ff-2 color-paragraph">Our skilled team brings extensive expertise across all digital marketing disciplines.</p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px" }}>
-// //                           <h5 className="fw-6">Transparent Communication</h5>
-// //                           <p className="ff-2 color-paragraph">Clients receive regular updates, detailed reports, and clear communication throughout.</p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px" }}>
-// //                           <h5 className="fw-6">Data-Driven Decision Making</h5>
-// //                           <p className="ff-2 color-paragraph">Every marketing decision is backed by data and analytics to optimize campaign performance.</p>
-// //                         </div>
-// //                       </div>
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Performance Marketing That Delivers Results - Updated with Lucide Icons */}
-// //                   <div className="mt-70">
-// //                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-// //                       Performance Marketing That{" "}
-// //                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                         Delivers Results
-// //                       </span>
-// //                     </h3>
-// //                     <div className="text ff-2 color-paragraph mb-40">
-// //                       Performance marketing focuses on measurable outcomes and accountability. Every campaign is designed to achieve specific objectives while maximizing efficiency.
-// //                     </div>
-// //                     <div className="row g-30">
-// //                       <div className="col-md-4">
-// //                         <div className="text-center p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-// //                           <BarChart3 size={40} style={{ color: "var(--digital-marketing-light)", marginBottom: "15px" }} />
-// //                           <h5 className="fw-6">Search & Social Advertising</h5>
-// //                           <p className="ff-2 color-paragraph">Targeted campaigns that drive qualified traffic and conversions.</p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-4">
-// //                         <div className="text-center p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-// //                           <Target size={40} style={{ color: "var(--digital-marketing-light)", marginBottom: "15px" }} />
-// //                           <h5 className="fw-6">Conversion Optimization</h5>
-// //                           <p className="ff-2 color-paragraph">Landing page testing and optimization to improve conversion rates.</p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-4">
-// //                         <div className="text-center p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", height: "100%" }}>
-// //                           <TrendingUp size={40} style={{ color: "var(--digital-marketing-light)", marginBottom: "15px" }} />
-// //                           <h5 className="fw-6">Campaign Analytics</h5>
-// //                           <p className="ff-2 color-paragraph">Continuous monitoring and optimization to maximize ROI.</p>
-// //                         </div>
-// //                       </div>
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Future-Ready Digital Marketing Solutions - Updated with Lucide Icons */}
-// //                   <div className="mt-70">
-// //                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-// //                       Future-Ready{" "}
-// //                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                         Digital Marketing Solutions
-// //                       </span>
-// //                     </h3>
-// //                     <div className="text ff-2 color-paragraph mb-40">
-// //                       The digital landscape continues to evolve rapidly. Businesses must adapt to changing consumer behaviors, emerging technologies, and evolving search engine algorithms. Digital Elite Service stays ahead of industry trends by adopting innovative marketing techniques and leveraging the latest technologies.
-// //                     </div>
-// //                     <div className="row g-30">
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-// //                           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-// //                             <Bot size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             <h5 className="fw-6" style={{ marginBottom: 0 }}>Marketing Automation</h5>
-// //                           </div>
-// //                           <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-// //                             Streamline campaigns and improve efficiency through automation.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-// //                           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-// //                             <Brain size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             <h5 className="fw-6" style={{ marginBottom: 0 }}>Artificial Intelligence Tools</h5>
-// //                           </div>
-// //                           <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-// //                             Leverage AI for smarter targeting, personalization, and optimization.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-// //                           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-// //                             <Database size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             <h5 className="fw-6" style={{ marginBottom: 0 }}>Advanced Analytics</h5>
-// //                           </div>
-// //                           <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-// //                             Gain deeper insights into campaign performance and customer behavior.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <div className="p-30" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px", marginBottom: "20px", height: "100%" }}>
-// //                           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "10px" }}>
-// //                             <Sparkles size={24} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             <h5 className="fw-6" style={{ marginBottom: 0 }}>Emerging Digital Platforms</h5>
-// //                           </div>
-// //                           <p className="ff-2 color-paragraph" style={{ marginLeft: "36px" }}>
-// //                             Stay ahead by adopting new platforms and channels as they emerge.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Final CTA */}
-// //                   <div className="mt-70 p-40" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px" }}>
-// //                     <h4 className="fw-6 letter-space--3 lh-32 mb-30" style={{marginTop:"53px"}}>
-// //                       Partner with{" "}
-// //                       <span style={{color:"var(--digital-marketing-light)"}}>
-// //                         Digital Elite Service
-// //                       </span>
-// //                     </h4>
-// //                     <p className="ff-2 color-paragraph mb-30">
-// //                       If you are looking for a reliable <strong>Digital marketing company in Bangalore</strong> that prioritizes growth, transparency, and measurable results, Digital Elite Service is your ideal partner. We are committed to helping businesses strengthen their online presence, attract qualified customers, and achieve long-term success.
-// //                     </p>
-// //                     <p className="ff-2 color-paragraph mb-30">
-// //                       As a trusted provider of <strong>Digital marketing services in Bangalore</strong>, we combine strategic expertise with creative execution to deliver impactful marketing campaigns. Whether your goal is improving search rankings, generating leads, increasing sales, or building brand awareness, our team has the experience and dedication to help you succeed.
-// //                     </p>
-// //                     <p className="ff-2 color-paragraph">
-// //                       <strong>
-// //                         Choose Digital Elite Service and experience the difference that professional, results-driven digital marketing can make for your business.
-// //                       </strong>{" "}
-// //                       Let us help you transform your online presence into a powerful engine for growth, visibility, and success.
-// //                     </p>
-// //                   </div>
-// //                 </div>
-// //               </div>
-// //             </div>
-// //           </div>
-// //         </section>
-
-// //         <Footer />
-
-// //         <div className="overlay-filter" id="overlay-filter"></div>
-// //       </main>
-
-// //       <div className="offcanvas offcanvas-start" id="mobileMenu">
-// //         <div className="pop-up-nav-mobile">
-// //           <div className="canvas-header">
-// //             <a href="#" className="logo-site">
-// //               <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
-// //             </a>
-// //             <span
-// //               className="icon icon-close"
-// //               data-bs-dismiss="offcanvas"
-// //             ></span>
-// //           </div>
-// //           <div className="canvas-body">
-// //             <div className="mb-content-top">
-// //               <ul
-// //                 className="nav-ul-mb"
-// //                 id="wrapper-menu-navigation"
-// //               ></ul>
-// //             </div>
-// //           </div>
-// //           <div className="canvas-bottom"></div>
-// //         </div>
-// //       </div>
-
-// //       <SidePopup />
-
-// //       <div className="progress-wrap">
-// //         <svg
-// //           className="progress-circle svg-content"
-// //           width="100%"
-// //           height="100%"
-// //           viewBox="-1 -1 102 102"
-// //         >
-// //           <path
-// //             d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-// //             style={{
-// //               transition: "strokeDashoffset 10ms linear",
-// //               strokeDasharray: "307.919, 307.919",
-// //               strokeDashoffset: "277.672",
-// //             }}
-// //           ></path>
-// //         </svg>
-// //       </div>
-// //     </>
-// //   );
-// // }
-
-
-// // import React from "react";
-// // import Header from "../../../components/Header";
-// // import Footer from "../../../components/Footer";
-// // import SidePopup from "../../../components/sidePopup";
-// // import {
-// //   Building2,
-// //   HeartPulse,
-// //   GraduationCap,
-// //   Laptop,
-// //   ShoppingBag,
-// //   Factory,
-// //   Wallet,
-// //   Hotel,
-// //   Store,
-// //   Scale,
-// //   HardHat,
-// //   Rocket,
-// //   MapPin,
-// //   Navigation,
-// //   BadgeCheck,
-// //   Megaphone,
-// //   BarChart3,
-// //   Target,
-// //   TrendingUp,
-// //   Bot,
-// //   Brain,
-// //   Database,
-// //   Sparkles,
-// // } from "lucide-react";
-// // // Import relevant images for the digital marketing service page
-// // import digitalHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
-// // import digitalDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
-// // import digitalDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
-// // import digitalDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
-
-// // export default function ServiceDetailsDigitalMarketing() {
-// //   // Helper function to handle image errors
-// //   const handleImageError = (e) => {
-// //     e.target.style.display = 'none';
-// //     // Optionally show a placeholder or fallback
-// //     const parent = e.target.parentElement;
-// //     if (parent) {
-// //       parent.style.background = '#f0f4f9';
-// //       parent.style.minHeight = '200px';
-// //       parent.style.display = 'flex';
-// //       parent.style.alignItems = 'center';
-// //       parent.style.justifyContent = 'center';
-// //       parent.style.borderRadius = '8px';
-// //       parent.innerHTML = '<span style="color: #666; font-size: 14px;">Image not available</span>';
-// //     }
-// //   };
-
-// //   return (
-// //     <>
-// //       <main id="wrapper">
-// //         <div className="preload preload-container">
-// //           <div className="spinner-circle lg">
-// //             <span className="spinner-circle1 spinner-child"></span>
-// //             <span className="spinner-circle2 spinner-child"></span>
-// //             <span className="spinner-circle3 spinner-child"></span>
-// //             <span className="spinner-circle4 spinner-child"></span>
-// //             <span className="spinner-circle5 spinner-child"></span>
-// //             <span className="spinner-circle6 spinner-child"></span>
-// //             <span className="spinner-circle7 spinner-child"></span>
-// //             <span className="spinner-circle8 spinner-child"></span>
-// //             <span className="spinner-circle9 spinner-child"></span>
-// //           </div>
-// //         </div>
-
-// //         <Header />
-
-// //         <div className="page-title style-2">
-// //           <div className="img-sharp sharp-1">
-// //             <div className="blob-wrapper">
-// //               <div className="blob"></div>
-// //             </div>
-// //           </div>
-// //           <div className="img-sharp sharp-2">
-// //             <div className="blob-wrapper">
-// //               <div className="blob"></div>
-// //             </div>
-// //           </div>
-// //           <div className="container">
-// //             <div className="page-title-content">
-// //               <h1 className="title">
-// //                 Leading <br />
-// //                 <span style={{ color: "var(--digital-marketing-light)" }}>
-// //                   Digital Marketing Agency
-// //                 </span>{" "}
-// //                 in Bangalore
-// //               </h1>
-// //               <div className="breadkcum">
-// //                 <a href="/">Home</a>
-// //                 <span className="icon icon-chevron-right"></span>
-// //                 <span className="breadkcum-active">Service Details</span>
-// //               </div>
-// //             </div>
-// //           </div>
-// //         </div>
-
-// //         <div className="img-page-title d-none d-lg-block">
-// //           <div className="container">
-// //             <div className="image">
-// //               <img
-// //                 loading="lazy"
-// //                 width="915"
-// //                 height="470"
-// //                 src={digitalHeroImage}
-// //                 alt="Leading Digital Marketing Agency in Bangalore"
-// //                 className="w-100"
-// //                 style={{ borderRadius: "8px", objectFit: "cover" }}
-// //                 onError={handleImageError}
-// //               />
-// //             </div>
-// //           </div>
-// //         </div>
-
-// //         <section className="section-services-detail flat-spacing-9">
-// //           <div className="container">
-// //             <div className="row rg-50">
-// //               <div className="col-lg-4">
-// //                 <div className="card-sidebar" style={{
-// //                   position: "sticky",
-// //                   top: "100px",
-// //                   left: "20px",
-// //                   zIndex: 1000,
-// //                 }}>
-// //                   <p className="h5 title fw-6 letter-space--3 lh-100">
-// //                     Services Category
-// //                   </p>
-// //                   <ul>
-// //                     <li>
-// //                       <a
-// //                         href="/services/Digital-marketing-agency-in-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2 active"
-// //                       >
-// //                         Digital Marketing
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/seo-services-in-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         Search Engine Optimization
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/social-media-marketing-company-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         Social Media Marketing
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/web-development-company-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         Web Design & Development
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/graphic-design-company-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         Graphic Design
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/lead-generation-companies-in-bangalore"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         Lead Generation
-// //                       </a>
-// //                     </li>
-// //                     <li>
-// //                       <a
-// //                         href="/services/whatsapp-automation-AI-providers-india"
-// //                         className="category-services-item fw-5 letter-space--2 ff-2"
-// //                       >
-// //                         WhatsApp Automation
-// //                       </a>
-// //                     </li>
-// //                   </ul>
-// //                 </div>
-// //               </div>
-// //               <div className="col-lg-8">
-// //                 <div className="detail-content">
-// //                   <h2 className="fw-6 letter-space--3 color-dt-black mb-50">
-// //                     In today's competitive online landscape, businesses need more than just a website to succeed. They need a strategic digital presence that attracts customers, builds trust, and generates measurable results.{" "}
-// //                     <span style={{ color: "var(--digital-marketing-light)" }}>
-// //                       Digital Elite Service
-// //                     </span>{" "}
-// //                     is a trusted Digital marketing agency in Bangalore that helps businesses achieve sustainable growth through innovative, data-driven marketing solutions.
-// //                   </h2>
-// //                   <div className="text ff-2 color-paragraph mb-70">
-// //                     Our team of experienced marketers, SEO specialists, content strategists, social media experts, and paid advertising professionals work together to deliver exceptional outcomes for businesses across industries. Whether you are a startup looking to establish your online presence, a growing company aiming to generate qualified leads, or an established enterprise seeking to strengthen your digital footprint, Digital Elite Service offers customized solutions designed to meet your goals. As a leading Digital marketing company in Bangalore, we combine creativity, technology, and analytics to create campaigns that deliver real business impact.
-// //                   </div>
-
-// //                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-// //                     Why Businesses Choose{" "}
-// //                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                       Digital Elite Service
-// //                     </span>
-// //                   </h3>
-// //                   <div className="text ff-2 color-paragraph mb-40">
-// //                     Digital marketing has become an essential part of business growth. Customers are searching for products and services online before making purchasing decisions. If your business is not visible where your customers are looking, you risk losing valuable opportunities. Digital Elite Service helps businesses stay ahead of the competition through comprehensive digital marketing strategies tailored to their target audience and industry.
-// //                   </div>
-// //                   <div className="text ff-2 color-paragraph mb-70">
-// //                     Our approach focuses on understanding your business objectives, identifying market opportunities, and implementing strategies that generate measurable returns. We believe every business is unique, which is why we create personalized campaigns rather than relying on generic marketing templates. As a trusted Digital marketing agency in Bangalore, our mission is simple: help businesses grow through effective online marketing strategies that increase visibility, drive traffic, generate leads, and improve conversions.
-// //                   </div>
-
-// //                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-// //                     Comprehensive{" "}
-// //                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                       Digital Marketing Services
-// //                     </span>{" "}
-// //                     in Bangalore
-// //                   </h3>
-// //                   <div className="text ff-2 color-paragraph mb-40">
-// //                     Digital Elite Service provides a complete range of Digital marketing services in Bangalore designed to help businesses maximize their online potential.
-// //                   </div>
-
-// //                   {/* Core Services List - Styled as Process Items */}
-// //                   <div className="list-process-item d-flex justify-content-between mb-70">
-// //                     <div className="line d-none d-md-block"></div>
-// //                     <div className="process-item-2">
-// //                       <div className="number ff-2 fw-5 letter-space--2">01</div>
-// //                       <div className="dot"></div>
-// //                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-// //                         Search Engine Optimization (SEO)
-// //                       </a>
-// //                       <div className="desc ff-2">
-// //                         SEO remains one of the most effective ways to increase online visibility. Our SEO experts use proven strategies to improve search engine rankings and drive organic traffic.
-// //                       </div>
-// //                     </div>
-
-// //                     <div className="process-item-2">
-// //                       <div className="number ff-2 fw-5 letter-space--2">02</div>
-// //                       <div className="dot"></div>
-// //                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-// //                         Pay-Per-Click Advertising (PPC)
-// //                       </a>
-// //                       <div className="desc ff-2">
-// //                         Paid advertising provides immediate visibility and lead generation. Our PPC specialists create highly targeted campaigns that maximize ROI.
-// //                       </div>
-// //                     </div>
-
-// //                     <div className="process-item-2">
-// //                       <div className="number ff-2 fw-5 letter-space--2">03</div>
-// //                       <div className="dot"></div>
-// //                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-// //                         Social Media Marketing
-// //                       </a>
-// //                       <div className="desc ff-2">
-// //                         Social media platforms have become powerful channels for brand awareness, customer engagement, and lead generation through compelling campaigns.
-// //                       </div>
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Image Grid - FIXED with proper responsive alignment and error handling */}
-// //                   {/* <div className="row g-30 mb-70">
-// //                     <div className="col-12 col-md-6">
-// //                       <div className="image" style={{ height: "100%", minHeight: "250px" }}>
-// //                         <img
-// //                           loading="lazy"
-// //                           width="410"
-// //                           height="470"
-// //                           src={digitalDetailImage1}
-// //                           alt="Digital Marketing Strategy Session"
-// //                           className="w-100"
-// //                           style={{ 
-// //                             objectFit: "cover", 
-// //                             borderRadius: "8px",
-// //                             height: "100%",
-// //                             maxHeight: "470px",
-// //                             width: "100%"
-// //                           }}
-// //                           onError={handleImageError}
-// //                         />
-// //                       </div>
-// //                     </div>
-// //                     <div className="col-12 col-md-6">
-// //                       <div className="image" style={{ height: "100%", minHeight: "250px" }}>
-// //                         <img
-// //                           loading="lazy"
-// //                           width="410"
-// //                           height="470"
-// //                           src={digitalDetailImage2}
-// //                           alt="Digital Marketing Campaign Results"
-// //                           className="w-100"
-// //                           style={{ 
-// //                             objectFit: "cover", 
-// //                             borderRadius: "8px",
-// //                             height: "100%",
-// //                             maxHeight: "470px",
-// //                             width: "100%"
-// //                           }}
-// //                           onError={handleImageError}
-// //                         />
-// //                       </div>
-// //                     </div>
-// //                   </div> */}
-
-// //                   <div className="row g-4 mb-40">
-// //                     <div className="col-12 col-md-6">
-// //                       <img
-// //                         loading="lazy"
-// //                         src={digitalDetailImage1}
-// //                         alt="Digital Marketing Strategy Session"
-// //                         className="img-fluid w-100"
-// //                         style={{
-// //                           borderRadius: "8px",
-// //                           aspectRatio: "410 / 470",
-// //                           objectFit: "cover",
-// //                         }}
-// //                         onError={handleImageError}
-// //                       />
-// //                     </div>
-
-// //                     <div className="col-12 col-md-6">
-// //                       <img
-// //                         loading="lazy"
-// //                         src={digitalDetailImage2}
-// //                         alt="Digital Marketing Campaign Results"
-// //                         className="img-fluid w-100"
-// //                         style={{
-// //                           borderRadius: "8px",
-// //                           aspectRatio: "410 / 470",
-// //                           objectFit: "cover",
-// //                         }}
-// //                         onError={handleImageError}
-// //                       />
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Additional Services Section */}
-// //                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30">
-// //                     More of our{" "}
-// //                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                       digital marketing services
-// //                     </span>{" "}
-// //                     include <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                       Content Marketing, Website Design & Development,
-// //                     </span>{" "}
-// //                     and <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                       Email Marketing
-// //                     </span>
-// //                     .
-// //                   </h3>
-// //                   <div className="text ff-2 color-paragraph mb-70">
-// //                     High-quality content plays a critical role in digital marketing success. Our content marketing strategies focus on creating valuable, informative, and engaging content that attracts and converts potential customers. Your website is often the first interaction potential customers have with your business. Digital Elite Service creates modern, responsive, and user-friendly websites designed to deliver exceptional user experiences. Email marketing continues to be one of the most cost-effective digital marketing channels, helping businesses nurture leads, retain customers, and increase revenue.
-// //                   </div>
-
-// //                   {/* Why Choose Us Section */}
-// //                   {/* <div className="content-detail">
-// //                     <div className="left">
-// //                       <h4 className="title-3 fw-6 letter-space--3 lh-32 mb-50">
-// //                         <span style={{ color: "var(--digital-marketing-light)" }}>Digital Marketing Agency</span> in Bangalore Focused on Results
-// //                       </h4>
-
-// //                       <div className="desc-1 ff-2 mb-50 color-paragraph">
-// //                         <strong>Customized Marketing Strategies:</strong> We understand that every business has unique goals, challenges, and audiences. Our team develops personalized marketing strategies tailored specifically to your needs.
-// //                       </div>
-
-// //                       <div className="desc-1 ff-2 mb-50 color-paragraph">
-// //                         <strong>Experienced Professionals:</strong> Our team consists of skilled digital marketers with expertise across multiple disciplines. From SEO and PPC to social media and content marketing, we bring extensive experience to every project.
-// //                       </div>
-
-// //                       <div className="desc-1 ff-2 mb-50 color-paragraph">
-// //                         <strong>Transparent Communication & Data-Driven Decisions:</strong> We believe strong partnerships are built on trust and transparency. Every marketing decision is backed by data and analytics to maximize results.
-// //                       </div>
-
-// //                       <div className="desc-2 ff-2 color-paragraph">
-// //                         <strong>Focus on ROI:</strong> Our primary objective is helping businesses achieve measurable returns from their marketing investments. We focus on strategies that contribute directly to business growth.
-// //                       </div>
-// //                     </div>
-// //                     <div className="right image">
-// //                       <img
-// //                         loading="lazy"
-// //                         width="410"
-// //                         height="540"
-// //                         src={digitalDetailImage3}
-// //                         alt="Digital Elite Services Digital Marketing Process"
-// //                         className="w-100"
-// //                         style={{ borderRadius: "8px", objectFit: "cover" }}
-// //                         onError={handleImageError}
-// //                       />
-// //                     </div>
-// //                   </div> */}
-
-// //                   <div className="row align-items-center g-4">
-// //   {/* Content */}
-// //   <div className="col-12 col-lg-7">
-// //     <h4 className="title-3 fw-6 letter-space--3 lh-32 mb-4">
-// //       <span style={{ color: "var(--digital-marketing-light)" }}>
-// //         Digital Marketing Agency
-// //       </span>{" "}
-// //       in Bangalore Focused on Results
-// //     </h4>
-
-// //     <div className="desc-1 ff-2 mb-4 color-paragraph">
-// //       <strong>Customized Marketing Strategies:</strong> We understand that
-// //       every business has unique goals, challenges, and audiences. Our team
-// //       develops personalized marketing strategies tailored specifically to your
-// //       needs.
-// //     </div>
-
-// //     <div className="desc-1 ff-2 mb-4 color-paragraph">
-// //       <strong>Experienced Professionals:</strong> Our team consists of skilled
-// //       digital marketers with expertise across multiple disciplines. From SEO and
-// //       PPC to social media and content marketing, we bring extensive experience
-// //       to every project.
-// //     </div>
-
-// //     <div className="desc-1 ff-2 mb-4 color-paragraph">
-// //       <strong>Transparent Communication & Data-Driven Decisions:</strong> We
-// //       believe strong partnerships are built on trust and transparency. Every
-// //       marketing decision is backed by data and analytics to maximize results.
-// //     </div>
-
-// //     <div className="desc-2 ff-2 color-paragraph">
-// //       <strong>Focus on ROI:</strong> Our primary objective is helping businesses
-// //       achieve measurable returns from their marketing investments. We focus on
-// //       strategies that contribute directly to business growth.
-// //     </div>
-// //   </div>
-
-// //   {/* Image */}
-// //   <div className="col-12 col-lg-5">
-// //     <img
-// //       loading="lazy"
-// //       src={digitalDetailImage3}
-// //       alt="Digital Elite Services Digital Marketing Process"
-// //       className="img-fluid w-100"
-// //       style={{
-// //         borderRadius: "8px",
-// //         objectFit: "cover",
-// //         maxHeight: "540px",
-// //       }}
-// //       onError={handleImageError}
-// //     />
-// //   </div>
-// // </div>
-
-// //                   {/* Industries We Serve */}
-// //                   <div className="mt-70">
-// //                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-// //                       Industries We{" "}
-// //                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                         Serve
-// //                       </span>
-// //                     </h3>
-// //                     <div className="text ff-2 color-paragraph mb-40">
-// //                       Digital Elite Service has experience working with businesses across various industries. Our diverse expertise allows us to understand unique market challenges and develop effective solutions.
-// //                     </div>
-// //                     {/* <div className="row g-20" style={{ marginBottom: "20px" }}>
-// //                       <div className="col-md-6">
-// //                         <ul className="list-unstyled ff-2 color-paragraph">
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Building2 size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Real Estate
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <HeartPulse size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Healthcare
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <GraduationCap size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Education
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Laptop size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Information Technology
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <ShoppingBag size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             E-commerce
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Factory size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Manufacturing
-// //                           </li>
-// //                         </ul>
-// //                       </div>
-// //                       <div className="col-md-6">
-// //                         <ul className="list-unstyled ff-2 color-paragraph">
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Wallet size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Finance
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Hotel size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Hospitality
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Store size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Retail
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Scale size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Professional Services
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <HardHat size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Construction
-// //                           </li>
-// //                           <li className="mb-20" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-// //                             <Rocket size={20} style={{ color: "var(--digital-marketing-light)", flexShrink: 0 }} />
-// //                             Startups
-// //                           </li>
-// //                         </ul>
-// //                       </div>
-// //                     </div> */}
-
-// //                      <div
-// //                     className="d-flex flex-wrap"
-// //                     style={{
-// //                       gap: "20px 40px",
-// //                       marginBottom: "20px",
-// //                     }}
-// //                   >
-// //                     {[
-// //                       { icon: <Building2 size={20} />, text: "Real Estate" },
-// //                       { icon: <HeartPulse size={20} />, text: "Healthcare" },
-// //                       { icon: <GraduationCap size={20} />, text: "Education" },
-// //                       { icon: <Laptop size={20} />, text: "Information Technology" },
-// //                       { icon: <ShoppingBag size={20} />, text: "E-commerce" },
-// //                       { icon: <Factory size={20} />, text: "Manufacturing" },
-// //                       { icon: <Wallet size={20} />, text: "Finance" },
-// //                       { icon: <Hotel size={20} />, text: "Hospitality" },
-// //                       { icon: <Store size={20} />, text: "Retail" },
-// //                       { icon: <Scale size={20} />, text: "Professional Services" },
-// //                       { icon: <HardHat size={20} />, text: "Construction" },
-// //                       { icon: <Rocket size={20} />, text: "Startups" },
-// //                     ].map((item, index) => (
-// //                       <div
-// //                         key={index}
-// //                         style={{
-// //                           display: "flex",
-// //                           alignItems: "center",
-// //                           gap: "12px",
-// //                           minWidth: "220px",
-// //                           flex: "1 1 250px",
-// //                         }}
-// //                         className="ff-2 color-paragraph"
-// //                       >
-// //                         <span
-// //                           style={{
-// //                             color: "var(--digital-marketing-light)",
-// //                             flexShrink: 0,
-// //                           }}
-// //                         >
-// //                           {item.icon}
-// //                         </span>
-// //                         {item.text}
-// //                       </div>
-// //                     ))}
-// //                   </div>
-// //                     <div className="text ff-2 color-paragraph">
-// //                       Our industry-specific strategies ensure that marketing campaigns resonate with the right audience and deliver meaningful results.
-// //                     </div>
-// //                   </div>
-                  
-
-// //                   {/* Best Digital Marketing Agency Section with Lucide Icons */}
-// //                   <div className="mt-70">
-// //                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-// //                       Best{" "}
-// //                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                         Digital Marketing Agency
-// //                       </span>{" "}
-// //                       in Bangalore for Local Businesses
-// //                     </h3>
-// //                     <div className="text ff-2 color-paragraph mb-40">
-// //                       Local businesses face unique challenges when competing in increasingly crowded markets. Digital Elite Service helps local businesses improve visibility, attract nearby customers, and generate qualified leads.
-// //                     </div>
-// //                     <div
-// //                     style={{
-// //                       display: "flex",
-// //                       flexWrap: "wrap",
-// //                       gap: "20px",
-// //                     }}
-// //                   >
-// //                     {[
-// //                       {
-// //                         icon: <MapPin size={24} />,
-// //                         title: "Local SEO Optimization",
-// //                         desc: "Improve visibility in local search results and attract customers in your area.",
-// //                       },
-// //                       {
-// //                         icon: <Navigation size={24} />,
-// //                         title: "Google Business Profile Management",
-// //                         desc: "Optimize your Google Business Profile for better local search performance.",
-// //                       },
-// //                       {
-// //                         icon: <BadgeCheck size={24} />,
-// //                         title: "Reputation Management",
-// //                         desc: "Build and maintain a positive online reputation through effective review management.",
-// //                       },
-// //                       {
-// //                         icon: <Megaphone size={24} />,
-// //                         title: "Local Search Advertising",
-// //                         desc: "Target customers actively searching for products and services in your location.",
-// //                       },
-// //                     ].map((item, index) => (
-// //                       <div
-// //                         key={index}
-// //                         style={{
-// //                           flex: "1 1 350px",
-// //                           minWidth: "300px",
-// //                           background: "var(--digital-marketing-light-bg)",
-// //                           borderRadius: "12px",
-// //                           padding: "30px",
-// //                         }}
-// //                       >
-// //                         <div
-// //                           style={{
-// //                             display: "flex",
-// //                             alignItems: "center",
-// //                             gap: "12px",
-// //                             marginBottom: "12px",
-// //                           }}
-// //                         >
-// //                           <span
-// //                             style={{
-// //                               color: "var(--digital-marketing-light)",
-// //                               flexShrink: 0,
-// //                             }}
-// //                           >
-// //                             {item.icon}
-// //                           </span>
-// //                           <h5 className="fw-6 mb-0">{item.title}</h5>
-// //                         </div>
-
-// //                         <p className="ff-2 color-paragraph mb-0">
-// //                           {item.desc}
-// //                         </p>
-// //                       </div>
-// //                     ))}
-// //                   </div>
-// //                   </div>
-
-                  
-
-// //                   {/* What Makes Digital Elite Service Different */}
-// //                   <div className="mt-70">
-// //                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-// //                       What Makes{" "}
-// //                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                         Digital Elite Service
-// //                       </span>{" "}
-// //                       Different
-// //                     </h3>
-// //                     <div className="text ff-2 color-paragraph mb-40">
-// //                       Choosing the right digital marketing company in Bangalore can significantly impact your business growth. Digital Elite Service stands out because of our commitment to excellence, innovation, and client success.
-// //                     </div>
-// //                   <div className="row g-4">
-// //                     <div className="col-12 col-md-6 d-flex">
-// //                       <div
-// //                         className="p-30 w-100"
-// //                         style={{
-// //                           background: "var(--digital-marketing-light-bg)",
-// //                           borderRadius: "12px",
-// //                         }}
-// //                       >
-// //                         <h5 className="fw-6">Customized Marketing Strategies</h5>
-// //                         <p className="ff-2 color-paragraph mb-0">
-// //                           We develop personalized marketing strategies tailored specifically to your business needs.
-// //                         </p>
-// //                       </div>
-// //                     </div>
-
-// //                     <div className="col-12 col-md-6 d-flex">
-// //                       <div
-// //                         className="p-30 w-100"
-// //                         style={{
-// //                           background: "var(--digital-marketing-light-bg)",
-// //                           borderRadius: "12px",
-// //                         }}
-// //                       >
-// //                         <h5 className="fw-6">Experienced Professionals</h5>
-// //                         <p className="ff-2 color-paragraph mb-0">
-// //                           Our skilled team brings extensive expertise across all digital marketing disciplines.
-// //                         </p>
-// //                       </div>
-// //                     </div>
-
-// //                     <div className="col-12 col-md-6 d-flex">
-// //                       <div
-// //                         className="p-30 w-100"
-// //                         style={{
-// //                           background: "var(--digital-marketing-light-bg)",
-// //                           borderRadius: "12px",
-// //                         }}
-// //                       >
-// //                         <h5 className="fw-6">Transparent Communication</h5>
-// //                         <p className="ff-2 color-paragraph mb-0">
-// //                           Clients receive regular updates, detailed reports, and clear communication throughout.
-// //                         </p>
-// //                       </div>
-// //                     </div>
-
-// //                     <div className="col-12 col-md-6 d-flex">
-// //                       <div
-// //                         className="p-30 w-100"
-// //                         style={{
-// //                           background: "var(--digital-marketing-light-bg)",
-// //                           borderRadius: "12px",
-// //                         }}
-// //                       >
-// //                         <h5 className="fw-6">Data-Driven Decision Making</h5>
-// //                         <p className="ff-2 color-paragraph mb-0">
-// //                           Every marketing decision is backed by data and analytics to optimize campaign performance.
-// //                         </p>
-// //                       </div>
-// //                     </div>
-// //                   </div>
-// //                   </div>
-
-// //                   {/* Performance Marketing That Delivers Results - Updated with Lucide Icons */}
-// //                   <div className="mt-70">
-// //                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-// //                       Performance Marketing That{" "}
-// //                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                         Delivers Results
-// //                       </span>
-// //                     </h3>
-// //                     <div className="text ff-2 color-paragraph mb-40">
-// //                       Performance marketing focuses on measurable outcomes and accountability. Every campaign is designed to achieve specific objectives while maximizing efficiency.
-// //                     </div>
-// //                       <div className="row g-4">
-// //                         <div className="col-12 col-md-4 d-flex">
-// //                           <div
-// //                             className="text-center p-30 w-100"
-// //                             style={{
-// //                               background: "var(--digital-marketing-light-bg)",
-// //                               borderRadius: "12px",
-// //                             }}
-// //                           >
-// //                             <BarChart3
-// //                               size={40}
-// //                               style={{
-// //                                 color: "var(--digital-marketing-light)",
-// //                                 marginBottom: "15px",
-// //                               }}
-// //                             />
-// //                             <h5 className="fw-6">Search & Social Advertising</h5>
-// //                             <p className="ff-2 color-paragraph mb-0">
-// //                               Targeted campaigns that drive qualified traffic and conversions.
-// //                             </p>
-// //                           </div>
-// //                         </div>
-
-// //                         <div className="col-12 col-md-4 d-flex">
-// //                           <div
-// //                             className="text-center p-30 w-100"
-// //                             style={{
-// //                               background: "var(--digital-marketing-light-bg)",
-// //                               borderRadius: "12px",
-// //                             }}
-// //                           >
-// //                             <Target
-// //                               size={40}
-// //                               style={{
-// //                                 color: "var(--digital-marketing-light)",
-// //                                 marginBottom: "15px",
-// //                               }}
-// //                             />
-// //                             <h5 className="fw-6">Conversion Optimizer</h5>
-// //                             <p className="ff-2 color-paragraph mb-0">
-// //                               Landing page testing and optimization to improve conversion rates.
-// //                             </p>
-// //                           </div>
-// //                         </div>
-
-// //                         <div className="col-12 col-md-4 d-flex">
-// //                           <div
-// //                             className="text-center p-30 w-100"
-// //                             style={{
-// //                               background: "var(--digital-marketing-light-bg)",
-// //                               borderRadius: "12px",
-// //                             }}
-// //                           >
-// //                             <TrendingUp
-// //                               size={40}
-// //                               style={{
-// //                                 color: "var(--digital-marketing-light)",
-// //                                 marginBottom: "15px",
-// //                               }}
-// //                             />
-// //                             <h5 className="fw-6">Campaign Analytics</h5>
-// //                             <p className="ff-2 color-paragraph mb-0">
-// //                               Continuous monitoring and optimization to maximize ROI.
-// //                             </p>
-// //                           </div>
-// //                         </div>
-// //                       </div>
-// //                   </div>
-
-// //                   {/* Future-Ready Digital Marketing Solutions - Updated with Lucide Icons */}
-// //                   <div className="mt-70">
-// //                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-// //                       Future-Ready{" "}
-// //                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-// //                         Digital Marketing Solutions
-// //                       </span>
-// //                     </h3>
-// //                     <div className="text ff-2 color-paragraph mb-40">
-// //                       The digital landscape continues to evolve rapidly. Businesses must adapt to changing consumer behaviors, emerging technologies, and evolving search engine algorithms. Digital Elite Service stays ahead of industry trends by adopting innovative marketing techniques and leveraging the latest technologies.
-// //                     </div>
-// //                     <div className="row g-4">
-// //                       <div className="col-12 col-md-6 d-flex">
-// //                         <div
-// //                           className="p-30 w-100"
-// //                           style={{
-// //                             background: "var(--digital-marketing-light-bg)",
-// //                             borderRadius: "12px",
-// //                           }}
-// //                         >
-// //                           <div
-// //                             style={{
-// //                               display: "flex",
-// //                               alignItems: "center",
-// //                               gap: "12px",
-// //                               marginBottom: "10px",
-// //                             }}
-// //                           >
-// //                             <Bot
-// //                               size={24}
-// //                               style={{
-// //                                 color: "var(--digital-marketing-light)",
-// //                                 flexShrink: 0,
-// //                               }}
-// //                             />
-// //                             <h5 className="fw-6 mb-0">Marketing Automation</h5>
-// //                           </div>
-
-// //                           <p className="ff-2 color-paragraph mb-0">
-// //                             Streamline campaigns and improve efficiency through automation.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-
-// //                       <div className="col-12 col-md-6 d-flex">
-// //                         <div
-// //                           className="p-30 w-100"
-// //                           style={{
-// //                             background: "var(--digital-marketing-light-bg)",
-// //                             borderRadius: "12px",
-// //                           }}
-// //                         >
-// //                           <div
-// //                             style={{
-// //                               display: "flex",
-// //                               alignItems: "center",
-// //                               gap: "12px",
-// //                               marginBottom: "10px",
-// //                             }}
-// //                           >
-// //                             <Brain
-// //                               size={24}
-// //                               style={{
-// //                                 color: "var(--digital-marketing-light)",
-// //                                 flexShrink: 0,
-// //                               }}
-// //                             />
-// //                             <h5 className="fw-6 mb-0">Artificial Intelligence Tools</h5>
-// //                           </div>
-
-// //                           <p className="ff-2 color-paragraph mb-0">
-// //                             Leverage AI for smarter targeting, personalization, and optimization.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-
-// //                       <div className="col-12 col-md-6 d-flex">
-// //                         <div
-// //                           className="p-30 w-100"
-// //                           style={{
-// //                             background: "var(--digital-marketing-light-bg)",
-// //                             borderRadius: "12px",
-// //                           }}
-// //                         >
-// //                           <div
-// //                             style={{
-// //                               display: "flex",
-// //                               alignItems: "center",
-// //                               gap: "12px",
-// //                               marginBottom: "10px",
-// //                             }}
-// //                           >
-// //                             <Database
-// //                               size={24}
-// //                               style={{
-// //                                 color: "var(--digital-marketing-light)",
-// //                                 flexShrink: 0,
-// //                               }}
-// //                             />
-// //                             <h5 className="fw-6 mb-0">Advanced Analytics</h5>
-// //                           </div>
-
-// //                           <p className="ff-2 color-paragraph mb-0">
-// //                             Gain deeper insights into campaign performance and customer behavior.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-
-// //                       <div className="col-12 col-md-6 d-flex">
-// //                         <div
-// //                           className="p-30 w-100"
-// //                           style={{
-// //                             background: "var(--digital-marketing-light-bg)",
-// //                             borderRadius: "12px",
-// //                           }}
-// //                         >
-// //                           <div
-// //                             style={{
-// //                               display: "flex",
-// //                               alignItems: "center",
-// //                               gap: "12px",
-// //                               marginBottom: "10px",
-// //                             }}
-// //                           >
-// //                             <Sparkles
-// //                               size={24}
-// //                               style={{
-// //                                 color: "var(--digital-marketing-light)",
-// //                                 flexShrink: 0,
-// //                               }}
-// //                             />
-// //                             <h5 className="fw-6 mb-0">Emerging Digital Platforms</h5>
-// //                           </div>
-
-// //                           <p className="ff-2 color-paragraph mb-0">
-// //                             Stay ahead by adopting new platforms and channels as they emerge.
-// //                           </p>
-// //                         </div>
-// //                       </div>
-// //                     </div>
-// //                   </div>
-
-// //                   {/* Final CTA */}
-// //                   <div className="mt-70 p-40" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px" }}>
-// //                     <h4 className="fw-6 letter-space--3 lh-32 mb-30" style={{marginTop:"53px"}}>
-// //                       Partner with{" "}
-// //                       <span style={{color:"var(--digital-marketing-light)"}}>
-// //                         Digital Elite Service
-// //                       </span>
-// //                     </h4>
-// //                     <p className="ff-2 color-paragraph mb-30">
-// //                       If you are looking for a reliable <strong>Digital marketing company in Bangalore</strong> that prioritizes growth, transparency, and measurable results, Digital Elite Service is your ideal partner. We are committed to helping businesses strengthen their online presence, attract qualified customers, and achieve long-term success.
-// //                     </p>
-// //                     <p className="ff-2 color-paragraph mb-30">
-// //                       As a trusted provider of <strong>Digital marketing services in Bangalore</strong>, we combine strategic expertise with creative execution to deliver impactful marketing campaigns. Whether your goal is improving search rankings, generating leads, increasing sales, or building brand awareness, our team has the experience and dedication to help you succeed.
-// //                     </p>
-// //                     <p className="ff-2 color-paragraph">
-// //                       <strong>
-// //                         Choose Digital Elite Service and experience the difference that professional, results-driven digital marketing can make for your business.
-// //                       </strong>{" "}
-// //                       Let us help you transform your online presence into a powerful engine for growth, visibility, and success.
-// //                     </p>
-// //                   </div>
-// //                 </div>
-// //               </div>
-// //             </div>
-// //           </div>
-// //         </section>
-
-// //         <Footer />
-
-// //         <div className="overlay-filter" id="overlay-filter"></div>
-// //       </main>
-
-// //       <div className="offcanvas offcanvas-start" id="mobileMenu">
-// //         <div className="pop-up-nav-mobile">
-// //           <div className="canvas-header">
-// //             <a href="#" className="logo-site">
-// //               <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
-// //             </a>
-// //             <span
-// //               className="icon icon-close"
-// //               data-bs-dismiss="offcanvas"
-// //             ></span>
-// //           </div>
-// //           <div className="canvas-body">
-// //             <div className="mb-content-top">
-// //               <ul
-// //                 className="nav-ul-mb"
-// //                 id="wrapper-menu-navigation"
-// //               ></ul>
-// //             </div>
-// //           </div>
-// //           <div className="canvas-bottom"></div>
-// //         </div>
-// //       </div>
-
-// //       <SidePopup />
-
-// //       <div className="progress-wrap">
-// //         <svg
-// //           className="progress-circle svg-content"
-// //           width="100%"
-// //           height="100%"
-// //           viewBox="-1 -1 102 102"
-// //         >
-// //           <path
-// //             d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-// //             style={{
-// //               transition: "strokeDashoffset 10ms linear",
-// //               strokeDasharray: "307.919, 307.919",
-// //               strokeDashoffset: "277.672",
-// //             }}
-// //           ></path>
-// //         </svg>
-// //       </div>
-// //     </>
-// //   );
-// // }
-
-// import React from "react";
-// import Header from "../../../components/Header";
-// import Footer from "../../../components/Footer";
-// import SidePopup from "../../../components/sidePopup";
-// import {
-//   Building2,
-//   HeartPulse,
-//   GraduationCap,
-//   Laptop,
-//   ShoppingBag,
-//   Factory,
-//   Wallet,
-//   Hotel,
-//   Store,
-//   Scale,
-//   HardHat,
-//   Rocket,
-//   MapPin,
-//   Navigation,
-//   BadgeCheck,
-//   Megaphone,
-//   BarChart3,
-//   Target,
-//   TrendingUp,
-//   Bot,
-//   Brain,
-//   Database,
-//   Sparkles,
-// } from "lucide-react";
-// // Import relevant images for the digital marketing service page
-// import digitalHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
-// import digitalDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
-// import digitalDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
-// import digitalDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
-
-// export default function ServiceDetailsDigitalMarketing() {
-//   // Helper function to handle image errors
-//   const handleImageError = (e) => {
-//     e.target.style.display = 'none';
-//     const parent = e.target.parentElement;
-//     if (parent) {
-//       parent.style.background = '#f0f4f9';
-//       parent.style.minHeight = '200px';
-//       parent.style.display = 'flex';
-//       parent.style.alignItems = 'center';
-//       parent.style.justifyContent = 'center';
-//       parent.style.borderRadius = '8px';
-//       parent.innerHTML = '<span style="color: #666; font-size: 14px;">Image not available</span>';
-//     }
-//   };
-
-//   return (
-//     <>
-//       <main id="wrapper">
-//         <div className="preload preload-container">
-//           <div className="spinner-circle lg">
-//             <span className="spinner-circle1 spinner-child"></span>
-//             <span className="spinner-circle2 spinner-child"></span>
-//             <span className="spinner-circle3 spinner-child"></span>
-//             <span className="spinner-circle4 spinner-child"></span>
-//             <span className="spinner-circle5 spinner-child"></span>
-//             <span className="spinner-circle6 spinner-child"></span>
-//             <span className="spinner-circle7 spinner-child"></span>
-//             <span className="spinner-circle8 spinner-child"></span>
-//             <span className="spinner-circle9 spinner-child"></span>
-//           </div>
-//         </div>
-
-//         <Header />
-
-//         <div className="page-title style-2">
-//           <div className="img-sharp sharp-1">
-//             <div className="blob-wrapper">
-//               <div className="blob"></div>
-//             </div>
-//           </div>
-//           <div className="img-sharp sharp-2">
-//             <div className="blob-wrapper">
-//               <div className="blob"></div>
-//             </div>
-//           </div>
-//           <div className="container">
-//             <div className="page-title-content">
-//               <h1 className="title">
-//                 Leading <br />
-//                 <span style={{ color: "var(--digital-marketing-light)" }}>
-//                   Digital Marketing Agency
-//                 </span>{" "}
-//                 in Bangalore
-//               </h1>
-//               <div className="breadkcum">
-//                 <a href="/">Home</a>
-//                 <span className="icon icon-chevron-right"></span>
-//                 <span className="breadkcum-active">Service Details</span>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="img-page-title d-none d-lg-block">
-//           <div className="container">
-//             <div className="image">
-//               <img
-//                 loading="lazy"
-//                 width="915"
-//                 height="470"
-//                 src={digitalHeroImage}
-//                 alt="Leading Digital Marketing Agency in Bangalore"
-//                 className="w-100"
-//                 style={{ borderRadius: "8px", objectFit: "cover" }}
-//                 onError={handleImageError}
-//               />
-//             </div>
-//           </div>
-//         </div>
-
-//         <section className="section-services-detail flat-spacing-9">
-//           <div className="container">
-//             <div className="row rg-50">
-//               <div className="col-lg-4">
-//                 <div className="card-sidebar" style={{
-//                   position: "sticky",
-//                   top: "100px",
-//                   left: "20px",
-//                   zIndex: 1000,
-//                 }}>
-//                   <p className="h5 title fw-6 letter-space--3 lh-100">
-//                     Services Category
-//                   </p>
-//                   <ul>
-//                     <li>
-//                       <a
-//                         href="/services/Digital-marketing-agency-in-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2 active"
-//                       >
-//                         Digital Marketing
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/seo-services-in-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         Search Engine Optimization
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/social-media-marketing-company-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         Social Media Marketing
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/web-development-company-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         Web Design & Development
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/graphic-design-company-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         Graphic Design
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/lead-generation-companies-in-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         Lead Generation
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/whatsapp-automation-AI-providers-india"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         WhatsApp Automation
-//                       </a>
-//                     </li>
-//                   </ul>
-//                 </div>
-//               </div>
-//               <div className="col-lg-8">
-//                 <div className="detail-content">
-//                   <h2 className="fw-6 letter-space--3 color-dt-black mb-50">
-//                     In today's competitive online landscape, businesses need more than just a website to succeed. They need a strategic digital presence that attracts customers, builds trust, and generates measurable results.{" "}
-//                     <span style={{ color: "var(--digital-marketing-light)" }}>
-//                       Digital Elite Service
-//                     </span>{" "}
-//                     is a trusted Digital marketing agency in Bangalore that helps businesses achieve sustainable growth through innovative, data-driven marketing solutions.
-//                   </h2>
-//                   <div className="text ff-2 color-paragraph mb-70">
-//                     Our team of experienced marketers, SEO specialists, content strategists, social media experts, and paid advertising professionals work together to deliver exceptional outcomes for businesses across industries. Whether you are a startup looking to establish your online presence, a growing company aiming to generate qualified leads, or an established enterprise seeking to strengthen your digital footprint, Digital Elite Service offers customized solutions designed to meet your goals. As a leading Digital marketing company in Bangalore, we combine creativity, technology, and analytics to create campaigns that deliver real business impact.
-//                   </div>
-
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-//                     Why Businesses Choose{" "}
-//                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                       Digital Elite Service
-//                     </span>
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     Digital marketing has become an essential part of business growth. Customers are searching for products and services online before making purchasing decisions. If your business is not visible where your customers are looking, you risk losing valuable opportunities. Digital Elite Service helps businesses stay ahead of the competition through comprehensive digital marketing strategies tailored to their target audience and industry.
-//                   </div>
-//                   <div className="text ff-2 color-paragraph mb-70">
-//                     Our approach focuses on understanding your business objectives, identifying market opportunities, and implementing strategies that generate measurable returns. We believe every business is unique, which is why we create personalized campaigns rather than relying on generic marketing templates. As a trusted Digital marketing agency in Bangalore, our mission is simple: help businesses grow through effective online marketing strategies that increase visibility, drive traffic, generate leads, and improve conversions.
-//                   </div>
-
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-//                     Comprehensive{" "}
-//                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                       Digital Marketing Services
-//                     </span>{" "}
-//                     in Bangalore
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     Digital Elite Service provides a complete range of Digital marketing services in Bangalore designed to help businesses maximize their online potential.
-//                   </div>
-
-//                   {/* Core Services List - Styled as Process Items */}
-//                   <div className="list-process-item d-flex justify-content-between mb-70">
-//                     <div className="line d-none d-md-block"></div>
-//                     <div className="process-item-2">
-//                       <div className="number ff-2 fw-5 letter-space--2">01</div>
-//                       <div className="dot"></div>
-//                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-//                         Search Engine Optimization (SEO)
-//                       </a>
-//                       <div className="desc ff-2">
-//                         SEO remains one of the most effective ways to increase online visibility. Our SEO experts use proven strategies to improve search engine rankings and drive organic traffic.
-//                       </div>
-//                     </div>
-
-//                     <div className="process-item-2">
-//                       <div className="number ff-2 fw-5 letter-space--2">02</div>
-//                       <div className="dot"></div>
-//                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-//                         Pay-Per-Click Advertising (PPC)
-//                       </a>
-//                       <div className="desc ff-2">
-//                         Paid advertising provides immediate visibility and lead generation. Our PPC specialists create highly targeted campaigns that maximize ROI.
-//                       </div>
-//                     </div>
-
-//                     <div className="process-item-2">
-//                       <div className="number ff-2 fw-5 letter-space--2">03</div>
-//                       <div className="dot"></div>
-//                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-//                         Social Media Marketing
-//                       </a>
-//                       <div className="desc ff-2">
-//                         Social media platforms have become powerful channels for brand awareness, customer engagement, and lead generation through compelling campaigns.
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   {/* Image Grid - FIXED with proper responsive alignment */}
-//                   <div className="row g-4 mb-70">
-//                     <div className="col-12 col-md-6">
-//                       <div className="image" style={{ height: "100%" }}>
-//                         <img
-//                           loading="lazy"
-//                           src={digitalDetailImage1}
-//                           alt="Digital Marketing Strategy Session"
-//                           className="img-fluid w-100"
-//                           style={{
-//                             borderRadius: "8px",
-//                             aspectRatio: "410 / 470",
-//                             objectFit: "cover",
-//                             height: "100%",
-//                             maxHeight: "470px",
-//                           }}
-//                           onError={handleImageError}
-//                         />
-//                       </div>
-//                     </div>
-//                     <div className="col-12 col-md-6">
-//                       <div className="image" style={{ height: "100%" }}>
-//                         <img
-//                           loading="lazy"
-//                           src={digitalDetailImage2}
-//                           alt="Digital Marketing Campaign Results"
-//                           className="img-fluid w-100"
-//                           style={{
-//                             borderRadius: "8px",
-//                             aspectRatio: "410 / 470",
-//                             objectFit: "cover",
-//                             height: "100%",
-//                             maxHeight: "470px",
-//                           }}
-//                           onError={handleImageError}
-//                         />
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   {/* Additional Services Section */}
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30">
-//                     More of our{" "}
-//                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                       digital marketing services
-//                     </span>{" "}
-//                     include <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                       Content Marketing, Website Design & Development,
-//                     </span>{" "}
-//                     and <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                       Email Marketing
-//                     </span>
-//                     .
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-70">
-//                     High-quality content plays a critical role in digital marketing success. Our content marketing strategies focus on creating valuable, informative, and engaging content that attracts and converts potential customers. Your website is often the first interaction potential customers have with your business. Digital Elite Service creates modern, responsive, and user-friendly websites designed to deliver exceptional user experiences. Email marketing continues to be one of the most cost-effective digital marketing channels, helping businesses nurture leads, retain customers, and increase revenue.
-//                   </div>
-
-//                   {/* Why Choose Us Section - Updated with proper responsive grid */}
-//                   <div className="row align-items-center g-4 mb-70">
-//                     <div className="col-12 col-lg-7">
-//                       <h4 className="title-3 fw-6 letter-space--3 lh-32 mb-4">
-//                         <span style={{ color: "var(--digital-marketing-light)" }}>
-//                           Digital Marketing Agency
-//                         </span>{" "}
-//                         in Bangalore Focused on Results
-//                       </h4>
-
-//                       <div className="desc-1 ff-2 mb-4 color-paragraph">
-//                         <strong>Customized Marketing Strategies:</strong> We understand that every business has unique goals, challenges, and audiences. Our team develops personalized marketing strategies tailored specifically to your needs.
-//                       </div>
-
-//                       <div className="desc-1 ff-2 mb-4 color-paragraph">
-//                         <strong>Experienced Professionals:</strong> Our team consists of skilled digital marketers with expertise across multiple disciplines. From SEO and PPC to social media and content marketing, we bring extensive experience to every project.
-//                       </div>
-
-//                       <div className="desc-1 ff-2 mb-4 color-paragraph">
-//                         <strong>Transparent Communication & Data-Driven Decisions:</strong> We believe strong partnerships are built on trust and transparency. Every marketing decision is backed by data and analytics to maximize results.
-//                       </div>
-
-//                       <div className="desc-2 ff-2 color-paragraph">
-//                         <strong>Focus on ROI:</strong> Our primary objective is helping businesses achieve measurable returns from their marketing investments. We focus on strategies that contribute directly to business growth.
-//                       </div>
-//                     </div>
-
-//                     <div className="col-12 col-lg-5">
-//                       <div className="image">
-//                         <img
-//                           loading="lazy"
-//                           src={digitalDetailImage3}
-//                           alt="Digital Elite Services Digital Marketing Process"
-//                           className="img-fluid w-100"
-//                           style={{
-//                             borderRadius: "8px",
-//                             objectFit: "cover",
-//                             maxHeight: "540px",
-//                           }}
-//                           onError={handleImageError}
-//                         />
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   {/* Industries We Serve - WITH BOLD TEXT */}
-//                   <div className="mt-70">
-//                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-//                       Industries We{" "}
-//                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                         Serve
-//                       </span>
-//                     </h3>
-//                     <div className="text ff-2 color-paragraph mb-40">
-//                       Digital Elite Service has experience working with businesses across various industries. Our diverse expertise allows us to understand unique market challenges and develop effective solutions.
-//                     </div>
-
-//                     <div
-//                       className="d-flex flex-wrap"
-//                       style={{
-//                         gap: "20px 40px",
-//                         marginBottom: "20px",
-//                       }}
-//                     >
-//                       {[
-//                         { icon: <Building2 size={20} />, text: "Real Estate" },
-//                         { icon: <HeartPulse size={20} />, text: "Healthcare" },
-//                         { icon: <GraduationCap size={20} />, text: "Education" },
-//                         { icon: <Laptop size={20} />, text: "Information Technology" },
-//                         { icon: <ShoppingBag size={20} />, text: "E-commerce" },
-//                         { icon: <Factory size={20} />, text: "Manufacturing" },
-//                         { icon: <Wallet size={20} />, text: "Finance" },
-//                         { icon: <Hotel size={20} />, text: "Hospitality" },
-//                         { icon: <Store size={20} />, text: "Retail" },
-//                         { icon: <Scale size={20} />, text: "Professional Services" },
-//                         { icon: <HardHat size={20} />, text: "Construction" },
-//                         { icon: <Rocket size={20} />, text: "Startups" },
-//                       ].map((item, index) => (
-//                         <div
-//                           key={index}
-//                           style={{
-//                             display: "flex",
-//                             alignItems: "center",
-//                             gap: "12px",
-//                             minWidth: "200px",
-//                             flex: "1 1 200px",
-//                           }}
-//                           className="ff-2 color-paragraph"
-//                         >
-//                           <span
-//                             style={{
-//                               color: "var(--digital-marketing-light)",
-//                               flexShrink: 0,
-//                             }}
-//                           >
-//                             {item.icon}
-//                           </span>
-//                           <strong style={{ fontWeight: 600 }}>{item.text}</strong>
-//                         </div>
-//                       ))}
-//                     </div>
-                    
-//                     <div className="text ff-2 color-paragraph">
-//                       Our industry-specific strategies ensure that marketing campaigns resonate with the right audience and deliver meaningful results.
-//                     </div>
-//                   </div>
-
-//                   {/* Best Digital Marketing Agency Section */}
-//                   <div className="mt-70">
-//                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-//                       Best{" "}
-//                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                         Digital Marketing Agency
-//                       </span>{" "}
-//                       in Bangalore for Local Businesses
-//                     </h3>
-//                     <div className="text ff-2 color-paragraph mb-40">
-//                       Local businesses face unique challenges when competing in increasingly crowded markets. Digital Elite Service helps local businesses improve visibility, attract nearby customers, and generate qualified leads.
-//                     </div>
-                    
-//                     <div
-//                       style={{
-//                         display: "flex",
-//                         flexWrap: "wrap",
-//                         gap: "20px",
-//                       }}
-//                     >
-//                       {[
-//                         {
-//                           icon: <MapPin size={24} />,
-//                           title: "Local SEO Optimization",
-//                           desc: "Improve visibility in local search results and attract customers in your area.",
-//                         },
-//                         {
-//                           icon: <Navigation size={24} />,
-//                           title: "Google Business Profile Management",
-//                           desc: "Optimize your Google Business Profile for better local search performance.",
-//                         },
-//                         {
-//                           icon: <BadgeCheck size={24} />,
-//                           title: "Reputation Management",
-//                           desc: "Build and maintain a positive online reputation through effective review management.",
-//                         },
-//                         {
-//                           icon: <Megaphone size={24} />,
-//                           title: "Local Search Advertising",
-//                           desc: "Target customers actively searching for products and services in your location.",
-//                         },
-//                       ].map((item, index) => (
-//                         <div
-//                           key={index}
-//                           style={{
-//                             flex: "1 1 280px",
-//                             minWidth: "250px",
-//                             background: "var(--digital-marketing-light-bg)",
-//                             borderRadius: "12px",
-//                             padding: "30px",
-//                           }}
-//                         >
-//                           <div
-//                             style={{
-//                               display: "flex",
-//                               alignItems: "center",
-//                               gap: "12px",
-//                               marginBottom: "12px",
-//                             }}
-//                           >
-//                             <span
-//                               style={{
-//                                 color: "var(--digital-marketing-light)",
-//                                 flexShrink: 0,
-//                               }}
-//                             >
-//                               {item.icon}
-//                             </span>
-//                             <h5 className="fw-6 mb-0">{item.title}</h5>
-//                           </div>
-//                           <p className="ff-2 color-paragraph mb-0">
-//                             {item.desc}
-//                           </p>
-//                         </div>
-//                       ))}
-//                     </div>
-//                   </div>
-
-//                   {/* What Makes Digital Elite Service Different */}
-//                   <div className="mt-70">
-//                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-//                       What Makes{" "}
-//                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                         Digital Elite Service
-//                       </span>{" "}
-//                       Different
-//                     </h3>
-//                     <div className="text ff-2 color-paragraph mb-40">
-//                       Choosing the right digital marketing company in Bangalore can significantly impact your business growth. Digital Elite Service stands out because of our commitment to excellence, innovation, and client success.
-//                     </div>
-                    
-//                     <div className="row g-4">
-//                       {[
-//                         {
-//                           title: "Customized Marketing Strategies",
-//                           desc: "We develop personalized marketing strategies tailored specifically to your business needs."
-//                         },
-//                         {
-//                           title: "Experienced Professionals",
-//                           desc: "Our skilled team brings extensive expertise across all digital marketing disciplines."
-//                         },
-//                         {
-//                           title: "Transparent Communication",
-//                           desc: "Clients receive regular updates, detailed reports, and clear communication throughout."
-//                         },
-//                         {
-//                           title: "Data-Driven Decision Making",
-//                           desc: "Every marketing decision is backed by data and analytics to optimize campaign performance."
-//                         }
-//                       ].map((item, index) => (
-//                         <div key={index} className="col-12 col-md-6 d-flex">
-//                           <div
-//                             className="p-30 w-100"
-//                             style={{
-//                               background: "var(--digital-marketing-light-bg)",
-//                               borderRadius: "12px",
-//                             }}
-//                           >
-//                             <h5 className="fw-6">{item.title}</h5>
-//                             <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
-//                           </div>
-//                         </div>
-//                       ))}
-//                     </div>
-//                   </div>
-
-//                   {/* Performance Marketing That Delivers Results */}
-//                   <div className="mt-70">
-//                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-//                       Performance Marketing That{" "}
-//                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                         Delivers Results
-//                       </span>
-//                     </h3>
-//                     <div className="text ff-2 color-paragraph mb-40">
-//                       Performance marketing focuses on measurable outcomes and accountability. Every campaign is designed to achieve specific objectives while maximizing efficiency.
-//                     </div>
-                    
-//                     <div className="row g-4">
-//                       {[
-//                         {
-//                           icon: <BarChart3 size={40} />,
-//                           title: "Search & Social Advertising",
-//                           desc: "Targeted campaigns that drive qualified traffic and conversions."
-//                         },
-//                         {
-//                           icon: <Target size={40} />,
-//                           title: "Conversion Optimization",
-//                           desc: "Landing page testing and optimization to improve conversion rates."
-//                         },
-//                         {
-//                           icon: <TrendingUp size={40} />,
-//                           title: "Campaign Analytics",
-//                           desc: "Continuous monitoring and optimization to maximize ROI."
-//                         }
-//                       ].map((item, index) => (
-//                         <div key={index} className="col-12 col-md-4 d-flex">
-//                           <div
-//                             className="text-center p-30 w-100"
-//                             style={{
-//                               background: "var(--digital-marketing-light-bg)",
-//                               borderRadius: "12px",
-//                             }}
-//                           >
-//                             <span
-//                               style={{
-//                                 color: "var(--digital-marketing-light)",
-//                                 display: "block",
-//                                 marginBottom: "15px",
-//                               }}
-//                             >
-//                               {item.icon}
-//                             </span>
-//                             <h5 className="fw-6">{item.title}</h5>
-//                             <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
-//                           </div>
-//                         </div>
-//                       ))}
-//                     </div>
-//                   </div>
-
-//                   {/* Future-Ready Digital Marketing Solutions */}
-//                   <div className="mt-70">
-//                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-//                       Future-Ready{" "}
-//                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                         Digital Marketing Solutions
-//                       </span>
-//                     </h3>
-//                     <div className="text ff-2 color-paragraph mb-40">
-//                       The digital landscape continues to evolve rapidly. Businesses must adapt to changing consumer behaviors, emerging technologies, and evolving search engine algorithms. Digital Elite Service stays ahead of industry trends by adopting innovative marketing techniques and leveraging the latest technologies.
-//                     </div>
-                    
-//                     <div className="row g-4">
-//                       {[
-//                         {
-//                           icon: <Bot size={24} />,
-//                           title: "Marketing Automation",
-//                           desc: "Streamline campaigns and improve efficiency through automation."
-//                         },
-//                         {
-//                           icon: <Brain size={24} />,
-//                           title: "Artificial Intelligence Tools",
-//                           desc: "Leverage AI for smarter targeting, personalization, and optimization."
-//                         },
-//                         {
-//                           icon: <Database size={24} />,
-//                           title: "Advanced Analytics",
-//                           desc: "Gain deeper insights into campaign performance and customer behavior."
-//                         },
-//                         {
-//                           icon: <Sparkles size={24} />,
-//                           title: "Emerging Digital Platforms",
-//                           desc: "Stay ahead by adopting new platforms and channels as they emerge."
-//                         }
-//                       ].map((item, index) => (
-//                         <div key={index} className="col-12 col-md-6 d-flex">
-//                           <div
-//                             className="p-30 w-100"
-//                             style={{
-//                               background: "var(--digital-marketing-light-bg)",
-//                               borderRadius: "12px",
-//                             }}
-//                           >
-//                             <div
-//                               style={{
-//                                 display: "flex",
-//                                 alignItems: "center",
-//                                 gap: "12px",
-//                                 marginBottom: "10px",
-//                               }}
-//                             >
-//                               <span
-//                                 style={{
-//                                   color: "var(--digital-marketing-light)",
-//                                   flexShrink: 0,
-//                                 }}
-//                               >
-//                                 {item.icon}
-//                               </span>
-//                               <h5 className="fw-6 mb-0">{item.title}</h5>
-//                             </div>
-//                             <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
-//                           </div>
-//                         </div>
-//                       ))}
-//                     </div>
-//                   </div>
-
-//                   {/* Final CTA */}
-//                   <div className="mt-70 p-40" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px" }}>
-//                     <h4 className="fw-6 letter-space--3 lh-32 mb-30" style={{marginTop:"53px"}}>
-//                       Partner with{" "}
-//                       <span style={{color:"var(--digital-marketing-light)"}}>
-//                         Digital Elite Service
-//                       </span>
-//                     </h4>
-//                     <p className="ff-2 color-paragraph mb-30">
-//                       If you are looking for a reliable <strong>Digital marketing company in Bangalore</strong> that prioritizes growth, transparency, and measurable results, Digital Elite Service is your ideal partner. We are committed to helping businesses strengthen their online presence, attract qualified customers, and achieve long-term success.
-//                     </p>
-//                     <p className="ff-2 color-paragraph mb-30">
-//                       As a trusted provider of <strong>Digital marketing services in Bangalore</strong>, we combine strategic expertise with creative execution to deliver impactful marketing campaigns. Whether your goal is improving search rankings, generating leads, increasing sales, or building brand awareness, our team has the experience and dedication to help you succeed.
-//                     </p>
-//                     <p className="ff-2 color-paragraph">
-//                       <strong>
-//                         Choose Digital Elite Service and experience the difference that professional, results-driven digital marketing can make for your business.
-//                       </strong>{" "}
-//                       Let us help you transform your online presence into a powerful engine for growth, visibility, and success.
-//                     </p>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </section>
-
-//         <Footer />
-
-//         <div className="overlay-filter" id="overlay-filter"></div>
-//       </main>
-
-//       <div className="offcanvas offcanvas-start" id="mobileMenu">
-//         <div className="pop-up-nav-mobile">
-//           <div className="canvas-header">
-//             <a href="#" className="logo-site">
-//               <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
-//             </a>
-//             <span
-//               className="icon icon-close"
-//               data-bs-dismiss="offcanvas"
-//             ></span>
-//           </div>
-//           <div className="canvas-body">
-//             <div className="mb-content-top">
-//               <ul
-//                 className="nav-ul-mb"
-//                 id="wrapper-menu-navigation"
-//               ></ul>
-//             </div>
-//           </div>
-//           <div className="canvas-bottom"></div>
-//         </div>
-//       </div>
-
-//       <SidePopup />
-
-//       <div className="progress-wrap">
-//         <svg
-//           className="progress-circle svg-content"
-//           width="100%"
-//           height="100%"
-//           viewBox="-1 -1 102 102"
-//         >
-//           <path
-//             d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-//             style={{
-//               transition: "strokeDashoffset 10ms linear",
-//               strokeDasharray: "307.919, 307.919",
-//               strokeDashoffset: "277.672",
-//             }}
-//           ></path>
-//         </svg>
-//       </div>
-//     </>
-//   );
-// }
-
 import React, { useEffect } from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
@@ -2474,8 +26,6 @@ import {
   Brain,
   Database,
   Sparkles,
-  Users,
-  Gauge,
   ArrowUpRight,
 } from "lucide-react";
 // Import relevant images for the digital marketing service page
@@ -2483,6 +33,7 @@ import digitalHeroImage from "../../../assets/images/serviceDetails/img-page-tit
 import digitalDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
 import digitalDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
 import digitalDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
+import Logo from "../../../assets/images/header/DES_logo.png"
 
 export default function ServiceDetailsDigitalMarketing() {
   // Helper function to handle image errors
@@ -2885,149 +436,103 @@ export default function ServiceDetailsDigitalMarketing() {
         /* ============================================
            HERO SECTION STYLES
            ============================================ */
+        .page-title.hero-section {
+          padding-top: 100px !important;
+          padding-bottom: 40px !important;
+        }
+
         .hero-section .hero-left {
           display: flex;
           flex-direction: column;
-          gap: 30px;
-          padding: 40px 0;
+          gap: 20px;
+          padding: 20px 0 10px;
         }
 
         .hero-section .hero-content {
           display: flex;
           flex-direction: column;
-          gap: 20px;
-        }
-
-        .hero-section .hero-content .sub-title {
-          font-size: 18px;
-          letter-spacing: 2px;
-          opacity: 0.8;
-        }
-
-        .hero-section .hero-content .sub-title .color-dt-light {
-          color: var(--digital-marketing-light);
+          gap: 15px;
         }
 
         .hero-section .hero-content .title {
           font-size: 56px;
-          line-height: 1.1;
-        }
-
-        @media (max-width: 768px) {
-          .hero-section .hero-content .title {
-            font-size: 36px;
-          }
-        }
-
-        .hero-section .hero-content .desc {
-          font-size: 20px;
-          line-height: 1.6;
-          max-width: 600px;
-          color: #666;
-        }
-
-        .hero-section .stats {
-          display: flex;
-          gap: 60px;
-          margin-top: 20px;
-          padding-top: 30px;
-          border-top: 1px solid rgba(0,0,0,0.08);
-        }
-
-        @media (max-width: 576px) {
-          .hero-section .stats {
-            gap: 30px;
-            flex-wrap: wrap;
-          }
-        }
-
-        .hero-section .counter-item .counter {
-          display: flex;
-          align-items: center;
-        }
-
-        .hero-section .counter-item .number-counter {
-          display: flex;
-          align-items: baseline;
-        }
-
-        .hero-section .counter-item .odometer {
-          font-size: 48px;
+          line-height: 1.15 !important;
           font-weight: 700;
-          color: var(--digital-marketing-light);
+          display: block;
         }
 
-        .hero-section .counter-item .h5 {
-          font-size: 16px;
-          color: #666;
-          margin-top: 5px;
+        .hero-section .hero-content .title .title-line {
+          display: block;
+          width: 100%;
+        }
+
+        .hero-section .hero-content .title .highlight-text {
+          color: var(--digital-marketing-light);
+          position: relative;
+          display: inline-block;
+        }
+
+        .hero-section .hero-content .title .highlight-text::after {
+          content: '';
+          position: absolute;
+          bottom: 8px;
+          left: 0;
+          width: 100%;
+          height: 8px;
+          background: rgba(var(--digital-marketing-light-rgb), 0.2);
+          border-radius: 4px;
+          z-index: -1;
+          transition: all 0.3s ease;
+        }
+
+        .hero-section .hero-content .title .highlight-text:hover::after {
+          height: 100%;
+          background: rgba(var(--digital-marketing-light-rgb), 0.1);
         }
 
         /* ============================================
-           BUTTON STYLE WITH PULSE ANIMATION
+           HERO IMAGE WRAPPER
            ============================================ */
-        .hero-section .tf-btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 12px;
-          padding: 16px 40px;
-          background: var(--digital-marketing-light);
-          color: #fff;
-          border-radius: 50px;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          width: fit-content;
-          font-weight: 600;
-          border: none;
-          cursor: pointer;
-          position: relative;
+        .hero-image-wrapper .image {
+          border-radius: 12px;
           overflow: hidden;
-        }
-
-        .hero-section .tf-btn::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-          transition: left 0.5s ease;
-        }
-
-        .hero-section .tf-btn:hover::before {
-          left: 100%;
-        }
-
-        .hero-section .tf-btn:hover {
-          transform: translateY(-3px) scale(1.02);
-          box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-          background: var(--digital-marketing-light);
-          opacity: 0.9;
-        }
-
-        .hero-section .tf-btn .icon-btn {
-          display: flex;
-          align-items: center;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.08);
           transition: transform 0.3s ease;
         }
 
-        .hero-section .tf-btn:hover .icon-btn {
-          transform: rotate(45deg) scale(1.2);
+        .hero-image-wrapper .image:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 30px 80px rgba(0,0,0,0.12);
         }
 
         /* ============================================
-           STAT ITEM ANIMATION
+           HERO IMAGE — responsive fix
            ============================================ */
-        .stat-item {
-          opacity: 0;
-          transform: translateY(30px) scale(0.9);
-          transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        .img-page-title {
+          margin-top: 0 !important;
+          padding: 0 15px;
+          margin-bottom: 30px;
         }
-
-        .stat-item.stat-visible {
-          opacity: 1;
-          transform: translateY(0) scale(1);
+        
+        .img-page-title .container {
+          padding: 0;
+        }
+        
+        .img-page-title .image {
+          padding-left: 0 !important;
+          max-width: 100% !important;
+          border-radius: 12px;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+          overflow: hidden;
+        }
+        
+        .img-page-title .image img {
+          width: 100%;
+          height: auto;
+          max-height: 470px;
+          object-fit: cover;
+          border-radius: 8px;
         }
 
         /* ============================================
@@ -3046,11 +551,9 @@ export default function ServiceDetailsDigitalMarketing() {
           cursor: default;
         }
 
-
         .p-30 {
           transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
-
 
         /* ============================================
            IMAGE HOVER ZOOM EFFECT
@@ -3059,25 +562,13 @@ export default function ServiceDetailsDigitalMarketing() {
           overflow: hidden;
           border-radius: 8px;
           position: relative;
-        }
-
-        .image::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
           width: 100%;
-          height: 100%;
-          background: linear-gradient(135deg, rgba(var(--digital-marketing-light-rgb), 0.1), transparent);
-          opacity: 0;
-          transition: opacity 0.4s ease;
-        }
-
-        .image:hover::after {
-          opacity: 1;
         }
 
         .image img {
+          width: 100%;
+          height: auto;
+          display: block;
           transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
@@ -3095,7 +586,6 @@ export default function ServiceDetailsDigitalMarketing() {
           cursor: default;
         }
 
-
         /* ============================================
            CTA BOX ANIMATION
            ============================================ */
@@ -3103,6 +593,9 @@ export default function ServiceDetailsDigitalMarketing() {
           transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
           position: relative;
           overflow: hidden;
+          padding: 30px;
+          border-radius: 12px;
+          background: var(--digital-marketing-light-bg);
         }
 
         .p-40::before {
@@ -3120,8 +613,6 @@ export default function ServiceDetailsDigitalMarketing() {
         .p-40:hover::before {
           opacity: 1;
         }
-
-
 
         /* ============================================
            SIDEBAR CATEGORY ITEMS
@@ -3168,97 +659,15 @@ export default function ServiceDetailsDigitalMarketing() {
           transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
-
         /* ============================================
-           TYPING EFFECT
+           PROCESS LIST — horizontal on desktop
            ============================================ */
-        .typing-effect {
-          display: inline-block;
-          border-right: 3px solid var(--digital-marketing-light);
-          padding-right: 5px;
-          animation: blink 0.8s step-end infinite;
+        .list-process-item {
+          display: flex;
+          gap: 30px;
         }
-
-        @keyframes blink {
-          0%, 100% { border-color: var(--digital-marketing-light); }
-          50% { border-color: transparent; }
-        }
-
-        /* ============================================
-           SCROLLBAR STYLES
-           ============================================ */
-        ::-webkit-scrollbar {
-          width: 10px;
-        }
-
-        ::-webkit-scrollbar-track {
-          background: #f1f1f1;
-          border-radius: 5px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-          background: var(--digital-marketing-light);
-          border-radius: 5px;
-          transition: background 0.3s ease;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-          background: #555;
-        }
-
-        /* ============================================
-           RESPONSIVE ADJUSTMENTS
-           ============================================ */
-        @media (max-width: 992px) {
-          .hero-section .hero-content .title {
-            font-size: 42px;
-          }
-          
-          .hero-section .hero-content .desc {
-            font-size: 18px;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .hero-section .hero-left {
-            padding: 20px 0;
-          }
-          
-          .hero-section .hero-content .title {
-            font-size: 32px;
-          }
-          
-          .hero-section .hero-content .desc {
-            font-size: 16px;
-          }
-          
-          .hero-section .counter-item .odometer {
-            font-size: 36px;
-          }
-          
-          .hero-section .tf-btn {
-            padding: 14px 30px;
-            font-size: 14px;
-          }
-          
-          .p-30 {
-            padding: 20px !important;
-          }
-        }
-
-        @media (max-width: 576px) {
-          .hero-section .hero-content .title {
-            font-size: 28px;
-          }
-          
-          .hero-section .stats {
-            flex-direction: column;
-            gap: 15px;
-          }
-          
-          .hero-section .counter-item .odometer {
-            font-size: 30px;
-          }
+        .list-process-item .process-item-2 {
+          flex: 1;
         }
 
         /* ============================================
@@ -3282,7 +691,324 @@ export default function ServiceDetailsDigitalMarketing() {
         .section-services-detail {
           animation: fadeInUp 0.6s ease forwards;
           animation-delay: 0.2s;
-          opacity: 0;
+        }
+
+        /* ============================================
+           RESPONSIVE — XL (≤1200px)
+           ============================================ */
+        @media (max-width: 1200px) {
+          .hero-section .hero-content .title {
+            font-size: 48px;
+          }
+          .page-title.hero-section {
+            padding-top: 140px !important;
+          }
+        }
+
+        /* ============================================
+           RESPONSIVE — LG (≤992px)
+           ============================================ */
+        @media (max-width: 992px) {
+          .hero-section .hero-content .title {
+            font-size: 40px;
+          }
+          .page-title.hero-section {
+            padding-top: 130px !important;
+            padding-bottom: 30px !important;
+          }
+          .hero-section .hero-left {
+            padding: 10px 0;
+          }
+          
+          /* Sidebar: remove sticky so it sits above content */
+          .card-sidebar {
+            position: static !important;
+            top: auto !important;
+            left: auto !important;
+            margin-bottom: 40px;
+          }
+          .card-sidebar ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 12px;
+            padding: 0;
+            list-style: none;
+          }
+          .card-sidebar ul li {
+            flex: 0 0 auto;
+          }
+          .category-services-item {
+            padding: 8px 16px;
+            background: var(--digital-marketing-light-bg, #f5f7ff);
+            border-radius: 20px;
+            white-space: nowrap;
+            font-size: 14px;
+          }
+          .category-services-item::after {
+            display: none;
+          }
+          .category-services-item:hover {
+            transform: translateY(-2px);
+            background: var(--digital-marketing-light);
+            color: #fff;
+          }
+          .category-services-item.active {
+            background: var(--digital-marketing-light);
+            color: #fff;
+          }
+          
+          /* Process list: 2-col wrap on tablet */
+          .list-process-item {
+            flex-wrap: wrap;
+            gap: 24px;
+          }
+          .list-process-item .line {
+            display: none !important;
+          }
+          .list-process-item .process-item-2 {
+            flex: 1 1 calc(50% - 12px);
+            min-width: 220px;
+          }
+          
+          /* Hero image adjustments */
+          .img-page-title .image img {
+            max-height: 350px;
+          }
+        }
+
+        /* ============================================
+           RESPONSIVE — MD (≤768px)
+           ============================================ */
+        @media (max-width: 768px) {
+          .hero-section .hero-content .title {
+            font-size: 32px;
+            line-height: 1.2 !important;
+          }
+          .hero-section .hero-content .title .highlight-text::after {
+            bottom: 4px;
+            height: 5px;
+          }
+          .page-title.hero-section {
+            padding-top: 120px !important;
+            padding-bottom: 20px !important;
+          }
+          .hero-section .hero-left {
+            padding: 5px 0;
+          }
+          .p-30 {
+            padding: 20px !important;
+          }
+          
+          /* Process list: single column */
+          .list-process-item {
+            flex-direction: column;
+            gap: 20px;
+          }
+          .list-process-item .process-item-2 {
+            flex: 1 1 100%;
+            min-width: 0;
+          }
+          
+          /* Industries flex items */
+          .d-flex.flex-wrap > div {
+            flex: 1 1 140px !important;
+            min-width: 140px !important;
+          }
+          
+          .mt-70 { margin-top: 40px !important; }
+          .mb-70 { margin-bottom: 40px !important; }
+          .mb-50 { margin-bottom: 30px !important; }
+          
+          /* Hero image adjustments */
+          .img-page-title {
+            padding: 0 10px;
+            margin-bottom: 20px;
+          }
+          .img-page-title .image img {
+            max-height: 280px;
+            border-radius: 6px;
+          }
+          
+          /* Card spacing */
+          .p-40 {
+            padding: 20px;
+          }
+          
+          .row.g-4 {
+            --bs-gutter-y: 1rem;
+          }
+
+          /* Detail images */
+          .detail-content .row.g-4 .image img {
+            max-height: 300px;
+          }
+        }
+
+        /* ============================================
+           RESPONSIVE — SM (≤576px)
+           ============================================ */
+        @media (max-width: 576px) {
+          .hero-section .hero-content .title {
+            font-size: 26px;
+            line-height: 1.25 !important;
+          }
+          .page-title.hero-section {
+            padding-top: 110px !important;
+            padding-bottom: 15px !important;
+          }
+          
+          .d-flex.flex-wrap > div {
+            flex: 1 1 130px !important;
+            min-width: 130px !important;
+          }
+          
+          .detail-content h2 {
+            font-size: 18px !important;
+            line-height: 1.5;
+            margin-bottom: 24px !important;
+          }
+          .detail-content h3.title-2 {
+            font-size: 20px !important;
+          }
+          .detail-content h4 {
+            font-size: 18px !important;
+          }
+          
+          .card-sidebar ul { gap: 6px 10px; }
+          .category-services-item {
+            font-size: 13px;
+            padding: 6px 12px;
+          }
+          
+          .col-12.col-md-4.d-flex,
+          .col-12.col-md-6.d-flex {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+          
+          .p-30 { padding: 16px !important; }
+          .p-40 { padding: 16px !important; }
+          
+          .mt-70 { margin-top: 30px !important; }
+          .mb-70 { margin-bottom: 30px !important; }
+          .mb-50 { margin-bottom: 20px !important; }
+          .mb-40 { margin-bottom: 20px !important; }
+          .mb-30 { margin-bottom: 16px !important; }
+          
+          /* Hero image adjustments */
+          .img-page-title {
+            padding: 0 8px;
+            margin-bottom: 15px;
+          }
+          .img-page-title .image img {
+            max-height: 200px;
+            border-radius: 6px;
+          }
+          
+          /* Fix image grid on mobile */
+          .row.g-4 .col-12 {
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+          
+          /* Adjust text sizes */
+          .text.ff-2 {
+            font-size: 14px;
+          }
+          
+          .desc-1, .desc-2 {
+            font-size: 14px;
+          }
+
+          /* Detail images */
+          .detail-content .row.g-4 .image img {
+            max-height: 220px;
+          }
+        }
+
+        /* ============================================
+           RESPONSIVE — XS (≤400px)
+           ============================================ */
+        @media (max-width: 400px) {
+          .hero-section .hero-content .title {
+            font-size: 22px;
+          }
+          .page-title.hero-section {
+            padding-top: 100px !important;
+            padding-bottom: 10px !important;
+          }
+          
+          .d-flex.flex-wrap > div {
+            flex: 1 1 100% !important;
+            min-width: 100% !important;
+          }
+          
+          .category-services-item {
+            font-size: 12px;
+            padding: 5px 10px;
+          }
+          
+          .img-page-title .image img {
+            max-height: 160px;
+          }
+        }
+
+        /* ============================================
+           FIX FOR MOBILE NAV SPACING
+           ============================================ */
+        @media (max-width: 768px) {
+          .flat-spacing-9 {
+            padding-top: 20px !important;
+            padding-bottom: 30px !important;
+          }
+        }
+
+        /* ============================================
+           MOBILE IMAGE WRAPPER BACKGROUND FIX
+           Prevents dark body showing through below hero
+           ============================================ */
+        .img-page-title {
+          background-color: #fff;
+        }
+
+        /* Transition zone: white strip connecting hero image to content */
+        .img-page-title.d-block {
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+
+        /* ============================================
+           IMAGE CONTAINER FIXES
+           ============================================ */
+        .image {
+          width: 100%;
+        }
+        
+        .image img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+        
+        /* Fix for the detail images */
+        .detail-content .row.g-4 .image {
+          height: auto !important;
+          min-height: 200px;
+        }
+        
+        .detail-content .row.g-4 .image img {
+          max-height: 470px;
+          object-fit: cover;
+        }
+        
+        /* Fix horizontal overflow causing white gap on mobile zoom */
+        html, body {
+          overflow-x: clip;
+        }
+        #wrapper {
+          overflow-x: clip;
+          width: 100%;
+          position: relative;
         }
       `}</style>
 
@@ -3316,60 +1042,38 @@ export default function ServiceDetailsDigitalMarketing() {
             </div>
           </div>
           <div className="container">
-            <div className="hero-left">
-              <div className="hero-content">
-                <div className="sub-title h6 letter-space--2 fw-5 fade-in-up mt-60" data-delay="100">
-                 
-                
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="hero-left">
+                  <div className="hero-content">
+                    <h1 className="title letter-space--3 fw-6 slide-in-left" data-delay="200">
+                      <span className="title-line">Elevating brands</span>
+                      <span className="title-line">
+                        <span className="highlight-text">performance</span>
+                      </span>
+                      <span className="title-line">marketing</span>
+                    </h1>
+                  </div>
                 </div>
-                <h1 className="title letter-space--3 fw-6 slide-in-left" data-delay="200">
-                  Elevating brands
-                  <br />
-                  with{" "}
-                  <span style={{ color: "var(--digital-marketing-light)" }}>
-                    performance
-                  </span>
-                  <br />
-                  marketing
-                </h1>
-                
               </div>
-              <div className="stats">
-                <div className="counter-item stat stat-item">
-                  <div className="counter">
-                    <div className="number-counter flex fs-65">
-                      <span
-                        className="number odometer color-primary h1 fw-6"
-                        data-to="98"
-                        data-inviewport="yes"
-                      >
-                        0
-                      </span>
-                      <span className="h1">%</span>
-                    </div>
-                  </div>
-                  <div className="h5 ff-2 fw-6 lh-35">
-                    Clients satisfied and
-                    <br />
-                    repeating
-                  </div>
-                </div>
-                <div className="counter-item stat stat-item">
-                  <div className="counter">
-                    <div className="number-counter flex fs-65">
-                      <span
-                        className="number odometer color-primary h1 fw-6"
-                        data-to="4.9"
-                        data-inviewport="yes"
-                      >
-                        0
-                      </span>
-                    </div>
-                  </div>
-                  <div className="h5 ff-2 fw-6 lh-35">
-                    Based on clients
-                    <br />
-                    reviews (1000+)
+              <div className="col-lg-6 d-none d-lg-block">
+                <div className="hero-image-wrapper zoom-in" data-delay="100">
+                  <div className="image" style={{ borderRadius: "12px", overflow: "hidden", boxShadow: "0 20px 60px rgba(0,0,0,0.1)" }}>
+                    <img
+                      loading="lazy"
+                      width="600"
+                      height="400"
+                      src={digitalHeroImage}
+                      alt="Leading Digital Marketing Agency in Bangalore"
+                      className="w-100"
+                      style={{ 
+                        borderRadius: "12px", 
+                        objectFit: "cover",
+                        width: "100%",
+                        height: "auto"
+                      }}
+                      onError={handleImageError}
+                    />
                   </div>
                 </div>
               </div>
@@ -3377,8 +1081,8 @@ export default function ServiceDetailsDigitalMarketing() {
           </div>
         </div>
 
-        {/* Hero Image - with parallax effect */}
-        <div className="img-page-title d-none d-lg-block hero-image-wrapper">
+        {/* Hero Image - Mobile/Tablet version */}
+        <div className="img-page-title d-block d-lg-none hero-image-wrapper" style={{ marginTop: "0" }}>
           <div className="container">
             <div className="image zoom-in" data-delay="100">
               <img
@@ -3388,7 +1092,13 @@ export default function ServiceDetailsDigitalMarketing() {
                 src={digitalHeroImage}
                 alt="Leading Digital Marketing Agency in Bangalore"
                 className="w-100"
-                style={{ borderRadius: "8px", objectFit: "cover" }}
+                style={{ 
+                  borderRadius: "8px", 
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "300px"
+                }}
                 onError={handleImageError}
               />
             </div>
@@ -3957,7 +1667,7 @@ export default function ServiceDetailsDigitalMarketing() {
                   </div>
 
                   {/* Final CTA */}
-                  <div className="mt-70 p-40 glow-in" data-delay="100" style={{ background: "", borderRadius: "`" }}>
+                  <div className="mt-70 p-40 glow-in" data-delay="100">
                     <h4 className="fw-6 letter-space--3 lh-32 mb-30" style={{marginTop:"53px"}}>
                       Partner with{" "}
                       <span style={{color:"var(--digital-marketing-light)"}}>
@@ -3992,7 +1702,8 @@ export default function ServiceDetailsDigitalMarketing() {
         <div className="pop-up-nav-mobile">
           <div className="canvas-header">
             <a href="#" className="logo-site">
-              <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
+              {/* <img src="./assets/images/logo/logo-mobi-1.svg" alt="" /> */}
+              <img src={Logo}/>
             </a>
             <span
               className="icon icon-close"

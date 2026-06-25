@@ -1,3 +1,4 @@
+import DESLOGO from "../../assets/images/header/DES_logo_white.png";
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -93,13 +94,13 @@ export default function Portfolio1() {
                         src={portfolioImage1} alt="Image" />
                     </a>
                     <div className="content">
-                        <div className="meta-project">
+                        {/* <div className="meta-project">
                             <span className="ff-2 fw-5">Digital marketing</span>
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
-                        </div>
+                        </div> */}
                         <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Global E-commerce SEO Campaign
+                          E-commerce SEO Campaign
                         </a>
                     </div>
                 </div>
@@ -111,11 +112,11 @@ export default function Portfolio1() {
                         src={portfolioImage2} alt="Image" />
                     </a>
                     <div className="content">
-                        <div className="meta-project">
+                        {/* <div className="meta-project">
                             <span className="ff-2 fw-5">Digital marketing</span>
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
-                        </div>
+                        </div> */}
                         <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Social Media Brand Awareness
                         </a>
@@ -129,13 +130,13 @@ export default function Portfolio1() {
                         src={portfolioImage3} alt="Image" />
                     </a>
                     <div className="content">
-                        <div className="meta-project">
+                        {/* <div className="meta-project">
                             <span className="ff-2 fw-5">Digital marketing</span>
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
-                        </div>
+                        </div> */}
                         <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
-                            Email Marketing Automation
+                            WhatsApp Automation
                         </a>
                     </div>
                 </div>
@@ -147,11 +148,11 @@ export default function Portfolio1() {
                         src={portfolioImage4} alt="Image" />
                     </a>
                     <div className="content">
-                        <div className="meta-project">
+                        {/* <div className="meta-project">
                             <span className="ff-2 fw-5">Digital marketing</span>
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
-                        </div>
+                        </div> */}
                         <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Influencer Marketing Campaign
                         </a>
@@ -165,11 +166,11 @@ export default function Portfolio1() {
                         src={portfolioImage5} alt="Image" />
                     </a>
                     <div className="content">
-                        <div className="meta-project">
+                        {/* <div className="meta-project">
                             <span className="ff-2 fw-5">Digital marketing</span>
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
-                        </div>
+                        </div> */}
                         <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Brand Identity & Digital Branding
                         </a>
@@ -183,11 +184,11 @@ export default function Portfolio1() {
                         src={portfolioImage6} alt="Image" />
                     </a>
                     <div className="content">
-                        <div className="meta-project">
+                        {/* <div className="meta-project">
                             <span className="ff-2 fw-5">Digital marketing</span>
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
-                        </div>
+                        </div> */}
                         <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Local SEO for Small Businesses
                         </a>
@@ -201,11 +202,11 @@ export default function Portfolio1() {
                         src={portfolioImage13} alt="Image" />
                     </a>
                     <div className="content">
-                        <div className="meta-project">
+                        {/* <div className="meta-project">
                             <span className="ff-2 fw-5">Digital marketing</span>
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
-                        </div>
+                        </div> */}
                         <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Influencer Marketing Campaign
                         </a>
@@ -219,11 +220,11 @@ export default function Portfolio1() {
                         src={portfolioImage14} alt="Image" />
                     </a>
                     <div className="content">
-                        <div className="meta-project">
+                        {/* <div className="meta-project">
                             <span className="ff-2 fw-5">Digital marketing</span>
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
-                        </div>
+                        </div> */}
                         <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Brand Identity & Digital Branding
                         </a>
@@ -237,11 +238,11 @@ export default function Portfolio1() {
                         src={portfolioImage15} alt="Image" />
                     </a>
                     <div className="content">
-                        <div className="meta-project">
+                        {/* <div className="meta-project">
                             <span className="ff-2 fw-5">Digital marketing</span>
                             <span className="line-dot"></span>
                             <span className="ff-2 fw-5">2026</span>
-                        </div>
+                        </div> */}
                         <a href="/portfolio-details" className="name-project h4 fw-6 letter-space--3">
                             Local SEO for Small Businesses
                         </a>
@@ -259,11 +260,11 @@ export default function Portfolio1() {
     
     <div className="offcanvas offcanvas-start" id="mobileMenu">
         <div className="pop-up-nav-mobile">
-            <div className="canvas-header">
+            <div className="canvas-header" style={{backgroundColor: "#1c1c1c", margin: "-15px -15px 15px -15px", padding: "15px"}}>
                 <a href="#" className="logo-site">
-                    <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
+                    <img src={DESLOGO} alt="Digital Elite Service" className="des-logo" style={{maxWidth: "150px"}} />
                 </a>
-                <span className="icon icon-close" data-bs-dismiss="offcanvas"></span>
+                <span className="icon icon-close" style={{color: "white"}} data-bs-dismiss="offcanvas"></span>
             </div>
             <div className="canvas-body">
                 <div className="mb-content-top">

@@ -1,885 +1,54 @@
-// import React from "react";
-// import Header from "../../../components/Header";
-// import Footer from "../../../components/Footer";
-// import SidePopup from "../../../components/sidePopup";
-// import {
-//   Laptop,
-//   Palette,
-//   Smartphone,
-//   ShoppingBag,
-//   Rocket,
-//   Shield,
-//   Users,
-//   BarChart3,
-//   Search,
-//   Gauge,
-//   Settings,
-//   Layers,
-//   Pencil,
-//   Code,
-//   Server,
-//   Database,
-//   Cloud,
-//   Lock,
-//   Globe,
-//   Target,
-//   ThumbsUp,
-//   Handshake,
-//   Award,
-//   Clock,
-//   Headphones,
-//   Building2,
-//   HeartPulse,
-//   GraduationCap,
-//   Store,
-//   Cpu,
-//   Utensils,
-//   Sparkles,
-//   Zap,
-//   Eye,
-//   CheckCircle,
-//   Compass,
-//   PenTool,
-//   Layout,
-//   Monitor,
-//   Tablet,
-//   ArrowRight,
-//   TrendingUp,
-//   FileText,
-//   Briefcase,
-//   LineChart,
-//   MousePointer,
-//   Grid,
-//   Box,
-//   Wallet,
-//   Scale,
-//   HardHat,
-//   Factory,
-//   Hotel,
-// } from "lucide-react";
-// // Import relevant images for the web development service page
-// import webHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
-// import webDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
-// import webDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
-// import webDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
-
-// export default function ServiceDetailsWebDevelopment() {
-//   // Helper function to handle image errors
-//   const handleImageError = (e) => {
-//     e.target.style.display = 'none';
-//     const parent = e.target.parentElement;
-//     if (parent) {
-//       parent.style.background = '#f0f4f9';
-//       parent.style.minHeight = '200px';
-//       parent.style.display = 'flex';
-//       parent.style.alignItems = 'center';
-//       parent.style.justifyContent = 'center';
-//       parent.style.borderRadius = '8px';
-//       parent.innerHTML = '<span style="color: #666; font-size: 14px;">Image not available</span>';
-//     }
-//   };
-
-//   return (
-//     <>
-//       <main id="wrapper">
-//         <div className="preload preload-container">
-//           <div className="spinner-circle lg">
-//             <span className="spinner-circle1 spinner-child"></span>
-//             <span className="spinner-circle2 spinner-child"></span>
-//             <span className="spinner-circle3 spinner-child"></span>
-//             <span className="spinner-circle4 spinner-child"></span>
-//             <span className="spinner-circle5 spinner-child"></span>
-//             <span className="spinner-circle6 spinner-child"></span>
-//             <span className="spinner-circle7 spinner-child"></span>
-//             <span className="spinner-circle8 spinner-child"></span>
-//             <span className="spinner-circle9 spinner-child"></span>
-//           </div>
-//         </div>
-
-//         <Header />
-
-//         <div className="page-title style-2">
-//           <div className="img-sharp sharp-1">
-//             <div className="blob-wrapper">
-//               <div className="blob"></div>
-//             </div>
-//           </div>
-//           <div className="img-sharp sharp-2">
-//             <div className="blob-wrapper">
-//               <div className="blob"></div>
-//             </div>
-//           </div>
-//           <div className="container">
-//             <div className="page-title-content">
-//               <h1 className="title">
-//                 Web Development Company in {" "}
-//                 <span style={{ color: "var(--digital-marketing-light)" }}>
-//                   Bangalore for Startups & Enterprises
-//                 </span>
-//               </h1>
-//               <div className="breadkcum">
-//                 <a href="/">Home</a>
-//                 <span className="icon icon-chevron-right"></span>
-//                 <span className="breadkcum-active">Service Details</span>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="img-page-title d-none d-lg-block">
-//           <div className="container">
-//             <div className="image">
-//               <img
-//                 loading="lazy"
-//                 width="915"
-//                 height="470"
-//                 src={webHeroImage}
-//                 alt="Web Development Company in Bangalore"
-//                 className="w-100"
-//                 style={{ borderRadius: "8px", objectFit: "cover" }}
-//                 onError={handleImageError}
-//               />
-//             </div>
-//           </div>
-//         </div>
-
-//         <section className="section-services-detail flat-spacing-9">
-//           <div className="container">
-//             <div className="row rg-50">
-//               <div className="col-lg-4">
-//                 <div className="card-sidebar" style={{
-//                   position: "sticky",
-//                   top: "100px",
-//                   left: "20px",
-//                   zIndex: 1000,
-//                 }}>
-//                   <p className="h5 title fw-6 letter-space--3 lh-100">
-//                     Services Category
-//                   </p>
-//                   <ul>
-//                     <li>
-//                       <a
-//                         href="/services/Digital-marketing-agency-in-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         Digital Marketing
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/seo-services-in-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         Search Engine Optimization
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/social-media-marketing-company-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         Social Media Marketing
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/web-development-company-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2 active"
-//                       >
-//                         Web Design & Development
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/graphic-design-company-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         Graphic Design
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/lead-generation-companies-in-bangalore"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         Lead Generation
-//                       </a>
-//                     </li>
-//                     <li>
-//                       <a
-//                         href="/services/whatsapp-automation-AI-providers-india"
-//                         className="category-services-item fw-5 letter-space--2 ff-2"
-//                       >
-//                         WhatsApp Automation
-//                       </a>
-//                     </li>
-//                   </ul>
-//                 </div>
-//               </div>
-//               <div className="col-lg-8">
-//                 <div className="detail-content">
-//                   <h2 className="fw-6 letter-space--3 color-dt-black mb-50">
-//                     In today's fast-paced digital world, your website is often the first interaction customers have with your brand. A well-designed and high-performing website can significantly influence how users perceive your business.{" "}
-//                     <span style={{ color: "var(--digital-marketing-light)" }}>
-//                       Digital Elite Services
-//                     </span>{" "}
-//                     specializes in creating impactful digital experiences that combine creativity, functionality, and performance. As a trusted UI/UX Design Company in Bangalore and Web Development company in Bangalore, we help businesses establish a strong and lasting online presence.
-//                   </h2>
-
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-//                     <Palette size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-//                     UI/UX Design Company in Bangalore
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     User experience is the foundation of any successful digital product. As a professional UI/UX Design Company in Bangalore, Digital Elite Services focuses on designing interfaces that are intuitive, engaging, and user-friendly.
-//                   </div>
-//                   <div className="text ff-2 color-paragraph mb-70">
-//                     We believe that great design is not just about aesthetics—it's about solving problems and delivering seamless experiences. Our team conducts in-depth research to understand your audience, their needs, and their behavior. This allows us to create designs that guide users naturally and improve overall engagement.
-//                   </div>
-
-//                   <h4 className="fw-6 letter-space--3 color-dt-black mb-30">
-//                     UI/UX Design Services in Bangalore
-//                   </h4>
-//                   <div className="row g-4 mb-70">
-//                     {[
-//                       {
-//                         icon: <Users size={24} />,
-//                         title: "User Research & Competitor Analysis"
-//                       },
-//                       {
-//                         icon: <PenTool size={24} />,
-//                         title: "Wireframing & Prototyping"
-//                       },
-//                       {
-//                         icon: <Laptop size={24} />,
-//                         title: "Website UI/UX Design"
-//                       },
-//                       {
-//                         icon: <Smartphone size={24} />,
-//                         title: "Mobile-Responsive Interface Design"
-//                       },
-//                       {
-//                         icon: <Layers size={24} />,
-//                         title: "Interaction & Usability Design"
-//                       },
-//                       {
-//                         icon: <Search size={24} />,
-//                         title: "UX Audits & Improvements"
-//                       }
-//                     ].map((item, index) => (
-//                       <div key={index} className="col-12 col-md-6 d-flex">
-//                         <div
-//                           className="p-30 w-100"
-//                           style={{
-//                             background: "var(--digital-marketing-light-bg)",
-//                             borderRadius: "12px",
-//                           }}
-//                         >
-//                           <div
-//                             style={{
-//                               display: "flex",
-//                               alignItems: "center",
-//                               gap: "12px",
-//                             }}
-//                           >
-//                             <span
-//                               style={{
-//                                 color: "var(--digital-marketing-light)",
-//                                 flexShrink: 0,
-//                               }}
-//                             >
-//                               {item.icon}
-//                             </span>
-//                             <h5 className="fw-6 mb-0">{item.title}</h5>
-//                           </div>
-//                         </div>
-//                       </div>
-//                     ))}
-//                   </div>
-
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-//                     <Code size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-//                     Web Development Company in Bangalore
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     A strong online presence requires more than just a visually appealing design—it needs a powerful backend that ensures performance, scalability, and security. As a leading Web Development company in Bangalore, Digital Elite Services builds high-quality websites tailored to your business needs.
-//                   </div>
-//                   <div className="text ff-2 color-paragraph mb-70">
-//                     We use modern technologies and best practices to develop websites that are fast, secure, and optimized for performance. Our development approach ensures that your website not only looks great but also delivers a seamless user experience across all devices.
-//                   </div>
-
-//                   <h4 className="fw-6 letter-space--3 color-dt-black mb-30">
-//                     Our Expert Web Development Services in Bangalore Include:
-//                   </h4>
-//                   <div className="row g-4 mb-70">
-//                     {[
-//                       {
-//                         icon: <Code size={24} />,
-//                         title: "Custom Website Development"
-//                       },
-//                       {
-//                         icon: <Building2 size={24} />,
-//                         title: "Business & Corporate Websites"
-//                       },
-//                       {
-//                         icon: <ShoppingBag size={24} />,
-//                         title: "E-Commerce Website Development"
-//                       },
-//                       {
-//                         icon: <Layout size={24} />,
-//                         title: "CMS-Based Development"
-//                       },
-//                       {
-//                         icon: <Server size={24} />,
-//                         title: "Web Application Development"
-//                       },
-//                       {
-//                         icon: <Settings size={24} />,
-//                         title: "API & Third-Party Integrations"
-//                       }
-//                     ].map((item, index) => (
-//                       <div key={index} className="col-12 col-md-6 d-flex">
-//                         <div
-//                           className="p-30 w-100"
-//                           style={{
-//                             background: "var(--digital-marketing-light-bg)",
-//                             borderRadius: "12px",
-//                           }}
-//                         >
-//                           <div
-//                             style={{
-//                               display: "flex",
-//                               alignItems: "center",
-//                               gap: "12px",
-//                             }}
-//                           >
-//                             <span
-//                               style={{
-//                                 color: "var(--digital-marketing-light)",
-//                                 flexShrink: 0,
-//                               }}
-//                             >
-//                               {item.icon}
-//                             </span>
-//                             <h5 className="fw-6 mb-0">{item.title}</h5>
-//                           </div>
-//                         </div>
-//                       </div>
-//                     ))}
-//                   </div>
-
-//                   {/* Image Grid - FIXED with proper responsive alignment */}
-//                   <div className="row g-4 mb-70">
-//                     <div className="col-12 col-md-6">
-//                       <div className="image" style={{ height: "100%" }}>
-//                         <img
-//                           loading="lazy"
-//                           src={webDetailImage1}
-//                           alt="Web Development Process"
-//                           className="img-fluid w-100"
-//                           style={{
-//                             borderRadius: "8px",
-//                             aspectRatio: "410 / 470",
-//                             objectFit: "cover",
-//                             height: "100%",
-//                             maxHeight: "470px",
-//                           }}
-//                           onError={handleImageError}
-//                         />
-//                       </div>
-//                     </div>
-//                     <div className="col-12 col-md-6">
-//                       <div className="image" style={{ height: "100%" }}>
-//                         <img
-//                           loading="lazy"
-//                           src={webDetailImage2}
-//                           alt="Web Development Results"
-//                           className="img-fluid w-100"
-//                           style={{
-//                             borderRadius: "8px",
-//                             aspectRatio: "410 / 470",
-//                             objectFit: "cover",
-//                             height: "100%",
-//                             maxHeight: "470px",
-//                           }}
-//                           onError={handleImageError}
-//                         />
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-//                     <Palette size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-//                     Creative Web Designing Company in Bangalore
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     Design plays a crucial role in capturing attention and retaining users. As a creative Web designing company in Bangalore, Digital Elite Services focuses on crafting visually appealing and strategically structured websites.
-//                   </div>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     Our design process ensures that every element—from layout to color schemes—is aligned with your brand identity. We create designs that are not only modern and attractive but also optimized for usability and performance.
-//                   </div>
-
-//                   <h4 className="fw-6 letter-space--3 color-dt-black mb-30">
-//                     Our Web Design Solutions Include:
-//                   </h4>
-//                   <div className="row g-4 mb-70">
-//                     {[
-//                       {
-//                         icon: <Monitor size={24} />,
-//                         title: "Responsive Website Design"
-//                       },
-//                       {
-//                         icon: <Target size={24} />,
-//                         title: "Landing Page Design"
-//                       },
-//                       {
-//                         icon: <Building2 size={24} />,
-//                         title: "Corporate Website Design"
-//                       },
-//                       {
-//                         icon: <Grid size={24} />,
-//                         title: "UI Design for Web Platforms"
-//                       }
-//                     ].map((item, index) => (
-//                       <div key={index} className="col-12 col-md-6 d-flex">
-//                         <div
-//                           className="p-30 w-100"
-//                           style={{
-//                             background: "var(--digital-marketing-light-bg)",
-//                             borderRadius: "12px",
-//                           }}
-//                         >
-//                           <div
-//                             style={{
-//                               display: "flex",
-//                               alignItems: "center",
-//                               gap: "12px",
-//                             }}
-//                           >
-//                             <span
-//                               style={{
-//                                 color: "var(--digital-marketing-light)",
-//                                 flexShrink: 0,
-//                               }}
-//                             >
-//                               {item.icon}
-//                             </span>
-//                             <h5 className="fw-6 mb-0">{item.title}</h5>
-//                           </div>
-//                         </div>
-//                       </div>
-//                     ))}
-//                   </div>
-
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-//                     <Search size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-//                     SEO-Friendly and Performance-Driven Websites
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     In today's competitive digital landscape, having a beautiful website alone is not enough. Your website must also be discoverable on search engines and deliver fast performance. At Digital Elite Services, we create SEO-friendly websites that help businesses improve their online visibility and attract more organic traffic.
-//                   </div>
-//                   <div className="text ff-2 color-paragraph mb-70">
-//                     Our development and design teams work together to ensure that every website is optimized for search engines from the ground up. From proper site architecture to mobile optimization and page speed improvements, we follow industry best practices to help your website rank higher on search engine results pages. We also focus heavily on website performance because users expect fast-loading and smooth digital experiences. A slow website can negatively impact user engagement and conversions. That's why we optimize images, streamline code, and implement advanced performance techniques to ensure your website loads quickly across all devices and browsers.
-//                   </div>
-
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-//                     <ShoppingBag size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-//                     E-Commerce Website Development Solutions
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     For businesses looking to sell products or services online, we provide complete e-commerce website development solutions. Our team creates secure, scalable, and user-friendly online stores designed to maximize customer engagement and increase sales.
-//                   </div>
-//                   <div className="text ff-2 color-paragraph mb-70">
-//                     We build e-commerce platforms with intuitive navigation, secure payment gateways, easy product management systems, and seamless checkout experiences. Whether you need a simple online store or a feature-rich e-commerce platform, we deliver customized solutions tailored to your business model. Our e-commerce websites are designed to provide excellent user experiences while making it easier for businesses to manage inventory, orders, and customer interactions efficiently.
-//                   </div>
-
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-//                     <Smartphone size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-//                     Mobile-Responsive and User-Centric Design
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     With the growing number of mobile users, having a mobile-responsive website is essential for business success. At Digital Elite Services, we prioritize responsive design to ensure your website functions flawlessly on smartphones, tablets, laptops, and desktops.
-//                   </div>
-//                   <div className="text ff-2 color-paragraph mb-70">
-//                     Our user-centric design approach focuses on making navigation simple and intuitive. We carefully structure content, buttons, and layouts to guide users naturally through the website. This improves user engagement and encourages visitors to take desired actions such as filling out contact forms, making purchases, or requesting services. By combining responsive design with strategic UI/UX practices, we create websites that offer consistent and enjoyable experiences across all screen sizes.
-//                   </div>
-
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-//                     Our Approach to{" "}
-//                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                       Digital Success
-//                     </span>
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     At Digital Elite Services, we follow a structured approach to deliver exceptional results:
-//                   </div>
-
-//                   <div className="list-process-item d-flex justify-content-between mb-70">
-//                     <div className="line d-none d-md-block"></div>
-//                     <div className="process-item-2">
-//                       <div className="number ff-2 fw-5 letter-space--2">01</div>
-//                       <div className="dot"></div>
-//                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-//                         Understanding Your Business
-//                       </a>
-//                       <div className="desc ff-2">
-//                         We begin by analyzing your business goals, target audience, and competitors to create a clear strategy.
-//                       </div>
-//                     </div>
-
-//                     <div className="process-item-2">
-//                       <div className="number ff-2 fw-5 letter-space--2">02</div>
-//                       <div className="dot"></div>
-//                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-//                         Planning & Design
-//                       </a>
-//                       <div className="desc ff-2">
-//                         Our UI/UX experts create wireframes and prototypes to visualize the structure and user journey.
-//                       </div>
-//                     </div>
-
-//                     <div className="process-item-2">
-//                       <div className="number ff-2 fw-5 letter-space--2">03</div>
-//                       <div className="dot"></div>
-//                       <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-//                         Development
-//                       </a>
-//                       <div className="desc ff-2">
-//                         Our developers bring the design to life using advanced technologies and coding standards.
-//                       </div>
-//                     </div>
-//                   </div>
-
-//                   <div className="row g-4 mb-70">
-//                     {[
-//                       {
-//                         icon: <Gauge size={24} />,
-//                         title: "Step 4: Testing & Optimization",
-//                         desc: "We rigorously test your website for performance, usability, and responsiveness."
-//                       },
-//                       {
-//                         icon: <Rocket size={24} />,
-//                         title: "Step 5: Launch & Support",
-//                         desc: "After a successful launch, we provide ongoing support and updates to ensure optimal performance."
-//                       }
-//                     ].map((item, index) => (
-//                       <div key={index} className="col-12 col-md-6 d-flex">
-//                         <div
-//                           className="p-30 w-100"
-//                           style={{
-//                             background: "var(--digital-marketing-light-bg)",
-//                             borderRadius: "12px",
-//                           }}
-//                         >
-//                           <div
-//                             style={{
-//                               display: "flex",
-//                               alignItems: "center",
-//                               gap: "12px",
-//                               marginBottom: "10px",
-//                             }}
-//                           >
-//                             <span
-//                               style={{
-//                                 color: "var(--digital-marketing-light)",
-//                                 flexShrink: 0,
-//                               }}
-//                             >
-//                               {item.icon}
-//                             </span>
-//                             <h5 className="fw-6 mb-0">{item.title}</h5>
-//                           </div>
-//                           <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
-//                         </div>
-//                       </div>
-//                     ))}
-//                   </div>
-
-//                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black">
-//                     Why Choose{" "}
-//                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                       Digital Elite Services
-//                     </span>
-//                     ?
-//                   </h3>
-//                   <div className="text ff-2 color-paragraph mb-40">
-//                     Choosing the right digital partner can make all the difference. Here's why businesses trust Digital Elite Services:
-//                   </div>
-
-//                   <div className="row g-4 mb-70">
-//                     {[
-//                       {
-//                         icon: <Award size={24} />,
-//                         title: "Expertise & Experience",
-//                         desc: "Our team brings years of experience in UI/UX design and web development, ensuring high-quality outcomes."
-//                       },
-//                       {
-//                         icon: <Target size={24} />,
-//                         title: "Tailored Solutions",
-//                         desc: "We understand that every business is unique, so we create customized solutions that align with your goals."
-//                       },
-//                       {
-//                         icon: <Sparkles size={24} />,
-//                         title: "Latest Technologies",
-//                         desc: "We stay updated with the latest trends and technologies to deliver modern, future-ready websites."
-//                       },
-//                       {
-//                         icon: <Zap size={24} />,
-//                         title: "Focus on Performance",
-//                         desc: "Our websites are optimized for speed, SEO, and user experience, helping you rank better and convert more visitors."
-//                       },
-//                       {
-//                         icon: <Box size={24} />,
-//                         title: "End-to-End Services",
-//                         desc: "From concept to deployment, we handle every aspect of your digital project."
-//                       },
-//                       {
-//                         icon: <Headphones size={24} />,
-//                         title: "Dedicated Client Support",
-//                         desc: "Our dedicated support team is always available to assist with updates, maintenance, and technical guidance."
-//                       }
-//                     ].map((item, index) => (
-//                       <div key={index} className="col-12 col-md-6 d-flex">
-//                         <div
-//                           className="p-30 w-100"
-//                           style={{
-//                             background: "var(--digital-marketing-light-bg)",
-//                             borderRadius: "12px",
-//                           }}
-//                         >
-//                           <div
-//                             style={{
-//                               display: "flex",
-//                               alignItems: "center",
-//                               gap: "12px",
-//                               marginBottom: "10px",
-//                             }}
-//                           >
-//                             <span
-//                               style={{
-//                                 color: "var(--digital-marketing-light)",
-//                                 flexShrink: 0,
-//                               }}
-//                             >
-//                               {item.icon}
-//                             </span>
-//                             <h5 className="fw-6 mb-0">{item.title}</h5>
-//                           </div>
-//                           <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
-//                         </div>
-//                       </div>
-//                     ))}
-//                   </div>
-
-//                   {/* Industries We Serve - WITH BOLD TEXT */}
-//                   <div className="mt-70">
-//                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
-//                       Industries We{" "}
-//                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-//                         Serve
-//                       </span>
-//                     </h3>
-//                     <div className="text ff-2 color-paragraph mb-40">
-//                       Digital Elite Services has experience working with businesses across various industries. Our diverse expertise allows us to understand unique market challenges and develop effective web solutions.
-//                     </div>
-
-//                     <div
-//                       className="d-flex flex-wrap"
-//                       style={{
-//                         gap: "20px 40px",
-//                         marginBottom: "20px",
-//                       }}
-//                     >
-//                       {[
-//                         { icon: <Building2 size={20} />, text: "Real Estate" },
-//                         { icon: <HeartPulse size={20} />, text: "Healthcare" },
-//                         { icon: <GraduationCap size={20} />, text: "Education" },
-//                         { icon: <Laptop size={20} />, text: "Information Technology" },
-//                         { icon: <ShoppingBag size={20} />, text: "E-commerce" },
-//                         { icon: <Factory size={20} />, text: "Manufacturing" },
-//                         { icon: <Wallet size={20} />, text: "Finance" },
-//                         { icon: <Hotel size={20} />, text: "Hospitality" },
-//                         { icon: <Store size={20} />, text: "Retail" },
-//                         { icon: <Scale size={20} />, text: "Professional Services" },
-//                         { icon: <HardHat size={20} />, text: "Construction" },
-//                         { icon: <Rocket size={20} />, text: "Startups" },
-//                       ].map((item, index) => (
-//                         <div
-//                           key={index}
-//                           style={{
-//                             display: "flex",
-//                             alignItems: "center",
-//                             gap: "12px",
-//                             minWidth: "200px",
-//                             flex: "1 1 200px",
-//                           }}
-//                           className="ff-2 color-paragraph"
-//                         >
-//                           <span
-//                             style={{
-//                               color: "var(--digital-marketing-light)",
-//                               flexShrink: 0,
-//                             }}
-//                           >
-//                             {item.icon}
-//                           </span>
-//                           <strong style={{ fontWeight: 600 }}>{item.text}</strong>
-//                         </div>
-//                       ))}
-//                     </div>
-                    
-//                     <div className="text ff-2 color-paragraph">
-//                       Our industry-specific web development strategies ensure that your website meets the unique needs of your target audience and delivers meaningful results.
-//                     </div>
-//                   </div>
-
-//                   {/* Final CTA */}
-//                   <div className="mt-70 p-40" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px" }}>
-//                     <h4 className="fw-6 letter-space--3 lh-32 mb-30" style={{marginTop:"53px"}}>
-//                       Let's Build Your{" "}
-//                       <span style={{color:"var(--digital-marketing-light)"}}>
-//                         Digital Future
-//                       </span>
-//                     </h4>
-//                     <p className="ff-2 color-paragraph mb-30">
-//                       Your website is a powerful tool that can drive growth, improve customer engagement, and strengthen your brand. At Digital Elite Services, we are committed to helping you achieve your digital goals through innovative design and reliable development.
-//                     </p>
-//                     <p className="ff-2 color-paragraph mb-30">
-//                       If you're looking for expert <strong>UI/UX Design services in Bangalore</strong>, a trusted <strong>Web Development company in Bangalore</strong>, or a creative <strong>Web designing company in Bangalore</strong>, we're here to help.
-//                     </p>
-//                     <p className="ff-2 color-paragraph">
-//                       <strong>Get in touch with Digital Elite Services today</strong> and take the first step toward building a strong and successful online presence.
-//                     </p>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </section>
-
-//         <Footer />
-
-//         <div className="overlay-filter" id="overlay-filter"></div>
-//       </main>
-
-//       <div className="offcanvas offcanvas-start" id="mobileMenu">
-//         <div className="pop-up-nav-mobile">
-//           <div className="canvas-header">
-//             <a href="#" className="logo-site">
-//               <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
-//             </a>
-//             <span
-//               className="icon icon-close"
-//               data-bs-dismiss="offcanvas"
-//             ></span>
-//           </div>
-//           <div className="canvas-body">
-//             <div className="mb-content-top">
-//               <ul
-//                 className="nav-ul-mb"
-//                 id="wrapper-menu-navigation"
-//               ></ul>
-//             </div>
-//           </div>
-//           <div className="canvas-bottom"></div>
-//         </div>
-//       </div>
-
-//       <SidePopup />
-
-//       <div className="progress-wrap">
-//         <svg
-//           className="progress-circle svg-content"
-//           width="100%"
-//           height="100%"
-//           viewBox="-1 -1 102 102"
-//         >
-//           <path
-//             d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-//             style={{
-//               transition: "strokeDashoffset 10ms linear",
-//               strokeDasharray: "307.919, 307.919",
-//               strokeDashoffset: "277.672",
-//             }}
-//           ></path>
-//         </svg>
-//       </div>
-//     </>
-//   );
-// }
-
-
+import DESLOGO from "../../../assets/images/header/DES_logo_white.png";
 import React, { useEffect } from "react";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import SidePopup from "../../../components/sidePopup";
 import {
-  Laptop,
-  Palette,
-  Smartphone,
-  ShoppingBag,
-  Rocket,
-  Shield,
   Users,
-  BarChart3,
-  Search,
-  Gauge,
-  Settings,
-  Layers,
-  Pencil,
-  Code,
-  Server,
-  Database,
-  Cloud,
-  Lock,
-  Globe,
   Target,
-  ThumbsUp,
-  Handshake,
+  TrendingUp,
+  BarChart3,
+  Eye,
+  Rocket,
   Award,
-  Clock,
-  Headphones,
+  DollarSign,
+  MessageCircle,
+  Megaphone,
+  Layers,
+  Compass,
+  Settings,
+  PenTool,
   Building2,
   HeartPulse,
   GraduationCap,
-  Store,
-  Cpu,
-  Utensils,
-  Sparkles,
-  Zap,
-  Eye,
-  CheckCircle,
-  Compass,
-  PenTool,
-  Layout,
-  Monitor,
-  Tablet,
-  ArrowRight,
-  TrendingUp,
-  FileText,
-  Briefcase,
-  LineChart,
-  MousePointer,
-  Grid,
-  Box,
+  Laptop,
+  ShoppingBag,
+  Factory,
   Wallet,
+  Hotel,
+  Store,
   Scale,
   HardHat,
-  Factory,
-  Hotel,
+  Globe,
+  Smartphone,
+  Zap,
+  CheckCircle,
+  Sparkles,
   MapPin,
   Navigation,
   BadgeCheck,
-  Megaphone,
   ArrowUpRight,
 } from "lucide-react";
-// Import relevant images for the web development service page
-import webHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
-import webDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
-import webDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
-import webDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
+// Import Font Awesome icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// Import relevant images for the social media marketing service page
+import socialHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
+import socialDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
+import socialDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
+import socialDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
 
-export default function ServiceDetailsWebDevelopment() {
+export default function ServiceDetailsSocialMediaMarketing() {
   // Helper function to handle image errors
   const handleImageError = (e) => {
     e.target.style.display = 'none';
@@ -1280,45 +449,58 @@ export default function ServiceDetailsWebDevelopment() {
         /* ============================================
            HERO SECTION STYLES
            ============================================ */
+        .page-title.hero-section {
+          padding-top: 100px !important;
+          padding-bottom: 40px !important;
+        }
+
         .hero-section .hero-left {
           display: flex;
           flex-direction: column;
-          gap: 30px;
-          padding: 40px 0;
+          gap: 20px;
+          padding: 20px 0 10px;
         }
 
         .hero-section .hero-content {
           display: flex;
           flex-direction: column;
-          gap: 20px;
-        }
-
-        .hero-section .hero-content .sub-title {
-          font-size: 18px;
-          letter-spacing: 2px;
-          opacity: 0.8;
-        }
-
-        .hero-section .hero-content .sub-title .color-dt-light {
-          color: var(--digital-marketing-light);
+          gap: 15px;
         }
 
         .hero-section .hero-content .title {
           font-size: 56px;
-          line-height: 1.1;
+          line-height: 1.15 !important;
+          font-weight: 700;
+          display: block;
         }
 
-        @media (max-width: 768px) {
-          .hero-section .hero-content .title {
-            font-size: 36px;
-          }
+        .hero-section .hero-content .title .title-line {
+          display: block;
+          width: 100%;
         }
 
-        .hero-section .hero-content .desc {
-          font-size: 20px;
-          line-height: 1.6;
-          max-width: 600px;
-          color: #666;
+        .hero-section .hero-content .title .highlight-text {
+          color: var(--digital-marketing-light);
+          position: relative;
+          display: inline-block;
+        }
+
+        .hero-section .hero-content .title .highlight-text::after {
+          content: '';
+          position: absolute;
+          bottom: 8px;
+          left: 0;
+          width: 100%;
+          height: 8px;
+          background: rgba(var(--digital-marketing-light-rgb), 0.2);
+          border-radius: 4px;
+          z-index: -1;
+          transition: all 0.3s ease;
+        }
+
+        .hero-section .hero-content .title .highlight-text:hover::after {
+          height: 100%;
+          background: rgba(var(--digital-marketing-light-rgb), 0.1);
         }
 
         .hero-section .stats {
@@ -1359,70 +541,48 @@ export default function ServiceDetailsWebDevelopment() {
         }
 
         /* ============================================
-           BUTTON STYLE WITH PULSE ANIMATION
+           HERO IMAGE WRAPPER
            ============================================ */
-        .hero-section .tf-btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 12px;
-          padding: 16px 40px;
-          background: var(--digital-marketing-light);
-          color: #fff;
-          border-radius: 50px;
-          text-decoration: none;
-          transition: all 0.3s ease;
-          width: fit-content;
-          font-weight: 600;
-          border: none;
-          cursor: pointer;
-          position: relative;
+        .hero-image-wrapper .image {
+          border-radius: 12px;
           overflow: hidden;
-        }
-
-        .hero-section .tf-btn::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-          transition: left 0.5s ease;
-        }
-
-        .hero-section .tf-btn:hover::before {
-          left: 100%;
-        }
-
-        .hero-section .tf-btn:hover {
-          transform: translateY(-3px) scale(1.02);
-          box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-          background: var(--digital-marketing-light);
-          opacity: 0.9;
-        }
-
-        .hero-section .tf-btn .icon-btn {
-          display: flex;
-          align-items: center;
+          box-shadow: 0 20px 60px rgba(0,0,0,0.08);
           transition: transform 0.3s ease;
         }
 
-        .hero-section .tf-btn:hover .icon-btn {
-          transform: rotate(45deg) scale(1.2);
+        .hero-image-wrapper .image:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 30px 80px rgba(0,0,0,0.12);
         }
 
         /* ============================================
-           STAT ITEM ANIMATION
+           HERO IMAGE — responsive
            ============================================ */
-        .stat-item {
-          opacity: 0;
-          transform: translateY(30px) scale(0.9);
-          transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        .img-page-title {
+          margin-top: 0 !important;
+          padding: 0 15px;
+          margin-bottom: 30px;
         }
-
-        .stat-item.stat-visible {
-          opacity: 1;
-          transform: translateY(0) scale(1);
+        
+        .img-page-title .container {
+          padding: 0;
+        }
+        
+        .img-page-title .image {
+          padding-left: 0 !important;
+          max-width: 100% !important;
+          border-radius: 12px;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+          overflow: hidden;
+        }
+        
+        .img-page-title .image img {
+          width: 100%;
+          height: auto;
+          max-height: 470px;
+          object-fit: cover;
+          border-radius: 8px;
         }
 
         /* ============================================
@@ -1434,7 +594,7 @@ export default function ServiceDetailsWebDevelopment() {
         }
 
         /* ============================================
-           CARD HOVER EFFECTS - NO SHADOW
+           CARD HOVER EFFECTS
            ============================================ */
         .process-item-2 {
           transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -1452,25 +612,13 @@ export default function ServiceDetailsWebDevelopment() {
           overflow: hidden;
           border-radius: 8px;
           position: relative;
-        }
-
-        .image::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
           width: 100%;
-          height: 100%;
-          background: linear-gradient(135deg, rgba(var(--digital-marketing-light-rgb), 0.1), transparent);
-          opacity: 0;
-          transition: opacity 0.4s ease;
-        }
-
-        .image:hover::after {
-          opacity: 1;
         }
 
         .image img {
+          width: 100%;
+          height: auto;
+          display: block;
           transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
@@ -1489,12 +637,15 @@ export default function ServiceDetailsWebDevelopment() {
         }
 
         /* ============================================
-           CTA BOX ANIMATION - NO SHADOW
+           CTA BOX ANIMATION
            ============================================ */
         .p-40 {
           transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
           position: relative;
           overflow: hidden;
+          padding: 30px;
+          border-radius: 12px;
+          background: var(--digital-marketing-light-bg);
         }
 
         .p-40::before {
@@ -1522,8 +673,6 @@ export default function ServiceDetailsWebDevelopment() {
           padding: 10px 0;
           position: relative;
           cursor: pointer;
-          text-decoration: none;
-          color: inherit;
         }
 
         .category-services-item::after {
@@ -1561,95 +710,14 @@ export default function ServiceDetailsWebDevelopment() {
         }
 
         /* ============================================
-           TYPING EFFECT
+           PROCESS LIST — horizontal on desktop
            ============================================ */
-        .typing-effect {
-          display: inline-block;
-          border-right: 3px solid var(--digital-marketing-light);
-          padding-right: 5px;
-          animation: blink 0.8s step-end infinite;
+        .list-process-item {
+          display: flex;
+          gap: 30px;
         }
-
-        @keyframes blink {
-          0%, 100% { border-color: var(--digital-marketing-light); }
-          50% { border-color: transparent; }
-        }
-
-        /* ============================================
-           SCROLLBAR STYLES
-           ============================================ */
-        ::-webkit-scrollbar {
-          width: 10px;
-        }
-
-        ::-webkit-scrollbar-track {
-          background: #f1f1f1;
-          border-radius: 5px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-          background: var(--digital-marketing-light);
-          border-radius: 5px;
-          transition: background 0.3s ease;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-          background: #555;
-        }
-
-        /* ============================================
-           RESPONSIVE ADJUSTMENTS
-           ============================================ */
-        @media (max-width: 992px) {
-          .hero-section .hero-content .title {
-            font-size: 42px;
-          }
-          
-          .hero-section .hero-content .desc {
-            font-size: 18px;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .hero-section .hero-left {
-            padding: 20px 0;
-          }
-          
-          .hero-section .hero-content .title {
-            font-size: 32px;
-          }
-          
-          .hero-section .hero-content .desc {
-            font-size: 16px;
-          }
-          
-          .hero-section .counter-item .odometer {
-            font-size: 36px;
-          }
-          
-          .hero-section .tf-btn {
-            padding: 14px 30px;
-            font-size: 14px;
-          }
-          
-          .p-30 {
-            padding: 20px !important;
-          }
-        }
-
-        @media (max-width: 576px) {
-          .hero-section .hero-content .title {
-            font-size: 28px;
-          }
-          
-          .hero-section .stats {
-            flex-direction: column;
-            gap: 15px;
-          }
-          
-          .hero-section .counter-item .odometer {
-            font-size: 30px;
-          }
+        .list-process-item .process-item-2 {
+          flex: 1;
         }
 
         /* ============================================
@@ -1674,6 +742,312 @@ export default function ServiceDetailsWebDevelopment() {
           animation: fadeInUp 0.6s ease forwards;
           animation-delay: 0.2s;
           opacity: 0;
+        }
+
+        /* ============================================
+           RESPONSIVE — XL (≤1200px)
+           ============================================ */
+        @media (max-width: 1200px) {
+          .hero-section .hero-content .title {
+            font-size: 48px;
+          }
+          .page-title.hero-section {
+            padding-top: 140px !important;
+          }
+        }
+
+        /* ============================================
+           RESPONSIVE — LG (≤992px)
+           ============================================ */
+        @media (max-width: 992px) {
+          .hero-section .hero-content .title {
+            font-size: 40px;
+          }
+          .page-title.hero-section {
+            padding-top: 130px !important;
+            padding-bottom: 30px !important;
+          }
+          .hero-section .hero-left {
+            padding: 10px 0;
+          }
+          
+          .card-sidebar {
+            position: static !important;
+            top: auto !important;
+            left: auto !important;
+            margin-bottom: 40px;
+          }
+          .card-sidebar ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 12px;
+            padding: 0;
+            list-style: none;
+          }
+          .card-sidebar ul li {
+            flex: 0 0 auto;
+          }
+          .category-services-item {
+            padding: 8px 16px;
+            background: var(--digital-marketing-light-bg, #f5f7ff);
+            border-radius: 20px;
+            white-space: nowrap;
+            font-size: 14px;
+          }
+          .category-services-item::after {
+            display: none;
+          }
+          .category-services-item:hover {
+            transform: translateY(-2px);
+            background: var(--digital-marketing-light);
+            color: #fff;
+          }
+          .category-services-item.active {
+            background: var(--digital-marketing-light);
+            color: #fff;
+          }
+          
+          .list-process-item {
+            flex-wrap: wrap;
+            gap: 24px;
+          }
+          .list-process-item .line {
+            display: none !important;
+          }
+          .list-process-item .process-item-2 {
+            flex: 1 1 calc(50% - 12px);
+            min-width: 220px;
+          }
+          
+          .img-page-title .image img {
+            max-height: 350px;
+          }
+        }
+
+        /* ============================================
+           RESPONSIVE — MD (≤768px)
+           ============================================ */
+        @media (max-width: 768px) {
+          .hero-section .hero-content .title {
+            font-size: 32px;
+            line-height: 1.2 !important;
+          }
+          .hero-section .hero-content .title .highlight-text::after {
+            bottom: 4px;
+            height: 5px;
+          }
+          .page-title.hero-section {
+            padding-top: 120px !important;
+            padding-bottom: 20px !important;
+          }
+          .hero-section .hero-left {
+            padding: 5px 0;
+          }
+          .p-30 {
+            padding: 20px !important;
+          }
+          
+          .list-process-item {
+            flex-direction: column;
+            gap: 20px;
+          }
+          .list-process-item .process-item-2 {
+            flex: 1 1 100%;
+            min-width: 0;
+          }
+          
+          .d-flex.flex-wrap > div {
+            flex: 1 1 140px !important;
+            min-width: 140px !important;
+          }
+          
+          .mt-70 { margin-top: 40px !important; }
+          .mb-70 { margin-bottom: 40px !important; }
+          .mb-50 { margin-bottom: 30px !important; }
+          
+          .img-page-title {
+            padding: 0 10px;
+            margin-bottom: 20px;
+          }
+          .img-page-title .image img {
+            max-height: 280px;
+            border-radius: 6px;
+          }
+          
+          .p-40 {
+            padding: 20px;
+          }
+          
+          .row.g-4 {
+            --bs-gutter-y: 1rem;
+          }
+
+          .detail-content .row.g-4 .image img {
+            max-height: 300px;
+          }
+        }
+
+        /* ============================================
+           RESPONSIVE — SM (≤576px)
+           ============================================ */
+        @media (max-width: 576px) {
+          .hero-section .hero-content .title {
+            font-size: 26px;
+            line-height: 1.25 !important;
+          }
+          .page-title.hero-section {
+            padding-top: 110px !important;
+            padding-bottom: 15px !important;
+          }
+          
+          .d-flex.flex-wrap > div {
+            flex: 1 1 130px !important;
+            min-width: 130px !important;
+          }
+          
+          .detail-content h2 {
+            font-size: 18px !important;
+            line-height: 1.5;
+            margin-bottom: 24px !important;
+          }
+          .detail-content h3.title-2 {
+            font-size: 20px !important;
+          }
+          .detail-content h4 {
+            font-size: 18px !important;
+          }
+          
+          .card-sidebar ul { gap: 6px 10px; }
+          .category-services-item {
+            font-size: 13px;
+            padding: 6px 12px;
+          }
+          
+          .col-12.col-md-4.d-flex,
+          .col-12.col-md-6.d-flex {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+          
+          .p-30 { padding: 16px !important; }
+          .p-40 { padding: 16px !important; }
+          
+          .mt-70 { margin-top: 30px !important; }
+          .mb-70 { margin-bottom: 30px !important; }
+          .mb-50 { margin-bottom: 20px !important; }
+          .mb-40 { margin-bottom: 20px !important; }
+          .mb-30 { margin-bottom: 16px !important; }
+          
+          .img-page-title {
+            padding: 0 8px;
+            margin-bottom: 15px;
+          }
+          .img-page-title .image img {
+            max-height: 200px;
+            border-radius: 6px;
+          }
+          
+          .row.g-4 .col-12 {
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+          
+          .text.ff-2 {
+            font-size: 14px;
+          }
+          
+          .desc-1, .desc-2 {
+            font-size: 14px;
+          }
+
+          .detail-content .row.g-4 .image img {
+            max-height: 220px;
+          }
+        }
+
+        /* ============================================
+           RESPONSIVE — XS (≤400px)
+           ============================================ */
+        @media (max-width: 400px) {
+          .hero-section .hero-content .title {
+            font-size: 22px;
+          }
+          .page-title.hero-section {
+            padding-top: 100px !important;
+            padding-bottom: 10px !important;
+          }
+          
+          .d-flex.flex-wrap > div {
+            flex: 1 1 100% !important;
+            min-width: 100% !important;
+          }
+          
+          .category-services-item {
+            font-size: 12px;
+            padding: 5px 10px;
+          }
+          
+          .img-page-title .image img {
+            max-height: 160px;
+          }
+        }
+
+        /* ============================================
+           FIX FOR MOBILE NAV SPACING
+           ============================================ */
+        @media (max-width: 768px) {
+          .flat-spacing-9 {
+            padding-top: 30px !important;
+            padding-bottom: 30px !important;
+          }
+        }
+
+        /* ============================================
+           IMAGE CONTAINER FIXES
+           ============================================ */
+        .image {
+          width: 100%;
+        }
+        
+        .image img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+        
+        .detail-content .row.g-4 .image {
+          height: auto !important;
+          min-height: 200px;
+        }
+        
+        .detail-content .row.g-4 .image img {
+          max-height: 470px;
+          object-fit: cover;
+        }
+
+        /* ============================================
+           SOCIAL ICON STYLES
+           ============================================ */
+        .social-icon-wrapper {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 4px;
+        }
+        
+        .social-icon-wrapper svg {
+          width: 18px;
+          height: 18px;
+        }
+
+      /* Fix horizontal overflow causing white gap on mobile zoom */
+        html, body {
+          overflow-x: clip;
+        }
+        #wrapper {
+          overflow-x: clip;
+          width: 100%;
+          position: relative;
         }
       `}</style>
 
@@ -1707,58 +1081,39 @@ export default function ServiceDetailsWebDevelopment() {
             </div>
           </div>
           <div className="container">
-            <div className="hero-left">
-              <div className="hero-content">
-                <div className="sub-title h6 letter-space--2 fw-5 fade-in-up mt-60" data-delay="100">
-                  {/* <span className="typing-effect">Web Design & Development Agency</span> */}
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="hero-left">
+                  <div className="hero-content">
+                    <h1 className="title letter-space--3 fw-6 slide-in-left" data-delay="200">
+                      <span className="title-line">Get More Leads</span>
+                      <span className="title-line">
+                        with <span className="highlight-text">Strategic Social Media</span>
+                      </span>
+                      <span className="title-line">Marketing</span>
+                    </h1>
+                  </div>
+                  
                 </div>
-                <h1 className="title letter-space--3 fw-6 slide-in-left" data-delay="200">
-                  Build Your
-                  <br />
-                  <span style={{ color: "var(--digital-marketing-light)" }}>
-                    Digital Future
-                  </span>
-                  <br />
-                  With Expert Development
-                </h1>
-                
               </div>
-              <div className="stats">
-                <div className="counter-item stat stat-item">
-                  <div className="counter">
-                    <div className="number-counter flex fs-65">
-                      <span
-                        className="number odometer color-primary h1 fw-6"
-                        data-to="98"
-                        data-inviewport="yes"
-                      >
-                        0
-                      </span>
-                      <span className="h1">%</span>
-                    </div>
-                  </div>
-                  <div className="h5 ff-2 fw-6 lh-35">
-                    Client Satisfaction
-                    <br />
-                    Rate
-                  </div>
-                </div>
-                <div className="counter-item stat stat-item">
-                  <div className="counter">
-                    <div className="number-counter flex fs-65">
-                      <span
-                        className="number odometer color-primary h1 fw-6"
-                        data-to="4.9"
-                        data-inviewport="yes"
-                      >
-                        0
-                      </span>
-                    </div>
-                  </div>
-                  <div className="h5 ff-2 fw-6 lh-35">
-                    Based on Client
-                    <br />
-                    Reviews (500+)
+              <div className="col-lg-6 d-none d-lg-block">
+                <div className="hero-image-wrapper zoom-in" data-delay="100">
+                  <div className="image" style={{ borderRadius: "12px", overflow: "hidden", boxShadow: "0 20px 60px rgba(0,0,0,0.1)" }}>
+                    <img
+                      loading="lazy"
+                      width="600"
+                      height="400"
+                      src={socialHeroImage}
+                      alt="Social Media Marketing Agency in Bangalore"
+                      className="w-100"
+                      style={{ 
+                        borderRadius: "12px", 
+                        objectFit: "cover",
+                        width: "100%",
+                        height: "auto"
+                      }}
+                      onError={handleImageError}
+                    />
                   </div>
                 </div>
               </div>
@@ -1766,18 +1121,24 @@ export default function ServiceDetailsWebDevelopment() {
           </div>
         </div>
 
-        {/* Hero Image - with parallax effect */}
-        <div className="img-page-title d-none d-lg-block hero-image-wrapper">
+        {/* Hero Image - Mobile/Tablet version */}
+        <div className="img-page-title d-block d-lg-none hero-image-wrapper" style={{ marginTop: "20px" }}>
           <div className="container">
             <div className="image zoom-in" data-delay="100">
               <img
                 loading="lazy"
                 width="915"
                 height="470"
-                src={webHeroImage}
-                alt="Web Development Company in Bangalore"
+                src={socialHeroImage}
+                alt="Social Media Marketing Agency in Bangalore"
                 className="w-100"
-                style={{ borderRadius: "8px", objectFit: "cover" }}
+                style={{ 
+                  borderRadius: "8px", 
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "300px"
+                }}
                 onError={handleImageError}
               />
             </div>
@@ -1797,7 +1158,7 @@ export default function ServiceDetailsWebDevelopment() {
                   <p className="h5 title fw-6 letter-space--3 lh-100">
                     Services Category
                   </p>
-                  <ul style={{ listStyle: "none", padding: 0 }}>
+                  <ul>
                     <li>
                       <a
                         href="/services/Digital-marketing-agency-in-bangalore"
@@ -1817,7 +1178,7 @@ export default function ServiceDetailsWebDevelopment() {
                     <li>
                       <a
                         href="/services/social-media-marketing-company-bangalore"
-                        className="category-services-item fw-5 letter-space--2 ff-2"
+                        className="category-services-item fw-5 letter-space--2 ff-2 active"
                       >
                         Social Media Marketing
                       </a>
@@ -1825,7 +1186,7 @@ export default function ServiceDetailsWebDevelopment() {
                     <li>
                       <a
                         href="/services/web-development-company-bangalore"
-                        className="category-services-item fw-5 letter-space--2 ff-2 active"
+                        className="category-services-item fw-5 letter-space--2 ff-2"
                       >
                         Web Design & Development
                       </a>
@@ -1860,126 +1221,99 @@ export default function ServiceDetailsWebDevelopment() {
               <div className="col-lg-8">
                 <div className="detail-content">
                   <h2 className="fw-6 letter-space--3 color-dt-black mb-50 fade-in-up" data-delay="100">
-                    In today's fast-paced digital world, your website is often the first interaction customers have with your brand. A well-designed and high-performing website can significantly influence how users perceive your business.{" "}
+                    In today's digital-first world, social media has become a powerful tool for businesses to connect with their audience, build brand awareness, and drive measurable growth.{" "}
                     <span style={{ color: "var(--digital-marketing-light)" }}>
                       Digital Elite Services
                     </span>{" "}
-                    specializes in creating impactful digital experiences that combine creativity, functionality, and performance. As a trusted UI/UX Design Company in Bangalore and Web Development company in Bangalore, we help businesses establish a strong and lasting online presence.
+                    provides result-oriented Social Media Marketing services in Bangalore designed to help businesses stand out in a competitive marketplace.
                   </h2>
+                  <div className="text ff-2 color-paragraph mb-70 slide-in-right" data-delay="200">
+                    Whether you are a startup, a small business, or an established brand, our tailored strategies ensure that your business reaches the right audience at the right time. With millions of active users across platforms like{" "}
+                    <span className="social-icon-wrapper"><FontAwesomeIcon icon={faFacebook} style={{ color: "#1877F2" }} /></span>
+                    Facebook,{" "}
+                    <span className="social-icon-wrapper"><FontAwesomeIcon icon={faInstagram} style={{ color: "#E4405F" }} /></span>
+                    Instagram,{" "}
+                    <span className="social-icon-wrapper"><FontAwesomeIcon icon={faLinkedin} style={{ color: "#0A66C2" }} /></span>
+                    LinkedIn, and{" "}
+                    <span className="social-icon-wrapper"><FontAwesomeIcon icon={faTwitter} style={{ color: "#1DA1F2" }} /></span>
+                    Twitter, social media marketing is essential. Our team combines creativity, analytics, and industry expertise to deliver campaigns that not only look great but also perform exceptionally.
+                  </div>
 
                   <h3 className="title-2 fw-6 letter-space--3 color-dt-black scale-in" data-delay="100">
-                    <Palette size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-                    UI/UX Design Company in Bangalore
+                    Leading{" "}
+                    <span style={{ color: "var(--digital-marketing-blue)" }}>
+                      Social Media Marketing Agency
+                    </span>{" "}
+                    in Bangalore
                   </h3>
                   <div className="text ff-2 color-paragraph mb-40 fade-in-up" data-delay="200">
-                    User experience is the foundation of any successful digital product. As a professional UI/UX Design Company in Bangalore, Digital Elite Services focuses on designing interfaces that are intuitive, engaging, and user-friendly.
-                  </div>
-                  <div className="text ff-2 color-paragraph mb-70 slide-in-right" data-delay="300">
-                    We believe that great design is not just about aesthetics—it's about solving problems and delivering seamless experiences. Our team conducts in-depth research to understand your audience, their needs, and their behavior. This allows us to create designs that guide users naturally and improve overall engagement.
-                  </div>
-
-                  <h4 className="fw-6 letter-space--3 color-dt-black mb-30 rotate-in" data-delay="100">
-                    UI/UX Design Services in Bangalore
-                  </h4>
-                  <div className="row g-4 mb-70">
-                    {[
-                      {
-                        icon: <Users size={24} />,
-                        title: "User Research & Competitor Analysis"
-                      },
-                      {
-                        icon: <PenTool size={24} />,
-                        title: "Wireframing & Prototyping"
-                      },
-                      {
-                        icon: <Laptop size={24} />,
-                        title: "Website UI/UX Design"
-                      },
-                      {
-                        icon: <Smartphone size={24} />,
-                        title: "Mobile-Responsive Interface Design"
-                      },
-                      {
-                        icon: <Layers size={24} />,
-                        title: "Interaction & Usability Design"
-                      },
-                      {
-                        icon: <Search size={24} />,
-                        title: "UX Audits & Improvements"
-                      }
-                    ].map((item, index) => (
-                      <div key={index} className="col-12 col-md-6 d-flex flip-in" data-delay={100 + index * 100}>
-                        <div
-                          className="p-30 w-100"
-                          style={{
-                            background: "var(--digital-marketing-light-bg)",
-                            borderRadius: "12px",
-                          }}
-                        >
-                          <div
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              gap: "12px",
-                            }}
-                          >
-                            <span
-                              style={{
-                                color: "var(--digital-marketing-light)",
-                                flexShrink: 0,
-                              }}
-                            >
-                              {item.icon}
-                            </span>
-                            <h5 className="fw-6 mb-0">{item.title}</h5>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black zoom-in" data-delay="100">
-                    <Code size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-                    Web Development Company in Bangalore
-                  </h3>
-                  <div className="text ff-2 color-paragraph mb-40 fade-in-up" data-delay="200">
-                    A strong online presence requires more than just a visually appealing design—it needs a powerful backend that ensures performance, scalability, and security. As a leading Web Development company in Bangalore, Digital Elite Services builds high-quality websites tailored to your business needs.
+                    As a trusted Social Media Marketing Agency in Bangalore, Digital Elite Services focuses on creating meaningful connections between brands and their audiences. We understand that every business has unique goals, and that's why we craft customized strategies that align with your objectives.
                   </div>
                   <div className="text ff-2 color-paragraph mb-70 slide-in-left" data-delay="300">
-                    We use modern technologies and best practices to develop websites that are fast, secure, and optimized for performance. Our development approach ensures that your website not only looks great but also delivers a seamless user experience across all devices.
+                    Our approach begins with in-depth research and competitor analysis to identify opportunities within your industry. We then develop a content plan that resonates with your target audience while maintaining consistency in your brand voice. From eye-catching visuals to engaging captions, every element is designed to boost engagement and conversions. What sets us apart as a leading social media marketing agency is our commitment to transparency and performance. We provide detailed insights and reports so you can track your campaign's progress and understand the return on your investment.
                   </div>
 
-                  <h4 className="fw-6 letter-space--3 color-dt-black mb-30 blur-in" data-delay="100">
-                    Our Expert Web Development Services in Bangalore Include:
-                  </h4>
+                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black rotate-in" data-delay="100">
+                    Comprehensive{" "}
+                    <span style={{ color: "var(--digital-marketing-blue)" }}>
+                      Social Media Marketing Company
+                    </span>{" "}
+                    in Bangalore
+                  </h3>
+                  <div className="text ff-2 color-paragraph mb-40 fade-in-up" data-delay="200">
+                    As a full-service Social Media marketing company in Bangalore, Digital Elite Services offers end-to-end solutions that cover every aspect of social media management.
+                  </div>
+
+                  <div className="list-process-item d-flex justify-content-between mb-70">
+                    <div className="line d-none d-md-block"></div>
+                    <div className="process-item-2 flip-in" data-delay="100">
+                      <div className="number ff-2 fw-5 letter-space--2">01</div>
+                      <div className="dot"></div>
+                      <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
+                        Strategy Development
+                      </a>
+                      <div className="desc ff-2">
+                        We create data-driven social media strategies tailored to your business goals. Whether your aim is brand awareness, lead generation, or customer engagement, we design campaigns that deliver results.
+                      </div>
+                    </div>
+
+                    <div className="process-item-2 flip-in" data-delay="200">
+                      <div className="number ff-2 fw-5 letter-space--2">02</div>
+                      <div className="dot"></div>
+                      <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
+                        Content Creation
+                      </a>
+                      <div className="desc ff-2">
+                        Content is the backbone of any successful social media campaign. Our creative team develops high-quality graphics, videos, and written content that capture attention and encourage interaction.
+                      </div>
+                    </div>
+
+                    <div className="process-item-2 flip-in" data-delay="300">
+                      <div className="number ff-2 fw-5 letter-space--2">03</div>
+                      <div className="dot"></div>
+                      <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
+                        Social Media Management
+                      </a>
+                      <div className="desc ff-2">
+                        We handle your social media profiles from start to finish, including posting, monitoring, and responding to customer queries. This ensures your brand maintains a strong and consistent online presence.
+                      </div>
+                    </div>
+                  </div>
+
                   <div className="row g-4 mb-70">
                     {[
                       {
-                        icon: <Code size={24} />,
-                        title: "Custom Website Development"
+                        icon: <Megaphone size={24} />,
+                        title: "Paid Advertising Campaigns",
+                        desc: "Our targeted social media advertising campaigns help you reach a wider audience and generate qualified leads. We optimize ads for maximum performance and cost efficiency."
                       },
                       {
-                        icon: <Building2 size={24} />,
-                        title: "Business & Corporate Websites"
-                      },
-                      {
-                        icon: <ShoppingBag size={24} />,
-                        title: "E-Commerce Website Development"
-                      },
-                      {
-                        icon: <Layout size={24} />,
-                        title: "CMS-Based Development"
-                      },
-                      {
-                        icon: <Server size={24} />,
-                        title: "Web Application Development"
-                      },
-                      {
-                        icon: <Settings size={24} />,
-                        title: "API & Third-Party Integrations"
+                        icon: <BarChart3 size={24} />,
+                        title: "Analytics and Reporting",
+                        desc: "We track key performance metrics and provide detailed reports to measure the success of your campaigns. This data-driven approach allows us to continuously refine strategies for better outcomes."
                       }
                     ].map((item, index) => (
-                      <div key={index} className="col-12 col-md-6 d-flex bounce-in" data-delay={100 + index * 100}>
+                      <div key={index} className="col-12 col-md-6 d-flex zoom-in" data-delay={100 + index * 100}>
                         <div
                           className="p-30 w-100"
                           style={{
@@ -1992,6 +1326,7 @@ export default function ServiceDetailsWebDevelopment() {
                               display: "flex",
                               alignItems: "center",
                               gap: "12px",
+                              marginBottom: "10px",
                             }}
                           >
                             <span
@@ -2004,6 +1339,7 @@ export default function ServiceDetailsWebDevelopment() {
                             </span>
                             <h5 className="fw-6 mb-0">{item.title}</h5>
                           </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
                         </div>
                       </div>
                     ))}
@@ -2015,8 +1351,8 @@ export default function ServiceDetailsWebDevelopment() {
                       <div className="image" style={{ height: "100%" }}>
                         <img
                           loading="lazy"
-                          src={webDetailImage1}
-                          alt="Web Development Process"
+                          src={socialDetailImage1}
+                          alt="Social Media Strategy Session"
                           className="img-fluid w-100"
                           style={{
                             borderRadius: "8px",
@@ -2033,8 +1369,8 @@ export default function ServiceDetailsWebDevelopment() {
                       <div className="image" style={{ height: "100%" }}>
                         <img
                           loading="lazy"
-                          src={webDetailImage2}
-                          alt="Web Development Results"
+                          src={socialDetailImage2}
+                          alt="Social Media Campaign Results"
                           className="img-fluid w-100"
                           style={{
                             borderRadius: "8px",
@@ -2049,159 +1385,38 @@ export default function ServiceDetailsWebDevelopment() {
                     </div>
                   </div>
 
-                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black glow-in" data-delay="100">
-                    <Palette size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-                    Creative Web Designing Company in Bangalore
+                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black blur-in" data-delay="100">
+                    Why Choose{" "}
+                    <span style={{ color: "var(--digital-marketing-blue)" }}>
+                      Digital Elite Services
+                    </span>
+                    ?
                   </h3>
                   <div className="text ff-2 color-paragraph mb-40 fade-in-up" data-delay="200">
-                    Design plays a crucial role in capturing attention and retaining users. As a creative Web designing company in Bangalore, Digital Elite Services focuses on crafting visually appealing and strategically structured websites.
-                  </div>
-                  <div className="text ff-2 color-paragraph mb-40 slide-in-right" data-delay="300">
-                    Our design process ensures that every element—from layout to color schemes—is aligned with your brand identity. We create designs that are not only modern and attractive but also optimized for usability and performance.
+                    Choosing the right partner for your social media marketing needs can make a significant difference in your business growth. Here's why Digital Elite Services is the preferred choice for businesses looking for Social Media Marketing services in Bangalore:
                   </div>
 
-                  <h4 className="fw-6 letter-space--3 color-dt-black mb-30 scale-in" data-delay="100">
-                    Our Web Design Solutions Include:
-                  </h4>
                   <div className="row g-4 mb-70">
                     {[
                       {
-                        icon: <Monitor size={24} />,
-                        title: "Responsive Website Design"
+                        icon: <Award size={24} />,
+                        title: "Expertise and Experience",
+                        desc: "Our team consists of experienced professionals who stay updated with the latest trends and algorithm changes. This ensures that your campaigns remain relevant and effective."
                       },
                       {
                         icon: <Target size={24} />,
-                        title: "Landing Page Design"
-                      },
-                      {
-                        icon: <Building2 size={24} />,
-                        title: "Corporate Website Design"
-                      },
-                      {
-                        icon: <Grid size={24} />,
-                        title: "UI Design for Web Platforms"
-                      }
-                    ].map((item, index) => (
-                      <div key={index} className="col-12 col-md-6 d-flex flip-in" data-delay={100 + index * 100}>
-                        <div
-                          className="p-30 w-100"
-                          style={{
-                            background: "var(--digital-marketing-light-bg)",
-                            borderRadius: "12px",
-                          }}
-                        >
-                          <div
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                              gap: "12px",
-                            }}
-                          >
-                            <span
-                              style={{
-                                color: "var(--digital-marketing-light)",
-                                flexShrink: 0,
-                              }}
-                            >
-                              {item.icon}
-                            </span>
-                            <h5 className="fw-6 mb-0">{item.title}</h5>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black rotate-in" data-delay="100">
-                    <Search size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-                    SEO-Friendly and Performance-Driven Websites
-                  </h3>
-                  <div className="text ff-2 color-paragraph mb-40 fade-in-up" data-delay="200">
-                    In today's competitive digital landscape, having a beautiful website alone is not enough. Your website must also be discoverable on search engines and deliver fast performance. At Digital Elite Services, we create SEO-friendly websites that help businesses improve their online visibility and attract more organic traffic.
-                  </div>
-                  <div className="text ff-2 color-paragraph mb-70 slide-in-left" data-delay="300">
-                    Our development and design teams work together to ensure that every website is optimized for search engines from the ground up. From proper site architecture to mobile optimization and page speed improvements, we follow industry best practices to help your website rank higher on search engine results pages. We also focus heavily on website performance because users expect fast-loading and smooth digital experiences. A slow website can negatively impact user engagement and conversions. That's why we optimize images, streamline code, and implement advanced performance techniques to ensure your website loads quickly across all devices and browsers.
-                  </div>
-
-                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black blur-in" data-delay="100">
-                    <ShoppingBag size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-                    E-Commerce Website Development Solutions
-                  </h3>
-                  <div className="text ff-2 color-paragraph mb-40 fade-in-up" data-delay="200">
-                    For businesses looking to sell products or services online, we provide complete e-commerce website development solutions. Our team creates secure, scalable, and user-friendly online stores designed to maximize customer engagement and increase sales.
-                  </div>
-                  <div className="text ff-2 color-paragraph mb-70 slide-in-right" data-delay="300">
-                    We build e-commerce platforms with intuitive navigation, secure payment gateways, easy product management systems, and seamless checkout experiences. Whether you need a simple online store or a feature-rich e-commerce platform, we deliver customized solutions tailored to your business model. Our e-commerce websites are designed to provide excellent user experiences while making it easier for businesses to manage inventory, orders, and customer interactions efficiently.
-                  </div>
-
-                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black glow-in" data-delay="100">
-                    <Smartphone size={28} style={{ color: "var(--digital-marketing-blue)", marginRight: "12px", display: "inline-block" }} />
-                    Mobile-Responsive and User-Centric Design
-                  </h3>
-                  <div className="text ff-2 color-paragraph mb-40 fade-in-up" data-delay="200">
-                    With the growing number of mobile users, having a mobile-responsive website is essential for business success. At Digital Elite Services, we prioritize responsive design to ensure your website functions flawlessly on smartphones, tablets, laptops, and desktops.
-                  </div>
-                  <div className="text ff-2 color-paragraph mb-70 slide-in-left" data-delay="300">
-                    Our user-centric design approach focuses on making navigation simple and intuitive. We carefully structure content, buttons, and layouts to guide users naturally through the website. This improves user engagement and encourages visitors to take desired actions such as filling out contact forms, making purchases, or requesting services. By combining responsive design with strategic UI/UX practices, we create websites that offer consistent and enjoyable experiences across all screen sizes.
-                  </div>
-
-                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black scale-in" data-delay="100">
-                    Our Approach to{" "}
-                    <span style={{ color: "var(--digital-marketing-blue)" }}>
-                      Digital Success
-                    </span>
-                  </h3>
-                  <div className="text ff-2 color-paragraph mb-40 fade-in-up" data-delay="200">
-                    At Digital Elite Services, we follow a structured approach to deliver exceptional results:
-                  </div>
-
-                  <div className="list-process-item d-flex justify-content-between mb-70">
-                    <div className="line d-none d-md-block"></div>
-                    <div className="process-item-2 flip-in" data-delay="100">
-                      <div className="number ff-2 fw-5 letter-space--2">01</div>
-                      <div className="dot"></div>
-                      <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-                        Understanding Your Business
-                      </a>
-                      <div className="desc ff-2">
-                        We begin by analyzing your business goals, target audience, and competitors to create a clear strategy.
-                      </div>
-                    </div>
-
-                    <div className="process-item-2 flip-in" data-delay="200">
-                      <div className="number ff-2 fw-5 letter-space--2">02</div>
-                      <div className="dot"></div>
-                      <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-                        Planning & Design
-                      </a>
-                      <div className="desc ff-2">
-                        Our UI/UX experts create wireframes and prototypes to visualize the structure and user journey.
-                      </div>
-                    </div>
-
-                    <div className="process-item-2 flip-in" data-delay="300">
-                      <div className="number ff-2 fw-5 letter-space--2">03</div>
-                      <div className="dot"></div>
-                      <a href="#" className="title text-body-1 lh-100 fw-6 letter-space--3">
-                        Development
-                      </a>
-                      <div className="desc ff-2">
-                        Our developers bring the design to life using advanced technologies and coding standards.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="row g-4 mb-70">
-                    {[
-                      {
-                        icon: <Gauge size={24} />,
-                        title: "Step 4: Testing & Optimization",
-                        desc: "We rigorously test your website for performance, usability, and responsiveness."
+                        title: "Customized Solutions",
+                        desc: "We don't believe in one-size-fits-all strategies. Every campaign is tailored to meet your specific business needs and target audience."
                       },
                       {
                         icon: <Rocket size={24} />,
-                        title: "Step 5: Launch & Support",
-                        desc: "After a successful launch, we provide ongoing support and updates to ensure optimal performance."
+                        title: "Results-Driven Approach",
+                        desc: "Our focus is on delivering measurable results. From increasing followers to generating leads, we ensure that your investment translates into tangible outcomes."
+                      },
+                      {
+                        icon: <DollarSign size={24} />,
+                        title: "Affordable Pricing",
+                        desc: "We offer competitive pricing without compromising on quality, making our services accessible to businesses of all sizes."
                       }
                     ].map((item, index) => (
                       <div key={index} className="col-12 col-md-6 d-flex bounce-in" data-delay={100 + index * 100}>
@@ -2236,51 +1451,105 @@ export default function ServiceDetailsWebDevelopment() {
                     ))}
                   </div>
 
-                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black rotate-in" data-delay="100">
-                    Why Choose{" "}
+                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black glow-in" data-delay="100">
+                    Benefits of{" "}
                     <span style={{ color: "var(--digital-marketing-blue)" }}>
-                      Digital Elite Services
+                      Social Media Marketing
                     </span>
-                    ?
                   </h3>
                   <div className="text ff-2 color-paragraph mb-40 fade-in-up" data-delay="200">
-                    Choosing the right digital partner can make all the difference. Here's why businesses trust Digital Elite Services:
+                    Investing in social media marketing offers numerous advantages for your business:
                   </div>
 
                   <div className="row g-4 mb-70">
                     {[
                       {
-                        icon: <Award size={24} />,
-                        title: "Expertise & Experience",
-                        desc: "Our team brings years of experience in UI/UX design and web development, ensuring high-quality outcomes."
+                        icon: <Eye size={24} />,
+                        title: "Enhanced Brand Awareness",
+                        desc: "Reach a larger audience and establish your brand identity."
                       },
                       {
-                        icon: <Target size={24} />,
-                        title: "Tailored Solutions",
-                        desc: "We understand that every business is unique, so we create customized solutions that align with your goals."
+                        icon: <MessageCircle size={24} />,
+                        title: "Improved Customer Engagement",
+                        desc: "Interact directly with your customers and build strong relationships."
                       },
                       {
-                        icon: <Sparkles size={24} />,
-                        title: "Latest Technologies",
-                        desc: "We stay updated with the latest trends and technologies to deliver modern, future-ready websites."
+                        icon: <TrendingUp size={24} />,
+                        title: "Higher Conversion Rates",
+                        desc: "Targeted campaigns lead to better lead generation and sales."
                       },
                       {
-                        icon: <Zap size={24} />,
-                        title: "Focus on Performance",
-                        desc: "Our websites are optimized for speed, SEO, and user experience, helping you rank better and convert more visitors."
-                      },
-                      {
-                        icon: <Box size={24} />,
-                        title: "End-to-End Services",
-                        desc: "From concept to deployment, we handle every aspect of your digital project."
-                      },
-                      {
-                        icon: <Headphones size={24} />,
-                        title: "Dedicated Client Support",
-                        desc: "Our dedicated support team is always available to assist with updates, maintenance, and technical guidance."
+                        icon: <DollarSign size={24} />,
+                        title: "Cost-Effective Marketing",
+                        desc: "Compared to traditional advertising, social media offers better ROI."
                       }
                     ].map((item, index) => (
-                      <div key={index} className="col-12 col-md-6 d-flex flip-in" data-delay={100 + index * 100}>
+                      <div key={index} className="col-12 col-md-6 d-flex scale-in" data-delay={100 + index * 100}>
+                        <div
+                          className="p-30 w-100"
+                          style={{
+                            background: "var(--digital-marketing-light-bg)",
+                            borderRadius: "12px",
+                          }}
+                        >
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "12px",
+                              marginBottom: "10px",
+                            }}
+                          >
+                            <span
+                              style={{
+                                color: "var(--digital-marketing-light)",
+                                flexShrink: 0,
+                              }}
+                            >
+                              {item.icon}
+                            </span>
+                            <h5 className="fw-6 mb-0">{item.title}</h5>
+                          </div>
+                          <p className="ff-2 color-paragraph mb-0">{item.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <h3 className="title-2 fw-6 letter-space--3 color-dt-black flip-in" data-delay="100">
+                    Our{" "}
+                    <span style={{ color: "var(--digital-marketing-blue)" }}>
+                      Process
+                    </span>
+                  </h3>
+                  <div className="text ff-2 color-paragraph mb-40 fade-in-up" data-delay="200">
+                    At Digital Elite Services, we follow a structured approach to deliver successful campaigns:
+                  </div>
+
+                  <div className="row g-4 mb-70">
+                    {[
+                      {
+                        icon: <Users size={24} />,
+                        title: "Step 1: Understanding Your Business",
+                        desc: "We begin by learning about your brand, industry, and goals."
+                      },
+                      {
+                        icon: <Compass size={24} />,
+                        title: "Step 2: Market Research",
+                        desc: "Analyze competitors and identify trends to create effective strategies."
+                      },
+                      {
+                        icon: <Layers size={24} />,
+                        title: "Step 3: Planning and Execution",
+                        desc: "Develop and implement campaigns tailored to your objectives."
+                      },
+                      {
+                        icon: <Settings size={24} />,
+                        title: "Step 4: Monitoring and Optimization",
+                        desc: "Continuously track performance and make improvements."
+                      }
+                    ].map((item, index) => (
+                      <div key={index} className="col-12 col-md-6 d-flex rotate-in" data-delay={100 + index * 100}>
                         <div
                           className="p-30 w-100"
                           style={{
@@ -2321,7 +1590,7 @@ export default function ServiceDetailsWebDevelopment() {
                       </span>
                     </h3>
                     <div className="text ff-2 color-paragraph mb-40 fade-in-up">
-                      Digital Elite Services has experience working with businesses across various industries. Our diverse expertise allows us to understand unique market challenges and develop effective web solutions.
+                      Digital Elite Services has experience working with businesses across various industries. Our diverse expertise allows us to understand unique market challenges and develop effective social media strategies.
                     </div>
 
                     <div
@@ -2371,21 +1640,21 @@ export default function ServiceDetailsWebDevelopment() {
                     </div>
                     
                     <div className="text ff-2 color-paragraph">
-                      Our industry-specific web development strategies ensure that your website meets the unique needs of your target audience and delivers meaningful results.
+                      Our industry-specific social media strategies ensure that your brand resonates with the right audience and delivers meaningful results.
                     </div>
                   </div>
 
-                  {/* Best Web Development Agency Section */}
+                  {/* Best Social Media Agency Section */}
                   <div className="mt-70 fade-in-up" data-delay="100">
                     <h3 className="title-2 fw-6 letter-space--3 color-dt-black mb-30" style={{marginTop:"53px"}}>
                       Best{" "}
                       <span style={{ color: "var(--digital-marketing-blue)" }}>
-                        Web Development Agency
+                        Social Media Agency
                       </span>{" "}
                       in Bangalore for Local Businesses
                     </h3>
                     <div className="text ff-2 color-paragraph mb-40">
-                      Local businesses need websites that connect with their community. Digital Elite Services creates websites that resonate with local audiences and drive business growth.
+                      Local businesses need to connect with their community through social media. Digital Elite Services helps local businesses build a strong social presence that drives engagement and growth.
                     </div>
                     
                     <div
@@ -2398,23 +1667,23 @@ export default function ServiceDetailsWebDevelopment() {
                       {[
                         {
                           icon: <MapPin size={24} />,
-                          title: "Local Business Websites",
-                          desc: "Create websites that connect with your local community and drive engagement."
+                          title: "Local Community Engagement",
+                          desc: "Build meaningful connections with your local community through social media."
                         },
                         {
                           icon: <Navigation size={24} />,
-                          title: "Local SEO Integration",
-                          desc: "Optimize your website for local search to attract nearby customers."
+                          title: "Geo-Targeted Social Ads",
+                          desc: "Reach customers in specific locations with targeted social media advertising."
                         },
                         {
                           icon: <BadgeCheck size={24} />,
-                          title: "Local Brand Building",
-                          desc: "Build trust and credibility with professional web design."
+                          title: "Local Reputation Building",
+                          desc: "Build trust and credibility with local customers through social proof."
                         },
                         {
                           icon: <Megaphone size={24} />,
-                          title: "Local Marketing Support",
-                          desc: "Integrate your website with local marketing campaigns for maximum impact."
+                          title: "Local Event Promotion",
+                          desc: "Promote local events and connect with your community effectively."
                         }
                       ].map((item, index) => (
                         <div
@@ -2456,21 +1725,21 @@ export default function ServiceDetailsWebDevelopment() {
                   </div>
 
                   {/* Final CTA */}
-                  <div className="mt-70 p-40 glow-in" data-delay="100" style={{ background: "var(--digital-marketing-light-bg)", borderRadius: "12px" }}>
+                  <div className="mt-70 p-40 glow-in" data-delay="100">
                     <h4 className="fw-6 letter-space--3 lh-32 mb-30" style={{marginTop:"53px"}}>
-                      Let's Build Your{" "}
+                      Partner with the{" "}
                       <span style={{color:"var(--digital-marketing-light)"}}>
-                        Digital Future
+                        Best Social Media Marketing Agency in Bangalore
                       </span>
                     </h4>
                     <p className="ff-2 color-paragraph mb-30">
-                      Your website is a powerful tool that can drive growth, improve customer engagement, and strengthen your brand. At Digital Elite Services, we are committed to helping you achieve your digital goals through innovative design and reliable development.
+                      Ready to take your social media presence to the next level? Digital Elite Services is here to help you build meaningful connections with your audience and drive real business growth. As a leading <strong>Social Media Marketing Agency in Bangalore</strong>, we combine creativity, strategy, and technology to deliver exceptional results.
                     </p>
                     <p className="ff-2 color-paragraph mb-30">
-                      If you're looking for expert <strong>UI/UX Design services in Bangalore</strong>, a trusted <strong>Web Development company in Bangalore</strong>, or a creative <strong>Web designing company in Bangalore</strong>, we're here to help.
+                      Whether you need help with content creation, paid advertising, or complete social media management, our expert team has the skills and experience to make your brand stand out. We are committed to delivering <strong>Social Media Marketing services in Bangalore</strong> that are tailored to your unique business needs and goals.
                     </p>
                     <p className="ff-2 color-paragraph">
-                      <strong>Get in touch with Digital Elite Services today</strong> and take the first step toward building a strong and successful online presence.
+                      <strong>Contact Digital Elite Services Today</strong> - Let's create a social media strategy that drives engagement, builds brand loyalty, and generates measurable results for your business.
                     </p>
                   </div>
                 </div>
@@ -2486,13 +1755,12 @@ export default function ServiceDetailsWebDevelopment() {
 
       <div className="offcanvas offcanvas-start" id="mobileMenu">
         <div className="pop-up-nav-mobile">
-          <div className="canvas-header">
+          <div className="canvas-header" style={{backgroundColor: "#1c1c1c", margin: "-15px -15px 15px -15px", padding: "15px"}}>
             <a href="#" className="logo-site">
-              <img src="./assets/images/logo/logo-mobi-1.svg" alt="" />
+              <img src={DESLOGO} alt="Digital Elite Service" className="des-logo" style={{maxWidth: "150px"}} />
             </a>
             <span
-              className="icon icon-close"
-              data-bs-dismiss="offcanvas"
+              className="icon icon-close" style={{color: "white"}} data-bs-dismiss="offcanvas"
             ></span>
           </div>
           <div className="canvas-body">
