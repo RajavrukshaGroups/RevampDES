@@ -3,9 +3,12 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SidePopup from '../../components/sidePopup';
-import Services1Image from '../../assets/images/services/img-page-title-3.jpg';
+import Services1Image from '../../assets/images/services/img-page-title-dm.png';
 import Services2Image from '../../assets/images/services/img-section-strategy-2.jpg';
-import Services3Image from '../../assets/images/services/services-list-1.jpg';
+//import Services3Image from '../../assets/images/services/services-list-1.jpg';
+
+import Services3Image from '../../assets/images/homePageImgs/img-according.png'
+
 import Services4Image from '../../assets/images/services/services-list-2.jpg';
 import Services5Image from '../../assets/images/services/services-list-3.jpg';
 import Services6Image from '../../assets/images/services/services-list-4.jpg';
@@ -13,6 +16,9 @@ import Services7Image from '../../assets/images/services/services-list-5.jpg';
 import Services8Image from '../../assets/images/services/img-cta-p-services-2.jpg';
 import Services9Image from '../../assets/images/services/img-cta-p-services-1.jpg';
 import logoWhiteMarketingCard from '../../assets/images/services/logo-white-marketing-card.svg';
+
+
+
 
 export default function Services1() {
   return (
@@ -81,7 +87,7 @@ export default function Services1() {
                         Real strategies. <span>Real results.</span>
                     </div>
                     <h2 className="title letter-space--3 fw-6 mb-30">
-                        <span style={{ color:"var(--digital-marketing-blue)"}}>We believe success </span> comes from
+                        <span style={{ color:"var(--digital-marketing-blue)"}}> </span> comes from
                         <br />{" "}strategy, <span style={{ color:"var(--digital-marketing-light)" }}>not guesswork</span>. Approach
                         <br />{" "} combines deep market insight.
                     </h2>

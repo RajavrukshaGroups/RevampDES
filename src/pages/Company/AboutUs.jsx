@@ -2,8 +2,9 @@ import DESLOGO from "../../assets/images/header/DES_logo_white.png";
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import AboutUsHeroImg from "../../assets/images/aboutus/img-page-title-2.jpg";
-import AboutUsImgVideo from "../../assets/images/aboutus/img-video.jpg";
+import AboutUsHeroImg from "../../assets/images/aboutus/img-page-title-new2.png";
+//import AboutUsImgVideo from "../../assets/images/aboutus/img-video.jpg";
+import AboutUsImgVideo from "../../assets/images/homePageImgs/img-video.png"
 import AboutUsFounderImg from "../../assets/images/aboutus/avt-testimonial.jpg";
 import AboutUsConsultaionImg from "../../assets/images/aboutus/img-bg-cta-p-about.jpg";
 import SidePopup from "../../components/sidePopup";
@@ -18,6 +19,8 @@ import sriSaiExim from "../../../public/assets/images/clients/SSE.png";
 import dhsLogo from "../../../public/assets/images/clients/DHS.png";
 import RRPL from "../../../public/assets/images/clients/RPL.png";
 import PlumeriaResort from "../../../public/assets/images/clients/Plumeria.png";
+import HomePageVideo from "../../assets/images/homePageImgs/hero-page-video.mp4"
+
 import "./testimonial-slider.css";
 
 export default function AboutUs() {
@@ -128,7 +131,7 @@ export default function AboutUs() {
                       alt="Image"
                     />
                   </div>
-                  <a
+                  {/* <a
                     href="https://www.youtube.com/watch?v=XHOmBV4js_E"
                     className="popup-youtube btn-play"
                   >
@@ -138,7 +141,18 @@ export default function AboutUs() {
                       <div className="wave"></div>
                       <i className="icon-play icon-color-red"></i>
                     </div>
-                  </a>
+                  </a> */}
+                   <a
+                    href={HomePageVideo}
+                    className="popup-video btn-play"
+                  >
+                    <div className="icon">
+                      <div className="wave"></div>
+                      <div className="wave"></div>
+                      <div className="wave"></div>
+                      <i className="icon-play icon-color-red"></i>
+                    </div>
+                  </a>  
                 </div>
               </div>
 

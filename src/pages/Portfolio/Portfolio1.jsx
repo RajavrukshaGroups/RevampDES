@@ -4,15 +4,17 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SidePopup from '../../components/sidePopup';
 import portfolioHeroImage from '../../assets/images/portfolio/img-page-title-2.jpg';
-import portfolioImage1 from '../../assets/images/portfolio/project-item-1.jpg';
-import portfolioImage2 from '../../assets/images/portfolio/project-item-2.jpg';
-import portfolioImage3 from '../../assets/images/portfolio/project-item-3.jpg';
-import portfolioImage4 from '../../assets/images/portfolio/project-item-4.jpg';
-import portfolioImage5 from '../../assets/images/portfolio/project-item-5.jpg';
-import portfolioImage6 from '../../assets/images/portfolio/project-item-6.jpg';
-import portfolioImage13 from '../../assets/images/portfolio/project-item-13.jpg';
-import portfolioImage14 from '../../assets/images/portfolio/project-item-14.jpg';
-import portfolioImage15 from '../../assets/images/portfolio/project-item-15.jpg';
+import portfolioImage1 from '../../assets/images/portfolio/portfolio-paid-campain-img.jpeg';
+import portfolioImage2 from '../../assets/images/portfolio/portfolio-social-media-brand-img.jpeg';
+import portfolioImage3 from '../../assets/images/portfolio/portfolio-seo-img.jpeg';
+import portfolioImage4 from '../../assets/images/portfolio/portfolio-web-dev-img.jpeg';
+import portfolioImage5 from '../../assets/images/portfolio/portfolio-ui-ux-img.jpeg';
+import portfolioImage6 from '../../assets/images/portfolio/portfolio-local-seo-img.jpeg';
+import portfolioImage13 from '../../assets/images/portfolio/portfolio-influencer-marketing-img.jpeg';
+import portfolioImage14 from '../../assets/images/portfolio/portfolio-digital-branding-img.jpeg';
+import portfolioImage15 from '../../assets/images/portfolio/portfolio-whatsapp-automation-img.jpeg';
+
+
 
 export default function Portfolio1() {
   return (
@@ -59,7 +61,7 @@ export default function Portfolio1() {
                         <div className="breadkcum">
                             <a href="/">Home</a>
                             <span className="icon icon-chevron-right"></span>
-                            <span className="breadkcum-active">Projects 01</span>
+                            <span className="breadkcum-active">Projects</span>
                         </div>
                     </div>
                     <div className="image">

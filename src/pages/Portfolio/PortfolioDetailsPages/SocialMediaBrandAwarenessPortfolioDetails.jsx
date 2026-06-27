@@ -9,11 +9,11 @@ import WebAppImage2 from '../../../assets/images/portfolioDetails/project-result
 import WebAppImage3 from '../../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
 
 // Import portfolio images
-const Portfolio1 = 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio2 = 'https://images.unsplash.com/photo-1611162617265-e8515aee47a8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio3 = 'https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio4 = 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio5 = 'https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+import Portfolio1 from "../../../assets/images/portfolio/portfolioDetailsImages/social-media/social-media-img-1.jpg";
+import Portfolio2 from "../../../assets/images/portfolio/portfolioDetailsImages/social-media/social-media-img-2.jpg";
+import Portfolio3 from "../../../assets/images/portfolio/portfolioDetailsImages/social-media/social-media-img-3.jpg";
+import Portfolio4 from "../../../assets/images/portfolio/portfolioDetailsImages/social-media/social-media-img-5.png";
+import Portfolio5 from "../../../assets/images/portfolio/portfolioDetailsImages/social-media/social-media-img-6.jpg";
 
 export default function SocialMediaBrandAwareness() {
   // Portfolio data

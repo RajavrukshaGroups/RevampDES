@@ -687,13 +687,17 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import SidePopup from "../../components/sidePopup";
-import Services1Image from "../../assets/images/services/img-page-title-3.jpg";
+//import Services1Image from "../../assets/images/services/img-page-title-3.jpg";
+import Services1Image from "../../assets/images/services/web-dev/web-dev-hero-img.png";
+
 import Services2Image from "../../assets/images/services/img-section-strategy-2.jpg";
-import Services3Image from "../../assets/images/services/services-list-1.jpg";
-import Services4Image from "../../assets/images/services/services-list-2.jpg";
-import Services5Image from "../../assets/images/services/services-list-3.jpg";
-import Services6Image from "../../assets/images/services/services-list-4.jpg";
-import Services7Image from "../../assets/images/services/services-list-5.jpg";
+
+import Services3Image from "../../assets/images/services/web-dev/web-dev-img-1.jpg";
+
+import Services4Image from "../../assets/images/services/web-dev/web-dev-img-2.jpg";
+import Services5Image from "../../assets/images/services/web-dev/web-dev-img-3.jpg";
+import Services6Image from "../../assets/images/services/web-dev/web-dev-img-6.jpg";
+import Services7Image from  "../../assets/images/services/web-dev/web-dev-img-5.jpg";
 import Services8Image from "../../assets/images/services/img-cta-p-services-2.jpg";
 import Services9Image from "../../assets/images/services/img-cta-p-services-1.jpg";
 import logoWhiteMarketingCard from '../../assets/images/services/logo-white-marketing-card.svg';

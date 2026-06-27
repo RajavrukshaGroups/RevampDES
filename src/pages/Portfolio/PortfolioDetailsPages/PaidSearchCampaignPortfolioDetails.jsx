@@ -7,16 +7,12 @@ import "./StylesForPortfolioDetails.css"
 import WebAppImage1 from '../../../assets/images/portfolioDetails/project-information-item-1.jpg';
 import WebAppImage2 from '../../../assets/images/portfolioDetails/project-results-item-1.jpg';
 import WebAppImage3 from '../../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
-import paidSearchCampaignImage1 from '../../../assets/images/portfolio/portfolioDetailsImages/paid-search-campaign-img1.jpeg';
-import paidSearchCampaignImage2 from '../../../assets/images/portfolio/portfolioDetailsImages/paid-search-campaign-img2.jpeg';
-const Portfolio4 = paidSearchCampaignImage2
+import Portfolio1 from '../../../assets/images/portfolio/portfolioDetailsImages/paid-search-campaign/paid-search-campaign-img1.jpeg';
+import Portfolio2 from '../../../assets/images/portfolio/portfolioDetailsImages/paid-search-campaign/paid-search-campaign-img2.jpeg';
+import Portfolio3 from '../../../assets/images/portfolio/portfolioDetailsImages/paid-search-campaign/paid-search-campaign-img3.png';
+import Portfolio4 from '../../../assets/images/portfolio/portfolioDetailsImages/paid-search-campaign/paid-search-campaign-img4.png';
+import Portfolio5 from '../../../assets/images/portfolio/portfolioDetailsImages/paid-search-campaign/paid-search-campaign-img5.png';
 
-// Import portfolio images
-const Portfolio1 = paidSearchCampaignImage1;
-const Portfolio2 = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio3 = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-//const Portfolio4 = 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio5 = 'https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 
 export default function PaidSearchCampaign() {
   // Portfolio data
@@ -362,7 +358,7 @@ export default function PaidSearchCampaign() {
                     <div className="project-information-item mb-74">
                         <div className="image">
                             <img loading="lazy" width="960" height="570"
-                                src={paidSearchCampaignImage1} alt="Paid Search Campaign Services" />
+                                src={WebAppImage2} alt="Paid Search Campaign Services" />
                         </div>
                         <div className="content">
                             <p className="title h6 fw-6 letter-space--3 ">
@@ -463,7 +459,7 @@ export default function PaidSearchCampaign() {
                         <div className="col-sm-6 col-lg-7">
                             <div className="image">
                                 <img loading="lazy" width="740" height="470"
-                                    src={paidSearchCampaignImage2} alt="Paid Search Campaign Process" />
+                                    src={WebAppImage2} alt="Paid Search Campaign Process" />
                             </div>
                         </div>
                     </div>
