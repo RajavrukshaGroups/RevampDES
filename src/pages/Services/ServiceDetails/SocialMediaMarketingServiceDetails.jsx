@@ -43,9 +43,9 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 // Import relevant images for the social media marketing service page
-import socialHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
-import socialDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
-import socialDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
+import socialHeroImage from "../../../assets/images/serviceDetails/social-media/social-media-marketing-img-1.jpg";
+import socialDetailImage1 from "../../../assets/images/serviceDetails/social-media/social-media-marketing-img-2.avif";
+import socialDetailImage2 from "../../../assets/images/serviceDetails/social-media/social-media-marketing-img-3.jpg";
 import socialDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
 
 export default function ServiceDetailsSocialMediaMarketing() {

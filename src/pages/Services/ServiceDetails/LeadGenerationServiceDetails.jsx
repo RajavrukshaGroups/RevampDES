@@ -33,9 +33,9 @@ import {
   CheckCircle
 } from "lucide-react";
 // Import relevant images for the lead generation service page
-import leadHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
-import leadDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
-import leadDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
+import leadHeroImage from "../../../assets/images/serviceDetails/lead-generation/lead-generation-img-1.jpg";
+import leadDetailImage1 from "../../../assets/images/serviceDetails/lead-generation/lead-generation-img-2.jpg";
+import leadDetailImage2 from "../../../assets/images/serviceDetails/lead-generation/lead-generation-img-3.jpg";
 import leadDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
 
 export default function ServiceDetailsLeadGeneration() {

@@ -1823,9 +1823,9 @@ import {
   DollarSign,
 } from "lucide-react";
 // Import relevant images for the WhatsApp automation service page
-import whatsappHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
-import whatsappDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
-import whatsappDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
+import whatsappHeroImage from "../../../assets/images/serviceDetails/whatsapp-automation/whatsapp-automation-img-1.jpg";
+import whatsappDetailImage1 from "../../../assets/images/serviceDetails/whatsapp-automation/whatsapp-automation-img-2.jpg";
+import whatsappDetailImage2 from "../../../assets/images/serviceDetails/whatsapp-automation/whatsapp-automation-img-3.jpg";
 import whatsappDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
 
 export default function ServiceDetailsWhatsAppAutomation() {

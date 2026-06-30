@@ -29,10 +29,10 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 // Import relevant images for the digital marketing service page
-import digitalHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
-import digitalDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
-import digitalDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
-import digitalDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
+import digitalHeroImage from "../../../assets/images/serviceDetails/digital-marketing/digital-marketing-img-2.jpg";
+import digitalDetailImage1 from "../../../assets/images/serviceDetails/digital-marketing/digital-marketing-img-1.jpg";
+import digitalDetailImage2 from "../../../assets/images/serviceDetails/digital-marketing/digital-marketing-img-4.jpg";
+import digitalDetailImage3 from "../../../assets/images/serviceDetails/digital-marketing/digital-marketing-img-3.jpg";
 import Logo from "../../../assets/images/header/DES_logo.png"
 
 export default function ServiceDetailsDigitalMarketing() {
