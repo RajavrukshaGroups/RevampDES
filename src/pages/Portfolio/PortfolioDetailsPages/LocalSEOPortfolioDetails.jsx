@@ -20,14 +20,11 @@ import {
 import WebAppImage2 from '../../../assets/images/portfolioDetails/project-results-item-1.jpg';
 import WebAppImage3 from '../../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
 
-import WebAppImage1 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo-img.jpeg';
-
-// Import portfolio images
-const Portfolio1 = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio2 = 'https://images.unsplash.com/photo-1577415124269-fc1140a69e91?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio3 = WebAppImage1
-const Portfolio4 = 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio5 = 'https://images.unsplash.com/photo-1560525821-5613f35bd43d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+import Portfolio1 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/local-seo-img-1.jpeg';
+import Portfolio2 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/local-seo-img-2.jpeg';
+import Portfolio3 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/local-seo-img-3.jpg';
+import Portfolio4 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/local-seo-img-4.jpg';
+import Portfolio5 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/local-seo-img-5.jpg';
 
 // Image for Growth Highlights section
 const GrowthImage = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
@@ -455,7 +452,7 @@ export default function LocalSEO() {
                     <div className="project-information-item mb-74">
                         <div className="image">
                             <img loading="lazy" width="960" height="570"
-                                src={WebAppImage1} alt="Local SEO Services" />
+                                src={WebAppImage2} alt="Local SEO Services" />
                         </div>
                         <div className="content">
                             <p className="title h6 fw-6 letter-space--3 ">

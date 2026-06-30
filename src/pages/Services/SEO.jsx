@@ -3,10 +3,16 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SidePopup from '../../components/sidePopup';
-import Services1Image from '../../assets/images/services/img-page-title-3.jpg';
+//import Services1Image from '../../assets/images/services/img-page-title-3.jpg';
+import Services1Image from "../../assets/images/services/SEO/seo-hero-img.jpg"
+
 import Services2Image from '../../assets/images/services/img-section-strategy-2.jpg';
-import Services3Image from '../../assets/images/services/services-list-1.jpg';
-import Services4Image from '../../assets/images/services/services-list-2.jpg';
+//import Services3Image from '../../assets/images/services/services-list-1.jpg';
+import Services3Image from '../../assets/images/services/SEO/seo-service-img.jpg'
+
+//import Services4Image from '../../assets/images/services/services-list-2.jpg';
+import Services4Image from '../../assets/images/services/SEO/on-page-seo.jpg'
+
 import Services5Image from '../../assets/images/services/services-list-3.jpg';
 import Services6Image from '../../assets/images/services/services-list-4.jpg';
 import Services7Image from '../../assets/images/services/services-list-5.jpg';

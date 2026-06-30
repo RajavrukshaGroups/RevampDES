@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import SidePopup from "../../components/sidePopup";
-import FaqsImage from "../../assets/images/faqs/img-page-title.jpg";
+import FaqsImage from "../../assets/images/faqs/img-page-title1.png";
 
 export default function Faqs() {
   // Create refs for each section

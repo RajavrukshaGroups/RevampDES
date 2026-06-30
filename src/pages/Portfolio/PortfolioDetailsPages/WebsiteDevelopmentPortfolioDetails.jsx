@@ -343,11 +343,11 @@ import WebAppImage2 from '../../../assets/images/portfolioDetails/project-result
 import WebAppImage3 from '../../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
 
 // Import portfolio images (you'll need to add these)
-const Portfolio1 ='https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio2 = 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio3 = 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio4 = 'https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio5 = 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+import Portfolio1 from '../../../assets/images/portfolio/portfolioDetailsImages/web-dev/web-dev-img-1.jpg';
+import Portfolio2 from '../../../assets/images/portfolio/portfolioDetailsImages/web-dev/web-dev-img-2.jpg';
+import Portfolio3 from '../../../assets/images/portfolio/portfolioDetailsImages/web-dev/web-dev-img-3.jpg';
+import Portfolio4 from '../../../assets/images/portfolio/portfolioDetailsImages/web-dev/web-dev-img-4.avif';
+import Portfolio5 from '../../../assets/images/portfolio/portfolioDetailsImages/web-dev/web-dev-img-5.jpg';
 
 export default function WebAppDevelopment() {
   // Portfolio data

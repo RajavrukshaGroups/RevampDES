@@ -9,11 +9,11 @@ import WebAppImage2 from '../../../assets/images/portfolioDetails/project-result
 import WebAppImage3 from '../../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
 
 // Import portfolio images
-const Portfolio1 = 'https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio2 = 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio3 = 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio4 = 'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio5 = 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+import Portfolio1 from '../../../assets/images/portfolio/portfolioDetailsImages/whatsapp-automation/whatsapp-automation-img-1.png';
+import Portfolio2 from '../../../assets/images/portfolio/portfolioDetailsImages/whatsapp-automation/whatsapp-automation-img-2.jpg';
+import Portfolio3 from '../../../assets/images/portfolio/portfolioDetailsImages/whatsapp-automation/whatsapp-automation-img-3.jpg';
+import Portfolio4 from '../../../assets/images/portfolio/portfolioDetailsImages/whatsapp-automation/whatsapp-automation-img-4.jpg';
+import Portfolio5 from '../../../assets/images/portfolio/portfolioDetailsImages/whatsapp-automation/whatsapp-automation-img-5.png';
 
 export default function WhatsAppAutomation() {
   // Portfolio data

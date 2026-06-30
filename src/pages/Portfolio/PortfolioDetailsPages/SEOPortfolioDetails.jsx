@@ -19,14 +19,14 @@ import {
 import WebAppImage2 from '../../../assets/images/portfolioDetails/project-results-item-1.jpg';
 import WebAppImage3 from '../../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
 
-import WebAppImage1 from '../../../assets/images/portfolio/portfolioDetailsImages/seo-img.jpeg';
+import WebAppImage1 from '../../../assets/images/portfolio/portfolioDetailsImages/seo/seo-img.jpeg';
 
 // Import portfolio images
 const Portfolio1 = WebAppImage1;
-const Portfolio2 = 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio3 = 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio4 = 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio5 = 'https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+import Portfolio2 from '../../../assets/images/portfolio/portfolioDetailsImages/seo/seo-img-2.jpg'
+import Portfolio3 from '../../../assets/images/portfolio/portfolioDetailsImages/seo/seo-img-3.jpg'
+import Portfolio4 from '../../../assets/images/portfolio/portfolioDetailsImages/seo/seo-img-4.jpg'
+import Portfolio5 from '../../../assets/images/portfolio/portfolioDetailsImages/seo/seo-img-5.jpg'
 
 // Image for Growth Highlights section
 const GrowthImage = 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';

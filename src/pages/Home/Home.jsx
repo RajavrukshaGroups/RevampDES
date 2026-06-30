@@ -2,18 +2,18 @@ import DESLOGO from "../../assets/images/header/DES_logo_white.png";
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import HeroImg1 from "../../assets/images/hero/img-hero-1.jpg";
+//import HeroImg1 from "../../assets/images/hero/img-hero-1.jpg";
 import HeroImg2 from "../../assets/images/hero/img-hero-2.jpg";
 import BgBoxQuote from "../../assets/images/hero/bg-box-quote.jpg";
 import avtTeam3 from "../../assets/images/hero/avt-team-3.jpg";
 import avtTeam2 from "../../assets/images/hero/avt-team-2.jpg";
 import avtTeam1 from "../../assets/images/hero/avt-team-1.jpg";
-import ImgSectionStrategy from "../../assets/images/section/img-section-strategy.jpg";
-import ImgVideo from "../../assets/images/section/img-video.jpg";
+//import ImgSectionStrategy from "../../assets/images/section/img-section-strategy.jpg";
+//import ImgVideo from "../../assets/images/section/img-video.jpg";
 import AvtTestimonial from "../../assets/images/testimonial/avt-testimonial.jpg";
-import ImgSectionService from "../../assets/images/widget/img-section-services.jpg";
-import ImgAccording from "../../assets/images/widget/img-according.jpg";
-import ImgSectionWhy from "../../assets/images/section/img-section-why.jpg";
+//import ImgSectionService from "../../assets/images/widget/img-section-services.jpg";
+//import ImgAccording from "../../assets/images/widget/img-according.jpg";
+//import ImgSectionWhy from "../../assets/images/section/img-section-why.jpg";
 import ImgSectionWhy2 from "../../assets/images/section/img-section-why-2.jpg";
 import ImgSectionWhy3 from "../../assets/images/section/img-section-why-3.jpg";
 import ImgSectionWhy4 from "../../assets/images/section/img-section-why-4.jpg";
@@ -53,6 +53,21 @@ import RRPL from "../../../public/assets/images/clients/RPL.png";
 import PlumeriaResort from "../../../public/assets/images/clients/Plumeria.png";
 import AITIFLogo from "../../../public/assets/images/clients/AITIF.png";
 import NeelLogo from "../../../public/assets/images/clients/NEEL.png";
+
+import HomePageVideo from "../../assets/images/homePageImgs/hero-page-video.mp4"
+import ImgSectionStrategy from "../../assets/images/homePageImgs/ImgSectionStrategyNew7.jpeg"
+import ImgVideo from "../../assets/images/homePageImgs/img-video.png"
+import HeroImg1 from "../../assets/images/homePageImgs/hero-img-2.png"
+import ImgSectionService from "../../assets/images/homePageImgs/ImgSectionService1.png"
+import ImgAccording from "../../assets/images/homePageImgs/img-according.png"
+import ImgAccordingPPC from "../../assets/images/homePageImgs/img-according-ppc.png"
+import ImgAccordingBDS from "../../assets/images/homePageImgs/img-according-bds.png"
+import ImgAccordingWeb from "../../assets/images/homePageImgs/img-according-web.png"
+import ImgAccordingIM from "../../assets/images/homePageImgs/img-according-im.png"
+import ImgSectionWhy from "../../assets/images/homePageImgs/img-section-why.png";
+
+
+
 import "./client-logo-fix.css";
 
 export default function Home() {
@@ -455,9 +470,20 @@ export default function Home() {
                       alt="Image"
                     />
                   </div>
-                  <a
+                  {/* <a
                     href="https://www.youtube.com/watch?v=XHOmBV4js_E"
                     className="popup-youtube btn-play"
+                  >
+                    <div className="icon">
+                      <div className="wave"></div>
+                      <div className="wave"></div>
+                      <div className="wave"></div>
+                      <i className="icon-play icon-color-red"></i>
+                    </div>
+                  </a> */}
+                  <a
+                    href={HomePageVideo}
+                    className="popup-video btn-play"
                   >
                     <div className="icon">
                       <div className="wave"></div>
@@ -693,7 +719,7 @@ export default function Home() {
                             width="550"
                             height="290"
                             // src="./assets/images/widget/img-according.jpg"
-                            src={ImgAccording}
+                            src={ImgAccordingPPC}
                             alt="Image"
                           />
                         </div>
@@ -775,7 +801,7 @@ export default function Home() {
                             width="550"
                             height="290"
                             // src="./assets/images/widget/img-according.jpg"
-                            src={ImgAccording}
+                            src={ImgAccordingBDS}
                             alt="Image"
                           />
                         </div>
@@ -857,7 +883,7 @@ export default function Home() {
                             width="550"
                             height="290"
                             // src="./assets/images/widget/img-according.jpg"
-                            src={ImgAccording}
+                            src={ImgAccordingWeb}
                             alt="Image"
                           />
                         </div>
@@ -939,7 +965,7 @@ export default function Home() {
                             width="550"
                             height="290"
                             // src="./assets/images/widget/img-according.jpg"
-                            src={ImgAccording}
+                            src={ImgAccordingIM}
                             alt="Image"
                           />
                         </div>
