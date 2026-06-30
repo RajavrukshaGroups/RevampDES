@@ -51,10 +51,10 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 // Import relevant images for the SEO service page
-import seoHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
-import seoDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
-import seoDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
-import seoDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
+import seoHeroImage from "../../../assets/images/serviceDetails/SEO/seo-img-3.png";
+import seoDetailImage1 from "../../../assets/images/serviceDetails/SEO/seo-img-1.jpg";
+import seoDetailImage2 from "../../../assets/images/serviceDetails/SEO/seo-img-2.png";
+import seoDetailImage3 from "../../../assets/images/serviceDetails/SEO/seo-img-4.jpg";
 
 export default function ServiceDetailsSEO() {
   // Helper function to handle image errors

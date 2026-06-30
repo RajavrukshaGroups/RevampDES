@@ -40,9 +40,9 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 // Import relevant images for the graphic design service page
-import graphicHeroImage from "../../../assets/images/serviceDetails/img-page-title-4.jpg";
-import graphicDetailImage1 from "../../../assets/images/serviceDetails/img-services-detail-1.jpg";
-import graphicDetailImage2 from "../../../assets/images/serviceDetails/img-services-detail-2.jpg";
+import graphicHeroImage from "../../../assets/images/serviceDetails/graphic-design/graphic-design-img-1.jpg";
+import graphicDetailImage1 from "../../../assets/images/serviceDetails/graphic-design/graphic-design-img-2.jpg";
+import graphicDetailImage2 from "../../../assets/images/serviceDetails/graphic-design/graphic-design-img-3.jpg";
 import graphicDetailImage3 from "../../../assets/images/serviceDetails/img-services-detail-3.jpg";
 
 export default function ServiceDetailsGraphicDesign() {
