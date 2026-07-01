@@ -1,5 +1,6 @@
 import DESLOGO from "../../../assets/images/header/DES_logo_white.png";
-import React, { useEffect } from 'react';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 import "./StylesForPortfolioDetails.css"
@@ -16,9 +17,11 @@ import {
   ChevronRight
 } from 'lucide-react';
 
-//import WebAppImage1 from '../../../assets/images/portfolioDetails/project-information-item-1.jpg';
-import WebAppImage2 from '../../../assets/images/portfolioDetails/project-results-item-1.jpg';
-import WebAppImage3 from '../../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
+import WebAppImage1 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/WebAppImage1.jpg';
+import WebAppImage2 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/WebAppImage2.jpg';
+import WebAppImage3 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/WebAppImage3.jpg';
+import WebAppImage4 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/WebAppImage4.jpg';
+
 
 import Portfolio1 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/local-seo-img-1.jpeg';
 import Portfolio2 from '../../../assets/images/portfolio/portfolioDetailsImages/local-seo/local-seo-img-2.jpeg';
@@ -28,8 +31,6 @@ import Portfolio5 from '../../../assets/images/portfolio/portfolioDetailsImages/
 
 // Image for Growth Highlights section
 const GrowthImage = 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-
-
 
 export default function LocalSEO() {
   // Portfolio data
@@ -71,69 +72,21 @@ export default function LocalSEO() {
     }
   ];
 
-  // Add the JavaScript for horizontal scrolling
-  useEffect(() => {
-    const scrollContainer = document.querySelector('.portfolio-horizontal-scroll');
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  // Create the horizontal scroll transform
+  const x = useTransform(scrollYProgress, (pos) => {
+    // Calculate the total width of all items plus gaps
+    const totalWidth = portfolioItems.length * (350 + 30); // 350px item width + 30px gap
+    const viewportWidth = window.innerWidth;
+    const maxScroll = totalWidth - viewportWidth + 60; // 60px for padding
     
-    if (scrollContainer) {
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-      
-      const handleMouseDown = (e) => {
-        isDown = true;
-        scrollContainer.style.cursor = 'grabbing';
-        startX = e.pageX - scrollContainer.offsetLeft;
-        scrollLeft = scrollContainer.scrollLeft;
-      };
-      
-      const handleMouseLeave = () => {
-        isDown = false;
-        scrollContainer.style.cursor = 'grab';
-      };
-      
-      const handleMouseUp = () => {
-        isDown = false;
-        scrollContainer.style.cursor = 'grab';
-      };
-      
-      const handleMouseMove = (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - scrollContainer.offsetLeft;
-        const walk = (x - startX) * 2;
-        scrollContainer.scrollLeft = scrollLeft - walk;
-      };
-      
-      let autoScroll = setInterval(() => {
-        if (!isDown) {
-          scrollContainer.scrollLeft += 1;
-          if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-            clearInterval(autoScroll);
-          }
-        }
-      }, 30);
-      
-      const handleMouseEnter = () => {
-        clearInterval(autoScroll);
-      };
-      
-      scrollContainer.addEventListener('mousedown', handleMouseDown);
-      scrollContainer.addEventListener('mouseleave', handleMouseLeave);
-      scrollContainer.addEventListener('mouseup', handleMouseUp);
-      scrollContainer.addEventListener('mousemove', handleMouseMove);
-      scrollContainer.addEventListener('mouseenter', handleMouseEnter);
-      
-      return () => {
-        clearInterval(autoScroll);
-        scrollContainer.removeEventListener('mousedown', handleMouseDown);
-        scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
-        scrollContainer.removeEventListener('mouseup', handleMouseUp);
-        scrollContainer.removeEventListener('mousemove', handleMouseMove);
-        scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
-      };
-    }
-  }, []);
+    // Return the translation value
+    return `-${pos * maxScroll}px`;
+  });
 
   return (
     <>
@@ -181,52 +134,49 @@ export default function LocalSEO() {
             </div>
         </div>
 
-        {/* Portfolio horizontal scrolling */}
-        <section className="portfolio-horizontal-section flat-spacing-2">
-            <div className="container">
-                <div className="row align-items-center mb-60">
-                    <div className="col-lg-8">
-                        <p className="h3 letter-space--3 fw-6 color-dt-black mb-0">
-                            Our Recent <span className="color-dt-blue">Local SEO</span> Projects
-                        </p>
-                    </div>
-                    <div className="col-lg-4 text-lg-end">
-                        <a href="/portfolio" className="tf-btn style-outline style-big">
-                            <span className="text-btn">View All Projects</span>
-                            <span className="icon-btn"><ArrowUpRight size={18} /></span>
-                        </a>
+        {/* Portfolio horizontal scrolling with Framer Motion */}
+        <div ref={targetRef} className="portfolio-horizontal-container">
+            <section className="portfolio-horizontal-section flat-spacing-2">
+                <div className="container">
+                    <div className="row align-items-center mb-60">
+                        <div className="col-lg-8">
+                            <p className="h3 letter-space--3 fw-6 color-dt-black mb-0">
+                                Our Recent <span className="color-dt-blue">Local SEO</span> Projects
+                            </p>
+                        </div>
+                        
                     </div>
                 </div>
-            </div>
-            
-            <div className="portfolio-horizontal-scroll">
-                <div className="portfolio-scroll-wrapper">
-                    {portfolioItems.map((item) => (
-                        <div key={item.id} className="portfolio-horizontal-item">
-                            <div className="portfolio-card">
-                                <div className="portfolio-image">
-                                    <img 
-                                        loading="lazy" 
-                                        src={item.image} 
-                                        alt={item.title}
-                                        className="portfolio-img"
-                                    />
-                                    <div className="portfolio-overlay">
-                                        <div className="portfolio-content">
-                                            <span className="portfolio-category">{item.category}</span>
-                                            <h4 className="portfolio-title">{item.title}</h4>
-                                            <a href={item.link} className="portfolio-link">
-                                                <span className="icon"><ArrowUpRight size={20} /></span>
-                                            </a>
-                                        </div>
+                
+                <div className="portfolio-horizontal-scroll">
+                    <motion.div style={{ x }} className="portfolio-scroll-wrapper">
+                        {portfolioItems.map((item) => (
+                            <div key={item.id} className="portfolio-horizontal-item">
+                                <div className="portfolio-card">
+                                    <div className="portfolio-image">
+                                        <img 
+                                            loading="lazy" 
+                                            src={item.image} 
+                                            alt={item.title}
+                                            className="portfolio-img"
+                                        />
+                                        {/* <div className="portfolio-overlay">
+                                            <div className="portfolio-content">
+                                                <span className="portfolio-category">{item.category}</span>
+                                                <h4 className="portfolio-title">{item.title}</h4>
+                                                <a href={item.link} className="portfolio-link">
+                                                    <span className="icon"><ArrowUpRight size={20} /></span>
+                                                </a>
+                                            </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </motion.div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         
         <section className="section-profilio-detail flat-spacing-1">
             <div className="container">
@@ -434,7 +384,7 @@ export default function LocalSEO() {
                                         minHeight: '400px'
                                     }}>
                                         <img 
-                                            src={GrowthImage} 
+                                            src={WebAppImage1} 
                                             alt="Local SEO Growth Dashboard"
                                             style={{
                                                 width: '100%',
@@ -553,7 +503,7 @@ export default function LocalSEO() {
                         <div className="col-sm-6 col-lg-7">
                             <div className="image">
                                 <img loading="lazy" width="740" height="470"
-                                    src={WebAppImage2} alt="Local SEO Process" />
+                                    src={WebAppImage3} alt="Local SEO Process" />
                             </div>
                         </div>
                     </div>
@@ -563,7 +513,7 @@ export default function LocalSEO() {
             <div className="container">
                 <div className="image-section mb-74">
                     <img loading="lazy" 
-                        src={WebAppImage3} alt="Local SEO Showcase" />
+                        src={WebAppImage4} alt="Local SEO Showcase" />
                 </div>
             </div>
 

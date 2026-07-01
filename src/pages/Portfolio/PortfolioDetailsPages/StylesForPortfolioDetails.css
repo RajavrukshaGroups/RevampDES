@@ -1,17 +1,24 @@
 /* Portfolio Horizontal Scrolling */
+.portfolio-horizontal-container {
+    height: 300vh;
+    position: relative;
+}
+
 .portfolio-horizontal-section {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     overflow: hidden;
-    padding: 80px 0;
+    padding: 0;
     background: #f8f9fa;
 }
 
 .portfolio-horizontal-scroll {
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: hidden;
     padding: 20px 0 40px;
-    cursor: grab;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
 }
 
 .portfolio-horizontal-scroll::-webkit-scrollbar {
@@ -149,21 +156,12 @@
     font-size: 20px;
 }
 
-/* Drag scrolling hint */
-.portfolio-horizontal-scroll::after {
-    content: '← Scroll →';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    color: #6c757d;
-    opacity: 0.6;
-    pointer-events: none;
-}
+/* Drag scrolling hint - Removed since we use scroll-jacking now */
 
 @media (min-width: 992px) {
     .portfolio-horizontal-scroll::after {
         display: none;
     }
 }
+
+

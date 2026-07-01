@@ -14,9 +14,9 @@ import AvtTestimonial from "../../assets/images/testimonial/avt-testimonial.jpg"
 //import ImgSectionService from "../../assets/images/widget/img-section-services.jpg";
 //import ImgAccording from "../../assets/images/widget/img-according.jpg";
 //import ImgSectionWhy from "../../assets/images/section/img-section-why.jpg";
-import ImgSectionWhy2 from "../../assets/images/section/img-section-why-2.jpg";
-import ImgSectionWhy3 from "../../assets/images/section/img-section-why-3.jpg";
-import ImgSectionWhy4 from "../../assets/images/section/img-section-why-4.jpg";
+// import ImgSectionWhy2 from "../../assets/images/section/img-section-why-2.jpg";
+// import ImgSectionWhy3 from "../../assets/images/section/img-section-why-3.jpg";
+// import ImgSectionWhy4 from "../../assets/images/section/img-section-why-4.jpg";
 // import ProjectItem1 from "../../assets/images/projects/project-item-1.jpg";
 // import ProjectItem2 from "../../assets/images/projects/project-item-2.jpg";
 // import ProjectItem3 from "../../assets/images/projects/project-item-3.jpg";
@@ -24,16 +24,28 @@ import ImgSectionWhy4 from "../../assets/images/section/img-section-why-4.jpg";
 // import ProjectItem5 from "../../assets/images/projects/project-item-5.jpg";
 // import ProjectItem6 from "../../assets/images/projects/project-item-6.jpg";
 
+// import portfolioHeroImage from '../../assets/images/portfolio/img-page-title-2.jpg';
+// import portfolioImage1 from '../../assets/images/portfolio/project-item-1.jpg';
+// import portfolioImage2 from '../../assets/images/portfolio/project-item-2.jpg';
+// import portfolioImage3 from '../../assets/images/portfolio/project-item-3.jpg';
+// import portfolioImage4 from '../../assets/images/portfolio/project-item-4.jpg';
+// import portfolioImage5 from '../../assets/images/portfolio/project-item-5.jpg';
+// import portfolioImage6 from '../../assets/images/portfolio/project-item-6.jpg';
+// import portfolioImage13 from '../../assets/images/portfolio/project-item-13.jpg';
+// import portfolioImage14 from '../../assets/images/portfolio/project-item-14.jpg';
+// import portfolioImage15 from '../../assets/images/portfolio/project-item-15.jpg';
 import portfolioHeroImage from '../../assets/images/portfolio/img-page-title-2.jpg';
-import portfolioImage1 from '../../assets/images/portfolio/project-item-1.jpg';
-import portfolioImage2 from '../../assets/images/portfolio/project-item-2.jpg';
-import portfolioImage3 from '../../assets/images/portfolio/project-item-3.jpg';
-import portfolioImage4 from '../../assets/images/portfolio/project-item-4.jpg';
-import portfolioImage5 from '../../assets/images/portfolio/project-item-5.jpg';
-import portfolioImage6 from '../../assets/images/portfolio/project-item-6.jpg';
-import portfolioImage13 from '../../assets/images/portfolio/project-item-13.jpg';
-import portfolioImage14 from '../../assets/images/portfolio/project-item-14.jpg';
-import portfolioImage15 from '../../assets/images/portfolio/project-item-15.jpg';
+import portfolioImage1 from '../../assets/images/portfolio/portfolio-paid-campain-img.jpeg';
+import portfolioImage2 from '../../assets/images/portfolio/portfolio-social-media-brand-img.jpeg';
+import portfolioImage3 from '../../assets/images/portfolio/portfolio-seo-img.jpeg';
+import portfolioImage4 from '../../assets/images/portfolio/portfolio-web-dev-img.jpeg';
+import portfolioImage5 from '../../assets/images/portfolio/portfolio-ui-ux-img.jpeg';
+import portfolioImage6 from '../../assets/images/portfolio/portfolio-local-seo-img.jpeg';
+import portfolioImage13 from '../../assets/images/portfolio/portfolio-influencer-marketing-img.jpeg';
+import portfolioImage14 from '../../assets/images/portfolio/portfolio-digital-branding-img.jpeg';
+import portfolioImage15 from '../../assets/images/portfolio/portfolio-whatsapp-automation-img.jpeg';
+
+
 
 import DESLogoSideBar from "../../assets/images/header/DES_logo_new.svg";
 import PopUpSidebar1 from "../../assets/images/widget/pop-up-siderbar-1.jpg";
@@ -55,7 +67,8 @@ import AITIFLogo from "../../../public/assets/images/clients/AITIF.png";
 import NeelLogo from "../../../public/assets/images/clients/NEEL.png";
 
 import HomePageVideo from "../../assets/images/homePageImgs/hero-page-video.mp4"
-import ImgSectionStrategy from "../../assets/images/homePageImgs/ImgSectionStrategyNew7.jpeg"
+//import ImgSectionStrategy from "../../assets/images/homePageImgs/ImgSectionStrategyNew7.jpeg"
+import ImgSectionStrategy from "../../assets/images/homePageImgs/ImgSectionStrategyNew7.jpg"
 import ImgVideo from "../../assets/images/homePageImgs/img-video.png"
 import HeroImg1 from "../../assets/images/homePageImgs/hero-img-2.png"
 import ImgSectionService from "../../assets/images/homePageImgs/ImgSectionService1.png"
@@ -65,6 +78,10 @@ import ImgAccordingBDS from "../../assets/images/homePageImgs/img-according-bds.
 import ImgAccordingWeb from "../../assets/images/homePageImgs/img-according-web.png"
 import ImgAccordingIM from "../../assets/images/homePageImgs/img-according-im.png"
 import ImgSectionWhy from "../../assets/images/homePageImgs/img-section-why.png";
+
+import ImgSectionWhy2 from '../../assets/images/homePageImgs/ImgSectionWhy2.jpg'
+import ImgSectionWhy3 from '../../assets/images/homePageImgs/ImgSectionWhy3.jpg'
+import ImgSectionWhy4 from '../../assets/images/homePageImgs/ImgSectionWhy4.jpg'
 
 
 
@@ -2898,12 +2915,9 @@ export default function Home() {
             </div>
 
             {/* logos */}
-            <div className="infiniteSlide-app list-brands">
-              <div
-                className="infiniteSlide infiniteSlide-wrapper tf-marquee g-30"
-                data-clone="3"
-              >
-                <div className="infiniteSlide-slide">
+            <div className="list-brands mt-5">
+              <div className="row justify-content-center text-center g-4">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                   <div className="brand-card">
                     <a className="brand-item">
                       <img src={airzen} alt="AirZen" className="brand" />
@@ -2916,7 +2930,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="infiniteSlide-slide">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                   <div className="brand-card">
                     <a className="brand-item">
                       <img src={alizaStore} alt="aliza" className="brand" />
@@ -2927,7 +2941,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="infiniteSlide-slide">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                   <div className="brand-card">
                     <a className="brand-item">
                       <img src={aqua} alt="aqua" className="brand" />
@@ -2938,7 +2952,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="infiniteSlide-slide">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                   <div className="brand-card">
                     <a className="brand-item">
                       <img src={humStrum} alt="humstrum" className="brand" />
@@ -2949,7 +2963,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="infiniteSlide-slide">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                   <div className="brand-card">
                     <a className="brand-item">
                       <img src={chaskaTea} alt="chaskaTea" className="brand" />
@@ -2960,7 +2974,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="infiniteSlide-slide">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                   <div className="brand-card">
                     <a className="brand-item">
                       <img
@@ -2975,7 +2989,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="infiniteSlide-slide">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                   <div className="brand-card">
                     <a className="brand-item">
                       <img src={dhsLogo} alt="dhs" className="brand" />
@@ -2986,7 +3000,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="infiniteSlide-slide">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                   <div className="brand-card">
                     <a className="brand-item">
                       <img src={RRPL} alt="rrpl" className="brand" />
@@ -2999,10 +3013,10 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="infiniteSlide-slide">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                   <div className="brand-card">
                     <a className="brand-item">
-                      <img src={RRPL} alt="plumeria" className="brand" />
+                      <img src={PlumeriaResort} alt="plumeria" className="brand" />
                     </a>
 
                     <h6 className="client-name">Plumeria Resort</h6>

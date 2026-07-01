@@ -2,11 +2,13 @@ import DESLOGO from "../../assets/images/header/DES_logo_white.png";
 import React from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import AboutUsHeroImg from "../../assets/images/aboutus/img-page-title-new2.png";
+// import AboutUsHeroImg from "../../assets/images/aboutus/img-page-title-new2.png";
+import AboutUsHeroImg from "../../assets/images/aboutus/img-page-title-new2.jpeg";
+
 //import AboutUsImgVideo from "../../assets/images/aboutus/img-video.jpg";
 import AboutUsImgVideo from "../../assets/images/homePageImgs/img-video.png"
 import AboutUsFounderImg from "../../assets/images/aboutus/avt-testimonial.jpg";
-import AboutUsConsultaionImg from "../../assets/images/aboutus/img-bg-cta-p-about.jpg";
+import AboutUsConsultaionImg from "../../assets/images/aboutus/img-bg-cta-p-about.jpeg";
 import SidePopup from "../../components/sidePopup";
 
 import airzen from "../../../public/assets/images/clients/AIRZEN.png";
@@ -1447,140 +1449,144 @@ export default function AboutUs() {
         </div> */}
         <div className="section-clients flat-spacing-1">
           <div className="container">
-            <div className="heading-section text-center mb-70">
-              <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
-                Connect Our — <span>Global Clients.</span>
-              </div>
-              <h2 className="title letter-space--3 fw-6 wow fadeInUp">
-                Helping{" "}
-                <span style={{ color: "var(--digital-marketing-blue)" }}>
-                  80+
-                </span>{" "}
-                brands{" "}
-                <span
-                  style={{
-                    color: "linear-gradient(to right, #2196F3, #FF9800",
-                  }}
-                >
-                  success
-                </span>
-              </h2>
-            </div>
+             <div className="section-clients flat-spacing-1">
+                      <div className="container">
+                        <div className="heading-section text-center mb-70">
+                          <div className="sub-title h6 mb-12 letter-space--2 fw-5 wow fadeInUp">
+                            Connect Our — <span>Global Clients.</span>
+                          </div>
+                          <h2 className="title letter-space--3 fw-6 wow fadeInUp">
+                            Helping{" "}
+                            <span style={{ color: "var(--digital-marketing-blue)" }}>
+                              80+
+                            </span>{" "}
+                            brands{" "}
+                            <span
+                              style={{
+                                color: "linear-gradient(to right, #2196F3, #FF9800",
+                              }}
+                            >
+                              success
+                            </span>
+                          </h2>
+                        </div>
+            
+                        {/* logos */}
+                        <div className="list-brands mt-5">
+                          <div className="row justify-content-center text-center g-4">
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div className="brand-card">
+                                <a className="brand-item">
+                                  <img src={airzen} alt="AirZen" className="brand" />
+                                </a>
+            
+                                <h6 className="client-name">Airzen Technologies</h6>
+                                <p className="client-industry">
+                                  Air Purification & Wellness
+                                </p>
+                              </div>
+                            </div>
+            
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div className="brand-card">
+                                <a className="brand-item">
+                                  <img src={alizaStore} alt="aliza" className="brand" />
+                                </a>
+            
+                                <h6 className="client-name">Aliza Stores</h6>
+                                <p className="client-industry">E-Commerce & Retail</p>
+                              </div>
+                            </div>
+            
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div className="brand-card">
+                                <a className="brand-item">
+                                  <img src={aqua} alt="aqua" className="brand" />
+                                </a>
+            
+                                <h6 className="client-name">Aqua Gold</h6>
+                                <p className="client-industry">Water Treatment Solutions</p>
+                              </div>
+                            </div>
+            
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div className="brand-card">
+                                <a className="brand-item">
+                                  <img src={humStrum} alt="humstrum" className="brand" />
+                                </a>
+            
+                                <h6 className="client-name">Hum & Strum Music School</h6>
+                                <p className="client-industry">Music & Entertainment</p>
+                              </div>
+                            </div>
+            
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div className="brand-card">
+                                <a className="brand-item">
+                                  <img src={chaskaTea} alt="chaskaTea" className="brand" />
+                                </a>
+            
+                                <h6 className="client-name">Chaska Tea</h6>
+                                <p className="client-industry">Food & Beverage</p>
+                              </div>
+                            </div>
+            
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div className="brand-card">
+                                <a className="brand-item">
+                                  <img
+                                    src={sriSaiExim}
+                                    alt="sirsaiexim"
+                                    className="brand"
+                                  />
+                                </a>
+            
+                                <h6 className="client-name">Sri Sai Exim</h6>
+                                <p className="client-industry">Import & Export</p>
+                              </div>
+                            </div>
+            
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div className="brand-card">
+                                <a className="brand-item">
+                                  <img src={dhsLogo} alt="dhs" className="brand" />
+                                </a>
+            
+                                <h6 className="client-name">Defence Housing Society</h6>
+                                <p className="client-industry">Real Estate & Housing</p>
+                              </div>
+                            </div>
+            
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div className="brand-card">
+                                <a className="brand-item">
+                                  <img src={RRPL} alt="rrpl" className="brand" />
+                                </a>
+            
+                                <h6 className="client-name">Rajavruksha Realtors</h6>
+                                <p className="client-industry">
+                                  Real Estate & Construction
+                                </p>
+                              </div>
+                            </div>
+            
+                            <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                              <div className="brand-card">
+                                <a className="brand-item">
+                                  <img src={PlumeriaResort} alt="plumeria" className="brand" />
+                                </a>
+            
+                                <h6 className="client-name">Plumeria Resort</h6>
+                                <p className="client-industry">Hospitality & Tourism</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
             {/* logos */}
-            <div className="infiniteSlide-app list-brands">
-              <div
-                className="infiniteSlide infiniteSlide-wrapper tf-marquee g-30"
-                data-clone="3"
-              >
-                <div className="infiniteSlide-slide">
-                  <div className="brand-card">
-                    <a className="brand-item">
-                      <img src={airzen} alt="AirZen" className="brand" />
-                    </a>
-
-                    <h6 className="client-name">Airzen Technologies</h6>
-                    <p className="client-industry">
-                      Air Purification & Wellness
-                    </p>
-                  </div>
-                </div>
-
-                <div className="infiniteSlide-slide">
-                  <div className="brand-card">
-                    <a className="brand-item">
-                      <img src={alizaStore} alt="aliza" className="brand" />
-                    </a>
-
-                    <h6 className="client-name">Aliza Stores</h6>
-                    <p className="client-industry">E-Commerce & Retail</p>
-                  </div>
-                </div>
-
-                <div className="infiniteSlide-slide">
-                  <div className="brand-card">
-                    <a className="brand-item">
-                      <img src={aqua} alt="aqua" className="brand" />
-                    </a>
-
-                    <h6 className="client-name">Aqua Gold</h6>
-                    <p className="client-industry">Water Treatment Solutions</p>
-                  </div>
-                </div>
-
-                <div className="infiniteSlide-slide">
-                  <div className="brand-card">
-                    <a className="brand-item">
-                      <img src={humStrum} alt="humstrum" className="brand" />
-                    </a>
-
-                    <h6 className="client-name">Hum & Strum Music School</h6>
-                    <p className="client-industry">Music & Entertainment</p>
-                  </div>
-                </div>
-
-                <div className="infiniteSlide-slide">
-                  <div className="brand-card">
-                    <a className="brand-item">
-                      <img src={chaskaTea} alt="chaskaTea" className="brand" />
-                    </a>
-
-                    <h6 className="client-name">Chaska Tea</h6>
-                    <p className="client-industry">Food & Beverage</p>
-                  </div>
-                </div>
-
-                <div className="infiniteSlide-slide">
-                  <div className="brand-card">
-                    <a className="brand-item">
-                      <img
-                        src={sriSaiExim}
-                        alt="sirsaiexim"
-                        className="brand"
-                      />
-                    </a>
-
-                    <h6 className="client-name">Sri Sai Exim</h6>
-                    <p className="client-industry">Import & Export</p>
-                  </div>
-                </div>
-
-                <div className="infiniteSlide-slide">
-                  <div className="brand-card">
-                    <a className="brand-item">
-                      <img src={dhsLogo} alt="dhs" className="brand" />
-                    </a>
-
-                    <h6 className="client-name">Defence Housing Society</h6>
-                    <p className="client-industry">Real Estate & Housing</p>
-                  </div>
-                </div>
-
-                <div className="infiniteSlide-slide">
-                  <div className="brand-card">
-                    <a className="brand-item">
-                      <img src={RRPL} alt="rrpl" className="brand" />
-                    </a>
-
-                    <h6 className="client-name">Rajavruksha Realtors</h6>
-                    <p className="client-industry">
-                      Real Estate & Construction
-                    </p>
-                  </div>
-                </div>
-
-                <div className="infiniteSlide-slide">
-                  <div className="brand-card">
-                    <a className="brand-item">
-                      <img src={RRPL} alt="plumeria" className="brand" />
-                    </a>
-
-                    <h6 className="client-name">Plumeria Resort</h6>
-                    <p className="client-industry">Hospitality & Tourism</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
           </div>
         </div>
 

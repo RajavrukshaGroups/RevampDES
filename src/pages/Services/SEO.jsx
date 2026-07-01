@@ -4,7 +4,9 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import SidePopup from '../../components/sidePopup';
 //import Services1Image from '../../assets/images/services/img-page-title-3.jpg';
-import Services1Image from "../../assets/images/services/SEO/seo-hero-img.jpg"
+//import Services1Image from "../../assets/images/services/SEO/seo-hero-img.jpg"
+import Services1Image from "../../assets/images/services/SEO/seo-hero-img.jpeg"
+
 
 import Services2Image from '../../assets/images/services/img-section-strategy-2.jpg';
 //import Services3Image from '../../assets/images/services/services-list-1.jpg';

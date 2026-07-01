@@ -1,19 +1,20 @@
 import DESLOGO from "../../../assets/images/header/DES_logo_white.png";
-import React, { useEffect } from 'react';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 import "./StylesForPortfolioDetails.css"
 
-import WebAppImage1 from '../../../assets/images/portfolioDetails/project-information-item-1.jpg';
-import WebAppImage2 from '../../../assets/images/portfolioDetails/project-results-item-1.jpg';
-import WebAppImage3 from '../../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
+import WebAppImage1 from "../../../assets/images/portfolio/portfolioDetailsImages/brand-identity/WebAppImage1.jpg";
+import WebAppImage2 from "../../../assets/images/portfolio/portfolioDetailsImages/brand-identity/WebAppImage2.jpg";
+import WebAppImage3 from "../../../assets/images/portfolio/portfolioDetailsImages/brand-identity/WebAppImage3.jpg";
 
 // Import portfolio images
-const Portfolio1 = 'https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio2 = 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio3 = 'https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio4 = 'https://images.unsplash.com/photo-1545235617-7a424c1a60cc?q=80&w=1180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio5 = 'https://images.unsplash.com/photo-1545665277-5937489579f2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+import Portfolio1 from '../../../assets/images/portfolio/portfolioDetailsImages/brand-identity/Portfolio1.jpg'
+import Portfolio2 from '../../../assets/images/portfolio/portfolioDetailsImages/brand-identity/Portfolio2.jpg'
+import Portfolio3 from '../../../assets/images/portfolio/portfolioDetailsImages/brand-identity/Portfolio3.jpg'
+import Portfolio4 from '../../../assets/images/portfolio/portfolioDetailsImages/brand-identity/Portfolio4.jpeg'
+import Portfolio5 from '../../../assets/images/portfolio/portfolioDetailsImages/brand-identity/Portfolio5.jpeg'
 
 export default function BrandIdentityDigitalBranding() {
   // Portfolio data
@@ -55,70 +56,14 @@ export default function BrandIdentityDigitalBranding() {
     }
   ];
 
-  // Add the JavaScript for horizontal scrolling
-  useEffect(() => {
-    const scrollContainer = document.querySelector('.portfolio-horizontal-scroll');
-    
-    if (scrollContainer) {
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-      
-      const handleMouseDown = (e) => {
-        isDown = true;
-        scrollContainer.style.cursor = 'grabbing';
-        startX = e.pageX - scrollContainer.offsetLeft;
-        scrollLeft = scrollContainer.scrollLeft;
-      };
-      
-      const handleMouseLeave = () => {
-        isDown = false;
-        scrollContainer.style.cursor = 'grab';
-      };
-      
-      const handleMouseUp = () => {
-        isDown = false;
-        scrollContainer.style.cursor = 'grab';
-      };
-      
-      const handleMouseMove = (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - scrollContainer.offsetLeft;
-        const walk = (x - startX) * 2;
-        scrollContainer.scrollLeft = scrollLeft - walk;
-      };
-      
-      // Auto-scroll on load
-      let autoScroll = setInterval(() => {
-        if (!isDown) {
-          scrollContainer.scrollLeft += 1;
-          if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-            clearInterval(autoScroll);
-          }
-        }
-      }, 30);
-      
-      const handleMouseEnter = () => {
-        clearInterval(autoScroll);
-      };
-      
-      scrollContainer.addEventListener('mousedown', handleMouseDown);
-      scrollContainer.addEventListener('mouseleave', handleMouseLeave);
-      scrollContainer.addEventListener('mouseup', handleMouseUp);
-      scrollContainer.addEventListener('mousemove', handleMouseMove);
-      scrollContainer.addEventListener('mouseenter', handleMouseEnter);
-      
-      return () => {
-        clearInterval(autoScroll);
-        scrollContainer.removeEventListener('mousedown', handleMouseDown);
-        scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
-        scrollContainer.removeEventListener('mouseup', handleMouseUp);
-        scrollContainer.removeEventListener('mousemove', handleMouseMove);
-        scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
-      };
-    }
-  }, []);
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  const x = useTransform(scrollYProgress, (pos) => {
+    return `calc(-${pos * 100}% + ${pos * 100}vw)`;
+  });
 
   return (
     <>
@@ -167,7 +112,8 @@ export default function BrandIdentityDigitalBranding() {
         </div>
 
         {/* Portfolio horizontal scrolling */}
-        <section className="portfolio-horizontal-section flat-spacing-2">
+        <div ref={targetRef} className="portfolio-horizontal-container">
+            <section className="portfolio-horizontal-section flat-spacing-2">
             <div className="container">
                 <div className="row align-items-center mb-60">
                     <div className="col-lg-8">
@@ -185,7 +131,7 @@ export default function BrandIdentityDigitalBranding() {
             </div>
             
             <div className="portfolio-horizontal-scroll">
-                <div className="portfolio-scroll-wrapper">
+                <motion.div style={{ x }} className="portfolio-scroll-wrapper">
                     {portfolioItems.map((item) => (
                         <div key={item.id} className="portfolio-horizontal-item">
                             <div className="portfolio-card">
@@ -196,7 +142,7 @@ export default function BrandIdentityDigitalBranding() {
                                         alt={item.title}
                                         className="portfolio-img"
                                     />
-                                    <div className="portfolio-overlay">
+                                    {/* <div className="portfolio-overlay">
                                         <div className="portfolio-content">
                                             <span className="portfolio-category">{item.category}</span>
                                             <h4 className="portfolio-title">{item.title}</h4>
@@ -204,14 +150,15 @@ export default function BrandIdentityDigitalBranding() {
                                                 <span className="icon icon-arrow-up-right"></span>
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
+        </div>
         
         <section className="section-profilio-detail flat-spacing-1">
             <div className="container">
