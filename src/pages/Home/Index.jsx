@@ -1729,45 +1729,45 @@ export default function Index() {
                     </h2>
                 </div>
 
-                <div className="infiniteSlide-app list-brands">
-                    <div className="infiniteSlide infiniteSlide-wrapper tf-marquee g-30" data-clone="3">
+                <div className="list-brands">
+                    <div className="row justify-content-center align-items-center g-4">
                         
-                        <div className="infiniteSlide-slide">
+                        <div className="col-6 col-md-4 col-lg-2 text-center">
                             <a className="brand-item">
                                 <img src="./assets/images/icon/brand-1.svg" alt="Image" className="brand" />
                                 <img src="./assets/images/icon/hover-brand-1.svg" alt="Image" className="brand-hover" />
                             </a>
                         </div>
                         
-                        <div className="infiniteSlide-slide">
+                        <div className="col-6 col-md-4 col-lg-2 text-center">
                             <a className="brand-item">
                                 <img src="./assets/images/icon/brand-2.svg" alt="Image" className="brand" />
                                 <img src="./assets/images/icon/hover-brand-2.svg" alt="Image" className="brand-hover" />
                             </a>
                         </div>
                         
-                        <div className="infiniteSlide-slide">
+                        <div className="col-6 col-md-4 col-lg-2 text-center">
                             <a className="brand-item">
                                 <img src="./assets/images/icon/brand-3.svg" alt="Image" className="brand" />
                                 <img src="./assets/images/icon/hover-brand-3.svg" alt="Image" className="brand-hover" />
                             </a>
                         </div>
                         
-                        <div className="infiniteSlide-slide">
+                        <div className="col-6 col-md-4 col-lg-2 text-center">
                             <a className="brand-item">
                                 <img src="./assets/images/icon/brand-4.svg" alt="Image" className="brand" />
                                 <img src="./assets/images/icon/hover-brand-4.svg" alt="Image" className="brand-hover" />
                             </a>
                         </div>
                         
-                        <div className="infiniteSlide-slide">
+                        <div className="col-6 col-md-4 col-lg-2 text-center">
                             <a className="brand-item">
                                 <img src="./assets/images/icon/brand-5.svg" alt="Image" className="brand" />
                                 <img src="./assets/images/icon/hover-brand-5.svg" alt="Image" className="brand-hover" />
                             </a>
                         </div>
                         
-                        <div className="infiniteSlide-slide">
+                        <div className="col-6 col-md-4 col-lg-2 text-center">
                             <a className="brand-item">
                                 <img src="./assets/images/icon/brand-6.svg" alt="Image" className="brand" />
                                 <img src="./assets/images/icon/hover-brand-6.svg" alt="Image" className="brand-hover" />

@@ -1,19 +1,20 @@
 import DESLOGO from "../../../assets/images/header/DES_logo_white.png";
-import React, { useEffect } from 'react';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Header from '../../../components/Header';
 import Footer from '../../../components/Footer';
 import "./StylesForPortfolioDetails.css"
 
-import WebAppImage1 from '../../../assets/images/portfolioDetails/project-information-item-1.jpg';
-import WebAppImage2 from '../../../assets/images/portfolioDetails/project-results-item-1.jpg';
-import WebAppImage3 from '../../../assets/images/portfolioDetails/img-section-portfolio-detail.jpg';
+import WebAppImage1 from '../../../assets/images/portfolio/portfolioDetailsImages/UIUX/WebAppImage1.jpg';
+import WebAppImage2 from '../../../assets/images/portfolio/portfolioDetailsImages/UIUX/WebAppImage2.jpg';
+import WebAppImage3 from '../../../assets/images/portfolio/portfolioDetailsImages/UIUX/WebAppImage3.jpg';
+import Portfolio1 from '../../../assets/images/portfolio/portfolioDetailsImages/UIUX/ui-ux-img-1.jpg';
+import Portfolio2 from '../../../assets/images/portfolio/portfolioDetailsImages/UIUX/ui-ux-img-2.jpg'
+import Portfolio3 from '../../../assets/images/portfolio/portfolioDetailsImages/UIUX/ui-ux-img-3.jpg'
+import Portfolio4 from '../../../assets/images/portfolio/portfolioDetailsImages/UIUX/ui-ux-img-4.jpg'
+import Portfolio5 from '../../../assets/images/portfolio/portfolioDetailsImages/UIUX/ui-ux-img-5.jpg'
 
 // Import portfolio images (you'll need to add these)
-const Portfolio1 ='https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio2 = 'https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio3 = 'https://images.unsplash.com/photo-1545235617-7a424c1a60cc?q=80&w=1180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio4 = 'https://images.unsplash.com/photo-1545665277-5937489579f2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-const Portfolio5 = 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 
 export default function UIUXDesign() {
   // Portfolio data
@@ -55,73 +56,21 @@ export default function UIUXDesign() {
     }
   ];
 
-  // Add the JavaScript for horizontal scrolling
-  useEffect(() => {
-    const scrollContainer = document.querySelector('.portfolio-horizontal-scroll');
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  // Create the horizontal scroll transform
+  const x = useTransform(scrollYProgress, (pos) => {
+    // Calculate the total width of all items plus gaps
+    const totalWidth = portfolioItems.length * (350 + 30); // 350px item width + 30px gap
+    const viewportWidth = window.innerWidth;
+    const maxScroll = totalWidth - viewportWidth + 60; // 60px for padding
     
-    if (scrollContainer) {
-      let isDown = false;
-      let startX;
-      let scrollLeft;
-      
-      const handleMouseDown = (e) => {
-        isDown = true;
-        scrollContainer.style.cursor = 'grabbing';
-        startX = e.pageX - scrollContainer.offsetLeft;
-        scrollLeft = scrollContainer.scrollLeft;
-      };
-      
-      const handleMouseLeave = () => {
-        isDown = false;
-        scrollContainer.style.cursor = 'grab';
-      };
-      
-      const handleMouseUp = () => {
-        isDown = false;
-        scrollContainer.style.cursor = 'grab';
-      };
-      
-      const handleMouseMove = (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - scrollContainer.offsetLeft;
-        const walk = (x - startX) * 2;
-        scrollContainer.scrollLeft = scrollLeft - walk;
-      };
-      
-      // Auto-scroll on load (optional)
-      let autoScroll = setInterval(() => {
-        if (!isDown) {
-          scrollContainer.scrollLeft += 1;
-          if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-            clearInterval(autoScroll);
-          }
-        }
-      }, 30);
-      
-      // Stop auto-scroll on user interaction
-      const handleMouseEnter = () => {
-        clearInterval(autoScroll);
-      };
-      
-      // Add event listeners
-      scrollContainer.addEventListener('mousedown', handleMouseDown);
-      scrollContainer.addEventListener('mouseleave', handleMouseLeave);
-      scrollContainer.addEventListener('mouseup', handleMouseUp);
-      scrollContainer.addEventListener('mousemove', handleMouseMove);
-      scrollContainer.addEventListener('mouseenter', handleMouseEnter);
-      
-      // Cleanup function
-      return () => {
-        clearInterval(autoScroll);
-        scrollContainer.removeEventListener('mousedown', handleMouseDown);
-        scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
-        scrollContainer.removeEventListener('mouseup', handleMouseUp);
-        scrollContainer.removeEventListener('mousemove', handleMouseMove);
-        scrollContainer.removeEventListener('mouseenter', handleMouseEnter);
-      };
-    }
-  }, []);
+    // Return the translation value
+    return `-${pos * maxScroll}px`;
+  });
 
   return (
     <>
@@ -169,52 +118,54 @@ export default function UIUXDesign() {
             </div>
         </div>
 
-        {/* Portfolio horizontal scrolling */}
-        <section className="portfolio-horizontal-section flat-spacing-2">
-            <div className="container">
-                <div className="row align-items-center mb-60">
-                    <div className="col-lg-8">
-                        <p className="h3 letter-space--3 fw-6 color-dt-black mb-0">
-                            Our Recent <span className="color-dt-blue">UI/UX Projects</span>
-                        </p>
+        {/* Portfolio horizontal scrolling with Framer Motion */}
+        <div ref={targetRef} className="portfolio-horizontal-container">
+            <section className="portfolio-horizontal-section flat-spacing-2">
+                <div className="container">
+                    <div className="row align-items-center mb-60">
+                        <div className="col-lg-8">
+                            <p className="h3 letter-space--3 fw-6 color-dt-black mb-0">
+                                Our Recent <span className="color-dt-blue">UI/UX Projects</span>
+                            </p>
+                        </div>
+                       {/* <div className="col-lg-4 text-lg-end">
+                            <a href="/portfolio" className="tf-btn style-outline style-big">
+                                <span className="text-btn">View All Projects</span>
+                                <span className="icon-btn"><i className="icon-arrow-up-right"></i></span>
+                            </a>
+                        </div> */}
                     </div>
-                   {/* <div className="col-lg-4 text-lg-end">
-                        <a href="/portfolio" className="tf-btn style-outline style-big">
-                            <span className="text-btn">View All Projects</span>
-                            <span className="icon-btn"><i className="icon-arrow-up-right"></i></span>
-                        </a>
-                    </div> */}
                 </div>
-            </div>
-            
-            <div className="portfolio-horizontal-scroll">
-                <div className="portfolio-scroll-wrapper">
-                    {portfolioItems.map((item) => (
-                        <div key={item.id} className="portfolio-horizontal-item">
-                            <div className="portfolio-card">
-                                <div className="portfolio-image">
-                                    <img 
-                                        loading="lazy" 
-                                        src={item.image} 
-                                        alt={item.title}
-                                        className="portfolio-img"
-                                    />
-                                    <div className="portfolio-overlay">
-                                        <div className="portfolio-content">
-                                            <span className="portfolio-category">{item.category}</span>
-                                            <h4 className="portfolio-title">{item.title}</h4>
-                                            <a href={item.link} className="portfolio-link">
-                                                <span className="icon icon-arrow-up-right"></span>
-                                            </a>
-                                        </div>
+                
+                <div className="portfolio-horizontal-scroll">
+                    <motion.div style={{ x }} className="portfolio-scroll-wrapper">
+                        {portfolioItems.map((item) => (
+                            <div key={item.id} className="portfolio-horizontal-item">
+                                <div className="portfolio-card">
+                                    <div className="portfolio-image">
+                                        <img 
+                                            loading="lazy" 
+                                            src={item.image} 
+                                            alt={item.title}
+                                            className="portfolio-img"
+                                        />
+                                        {/* <div className="portfolio-overlay">
+                                            <div className="portfolio-content">
+                                                <span className="portfolio-category">{item.category}</span>
+                                                <h4 className="portfolio-title">{item.title}</h4>
+                                                <a href={item.link} className="portfolio-link">
+                                                    <span className="icon icon-arrow-up-right"></span>
+                                                </a>
+                                            </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </motion.div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         
         <section className="section-profilio-detail flat-spacing-1">
             <div className="container">

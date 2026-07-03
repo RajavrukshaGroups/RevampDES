@@ -117,13 +117,13 @@ export default function Footer() {
                       </a>
                     </li>
                     <li className="support-item-footer">
-                      <a href="#" className="ff-2">
-                        Need a Careers
+                      <a href="/faqs" className="ff-2">
+                        FAQs
                       </a>
                     </li>
                     <li className="support-item-footer">
-                      <a href="#" className="ff-2">
-                        Articles & news
+                      <a href="/portfolio" className="ff-2">
+                        Portfolio
                       </a>
                     </li>
                   </ul>
