@@ -2,8 +2,9 @@ import DESLOGO from "../../assets/images/header/DES_logo_white.png";
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import ContactTitleImage from "../../assets/images/contact/img-page-title.jpg"
-import ContactImage from "../../assets/images/contact/img-contact.jpg"
+//import ContactTitleImage from "../../assets/images/contact/img-page-title.jpg"
+import ContactTitleImage from "../../assets/images/contact/img-page-title.png"
+import ContactImage from "../../assets/images/contact/img-contact.png"
 import DESLogoSideBar from "../../assets/images/header/DES_logo_new.svg";
 import PopUpSidebar1 from "../../assets/images/widget/pop-up-siderbar-1.jpg";
 import PopUpSidebar2 from "../../assets/images/widget/pop-up-siderbar-2.jpg";

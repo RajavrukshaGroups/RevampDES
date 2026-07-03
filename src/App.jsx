@@ -60,7 +60,7 @@ function App() {
         <Route path="/home-seo-marketing" element={<HomeSeoMarketing />} />
         <Route path="/index" element={<Index />} />
         <Route path="/our-team" element={<OurTeam />} />
-        <Route path="/portfolio-1" element={<Portfolio1 />} />
+        <Route path="/portfolio" element={<Portfolio1 />} />
         <Route path="/portfolio-2" element={<Portfolio2 />} />
         <Route path="/portfolio-details" element={<PortfolioDetails />} />
         <Route path="/pricing-plan" element={<PricingPlan />} />

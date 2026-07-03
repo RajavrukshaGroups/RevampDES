@@ -159,7 +159,7 @@ export default function Header() {
                   </li>
 
                   <li className="menu-item has-sub_menu">
-                    <a href="/portfolio-1" className="item-link">
+                    <a href="/portfolio" className="item-link">
                       Portfolio
                       {/* <span className="icon icon-chevron-down"></span> */}
                     </a>

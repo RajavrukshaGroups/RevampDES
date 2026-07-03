@@ -67,8 +67,8 @@ export default function AboutUs() {
                   ,
                   <br />
                   increase visibility
-                  <br />
-                  and grow faster
+                  {/* <br />
+                  and grow faster */}
                 </h1>
                 <div className="breadkcum">
                   <a href="/">Home</a>

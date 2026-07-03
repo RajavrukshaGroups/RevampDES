@@ -1,11 +1,12 @@
 import DESLOGO from "../../assets/images/header/DES_logo_white.png";
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 //import HeroImg1 from "../../assets/images/hero/img-hero-1.jpg";
-import HeroImg2 from "../../assets/images/hero/img-hero-2.jpg";
-import BgBoxQuote from "../../assets/images/hero/bg-box-quote.jpg";
-import avtTeam3 from "../../assets/images/hero/avt-team-3.jpg";
+import HeroImg2 from "../../assets/images/hero/img-hero-2.jpeg";
+import BgBoxQuote from "../../assets/images/hero/bg-box-quote.jpeg";
+import avtTeam3 from "../../assets/images/hero/avt-team-3.jpeg";
 import avtTeam2 from "../../assets/images/hero/avt-team-2.jpg";
 import avtTeam1 from "../../assets/images/hero/avt-team-1.jpg";
 //import ImgSectionStrategy from "../../assets/images/section/img-section-strategy.jpg";
@@ -88,6 +89,7 @@ import ImgSectionWhy4 from '../../assets/images/homePageImgs/ImgSectionWhy4.jpg'
 import "./client-logo-fix.css";
 
 export default function Home() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   return (
     <>
       <main className="wrapper" id="wrapper">
@@ -286,18 +288,10 @@ export default function Home() {
                       <br />
                       Solutions
                     </div>
-                    <div className="user-box">
-                      <a href="#" className="fw-5 letter-space--3">
-                        Michael Anderson
-                      </a>
-                      <a href="#" className="text-caption letter-space--3 fw-5">
-                        CEO & Founder
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>
-              <div className="image-hero img-2 wow fadeInRight">
+              {/* <div className="image-hero img-2 wow fadeInRight">
                 <img
                   loading="lazy"
                   width="453"
@@ -306,7 +300,7 @@ export default function Home() {
                   src={HeroImg2}
                   alt="Image"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -478,15 +472,30 @@ export default function Home() {
               <div className="col-12 col-md-6 col-lg-8">
                 <div className="wg-video wow fadeInUp">
                   <div className="image">
-                    <img
-                      loading="lazy"
-                      width="850"
-                      height="470"
-                      // src="./assets/images/section/img-video.jpg"
-                      src={ImgVideo}
-                      alt="Image"
-                    />
+                    {isVideoOpen ? (
+                      <video 
+                        width="850" 
+                        height="470" 
+                        controls 
+                        autoPlay 
+                        playsInline
+                        poster={ImgVideo}
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      >
+                        <source src={HomePageVideo} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    ) : (
+                      <img
+                        loading="lazy"
+                        width="850"
+                        height="470"
+                        src={ImgVideo}
+                        alt="Image"
+                      />
+                    )}
                   </div>
+                  
                   {/* <a
                     href="https://www.youtube.com/watch?v=XHOmBV4js_E"
                     className="popup-youtube btn-play"
@@ -498,17 +507,21 @@ export default function Home() {
                       <i className="icon-play icon-color-red"></i>
                     </div>
                   </a> */}
-                  <a
-                    href={HomePageVideo}
-                    className="popup-video btn-play"
-                  >
-                    <div className="icon">
-                      <div className="wave"></div>
-                      <div className="wave"></div>
-                      <div className="wave"></div>
-                      <i className="icon-play icon-color-red"></i>
+                  
+                  {!isVideoOpen && (
+                    <div
+                      className="btn-play"
+                      onClick={() => setIsVideoOpen(true)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <div className="icon">
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                        <div className="wave"></div>
+                        <i className="icon-play icon-color-red"></i>
+                      </div>
                     </div>
-                  </a>
+                  )}
                 </div>
               </div>
 
